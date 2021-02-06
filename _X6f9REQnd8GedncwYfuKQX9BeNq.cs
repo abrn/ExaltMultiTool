@@ -61,7 +61,7 @@ internal class _X6f9REQnd8GedncwYfuKQX9BeNq : WorldPosData
 		}
 	}
 
-	public override IDataObject Write(PacketReader r)
+	public override IDataObject Read(PacketReader r)
 	{
 		_IBSqBdwNTiXSzhZbDhEFMC0Gc51 = r.ReadInt32();
 		while (true)

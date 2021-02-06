@@ -5,9 +5,9 @@ using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
-internal class _ZoVDPfhFrldGCEcKrA1GxJu8qu2A
+internal class LocalProxy
 {
-	private TcpListener _xeSqcieGXfPRSNSebdpqN9rCL6i;
+	private TcpListener _Listener;
 
 	public ConcurrentDictionary<string, ReconnectPacket> _JlhuftEwIx9QqEcmrh5juOLuNhE;
 
@@ -423,59 +423,34 @@ internal class _ZoVDPfhFrldGCEcKrA1GxJu8qu2A
 		}
 	}
 
-	public void _kEjM3drv7XL0FHq5mFJklnMCTBq()
+	public void Start()
 	{
 		Program.LogInfoMessage("listener", "Starting local listener....");
 		_JlhuftEwIx9QqEcmrh5juOLuNhE = new ConcurrentDictionary<string, ReconnectPacket>();
-		while (true)
-		{
-			int num = -952184363;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0xB0D391FDu) % 6u)
-				{
-				case 3u:
-					break;
-				default:
-					return;
-				case 4u:
-					_xeSqcieGXfPRSNSebdpqN9rCL6i = new TcpListener(IPAddress.Parse("127.0.0.1"), 2050);
-					num = (int)(num2 * 921533915) ^ -510746573;
-					continue;
-				case 1u:
-					Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("listener", "Started local listener.");
-					num = ((int)num2 * -1177287142) ^ 0x26E7E96F;
-					continue;
-				case 0u:
-					_xeSqcieGXfPRSNSebdpqN9rCL6i.Server.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, optionValue: true);
-					num = ((int)num2 * -1982928890) ^ -1309957034;
-					continue;
-				case 5u:
-					_xeSqcieGXfPRSNSebdpqN9rCL6i.Start();
-					_xeSqcieGXfPRSNSebdpqN9rCL6i.BeginAcceptTcpClient(_8Dhu8OpskIzADqDh1q7XgEt1n3g, null);
-					num = ((int)num2 * -412861054) ^ 0x4FDD263A;
-					continue;
-				case 2u:
-					return;
-				}
-				break;
-			}
-		}
+		
+		_Listener = new TcpListener(IPAddress.Parse("127.0.0.1"), 2050);
+		_Listener.Server.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, optionValue: true);
+		
+		_Listener.Start();
+		_Listener.BeginAcceptTcpClient(_8Dhu8OpskIzADqDh1q7XgEt1n3g, null);
+		
+		Program.LogNetworkInfo("listener", "Started local listener.");
+
+		return;
 	}
 
 	private void _8Dhu8OpskIzADqDh1q7XgEt1n3g(IAsyncResult ar)
 	{
 		try
 		{
-			TcpClient client = _xeSqcieGXfPRSNSebdpqN9rCL6i.EndAcceptTcpClient(ar);
+			TcpClient client = _Listener.EndAcceptTcpClient(ar);
 			while (true)
 			{
 				int num = -1144780258;
 				while (true)
 				{
 					uint num2;
-					_PlferqYaObizDfc28C5jdKSLGq5 client2;
+					Client client2;
 					_KcBslMXpDkB2TvFqzjAsEACA1kK zdQQinTBhMRIy64E6jFDeZ4fNKA;
 					switch ((num2 = (uint)num ^ 0xC45FC69Du) % 3u)
 					{
@@ -484,7 +459,7 @@ internal class _ZoVDPfhFrldGCEcKrA1GxJu8qu2A
 					default:
 						goto end_IL_0000;
 					case 2u:
-						client2 = new _PlferqYaObizDfc28C5jdKSLGq5(this, client);
+						client2 = new Client(this, client);
 						Program.LogInfoMessage("listener", " Client recieved.");
 						zdQQinTBhMRIy64E6jFDeZ4fNKA = this._ZdQQinTBhMRIy64E6jFDeZ4fNKA;
 						if (zdQQinTBhMRIy64E6jFDeZ4fNKA != null)
@@ -509,7 +484,7 @@ internal class _ZoVDPfhFrldGCEcKrA1GxJu8qu2A
 		}
 		try
 		{
-			_xeSqcieGXfPRSNSebdpqN9rCL6i?.BeginAcceptTcpClient(_8Dhu8OpskIzADqDh1q7XgEt1n3g, null);
+			_Listener?.BeginAcceptTcpClient(_8Dhu8OpskIzADqDh1q7XgEt1n3g, null);
 		}
 		catch (Exception innerException)
 		{
@@ -517,12 +492,12 @@ internal class _ZoVDPfhFrldGCEcKrA1GxJu8qu2A
 		}
 	}
 
-	public void _brocD93D6xr1tNwKL9dn3DKnZ58(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public void _brocD93D6xr1tNwKL9dn3DKnZ58(Client client)
 	{
 		this._4eIapRPtQrSln4ftqlIqI1L6dwK?.Invoke(client);
 	}
 
-	public void _ggyYCUsqC4xC7xRoNrdJgcMMFWy(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public void _ggyYCUsqC4xC7xRoNrdJgcMMFWy(Client client)
 	{
 		this._dGfef8mxCbgdggCGNPQHdP7NYuB?.Invoke(client);
 	}

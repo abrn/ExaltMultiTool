@@ -64,11 +64,11 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 		}
 	}
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
-	private string _1VgaYRHMDybGT9G28RbleaeXsAd;
+	private string _ServerHostname;
 
-	public _sXxBcxQJ5OZEM8d0AIMUAzcF8In(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _sXxBcxQJ5OZEM8d0AIMUAzcF8In(Client client)
 	{
 		while (true)
 		{
@@ -95,12 +95,12 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 		}
 	}
 
-	public void _8XY4FIhyfLEdGGl9wsGeGL8RaBT(string ip)
+	public void GetServerIP(string ip)
 	{
-		_1VgaYRHMDybGT9G28RbleaeXsAd = ip;
+		_ServerHostname = ip;
 	}
 
-	public void _CgwO1K8tgdyKPdKvCtJupNhapLD(PlayerTextPacket playerText)
+	public void HandlePlayerCommand(PlayerTextPacket playerText)
 	{
 		//Discarded unreachable code: IL_00b1, IL_00c4, IL_015b
 		if (!Settings.Default.EnableGotoCommand)
@@ -158,10 +158,10 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 				return;
 			case 2u:
 			{
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Server IP: " + _1VgaYRHMDybGT9G28RbleaeXsAd);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Server IP: " + _ServerHostname);
 				Thread thread = new Thread((ThreadStart)delegate
 				{
-					Clipboard.SetText(_1VgaYRHMDybGT9G28RbleaeXsAd);
+					Clipboard.SetText(_ServerHostname);
 				});
 				thread.SetApartmentState(ApartmentState.STA);
 				thread.Start();
@@ -242,7 +242,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					IL_0061:
 					return true;
 				}).ToArray());
-				_aDQCFom1gSDZjGTT5uho8DxJI0P(ip);
+				ConnectToHostname(ip);
 				num = -828669762;
 				continue;
 			}
@@ -292,11 +292,11 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 		goto IL_0014;
 	}
 
-	private void _aDQCFom1gSDZjGTT5uho8DxJI0P(string ip)
+	private void ConnectToHostname(string ip)
 	{
 		string s = Guid.NewGuid().ToString();
 		ReconnectPacket reconnectPacket = default(ReconnectPacket);
-		ReconnectPacket pj6n5wnM13hiKitAbSha5pnU02v2 = default(ReconnectPacket);
+		ReconnectPacket ourReconnect = default(ReconnectPacket);
 		string key = default(string);
 		byte[] bytes = default(byte[]);
 		while (true)
@@ -316,16 +316,16 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					num = (int)(num2 * 847301290) ^ -447121975;
 					continue;
 				case 7u:
-					pj6n5wnM13hiKitAbSha5pnU02v2._Port = 2050;
+					ourReconnect._Port = 2050;
 					num = ((int)num2 * -1756224868) ^ -1139738377;
 					continue;
 				case 5u:
-					key = _PlferqYaObizDfc28C5jdKSLGq5._fvjeDdCWCcAa9Yq1lOCAy0ktNXt(bytes);
-					pj6n5wnM13hiKitAbSha5pnU02v2 = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
+					key = Client._fvjeDdCWCcAa9Yq1lOCAy0ktNXt(bytes);
+					ourReconnect = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
 					num = ((int)num2 * -1850591630) ^ -1298746286;
 					continue;
 				case 8u:
-					pj6n5wnM13hiKitAbSha5pnU02v2._WL2DOBxBuX9DARzf2KPoaJbgZiCb = "Recon";
+					ourReconnect._MapName = "Recon";
 					num = (int)((num2 * 1540626680) ^ 0x31DA498D);
 					continue;
 				case 1u:
@@ -340,22 +340,22 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					num = ((int)num2 * -1141512054) ^ 0x5D95DADC;
 					continue;
 				case 13u:
-					pj6n5wnM13hiKitAbSha5pnU02v2._IsFromArena = false;
+					ourReconnect._IsFromArena = false;
 					num = (int)((num2 * 896203018) ^ 0x26D443D0);
 					continue;
 				case 11u:
-					reconnectPacket._WL2DOBxBuX9DARzf2KPoaJbgZiCb = "Realm";
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._DumVMPhENnNVyQvhZaHdKZdaaMD._JlhuftEwIx9QqEcmrh5juOLuNhE.TryAdd(key, pj6n5wnM13hiKitAbSha5pnU02v2);
+					reconnectPacket._MapName = "Realm";
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._DumVMPhENnNVyQvhZaHdKZdaaMD._JlhuftEwIx9QqEcmrh5juOLuNhE.TryAdd(key, ourReconnect);
 					num = ((int)num2 * -1731393153) ^ 0x10B3F5A;
 					continue;
 				case 6u:
-					pj6n5wnM13hiKitAbSha5pnU02v2._GameId = -2;
-					pj6n5wnM13hiKitAbSha5pnU02v2._Hostname = ip;
+					ourReconnect._GameId = -2;
+					ourReconnect._Hostname = ip;
 					num = ((int)num2 * -2103217220) ^ -228243231;
 					continue;
 				case 12u:
-					pj6n5wnM13hiKitAbSha5pnU02v2._Key = new byte[0];
-					pj6n5wnM13hiKitAbSha5pnU02v2._KeyTime = -1;
+					ourReconnect._Key = new byte[0];
+					ourReconnect._KeyTime = -1;
 					num = ((int)num2 * -702639827) ^ -505394950;
 					continue;
 				case 0u:
@@ -383,8 +383,8 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 	}
 
 	[CompilerGenerated]
-	private void _aV6zgeYmJmZmnw6Lm4M4mqLtqlg()
+	private void CopyIPToClipboard()
 	{
-		Clipboard.SetText(_1VgaYRHMDybGT9G28RbleaeXsAd);
+		Clipboard.SetText(_ServerHostname);
 	}
 }

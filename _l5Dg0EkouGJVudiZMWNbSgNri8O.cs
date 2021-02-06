@@ -11,7 +11,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 
 	private bool _t4KMngpne0NUuJ6bUZ4OoBMeFV;
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private readonly Dictionary<int, int> _kGGu3Lri5FWVdDmWIhivvRjNI8C = new Dictionary<int, int>();
 
@@ -101,7 +101,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 		}
 	}
 
-	public _l5Dg0EkouGJVudiZMWNbSgNri8O(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _l5Dg0EkouGJVudiZMWNbSgNri8O(Client client)
 	{
 		while (true)
 		{
@@ -236,7 +236,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 		}
 		goto IL_005e;
 		IL_005e:
-		string name = Enum.GetName(typeof(EffectDictionary), showEffect._sSyCr8bFcSziFMiZ9YqQth5e6Uc);
+		string name = Enum.GetName(typeof(EffectDictionary), showEffect._EffectDict);
 		int num = 364950784;
 		goto IL_0011;
 		IL_0011:
@@ -268,7 +268,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 		goto IL_0011;
 	}
 
-	public void _N9zjozggCA9FymbKtC3I9dZkIib(_MI3DmqE2rDrkgXZr8nydo4E9TUF text)
+	public void _N9zjozggCA9FymbKtC3I9dZkIib(TextPacket text)
 	{
 		//Discarded unreachable code: IL_017f, IL_01af, IL_0214, IL_0268, IL_027c
 		if (!_bzWKi3O4BpntfsYKqrrA0hsxlMI)
@@ -279,7 +279,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 		IL_024a:
 		int num;
 		int num2;
-		if (text._O0glnQ0AXJDBFp472Nmh0tyva0Y != -1)
+		if (text._NumStars != -1)
 		{
 			num = -408988851;
 			num2 = num;
@@ -309,7 +309,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			{
 				int num14;
 				int num15;
-				if (text._N9zjozggCA9FymbKtC3I9dZkIib.StartsWith("{\"key\":\"server.guild_join\",\"tokens\":{\"name\":\""))
+				if (text._CleanMessage.StartsWith("{\"key\":\"server.guild_join\",\"tokens\":{\"name\":\""))
 				{
 					num14 = -1133620929;
 					num15 = num14;
@@ -326,7 +326,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			{
 				int num6;
 				int num7;
-				if (!text._N9zjozggCA9FymbKtC3I9dZkIib.Contains(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ROI49ai7g89LZTXhpoAd3C7Qa4I))
+				if (!text._CleanMessage.Contains(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ROI49ai7g89LZTXhpoAd3C7Qa4I))
 				{
 					num6 = 1998134989;
 					num7 = num6;
@@ -350,7 +350,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			{
 				int num10;
 				int num11;
-				if (!(text._Q6HRtFjBgAzGe3VdpxgzUe9DcHp == "*Guild*"))
+				if (!(text._Recipient == "*Guild*"))
 				{
 					num10 = -1843857576;
 					num11 = num10;
@@ -368,7 +368,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 				num = ((int)num3 * -54645723) ^ -2067783904;
 				continue;
 			case 1u:
-				array = text._N9zjozggCA9FymbKtC3I9dZkIib.Split(new string[1]
+				array = text._CleanMessage.Split(new string[1]
 				{
 					"{\"key\":\"server.guild_join\",\"tokens\":{\"name\":\""
 				}, StringSplitOptions.RemoveEmptyEntries);
@@ -428,7 +428,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			case 21u:
 				return;
 			case 15u:
-				array = text._N9zjozggCA9FymbKtC3I9dZkIib.Split(new string[1]
+				array = text._CleanMessage.Split(new string[1]
 				{
 					" has left "
 				}, StringSplitOptions.RemoveEmptyEntries);
@@ -466,7 +466,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			break;
 			IL_01e5:
 			int num16;
-			if (text._N9zjozggCA9FymbKtC3I9dZkIib.Contains(" has left "))
+			if (text._CleanMessage.Contains(" has left "))
 			{
 				num = -1144297277;
 				num16 = num;
@@ -555,11 +555,11 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 					continue;
 				}
 				case 13u:
-					_kGGu3Lri5FWVdDmWIhivvRjNI8C.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, 100);
+					_kGGu3Lri5FWVdDmWIhivvRjNI8C.Add(gameObject._Status._ObjectId, 100);
 					num = ((int)num2 * -1881621698) ^ 0x386E81D7;
 					continue;
 				case 10u:
-					_KQrCDNrUysA4qKaWspdpLvKfrZf(gameObject._gVz37u8P9es5e8QAguAJW13BAYh);
+					_KQrCDNrUysA4qKaWspdpLvKfrZf(gameObject._Status);
 					num = -1703732882;
 					continue;
 				case 1u:
@@ -578,7 +578,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 				{
 					int num11;
 					int num12;
-					if (_kGGu3Lri5FWVdDmWIhivvRjNI8C.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+					if (_kGGu3Lri5FWVdDmWIhivvRjNI8C.ContainsKey(gameObject._Status._ObjectId))
 					{
 						num11 = 328785446;
 						num12 = num11;
@@ -615,7 +615,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 				{
 					int num6;
 					int num7;
-					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._Status._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num6 = -640090087;
 						num7 = num6;
@@ -670,7 +670,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 	private bool _yM13KvXU9cLnZX3zNfsAEJ8e8UE(GameObject entity)
 	{
 		//Discarded unreachable code: IL_003e
-		if (entity._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId - 1 != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+		if (entity._Status._ObjectId - 1 != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			while (true)
 			{
@@ -691,7 +691,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 	private bool _Gh2VHcPTkEUMxCEVgHnOW695CDd(GameObject entity)
 	{
 		//Discarded unreachable code: IL_0041
-		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(entity._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(entity._Status._ObjectId))
 		{
 			while (true)
 			{

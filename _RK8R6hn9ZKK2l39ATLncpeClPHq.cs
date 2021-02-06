@@ -190,12 +190,12 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 					case 0u:
 						break;
 					case 3u:
-						_f4rWT9AaWpLNyuW0essSbQ79ee = gameObject._gVz37u8P9es5e8QAguAJW13BAYh
+						_f4rWT9AaWpLNyuW0essSbQ79ee = gameObject._Status
 							._Position;
 						num2 = (int) (num3 * 1089230358) ^ -33638788;
 						continue;
 					case 4u:
-						if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId ==
+						if (gameObject._Status._ObjectId ==
 						    _ObjectId) {
 							num2 = (int) (num3 * 2093831433) ^ -2010683975;
 							continue;
@@ -208,7 +208,7 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 						continue;
 					default: {
 						using (List<StatData>.Enumerator enumerator = gameObject
-							._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator()) {
+							._Status._Stats.GetEnumerator()) {
 							while (true) {
 								int num4;
 								int num5;

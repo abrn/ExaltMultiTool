@@ -8,9 +8,9 @@ internal class PlayerData
 
 	public int _fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 
-	public WorldPosData _FLMczMOk4gNIJMbSsAnIDIvYlDP = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	public WorldPosData _FLMczMOk4gNIJMbSsAnIDIvYlDP = WorldPosData.Initial;
 
-	public WorldPosData _IlcbhoOIM3MRszn9mfn3IKjnXc0 = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	public WorldPosData _IlcbhoOIM3MRszn9mfn3IKjnXc0 = WorldPosData.Initial;
 
 	public int _QcbiIFoaU4fTWtLHf007a8sDujV;
 
@@ -626,7 +626,7 @@ internal class PlayerData
 	public PlayerData(GameObject source)
 	{
 		_y2nCjecGeYsmqDEzaplcuBvYtN7 = source._ObjectType;
-		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = source._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = source._Status._ObjectId;
 		_K9KHPXwzr29YDgek3GVsa0yGGld(source);
 	}
 
@@ -646,7 +646,7 @@ internal class PlayerData
 					break;
 				case 14u:
 				{
-					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._Status._ObjectId;
 					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(_y2nCjecGeYsmqDEzaplcuBvYtN7);
 					int num3;
 					int num4;
@@ -721,7 +721,7 @@ internal class PlayerData
 					num = ((int)num2 * -151404443) ^ -1767284039;
 					continue;
 				default:
-					_JV6zl0lA6JLQZNtpbYVFdWCNsay(entity._gVz37u8P9es5e8QAguAJW13BAYh, 0, -1, -1, -1L);
+					_JV6zl0lA6JLQZNtpbYVFdWCNsay(entity._Status, 0, -1, -1, -1L);
 					return;
 				}
 				break;

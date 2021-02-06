@@ -1,16 +1,16 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _SroO6BArjwxjDOjHnWzqCAeNSvF : Packet
+internal class QuestRedeemResponsePacket : Packet
 {
-	public bool _PJSppIZJztu4HXLKvqK1ZeiDLym;
+	public bool _Result;
 
-	public string _1xJnApWExAEbirK3iXPXNZCyR4n;
+	public string _Message;
 
 	public override PacketType pType => PacketType.QUESTREDEEMRESPONSE;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_PJSppIZJztu4HXLKvqK1ZeiDLym = r.ReadBoolean();
+		_Result = r.ReadBoolean();
 		while (true)
 		{
 			int num = 1238542463;
@@ -30,7 +30,7 @@ internal class _SroO6BArjwxjDOjHnWzqCAeNSvF : Packet
 				}
 				break;
 				IL_002e:
-				_1xJnApWExAEbirK3iXPXNZCyR4n = r.ReadString();
+				_Message = r.ReadString();
 				num = (int)((num2 * 1070509493) ^ 0x4D5199EC);
 			}
 		}
@@ -38,7 +38,7 @@ internal class _SroO6BArjwxjDOjHnWzqCAeNSvF : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_PJSppIZJztu4HXLKvqK1ZeiDLym);
+		w.Write(_Result);
 		while (true)
 		{
 			int num = -1117792727;
@@ -58,7 +58,7 @@ internal class _SroO6BArjwxjDOjHnWzqCAeNSvF : Packet
 				}
 				break;
 				IL_002e:
-				w.Write(_1xJnApWExAEbirK3iXPXNZCyR4n);
+				w.Write(_Message);
 				num = (int)((num2 * 42434458) ^ 0x78CD7FFE);
 			}
 		}

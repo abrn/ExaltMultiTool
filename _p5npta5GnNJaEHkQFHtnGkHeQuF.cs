@@ -33,7 +33,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		94
 	};
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private bool _hxMDzH1xd6DA3Y2OhCwBJDCPEqcA;
 
@@ -53,7 +53,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 
 	private int _Qi8WHb2CLkop1GCwnhQRKKIWiiG = -1;
 
-	public _p5npta5GnNJaEHkQFHtnGkHeQuF(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _p5npta5GnNJaEHkQFHtnGkHeQuF(Client client)
 	{
 		while (true)
 		{
@@ -380,7 +380,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			{
 				int num14;
 				int num15;
-				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._e83B5VoPYGBwUAJrm6D3QiZAjKN == 0)
+				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._Alpha == 0)
 				{
 					num14 = 2103015895;
 					num15 = num14;
@@ -466,7 +466,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			{
 				int num8;
 				int num9;
-				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._e83B5VoPYGBwUAJrm6D3QiZAjKN == 0)
+				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._Alpha == 0)
 				{
 					num8 = 584288852;
 					num9 = num8;
@@ -489,7 +489,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			{
 				int num10;
 				int num11;
-				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._e83B5VoPYGBwUAJrm6D3QiZAjKN != 0)
+				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._Alpha != 0)
 				{
 					num10 = 1071001754;
 					num11 = num10;
@@ -510,7 +510,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			{
 				int num4;
 				int num5;
-				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._e83B5VoPYGBwUAJrm6D3QiZAjKN == 0)
+				if (showEffect._JEsT6uIdK1eySUKAfntb2FPG6xS._Alpha == 0)
 				{
 					num4 = -704745204;
 					num5 = num4;
@@ -546,7 +546,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			continue;
 			IL_00e7:
 			int num19;
-			if (showEffect._sSyCr8bFcSziFMiZ9YqQth5e6Uc == EffectDictionary.Flash)
+			if (showEffect._EffectDict == EffectDictionary.Flash)
 			{
 				num = -1998800503;
 				num19 = num;
@@ -559,7 +559,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			continue;
 			IL_00bd:
 			int num20;
-			if (showEffect._eVyRGurHYqbAmno19xMZWSdv2to._PositionY == 5.0)
+			if (showEffect._PositionOne._PositionY == 5.0)
 			{
 				num = -549071701;
 				num20 = num;
@@ -638,7 +638,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 17u:
 				return;
 			case 2u:
-				_uVJ77yndSE01nQVrPjFse5CsyYE = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+				_uVJ77yndSE01nQVrPjFse5CsyYE = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1744324475) ^ -1038323731;
 				continue;
 			case 6u:
@@ -649,13 +649,13 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				num = ((int)num2 * -38438754) ^ -305366763;
 				continue;
 			case 21u:
-				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._gVz37u8P9es5e8QAguAJW13BAYh);
+				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._Status);
 				num = ((int)num2 * -106810440) ^ -338325888;
 				continue;
 			case 20u:
 				return;
 			case 8u:
-				_Qi8WHb2CLkop1GCwnhQRKKIWiiG = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+				_Qi8WHb2CLkop1GCwnhQRKKIWiiG = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1355130168) ^ 0x5EB52ABF;
 				continue;
 			case 14u:
@@ -663,11 +663,11 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				num = 2112293538;
 				continue;
 			case 1u:
-				_Iz1POFdHlMFrJHwbDsWXXhNWElj = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+				_Iz1POFdHlMFrJHwbDsWXXhNWElj = gameObject._Status._ObjectId;
 				num = (int)(num2 * 1378612742) ^ -1920847158;
 				continue;
 			case 18u:
-				_r7ZdM6xdXiqvbZJtINNDT2dEpAS = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+				_r7ZdM6xdXiqvbZJtINNDT2dEpAS = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1419229404) ^ -1181828291;
 				continue;
 			case 10u:
@@ -699,7 +699,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 0u:
 				goto IL_0272;
 			case 3u:
-				_477CT08hnzYliCGcgisOnOsuJrd = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
+				_477CT08hnzYliCGcgisOnOsuJrd = gameObject._Status._ObjectId;
 				num = ((int)num2 * -408297481) ^ 0x5A20968F;
 				continue;
 			case 5u:
@@ -924,7 +924,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		}
 	}
 
-	internal void _N9zjozggCA9FymbKtC3I9dZkIib(_MI3DmqE2rDrkgXZr8nydo4E9TUF text)
+	internal void _N9zjozggCA9FymbKtC3I9dZkIib(TextPacket text)
 	{
 		//Discarded unreachable code: IL_006d, IL_00b4, IL_00c7
 		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
@@ -935,7 +935,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		IL_00fa:
 		int num;
 		int num2;
-		if (text._O0glnQ0AXJDBFp472Nmh0tyva0Y <= -1)
+		if (text._NumStars <= -1)
 		{
 			num = -2136029289;
 			num2 = num;
@@ -961,7 +961,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 5u:
 				return;
 			case 8u:
-				Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Ignoring Dammah: {_2GIxvwUGGhXZDbsdJhlfFL7Aynq}, raw text: {text._N9zjozggCA9FymbKtC3I9dZkIib}");
+				Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Ignoring Dammah: {_2GIxvwUGGhXZDbsdJhlfFL7Aynq}, raw text: {text._CleanMessage}");
 				num = (int)(num3 * 54915312) ^ -593345678;
 				continue;
 			case 3u:
@@ -969,7 +969,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 6u:
 				return;
 			case 4u:
-				_2GIxvwUGGhXZDbsdJhlfFL7Aynq = _BIxpDM3UpjVymy6HlSABzwKxH9l.Contains(text._N9zjozggCA9FymbKtC3I9dZkIib);
+				_2GIxvwUGGhXZDbsdJhlfFL7Aynq = _BIxpDM3UpjVymy6HlSABzwKxH9l.Contains(text._CleanMessage);
 				num = -485222150;
 				continue;
 			case 1u:
@@ -980,7 +980,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			break;
 			IL_0049:
 			int num4;
-			if (!(text._WL2DOBxBuX9DARzf2KPoaJbgZiCb != "#Chancellor Dammah"))
+			if (!(text._Name != "#Chancellor Dammah"))
 			{
 				num = -1247957691;
 				num4 = num;

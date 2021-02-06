@@ -1441,7 +1441,7 @@ internal class _FS6jMJJePXheZSSgdbcle1Cf3eK : UserControl
 	}
 
 	[CompilerGenerated]
-	private void _hW7PpTf6lHJhlyeU7g2Pg0KKTOd(_PlferqYaObizDfc28C5jdKSLGq5 c)
+	private void _hW7PpTf6lHJhlyeU7g2Pg0KKTOd(Client c)
 	{
 		Invoke((MethodInvoker)delegate
 		{
@@ -1456,7 +1456,7 @@ internal class _FS6jMJJePXheZSSgdbcle1Cf3eK : UserControl
 	}
 
 	[CompilerGenerated]
-	private void _Qh8D2HTdPv3OLiHIOROlSXMWrsZ(_PlferqYaObizDfc28C5jdKSLGq5 c)
+	private void _Qh8D2HTdPv3OLiHIOROlSXMWrsZ(Client c)
 	{
 		Invoke((MethodInvoker)delegate
 		{

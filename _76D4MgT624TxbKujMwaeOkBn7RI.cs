@@ -2,11 +2,11 @@ using ExaltMultiTool;
 
 internal class _76D4MgT624TxbKujMwaeOkBn7RI
 {
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private int _FWeRrJeEUAPVIWA2J2od8vfnvJh = 30;
 
-	public _76D4MgT624TxbKujMwaeOkBn7RI(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _76D4MgT624TxbKujMwaeOkBn7RI(Client client)
 	{
 		while (true)
 		{

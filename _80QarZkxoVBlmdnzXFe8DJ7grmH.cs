@@ -16,7 +16,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 		}
 	}
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private bool[] _3t2KnEmo4sR6bmL7O8ghpXgVQTC;
 
@@ -35,7 +35,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 		ResourceDownloader._2CIHnoEa49dfPXyqt9nkkBlUcQf._EOUVvVncv0meCCDQkGXOyUOLU5F(14771)
 	};
 
-	public _80QarZkxoVBlmdnzXFe8DJ7grmH(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _80QarZkxoVBlmdnzXFe8DJ7grmH(Client client)
 	{
 		while (true)
 		{
@@ -108,7 +108,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 		int num = 0;
 		GameObject gameObject = default(GameObject);
 		TileObject[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = default(TileObject[]);
-		_TmFas5PEXYMVmPQTpu3tg3XuoTo tmFas5PEXYMVmPQTpu3tg3XuoTo = default(_TmFas5PEXYMVmPQTpu3tg3XuoTo);
+		MapStructure mapStructure = default(MapStructure);
 		ObjectStructure objectStructure = default(ObjectStructure);
 		_JDuaG31Xe8XJ3zd9YVFcuUiYrW1 jDuaG31Xe8XJ3zd9YVFcuUiYrW = default(_JDuaG31Xe8XJ3zd9YVFcuUiYrW1);
 		while (true)
@@ -136,7 +136,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 				default:
 					return;
 				case 13u:
-					_Qy1BE24E40cQ133fQhzUEORnxWQ((int)gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Position._PositionX, (int)gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Position._PositionY, value: true);
+					_Qy1BE24E40cQ133fQhzUEORnxWQ((int)gameObject._Status._Position._PositionX, (int)gameObject._Status._Position._PositionY, value: true);
 					num2 = ((int)num4 * -961744554) ^ -243430478;
 					continue;
 				case 16u:
@@ -157,7 +157,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 				case 17u:
 				{
 					int num16;
-					if (tmFas5PEXYMVmPQTpu3tg3XuoTo._DhTaSoVobkg7U0jZ45RnYd4BIfr.MinDamage <= 0)
+					if (mapStructure._Tile.MinDamage <= 0)
 					{
 						num2 = 261571655;
 						num16 = num2;
@@ -279,7 +279,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 					continue;
 				case 21u:
 				{
-					tmFas5PEXYMVmPQTpu3tg3XuoTo = _50w8wVuv8bL5nhKaR2EHxjrTamB._psKBaUvFAGf2xFOCwHRyUMbhDXG(jDuaG31Xe8XJ3zd9YVFcuUiYrW._gNqSu0ttbd15HIOb5VM8P14kmgd._PositionX, jDuaG31Xe8XJ3zd9YVFcuUiYrW._gNqSu0ttbd15HIOb5VM8P14kmgd._PositionY);
+					mapStructure = _50w8wVuv8bL5nhKaR2EHxjrTamB._psKBaUvFAGf2xFOCwHRyUMbhDXG(jDuaG31Xe8XJ3zd9YVFcuUiYrW._gNqSu0ttbd15HIOb5VM8P14kmgd._PositionX, jDuaG31Xe8XJ3zd9YVFcuUiYrW._gNqSu0ttbd15HIOb5VM8P14kmgd._PositionY);
 					int num14;
 					int num15;
 					if (Settings.Default.EnableSafeWalk)

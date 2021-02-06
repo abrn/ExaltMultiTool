@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using ExaltMultiTool;
 
 internal class MainForm : Form {
-	[CompilerGenerated] private _ZoVDPfhFrldGCEcKrA1GxJu8qu2A _IKOmts76oBl90Xlm0Aw2A4moJcd;
+	[CompilerGenerated] private LocalProxy _IKOmts76oBl90Xlm0Aw2A4moJcd;
 
 	private _FS6jMJJePXheZSSgdbcle1Cf3eK _sPErbpKqY0mmEI36IOE5n9JEeUB;
 
@@ -37,12 +37,12 @@ internal class MainForm : Form {
 
 	private Timer _O3LpaCvM1vP0FMX2OknddbMCJAn;
 
-	public _ZoVDPfhFrldGCEcKrA1GxJu8qu2A _K7ZdnyAWKqJeAPIhC4xsrSzRGat { get; private set; }
+	public LocalProxy _K7ZdnyAWKqJeAPIhC4xsrSzRGat { get; private set; }
 
 	public MainForm()
 	{
 		LoadResources();
-		_K7ZdnyAWKqJeAPIhC4xsrSzRGat = new _ZoVDPfhFrldGCEcKrA1GxJu8qu2A();
+		_K7ZdnyAWKqJeAPIhC4xsrSzRGat = new LocalProxy();
 	}
 
 	[AsyncStateMachine(typeof(_FjdiqLrGVaHBcAu4Rq92FM9vL7I))]
@@ -630,7 +630,7 @@ internal class MainForm : Form {
 
 					break;
 					IL_003b:
-					_K7ZdnyAWKqJeAPIhC4xsrSzRGat._kEjM3drv7XL0FHq5mFJklnMCTBq();
+					_K7ZdnyAWKqJeAPIhC4xsrSzRGat.Start();
 					num = (int) (num2 * 1401915683) ^ -2028665882;
 				}
 			}

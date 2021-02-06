@@ -212,7 +212,7 @@ internal static class Program {
 		LogDebugMessage(source, '-', message);
 	}
 
-	public static void _et8c2Heqb7KWtXL1gFN1nBBGIVP(string source, string message)
+	public static void LogNetworkInfo(string source, string message)
 	{
 		LogDebugMessage(source, '!', message);
 	}

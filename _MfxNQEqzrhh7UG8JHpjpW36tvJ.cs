@@ -7,11 +7,11 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class _MfxNQEqzrhh7UG8JHpjpW36tvJ
 {
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private int _EeeRzHBDOL9AqYJ8CIuFvkR3Qlz = -1;
 
-	public _MfxNQEqzrhh7UG8JHpjpW36tvJ(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _MfxNQEqzrhh7UG8JHpjpW36tvJ(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}
@@ -208,7 +208,7 @@ internal class _MfxNQEqzrhh7UG8JHpjpW36tvJ
 										continue;
 									case 5u:
 										jI4Bueou7dItYp5S7QML5vyC6Rc2 = current2;
-										num14 = current2._FLMczMOk4gNIJMbSsAnIDIvYlDP._l97JYrnBrV9Ws5bD3UnHa879cYh(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num14 = current2._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP);
 										num18 = -2029029138;
 										continue;
 									case 8u:
@@ -232,7 +232,7 @@ internal class _MfxNQEqzrhh7UG8JHpjpW36tvJ
 									{
 										int num22;
 										int num23;
-										if (current2._FLMczMOk4gNIJMbSsAnIDIvYlDP._l97JYrnBrV9Ws5bD3UnHa879cYh(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP) >= num14)
+										if (current2._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP) >= num14)
 										{
 											num22 = -2076566562;
 											num23 = num22;
@@ -386,7 +386,7 @@ internal class _MfxNQEqzrhh7UG8JHpjpW36tvJ
 							case 4u:
 								return;
 							case 33u:
-								reconnectPacket._WL2DOBxBuX9DARzf2KPoaJbgZiCb = value + " Nexus";
+								reconnectPacket._MapName = value + " Nexus";
 								num17 = (int)((num2 * 2115272512) ^ 0x344C60BE);
 								continue;
 							case 16u:

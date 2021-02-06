@@ -1,4 +1,4 @@
-internal enum _WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C : sbyte
+internal enum EquipTierEnum : sbyte
 {
 	T0 = 0,
 	T1 = 1,

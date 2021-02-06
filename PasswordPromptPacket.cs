@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _UPjCRL1YuryOyV1C0YJxGziIxXD : Packet
+internal class PasswordPromptPacket : Packet
 {
 	public const int _gcDF5ucNX1cRytBCAAE8hBrCTY = 2;
 
@@ -8,17 +8,17 @@ internal class _UPjCRL1YuryOyV1C0YJxGziIxXD : Packet
 
 	public const int _xPVMS2Cn4xket4UbmlH1omWMLxp = 4;
 
-	public int _5HE6oPyKvfuhmO42qKZBIJ2Ir4d;
+	public int _PromptType;
 
 	public override PacketType pType => PacketType.PASSWORDPROMPT;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_5HE6oPyKvfuhmO42qKZBIJ2Ir4d = r.ReadInt32();
+		_PromptType = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_5HE6oPyKvfuhmO42qKZBIJ2Ir4d);
+		w.Write(_PromptType);
 	}
 }

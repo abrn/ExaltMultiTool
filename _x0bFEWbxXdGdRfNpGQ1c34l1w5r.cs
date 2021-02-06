@@ -40,7 +40,7 @@ internal class _x0bFEWbxXdGdRfNpGQ1c34l1w5r : IDataStructure<ushort>
 
 	public int _Hgcuj8Yk2qRXttXX0EHvRYXq7I;
 
-	public _WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C _NXYFTPTlBNIfValNYArFYakCddL;
+	public EquipTierEnum _NXYFTPTlBNIfValNYArFYakCddL;
 
 	public byte _8vNcgGDuWbW1NeAU33KZ6cm2n7i;
 
@@ -99,7 +99,7 @@ internal class _x0bFEWbxXdGdRfNpGQ1c34l1w5r : IDataStructure<ushort>
 	public _x0bFEWbxXdGdRfNpGQ1c34l1w5r(XElement item)
 	{
 		_QjKHGXZ7ohXwrDQImauPaSixsVg = (ushort)item._4qMIb2N5gf9DdhWw9LENt8TJhOK("type", "0x0")._59ab9VkqetpIwwmGzw45eRNlLMg();
-		_NXYFTPTlBNIfValNYArFYakCddL = (item._ujE3VgDdVnbxGy9qIazxpFzbjrY("Tier") ? ((_WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C)item.Element("Tier").Value._sO4kfypgWPkSczoRzkVQIGw3fyF()) : _WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C.UT);
+		_NXYFTPTlBNIfValNYArFYakCddL = (item._ujE3VgDdVnbxGy9qIazxpFzbjrY("Tier") ? ((EquipTierEnum)item.Element("Tier").Value._sO4kfypgWPkSczoRzkVQIGw3fyF()) : EquipTierEnum.UT);
 		_8vNcgGDuWbW1NeAU33KZ6cm2n7i = (byte)item._bUyefY83pIQc4tdCSCBCAwGEWxF("SlotType", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
 		_DVEKL21Adaqgmr9qa9bysABJurA = item._bUyefY83pIQc4tdCSCBCAwGEWxF("RateOfFire", "1")._y09e3EoPW54jYelUtQzj66l0jRF();
 		_q2CnkBKazwZ4CFq9kB6DtVsc2HA = (uint)item._bUyefY83pIQc4tdCSCBCAwGEWxF("feedPower", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();

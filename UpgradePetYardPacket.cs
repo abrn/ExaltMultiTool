@@ -1,18 +1,18 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _sxNjjakU7HAxr71DQ3pUOYwp77c : Packet
+internal class UpgradePetYardPacket : Packet
 {
-	public int _HFKCbZGsDhWUhb8bPzzqjZi7LZN;
+	public int _PetYardType;
 
 	public override PacketType pType => PacketType.PETYARDUPDATE;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_HFKCbZGsDhWUhb8bPzzqjZi7LZN = r.ReadInt32();
+		_PetYardType = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_HFKCbZGsDhWUhb8bPzzqjZi7LZN);
+		w.Write(_PetYardType);
 	}
 }

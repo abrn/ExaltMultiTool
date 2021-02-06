@@ -5,7 +5,7 @@ using ExaltMultiTool.Proxy.Mods;
 
 internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 {
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private bool _vFzBaWeCkk5hgjdL49TmYLedeuRB;
 
@@ -17,7 +17,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 
 	private int _SfV4XqXIATPdqQQB5fsHnSDPz2z;
 
-	public _NE4y2xXE2YXla2YQONOAy9ppGMm(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _NE4y2xXE2YXla2YQONOAy9ppGMm(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}
@@ -182,14 +182,14 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 		};
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(_WCTbeWogZHoPyDnxles484v2oK move)
+	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
 	{
 		_tnzATORRz69PD9QNslfqhszFO2M = Environment.TickCount;
 	}
 
 	public void _G32brJa4jmWaZroFncLDOsAha5VA(_FJ4Ncdgp30LvdfcfBFMzemYCCeT aoe)
 	{
-		if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._l97JYrnBrV9Ws5bD3UnHa879cYh(aoe._hZZqGJ97TiaLFTbiTFhvTTSGkIb) <= (double)(aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC * aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC)))
+		if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(aoe._hZZqGJ97TiaLFTbiTFhvTTSGkIb) <= (double)(aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC * aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC)))
 		{
 			return;
 		}

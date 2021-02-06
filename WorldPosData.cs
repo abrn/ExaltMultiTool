@@ -6,7 +6,7 @@ internal class WorldPosData : ICloneable, IDataObject
 
 	public double _PositionY;
 
-	public static WorldPosData _wqLcCTm1kWDEf2iYSYXvp4mO05R => new WorldPosData(0f, 0f);
+	public static WorldPosData Initial => new WorldPosData(0f, 0f);
 
 	public WorldPosData()
 	{
@@ -75,16 +75,16 @@ internal class WorldPosData : ICloneable, IDataObject
 		this.Write(w);
 	}
 
-	public double _l97JYrnBrV9Ws5bD3UnHa879cYh(WorldPosData location)
+	public double GetDistance(WorldPosData location)
 	{
 		double num = location._PositionX - _PositionX;
 		double num2 = location._PositionY - _PositionY;
 		return num * num + num2 * num2;
 	}
 
-	public double _zFtZUeGjkS0Ei8GwlFzZbAokBAQ(WorldPosData location)
+	public double GetAngle(WorldPosData location)
 	{
-		return Math.Sqrt(_l97JYrnBrV9Ws5bD3UnHa879cYh(location));
+		return Math.Sqrt(GetDistance(location));
 	}
 
 	public double _rXIBypY42lUhmjQwvfVwnT1hpLd(WorldPosData l1, WorldPosData l2)
@@ -113,20 +113,30 @@ internal class WorldPosData : ICloneable, IDataObject
 		return new WorldPosData(x, y);
 	}
 
-	public WorldPosData _UhmQhgJbHmzkOAp7eqNlTZqWAY1(WorldPosData loc)
+	public WorldPosData AddPosition(WorldPosData loc)
 	{
 		return new WorldPosData(_PositionX + loc._PositionX, _PositionY + loc._PositionY);
 	}
 
-	public WorldPosData _81bc1KQkWPvwZVKwf5M4k6wRSXe(WorldPosData loc)
+	public WorldPosData SubtractPosition(WorldPosData loc)
 	{
 		return new WorldPosData(_PositionX - loc._PositionX, _PositionY - loc._PositionY);
 	}
 
-	public override bool _5ZXFmKvJ2hXQDu9dbsTuTPppFUP(object obj)
+	public override bool Clone(object obj)
 	{
-		//Discarded unreachable code: IL_0060, IL_0093
 		WorldPosData worldPosData = (WorldPosData)obj;
+		
+		if (worldPosData != null)
+		{
+			num4 = 2101672636;
+			num5 = num4;
+		}
+		else
+		{
+			num4 = 1441042217;
+			num5 = num4;
+		}
 		while (true)
 		{
 			int num = 329794215;
@@ -141,16 +151,7 @@ internal class WorldPosData : ICloneable, IDataObject
 				{
 					int num4;
 					int num5;
-					if (worldPosData != null)
-					{
-						num4 = 2101672636;
-						num5 = num4;
-					}
-					else
-					{
-						num4 = 1441042217;
-						num5 = num4;
-					}
+					
 					num = num4 ^ (int)(num2 * 172426017);
 					continue;
 				}

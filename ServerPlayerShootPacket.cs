@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _zaToPzsu39B9ILPjZZX95Hsgucc : Packet
+internal class ServerPlayerShootPacket : Packet
 {
 	public byte _isVjytSCPjaQXfnhSgmbShfAEYC;
 
@@ -8,7 +8,7 @@ internal class _zaToPzsu39B9ILPjZZX95Hsgucc : Packet
 
 	public int _5oFaCQNi71DUAwr2GsRcpozHzAC;
 
-	public WorldPosData _s0AbVpQdzzkMtIgrYTUqllh7PYf;
+	public WorldPosData _StartPosition;
 
 	public float _hjRbCZIgEE6lGZJqDLlpYixCdUT;
 
@@ -36,7 +36,7 @@ internal class _zaToPzsu39B9ILPjZZX95Hsgucc : Packet
 					num = ((int)num2 * -729938459) ^ -452685311;
 					continue;
 				case 4u:
-					_s0AbVpQdzzkMtIgrYTUqllh7PYf = new WorldPosData(r);
+					_StartPosition = new WorldPosData(r);
 					num = ((int)num2 * -253987375) ^ 0x1040E77B;
 					continue;
 				case 1u:
@@ -73,7 +73,7 @@ internal class _zaToPzsu39B9ILPjZZX95Hsgucc : Packet
 					goto IL_002e;
 				default:
 					w.Write(_5oFaCQNi71DUAwr2GsRcpozHzAC);
-					_s0AbVpQdzzkMtIgrYTUqllh7PYf.Write(w);
+					_StartPosition.Write(w);
 					w.Write(_hjRbCZIgEE6lGZJqDLlpYixCdUT);
 					w.Write(_C3mvDTxTLKOCwcaeO4BKeVV1ydo);
 					return;

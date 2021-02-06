@@ -23,7 +23,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 		public float _TQs3I5HnEqElZoiO4Dsa88IEj3u;
 	}
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private bool _oV73NEwk247WZa6wM3sxIJwPEei;
 
@@ -35,7 +35,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 
 	private bool _F83qcJjBWlsOfjlt8CcrQ3L7Tko;
 
-	private WorldPosData _REqTtrf1f1UI7k1CKnC1oikFdjd = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	private WorldPosData _REqTtrf1f1UI7k1CKnC1oikFdjd = WorldPosData.Initial;
 
 	private Thread _5YLCCls8uJRZvkiXNMgUQHqL4Xk;
 
@@ -61,7 +61,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 		"Pet Yard 5"
 	};
 
-	public _A7ysKB2QYbIeDv1Ii3aLFW50gh(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _A7ysKB2QYbIeDv1Ii3aLFW50gh(Client client)
 	{
 		while (true)
 		{
@@ -372,7 +372,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 					obj._JEsT6uIdK1eySUKAfntb2FPG6xS = 0;
 					obj._C3mvDTxTLKOCwcaeO4BKeVV1ydo = 0;
 					obj._kvTyEminxJMM6fREzgqsVjHaInC = _PUpefZ8WOU2tKcPbBOBoE74Yj5m.Dead;
-					obj._hZZqGJ97TiaLFTbiTFhvTTSGkIb = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+					obj._hZZqGJ97TiaLFTbiTFhvTTSGkIb = WorldPosData.Initial;
 					obj._I9LOulXQ6dWoDQOn1L5GkchnJUC = 0f;
 					obj._l0mdLwT0Lqvn0oV26TZ8wa7mjTf = false;
 					obj._4ryHqycpd0BcdbojLHcVLB3vF4Z = 0f;
@@ -417,7 +417,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 					continue;
 				case 12u:
 				{
-					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[num3];
+					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num3];
 					int num10;
 					if (potionInfo.Type == 2595)
 					{
@@ -490,7 +490,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 				case 7u:
 				{
 					int num6;
-					if (num3 >= _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.Length)
+					if (num3 >= _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
 					{
 						num = -1526753199;
 						num6 = num;
@@ -913,7 +913,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 			break;
 			IL_0af1:
 			int num19;
-			if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.Length)
+			if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
 			{
 				num = 62381122;
 				num19 = num;
@@ -977,7 +977,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 			}
 			continue;
 			IL_03f7:
-			potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[num4];
+			potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num4];
 			int num24;
 			if (potionInfo.Type == 2595)
 			{
@@ -1627,7 +1627,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 								case 13u:
 								{
 									int num15;
-									if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._l97JYrnBrV9Ws5bD3UnHa879cYh(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) > 144.0))
+									if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) > 144.0))
 									{
 										num3 = -1056592192;
 										num15 = num3;
@@ -2037,7 +2037,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 					num = 1113833624;
 					continue;
 				case 14u:
-					worldPosData = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+					worldPosData = WorldPosData.Initial;
 					num = (int)((num2 * 377539524) ^ 0x584BC354);
 					continue;
 				case 9u:
@@ -2069,7 +2069,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 					num = ((int)num2 * -661068916) ^ -211260078;
 					continue;
 				case 2u:
-					y0mQWlPZGeLjvZsyRyxZmdIZ3qh2 = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+					y0mQWlPZGeLjvZsyRyxZmdIZ3qh2 = WorldPosData.Initial;
 					num = (int)((num2 * 703622841) ^ 0x1E896559);
 					continue;
 				case 7u:
@@ -2194,7 +2194,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 									case 20u:
 									{
 										int num92;
-										if (worldPosData == WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R)
+										if (worldPosData == WorldPosData.Initial)
 										{
 											num65 = 1224477398;
 											num92 = num65;
@@ -2275,7 +2275,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 										continue;
 									}
 									case 14u:
-										num10 = playerPos._l97JYrnBrV9Ws5bD3UnHa879cYh(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
 										num65 = 1753802518;
 										continue;
 									case 32u:
@@ -2388,7 +2388,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 										continue;
 									}
 									case 2u:
-										num10 = playerPos._l97JYrnBrV9Ws5bD3UnHa879cYh(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
 										num65 = (int)((num2 * 1040524434) ^ 0x3E116A2B);
 										continue;
 									case 9u:
@@ -2777,7 +2777,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 										continue;
 									}
 									case 14u:
-										num10 = playerPos._l97JYrnBrV9Ws5bD3UnHa879cYh(current2._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current2._FLMczMOk4gNIJMbSsAnIDIvYlDP);
 										num37 = ((int)num2 * -1104049786) ^ -1050221418;
 										continue;
 									case 8u:
@@ -2834,7 +2834,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 									case 7u:
 									{
 										int num43;
-										if (worldPosData == WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R)
+										if (worldPosData == WorldPosData.Initial)
 										{
 											num37 = 739136466;
 											num43 = num37;
@@ -2918,7 +2918,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 										continue;
 									}
 									case 2u:
-										num10 = playerPos._l97JYrnBrV9Ws5bD3UnHa879cYh(location);
+										num10 = playerPos.GetDistance(location);
 										num3 = (int)((num2 * 975080289) ^ 0x6EBDDD2C);
 										continue;
 									case 10u:
@@ -3060,7 +3060,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 									case 6u:
 									{
 										int num16;
-										if (worldPosData != WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R)
+										if (worldPosData != WorldPosData.Initial)
 										{
 											num3 = 2130493823;
 											num16 = num3;
@@ -3144,7 +3144,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 									}
 									case 13u:
 									{
-										num10 = playerPos._l97JYrnBrV9Ws5bD3UnHa879cYh(current._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP);
 										int num19;
 										int num20;
 										if (num10 > maxDist)
@@ -3266,7 +3266,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 						{
 							int num106;
 							int num107;
-							if (!y0mQWlPZGeLjvZsyRyxZmdIZ3qh2.Equals(WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R))
+							if (!y0mQWlPZGeLjvZsyRyxZmdIZ3qh2.Equals(WorldPosData.Initial))
 							{
 								num106 = -1440015492;
 								num107 = num106;
@@ -3309,7 +3309,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 
 	private WorldPosData _hsbR29Jmhj7ZEZaixrStnsNWcMh(WorldPosData playerCoords, WorldPosData targetCoords, WorldPosData targetVec, double projSpeed)
 	{
-		WorldPosData worldPosData = targetCoords._81bc1KQkWPvwZVKwf5M4k6wRSXe(playerCoords);
+		WorldPosData worldPosData = targetCoords.SubtractPosition(playerCoords);
 		double num8 = default(double);
 		double num7 = default(double);
 		while (true)
@@ -3394,7 +3394,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 					continue;
 				}
 				default:
-					return targetCoords._UhmQhgJbHmzkOAp7eqNlTZqWAY1(targetVec);
+					return targetCoords.AddPosition(targetVec);
 				}
 				break;
 			}
@@ -3581,7 +3581,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 				case 3u:
 				{
 					int num5;
-					if (!(target._FLMczMOk4gNIJMbSsAnIDIvYlDP._l97JYrnBrV9Ws5bD3UnHa879cYh(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) <= (double)P_1._TQs3I5HnEqElZoiO4Dsa88IEj3u))
+					if (!(target._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) <= (double)P_1._TQs3I5HnEqElZoiO4Dsa88IEj3u))
 					{
 						num2 = 885423107;
 						num5 = num2;

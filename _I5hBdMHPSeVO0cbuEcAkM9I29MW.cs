@@ -7,7 +7,7 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 {
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private int _42GPN9YDdixtPULe0BHbgMev6eG = -1;
 
@@ -21,7 +21,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 
 	private int _SQACGHTv1WEjcrxihqkj62R5YfQ = -1;
 
-	private WorldPosData _LAY5qDOXeCwwE8WGSZkOMs9oNKh = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	private WorldPosData _LAY5qDOXeCwwE8WGSZkOMs9oNKh = WorldPosData.Initial;
 
 	private int _neZM1USbaZsslUXWTqLzRHjLKGB;
 
@@ -56,7 +56,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 		"Greater Potion of Vitality"
 	};
 
-	public _I5hBdMHPSeVO0cbuEcAkM9I29MW(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _I5hBdMHPSeVO0cbuEcAkM9I29MW(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}
@@ -165,7 +165,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 			}
 			default:
 			{
-				using (List<StatData>.Enumerator enumerator = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator())
+				using (List<StatData>.Enumerator enumerator = gameObject._Status._Stats.GetEnumerator())
 				{
 					while (true)
 					{
@@ -261,18 +261,18 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 					case 0u:
 						goto IL_02af;
 					case 3u:
-						_n0qimu2AfjwQPWpCgZS0Cw246jV.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, DateTime.Now);
+						_n0qimu2AfjwQPWpCgZS0Cw246jV.Add(gameObject._Status._ObjectId, DateTime.Now);
 						num9 = -1236650401;
 						continue;
 					case 4u:
-						_n0qimu2AfjwQPWpCgZS0Cw246jV[gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId] = DateTime.Now;
+						_n0qimu2AfjwQPWpCgZS0Cw246jV[gameObject._Status._ObjectId] = DateTime.Now;
 						num9 = (int)(num2 * 1345194878) ^ -786679427;
 						continue;
 					case 1u:
 					{
 						int num13;
 						int num14;
-						if (!_n0qimu2AfjwQPWpCgZS0Cw246jV.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+						if (!_n0qimu2AfjwQPWpCgZS0Cw246jV.ContainsKey(gameObject._Status._ObjectId))
 						{
 							num13 = 755020099;
 							num14 = num13;
@@ -649,7 +649,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 		}
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(_WCTbeWogZHoPyDnxles484v2oK move)
+	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
 	{
 		//Discarded unreachable code: IL_0058, IL_007a, IL_0125, IL_031d, IL_05dc
 		if (Settings.Default.AutoLootAutoDisable)
@@ -882,7 +882,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 						case 21u:
 						{
 							int num33;
-							if (num18 < _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.Length)
+							if (num18 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
 							{
 								num3 = 826456472;
 								num33 = num3;
@@ -919,14 +919,14 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 							num3 = 1154773415;
 							continue;
 						case 26u:
-							potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[num18];
+							potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num18];
 							num3 = 1737119123;
 							continue;
 						case 0u:
 						{
 							int num16;
 							int num17;
-							if (!(current._IlcbhoOIM3MRszn9mfn3IKjnXc0._l97JYrnBrV9Ws5bD3UnHa879cYh(move._r0866iEhjgniNmmLz9ygFmfaWPA) <= 1.0))
+							if (!(current._IlcbhoOIM3MRszn9mfn3IKjnXc0.GetDistance(move._r0866iEhjgniNmmLz9ygFmfaWPA) <= 1.0))
 							{
 								num16 = -934589859;
 								num17 = num16;
@@ -1515,7 +1515,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 				{
 					int num5;
 					int num6;
-					if (x0bFEWbxXdGdRfNpGQ1c34l1w5r._NXYFTPTlBNIfValNYArFYakCddL != _WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C.UT)
+					if (x0bFEWbxXdGdRfNpGQ1c34l1w5r._NXYFTPTlBNIfValNYArFYakCddL != EquipTierEnum.UT)
 					{
 						num5 = 759576517;
 						num6 = num5;

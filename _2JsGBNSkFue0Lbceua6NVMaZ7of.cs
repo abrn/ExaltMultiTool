@@ -10,13 +10,13 @@ using ExaltMultiTool.Proxy.Mods;
 
 internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 {
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private int _tnzATORRz69PD9QNslfqhszFO2M = -1;
 
 	private int _qHZZzoli0IgcIAn5PLmFGLabsyC;
 
-	public _2JsGBNSkFue0Lbceua6NVMaZ7of(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _2JsGBNSkFue0Lbceua6NVMaZ7of(Client client)
 	{
 		while (true)
 		{
@@ -62,7 +62,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					break;
 				case 1u:
 					_50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA = mapInfo._MapName;
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf = new _TmFas5PEXYMVmPQTpu3tg3XuoTo[mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk * mapInfo._CmwC8GuQ56hi7QXOmmQpFukQ49j];
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf = new MapStructure[mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk * mapInfo._CmwC8GuQ56hi7QXOmmQpFukQ49j];
 					num = ((int)num2 * -65262235) ^ -1695567190;
 					continue;
 				case 3u:
@@ -208,7 +208,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num2 = 413459782;
 					continue;
 				case 9u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Add(gameObject._Status._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num2 = 366657872;
 					continue;
 				case 11u:
@@ -222,7 +222,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				{
 					int num18;
 					int num19;
-					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(gameObject._Status._ObjectId))
 					{
 						num18 = -859132222;
 						num19 = num18;
@@ -236,14 +236,14 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 13u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf[tileObject._PositionX * _qHZZzoli0IgcIAn5PLmFGLabsyC + tileObject._PositionY] = new _TmFas5PEXYMVmPQTpu3tg3XuoTo(ResourceDownloader._2CIHnoEa49dfPXyqt9nkkBlUcQf._EOUVvVncv0meCCDQkGXOyUOLU5F(tileObject._TileType), tileObject._PositionX, tileObject._PositionY, tileObject._TileType);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf[tileObject._PositionX * _qHZZzoli0IgcIAn5PLmFGLabsyC + tileObject._PositionY] = new MapStructure(ResourceDownloader._2CIHnoEa49dfPXyqt9nkkBlUcQf._EOUVvVncv0meCCDQkGXOyUOLU5F(tileObject._TileType), tileObject._PositionX, tileObject._PositionY, tileObject._TileType);
 					num2 = (int)(num4 * 2016845451) ^ -1538371851;
 					continue;
 				case 12u:
 				{
 					int num12;
 					int num13;
-					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._Status._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num12 = -815935218;
 						num13 = num12;
@@ -265,7 +265,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num2 = (int)(num4 * 1312364546) ^ -1615361244;
 					continue;
 				case 14u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm = _l9gQO8XQ1GsKFJroGbgdgagiQVO(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Stats);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots = _l9gQO8XQ1GsKFJroGbgdgagiQVO(gameObject._Status._Stats);
 					num2 = (int)((num4 * 540449009) ^ 0x5AB61F31);
 					continue;
 				case 2u:
@@ -286,18 +286,18 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 7u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Remove(gameObject._Status._ObjectId);
 					num2 = (int)((num4 * 1193905894) ^ 0x552F2346);
 					continue;
 				case 15u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Remove(gameObject._Status._ObjectId);
 					num2 = ((int)num4 * -140232547) ^ 0x4B83C3E0;
 					continue;
 				case 17u:
 				{
 					int num10;
 					int num11;
-					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.ContainsKey(gameObject._Status._ObjectId))
 					{
 						num10 = -1320613151;
 						num11 = num10;
@@ -335,12 +335,12 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				case 0u:
 					break;
 				case 3u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Add(gameObject._Status._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num2 = 1531324731;
 					continue;
 				default:
 				{
-					using (List<StatData>.Enumerator enumerator = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator())
+					using (List<StatData>.Enumerator enumerator = gameObject._Status._Stats.GetEnumerator())
 					{
 						while (true)
 						{
@@ -403,7 +403,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				}
 				case 1u:
 					{
-						if (_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+						if (_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(gameObject._Status._ObjectId))
 						{
 							goto IL_046c;
 						}
@@ -433,7 +433,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 							num9 = 1630524736;
 							continue;
 						case 11u:
-							_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
+							_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Remove(gameObject._Status._ObjectId);
 							num9 = (int)((num4 * 1327539164) ^ 0x58236D8D);
 							continue;
 						case 5u:
@@ -531,7 +531,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num9 = 1918360561;
 					goto IL_0471;
 					IL_04f5:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Add(gameObject._Status._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num9 = 151437575;
 					goto IL_0471;
 				}
@@ -542,7 +542,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 
 	private void _vK3Un4l0XFJiyoE34BNH9fitpDc(List<StatData> data)
 	{
-		PotionInfo potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.ElementAt(0);
+		PotionInfo potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.ElementAt(0);
 		data.Add(new StatData
 		{
 			_StatType = StatType._SbG99DT4Q20EiNjBNzIakE3Jugt,
@@ -569,7 +569,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				}
 				break;
 				IL_0070:
-				potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.ElementAt(1);
+				potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.ElementAt(1);
 				data.Add(new StatData
 				{
 					_StatType = StatType._dSvzyTzpt52eGfhdOI4AAtAyfTp,
@@ -577,7 +577,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					_MagicByte = potionInfo.Quantity,
 					_StringStatValue = string.Empty
 				});
-				potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.ElementAt(2);
+				potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.ElementAt(2);
 				data.Add(new StatData
 				{
 					_StatType = StatType._6McE94HGZ7Fc2g6W7ikQ3Ucw6Gh,
@@ -924,7 +924,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		}
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(_WCTbeWogZHoPyDnxles484v2oK move)
+	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
 	{
 		_tnzATORRz69PD9QNslfqhszFO2M = Environment.TickCount;
 		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC == null)
@@ -1017,7 +1017,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				num = 1907331609;
 				continue;
 			case 9u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"Unable to find enemy type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
+				Program.LogNetworkInfo("client", $"Unable to find enemy type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
 				num = (int)((num2 * 1353711768) ^ 0x42288EDB);
 				continue;
 			case 15u:
@@ -1107,7 +1107,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				num = 1219414074;
 				continue;
 			case 7u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"Unable to find enemy projectile type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
+				Program.LogNetworkInfo("client", $"Unable to find enemy projectile type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
 				num = (int)((num2 * 1698108007) ^ 0x13762240);
 				continue;
 			case 4u:
@@ -1185,11 +1185,11 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 12u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity = 0;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity = 0;
 					num = (int)(num2 * 1743529491) ^ -1692260871;
 					continue;
 				case 17u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
 					return;
 				case 10u:
 				{
@@ -1209,7 +1209,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 3u:
-					b = --_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity;
+					b = --_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity;
 					num = ((int)num2 * -357200076) ^ 0x440AD662;
 					continue;
 				case 5u:
@@ -1229,7 +1229,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				}
 				case 15u:
 				{
-					b = ++_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
+					b = ++_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
 					int num16;
 					int num17;
 					if (b > 6)
@@ -1282,21 +1282,21 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 18u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity = 6;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity = 6;
 					num = ((int)num2 * -910842810) ^ -674505082;
 					continue;
 				case 16u:
 					return;
 				case 13u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity ^= _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity;
 					num = ((int)num2 * -1151225643) ^ -1817340885;
 					continue;
 				case 9u:
 				{
 					int num14;
 					int num15;
-					if (_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity != _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity)
+					if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Quantity != _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId - 1000000].Quantity)
 					{
 						num14 = 178420240;
 						num15 = num14;
@@ -1346,7 +1346,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 4u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Type = -1;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invResult._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId - 1000000].Type = -1;
 					num = ((int)num2 * -1525215761) ^ 0x73BA1D59;
 					continue;
 				case 8u:
@@ -1448,7 +1448,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 			case 2u:
 				goto IL_0228;
 			case 21u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[slot._SlotId - 1000000].Type = slot._ObjectType;
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[slot._SlotId - 1000000].Type = slot._ObjectType;
 				num = (int)((num3 * 2060382297) ^ 0x30164861);
 				continue;
 			case 19u:
@@ -1462,7 +1462,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 			case 26u:
 				return;
 			case 4u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"Bad InvResult slot {slot}");
+				Program.LogNetworkInfo("client", $"Bad InvResult slot {slot}");
 				num = (int)(num3 * 1105700412) ^ -1046164995;
 				continue;
 			case 7u:
@@ -1603,7 +1603,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				default:
 					return;
 				case 0u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[useItem._obJo3i4uC8yf7c2aS8NBvEttXTO._SlotId - 1000000].Quantity--;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[useItem._obJo3i4uC8yf7c2aS8NBvEttXTO._SlotId - 1000000].Quantity--;
 					num = ((int)num2 * -64439244) ^ 0x5FB16879;
 					continue;
 				case 1u:
@@ -1684,7 +1684,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 0u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[invDrop._GPJ1Yp8tCEXEoq8RmZNbc43WC7C._SlotId - 1000000].Quantity--;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invDrop._GPJ1Yp8tCEXEoq8RmZNbc43WC7C._SlotId - 1000000].Quantity--;
 					num = ((int)num2 * -65986427) ^ -436039163;
 					continue;
 				case 1u:

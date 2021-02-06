@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _z14K0skbnHWlBInCNegbucvV6wU : Packet
+internal class VerifyEmailPacket : Packet
 {
 	public override PacketType pType => PacketType.VERIFYEMAIL;
 

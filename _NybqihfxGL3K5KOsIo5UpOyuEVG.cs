@@ -50,7 +50,7 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 			default:
 				return;
 			case 0u:
-				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._gVz37u8P9es5e8QAguAJW13BAYh);
+				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._Status);
 				num = (int)(num3 * 1483856324) ^ -2142246349;
 				continue;
 			case 1u:

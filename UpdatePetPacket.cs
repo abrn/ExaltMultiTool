@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _Ru1LSKLHrNEz3WkyrVvBhlKtmiN : Packet
+internal class UpdatePetPacket : Packet
 {
 	public const int _7VSSujIJwF6mzupj9vLObOJ5RCE = 1;
 

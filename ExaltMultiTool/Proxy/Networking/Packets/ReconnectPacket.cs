@@ -2,7 +2,7 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class ReconnectPacket : Packet
 {
-	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
+	public string _MapName;
 
 	public string _Hostname;
 
@@ -20,7 +20,7 @@ internal class ReconnectPacket : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_WL2DOBxBuX9DARzf2KPoaJbgZiCb = r.ReadString();
+		_MapName = r.ReadString();
 		_Hostname = r.ReadString();
 		while (true)
 		{
@@ -53,7 +53,7 @@ internal class ReconnectPacket : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_WL2DOBxBuX9DARzf2KPoaJbgZiCb);
+		w.Write(_MapName);
 		while (true)
 		{
 			int num = -1716207121;

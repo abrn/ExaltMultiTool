@@ -1,16 +1,16 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
+internal class AcceptTradePacket : Packet
 {
-	public bool[] _LHbaAVjSQXAgKyzFZayI0skw5HM;
+	public bool[] _OurOffers;
 
-	public bool[] _PE8lg9yzWD4WzuCZzjQgHBr9HzE;
+	public bool[] _OtherOffers;
 
 	public override PacketType pType => PacketType.TRADEACCEPTED;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_LHbaAVjSQXAgKyzFZayI0skw5HM = new bool[r.ReadInt16()];
+		_OurOffers = new bool[r.ReadInt16()];
 		int num3 = default(int);
 		int num5 = default(int);
 		while (true)
@@ -34,7 +34,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 					num = (int)(num2 * 1271062854) ^ -1676695078;
 					continue;
 				case 3u:
-					_LHbaAVjSQXAgKyzFZayI0skw5HM[num5] = r.ReadBoolean();
+					_OurOffers[num5] = r.ReadBoolean();
 					num = 1262297476;
 					continue;
 				case 1u:
@@ -42,17 +42,17 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 					num = ((int)num2 * -1188655478) ^ 0x1861A7C9;
 					continue;
 				case 4u:
-					_PE8lg9yzWD4WzuCZzjQgHBr9HzE = new bool[r.ReadInt16()];
+					_OtherOffers = new bool[r.ReadInt16()];
 					num = (int)(num2 * 1693750536) ^ -1156339095;
 					continue;
 				case 11u:
-					_PE8lg9yzWD4WzuCZzjQgHBr9HzE[num3] = r.ReadBoolean();
+					_OtherOffers[num3] = r.ReadBoolean();
 					num = 1140852701;
 					continue;
 				case 7u:
 				{
 					int num6;
-					if (num5 >= _LHbaAVjSQXAgKyzFZayI0skw5HM.Length)
+					if (num5 >= _OurOffers.Length)
 					{
 						num = 41992821;
 						num6 = num;
@@ -74,7 +74,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 				case 2u:
 				{
 					int num4;
-					if (num3 >= _PE8lg9yzWD4WzuCZzjQgHBr9HzE.Length)
+					if (num3 >= _OtherOffers.Length)
 					{
 						num = 1044041410;
 						num4 = num;
@@ -99,7 +99,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write((ushort)_LHbaAVjSQXAgKyzFZayI0skw5HM.Length);
+		w.Write((ushort)_OurOffers.Length);
 		bool value2 = default(bool);
 		bool[] array = default(bool[]);
 		int num3 = default(int);
@@ -124,7 +124,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 					num = 723965788;
 					continue;
 				case 7u:
-					w.Write((ushort)_PE8lg9yzWD4WzuCZzjQgHBr9HzE.Length);
+					w.Write((ushort)_OtherOffers.Length);
 					num = (int)((num2 * 292175150) ^ 0x70267CFB);
 					continue;
 				case 5u:
@@ -143,7 +143,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 					continue;
 				}
 				case 0u:
-					array = _PE8lg9yzWD4WzuCZzjQgHBr9HzE;
+					array = _OtherOffers;
 					num = ((int)num2 * -947833880) ^ -133432846;
 					continue;
 				case 3u:
@@ -169,7 +169,7 @@ internal class _sZTACcaWtDBvynOP5IuayIXFco8 : Packet
 					num = ((int)num2 * -841948076) ^ -1058414702;
 					continue;
 				case 6u:
-					array = _LHbaAVjSQXAgKyzFZayI0skw5HM;
+					array = _OurOffers;
 					num = (int)((num2 * 1706310721) ^ 0x719CB0D3);
 					continue;
 				case 11u:

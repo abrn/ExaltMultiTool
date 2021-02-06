@@ -255,7 +255,7 @@ internal class PacketStructure : IDataStructure<byte>
 				}
 				break;
 				IL_0031:
-				_tbwA3CYsq6dDCAhHaXDRhPwo8xq = (from t in Assembly.GetAssembly(typeof(_ZoVDPfhFrldGCEcKrA1GxJu8qu2A)).GetTypes()
+				_tbwA3CYsq6dDCAhHaXDRhPwo8xq = (from t in Assembly.GetAssembly(typeof(LocalProxy)).GetTypes()
 					where _Toi0CdTsRRcLpqFRR8AabzFM20p.IsAssignableFrom(t)
 					select t).ToArray();
 				num = (int)((num2 * 1839486014) ^ 0x69133E6E);

@@ -50,7 +50,7 @@ internal class InjectionHelper {
 							File.Delete(text);
 						}
 						catch {
-							Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("core", "Old lib is in use...");
+							Program.LogNetworkInfo("core", "Old lib is in use...");
 						}
 
 						goto IL_0189;
@@ -92,7 +92,7 @@ internal class InjectionHelper {
 			File.Delete(_cdyBaJMdzdveeFZzPT2GyKrT35Z);
 		}
 		catch {
-			Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("core", "Lib is in use...");
+			Program.LogNetworkInfo("core", "Lib is in use...");
 		}
 	}
 

@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _shMhgxADd7FcOGMDYYsJmB1XEwU : Packet
+internal class QuestRoomMessagePacket : Packet
 {
 	public override PacketType pType => PacketType.QUESTROOMMSG;
 

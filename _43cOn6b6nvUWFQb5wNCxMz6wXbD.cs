@@ -82,7 +82,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 
 	private static Dictionary<string, int> _2uy3SiURqP8Ecgmfnt4rRpGfe5y;
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private bool _RUI6iBtBZM0XLmrUDMinIhEAG2x;
 
@@ -131,7 +131,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 		}
 	}
 
-	public _43cOn6b6nvUWFQb5wNCxMz6wXbD(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _43cOn6b6nvUWFQb5wNCxMz6wXbD(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}
@@ -508,7 +508,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 			case 3u:
 				break;
 			case 1u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", "Maps list is null, unable to replace maps, trying to parse again");
+				Program.LogNetworkInfo("client", "Maps list is null, unable to replace maps, trying to parse again");
 				num = (int)((num2 * 1618470755) ^ 0x7D4C0262);
 				continue;
 			case 0u:
@@ -1070,8 +1070,8 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 		IL_0014:
 		int num7 = default(int);
 		Dictionary<ushort, List<byte[]>> dictionary = default(Dictionary<ushort, List<byte[]>>);
-		_TmFas5PEXYMVmPQTpu3tg3XuoTo tmFas5PEXYMVmPQTpu3tg3XuoTo = default(_TmFas5PEXYMVmPQTpu3tg3XuoTo);
-		_TmFas5PEXYMVmPQTpu3tg3XuoTo[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = default(_TmFas5PEXYMVmPQTpu3tg3XuoTo[]);
+		MapStructure mapStructure = default(MapStructure);
+		MapStructure[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = default(MapStructure[]);
 		byte[] current2 = default(byte[]);
 		while (true)
 		{
@@ -1099,7 +1099,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 			}
 			case 5u:
 			{
-				_PlferqYaObizDfc28C5jdKSLGq5 plferqYaObizDfc28C5jdKSLGq = _50w8wVuv8bL5nhKaR2EHxjrTamB;
+				Client plferqYaObizDfc28C5jdKSLGq = _50w8wVuv8bL5nhKaR2EHxjrTamB;
 				object message;
 				if (!_2uy3SiURqP8Ecgmfnt4rRpGfe5y.ContainsKey(_M2RcPC2J4Jc1ncdCsJJYHM1k0ai))
 				{
@@ -1162,7 +1162,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 							{
 								int num9;
 								int num10;
-								if (!dictionary.ContainsKey(tmFas5PEXYMVmPQTpu3tg3XuoTo._bjQd3Vpt6RdoySpzKxn7K2gQGoM))
+								if (!dictionary.ContainsKey(mapStructure._TileType))
 								{
 									num9 = -1490215132;
 									num10 = num9;
@@ -1187,7 +1187,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 							{
 								int num11;
 								int num12;
-								if (tmFas5PEXYMVmPQTpu3tg3XuoTo != null)
+								if (mapStructure != null)
 								{
 									num11 = 819786652;
 									num12 = num11;
@@ -1201,11 +1201,11 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 								continue;
 							}
 							case 5u:
-								dictionary.Add(tmFas5PEXYMVmPQTpu3tg3XuoTo._bjQd3Vpt6RdoySpzKxn7K2gQGoM, new List<byte[]>());
+								dictionary.Add(mapStructure._TileType, new List<byte[]>());
 								num3 = ((int)num2 * -610649468) ^ -323213420;
 								continue;
 							case 2u:
-								tmFas5PEXYMVmPQTpu3tg3XuoTo = _2CIHnoEa49dfPXyqt9nkkBlUcQf[num7];
+								mapStructure = _2CIHnoEa49dfPXyqt9nkkBlUcQf[num7];
 								num3 = -849492505;
 								continue;
 							case 6u:
@@ -1217,7 +1217,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 								num3 = ((int)num2 * -725467737) ^ -2065382304;
 								continue;
 							case 3u:
-								dictionary[tmFas5PEXYMVmPQTpu3tg3XuoTo._bjQd3Vpt6RdoySpzKxn7K2gQGoM].Add(_0U13Xaadumfh3Rq7bosOpHHI8EN._CbMmKhs21CLB3H4EaQTZreneGph(tmFas5PEXYMVmPQTpu3tg3XuoTo._J6Qj5cLLcu6lzA6QjEWC7AHwMFB, tmFas5PEXYMVmPQTpu3tg3XuoTo._xtqbgJ9lwGkC3oZ29UIr5OCkpsaA));
+								dictionary[mapStructure._TileType].Add(_0U13Xaadumfh3Rq7bosOpHHI8EN._CbMmKhs21CLB3H4EaQTZreneGph(mapStructure._PosX, mapStructure._PosY));
 								num3 = -610443369;
 								continue;
 							case 0u:

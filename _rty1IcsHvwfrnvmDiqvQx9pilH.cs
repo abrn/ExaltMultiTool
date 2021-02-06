@@ -10,7 +10,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 {
 	private const bool _VxECAYpjHcErYFwPo21VPyCqo1Db = false;
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	public bool _VczQDeMDvlxm06HSYLiD8FbT7qj;
 
@@ -34,7 +34,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 
 	private List<_Jb0feCILTkEl6pcg2T1V15k3pU9> _Rjfm4PW3aMRNwsporG8wkl5wG5G = new List<_Jb0feCILTkEl6pcg2T1V15k3pU9>();
 
-	private WorldPosData _rZfAtVaDv7a30Cx46re9BwDcDp3 = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	private WorldPosData _rZfAtVaDv7a30Cx46re9BwDcDp3 = WorldPosData.Initial;
 
 	private bool _nSbn5BiGHvwfVPOliLfIaQJ4jcb;
 
@@ -64,7 +64,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 
 	private Dictionary<int, ushort> _upSS8MT1MDBXesl0chZtogspZ0B = new Dictionary<int, ushort>();
 
-	public _rty1IcsHvwfrnvmDiqvQx9pilH(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _rty1IcsHvwfrnvmDiqvQx9pilH(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 		_VczQDeMDvlxm06HSYLiD8FbT7qj = false;
@@ -79,7 +79,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 		goto IL_0092;
 		IL_0092:
-		Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"Autonexusing from {source}, {damage}");
+		Program.LogNetworkInfo("client", $"Autonexusing from {source}, {damage}");
 		int num = -1787223940;
 		goto IL_0018;
 		IL_0018:
@@ -144,7 +144,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num = (int)((num2 * 655763433) ^ 0xA1A2183);
 					continue;
 				case 1u:
-					reconnectPacket._WL2DOBxBuX9DARzf2KPoaJbgZiCb = "Nexus";
+					reconnectPacket._MapName = "Nexus";
 					num = (int)(num2 * 1254907141) ^ -815976612;
 					continue;
 				case 5u:
@@ -231,7 +231,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				{
 					gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num];
 					int num5;
-					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._Status._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num2 = -820964269;
 						num5 = num2;
@@ -248,7 +248,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num2 = -1325262464;
 					continue;
 				case 4u:
-					_svydDteItTikqFWEdfihYLPjcdD(gameObject._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
+					_svydDteItTikqFWEdfihYLPjcdD(gameObject._Status, fromUpdate: true);
 					num2 = (int)((num3 * 816166144) ^ 0x7D17649D);
 					continue;
 				case 3u:
@@ -301,7 +301,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				case 4u:
 				{
 					int num7;
-					if (!_upSS8MT1MDBXesl0chZtogspZ0B.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
+					if (!_upSS8MT1MDBXesl0chZtogspZ0B.ContainsKey(gameObject._Status._ObjectId))
 					{
 						num = 4652208;
 						num7 = num;
@@ -317,7 +317,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num = ((int)num2 * -2035521373) ^ 0x31402DBA;
 					continue;
 				case 6u:
-					_upSS8MT1MDBXesl0chZtogspZ0B.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, gameObject._ObjectType);
+					_upSS8MT1MDBXesl0chZtogspZ0B.Add(gameObject._Status._ObjectId, gameObject._ObjectType);
 					num = ((int)num2 * -351150587) ^ -75449674;
 					continue;
 				case 1u:
@@ -336,7 +336,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					continue;
 				}
 				case 2u:
-					_KQrCDNrUysA4qKaWspdpLvKfrZf(gameObject._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
+					_KQrCDNrUysA4qKaWspdpLvKfrZf(gameObject._Status, fromUpdate: true);
 					num = ((int)num2 * -806065401) ^ -2062763528;
 					continue;
 				case 7u:
@@ -347,7 +347,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				{
 					int num4;
 					int num5;
-					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._Status._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num4 = -168142646;
 						num5 = num4;
@@ -981,7 +981,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(_WCTbeWogZHoPyDnxles484v2oK move)
+	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
 	{
 		int num = _50w8wVuv8bL5nhKaR2EHxjrTamB._ThXZKkD7eTKsvHaetPD5l7lo3ld;
 		while (true)
@@ -1072,7 +1072,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 			default:
 				return;
 			case 7u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
+				Program.LogNetworkInfo("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
 				return;
 			case 15u:
 				array2 = array[1].Split(new string[1]
@@ -1082,12 +1082,12 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				num = 1829585538;
 				continue;
 			case 13u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
+				Program.LogNetworkInfo("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
 				return;
 			case 12u:
 				goto IL_00f4;
 			case 3u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
+				Program.LogNetworkInfo("client", "Malformed notification message: " + notification._1xJnApWExAEbirK3iXPXNZCyR4n);
 				num = (int)(num3 * 1622327762) ^ -882269683;
 				continue;
 			case 9u:
@@ -1303,7 +1303,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					{
 						int num5;
 						int num6;
-						if (_rZfAtVaDv7a30Cx46re9BwDcDp3._zFtZUeGjkS0Ei8GwlFzZbAokBAQ(current._hZZqGJ97TiaLFTbiTFhvTTSGkIb) >= (double)current._I9LOulXQ6dWoDQOn1L5GkchnJUC)
+						if (_rZfAtVaDv7a30Cx46re9BwDcDp3.GetAngle(current._hZZqGJ97TiaLFTbiTFhvTTSGkIb) >= (double)current._I9LOulXQ6dWoDQOn1L5GkchnJUC)
 						{
 							num5 = -169044016;
 							num6 = num5;
@@ -1331,7 +1331,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		_Rjfm4PW3aMRNwsporG8wkl5wG5G.Clear();
 	}
 
-	public void _W4ULDsCzGjGES6SCKBD4lp5hvRd(_VhiC6MRkf9RQ9nQp4K78vup3R4n groundDamage)
+	public void _W4ULDsCzGjGES6SCKBD4lp5hvRd(GroundDamagePacket groundDamage)
 	{
 		//Discarded unreachable code: IL_00c4
 		if (_VczQDeMDvlxm06HSYLiD8FbT7qj)
@@ -1340,7 +1340,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 		goto IL_0102;
 		IL_0102:
-		_TmFas5PEXYMVmPQTpu3tg3XuoTo tmFas5PEXYMVmPQTpu3tg3XuoTo = _50w8wVuv8bL5nhKaR2EHxjrTamB._psKBaUvFAGf2xFOCwHRyUMbhDXG(groundDamage._ObXrbtVZcdprxclR2Ggz9jKwlp);
+		MapStructure mapStructure = _50w8wVuv8bL5nhKaR2EHxjrTamB._psKBaUvFAGf2xFOCwHRyUMbhDXG(groundDamage._Position);
 		int num = 496896558;
 		goto IL_0010;
 		IL_0010:
@@ -1357,7 +1357,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 			{
 				int num3;
 				int num4;
-				if (tmFas5PEXYMVmPQTpu3tg3XuoTo != null)
+				if (mapStructure != null)
 				{
 					num3 = -560179821;
 					num4 = num3;
@@ -1371,7 +1371,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				continue;
 			}
 			case 1u:
-				_CLRtscLVGwgyeHHILRfayjUB8iu(tmFas5PEXYMVmPQTpu3tg3XuoTo._DhTaSoVobkg7U0jZ45RnYd4BIfr.MaxDamage, "Ground damage (" + tmFas5PEXYMVmPQTpu3tg3XuoTo._DhTaSoVobkg7U0jZ45RnYd4BIfr.Name + ")");
+				_CLRtscLVGwgyeHHILRfayjUB8iu(mapStructure._Tile.MaxDamage, "Ground damage (" + mapStructure._Tile.Name + ")");
 				num = 616983127;
 				continue;
 			case 6u:
@@ -1382,7 +1382,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				_50w8wVuv8bL5nhKaR2EHxjrTamB.sendChatNotification("AutoNexus", "Took ground damage from an unknown source, autonexus may not be fully functional!");
 				return;
 			case 0u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"Null tile at {groundDamage._ObXrbtVZcdprxclR2Ggz9jKwlp} when taking GroundDamage");
+				Program.LogNetworkInfo("client", $"Null tile at {groundDamage._Position} when taking GroundDamage");
 				num = ((int)num2 * -638397555) ^ -694679016;
 				continue;
 			case 7u:
@@ -1491,7 +1491,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 			case 7u:
 				goto IL_01ff;
 			case 10u:
-				Program._et8c2Heqb7KWtXL1gFN1nBBGIVP("client", $"We got hit by a shot that is not logged, owner: {text}, bid: {playerHit._isVjytSCPjaQXfnhSgmbShfAEYC}");
+				Program.LogNetworkInfo("client", $"We got hit by a shot that is not logged, owner: {text}, bid: {playerHit._isVjytSCPjaQXfnhSgmbShfAEYC}");
 				num = (int)((num2 * 1188752503) ^ 0x49677A7B);
 				continue;
 			case 1u:
@@ -1901,7 +1901,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				case 8u:
 				{
 					int num13;
-					if (num10 < _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm.Length)
+					if (num10 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
 					{
 						num = 1198436290;
 						num13 = num;
@@ -2009,7 +2009,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num = (int)(num2 * 2026954862) ^ -1196184572;
 					continue;
 				case 7u:
-					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm[num10];
+					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num10];
 					num = 79909149;
 					continue;
 				case 3u:
@@ -2097,7 +2097,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 			{
 				int num4;
 				int num5;
-				if (_PlferqYaObizDfc28C5jdKSLGq5._RMiC0QFzlD1C8rYuIDkiDIy5r1H.Contains(id))
+				if (Client._RMiC0QFzlD1C8rYuIDkiDIy5r1H.Contains(id))
 				{
 					num4 = 1812783460;
 					num5 = num4;

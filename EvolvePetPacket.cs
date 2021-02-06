@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _Tny3AODKKpp40RqAsmrwx2rf6db : Packet
+internal class EvolvePetPacket : Packet
 {
 	public int _tjbHiRznBpNOVIqL5wnfaZ7vOZB;
 

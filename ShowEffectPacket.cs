@@ -5,38 +5,29 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 internal class ShowEffectPacket : Packet
 {
 	private const int BITMASK_COLOR = 1;
-
 	private const int BITMASK_POS1_X = 2;
-
 	private const int BITMASK_POS1_Y = 4;
-
 	private const int BITMASK_POS2_X = 8;
-
 	private const int BITMASK_POS2_Y = 16;
-
 	private const int BITMASK_POS1 = 6;
-
 	private const int BITMASK_POS2 = 24;
-
 	private const int BITMASK_DURATION = 32;
-
 	private const int BITMASK_BIT_ID = 64;
-
 	private const int BITMASK_ = 128;
 
-	private static readonly _yNixIvVlGhPCEfXGcNUaC9jZYRS _sEbsBUoH2nb2Xe0NgbAdtwAYgyn = new _yNixIvVlGhPCEfXGcNUaC9jZYRS(uint.MaxValue);
+	private static readonly ColorUtil _sEbsBUoH2nb2Xe0NgbAdtwAYgyn = new ColorUtil(uint.MaxValue);
 
-	public EffectDictionary _sSyCr8bFcSziFMiZ9YqQth5e6Uc;
+	public EffectDictionary _EffectDict;
 
 	public int _91Zhx0OBsUhlR5optw0cihxmls4;
 
-	public WorldPosData _eVyRGurHYqbAmno19xMZWSdv2to = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	public WorldPosData _PositionOne = WorldPosData.Initial;
 
-	public WorldPosData _LzqOSouCFw90pddCpHPi77ITQkB = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	public WorldPosData _PositionTwo = WorldPosData.Initial;
 
-	public _yNixIvVlGhPCEfXGcNUaC9jZYRS _JEsT6uIdK1eySUKAfntb2FPG6xS;
+	public ColorUtil _JEsT6uIdK1eySUKAfntb2FPG6xS;
 
-	public float _GqTyCW3dGiBN9DxAMWAsMjwS9AY;
+	public float _Duration;
 
 	public byte _Py6PkxjHTY3O6pw4WuxldaFbWxH;
 
@@ -44,7 +35,7 @@ internal class ShowEffectPacket : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_sSyCr8bFcSziFMiZ9YqQth5e6Uc = (EffectDictionary)r.ReadByte();
+		_EffectDict = (EffectDictionary)r.ReadByte();
 		byte b = r.ReadByte();
 		while (true)
 		{
@@ -59,12 +50,12 @@ internal class ShowEffectPacket : Packet
 				default:
 					return;
 				case 2u:
-					_LzqOSouCFw90pddCpHPi77ITQkB._PositionY = (((b & 0x10u) != 0) ? r.ReadSingle() : 0f);
+					_PositionTwo._PositionY = (((b & 0x10u) != 0) ? r.ReadSingle() : 0f);
 					num = 1157121933;
 					continue;
 				case 3u:
-					_JEsT6uIdK1eySUKAfntb2FPG6xS = ((((uint)b & (true ? 1u : 0u)) != 0) ? _yNixIvVlGhPCEfXGcNUaC9jZYRS._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r) : _sEbsBUoH2nb2Xe0NgbAdtwAYgyn);
-					_GqTyCW3dGiBN9DxAMWAsMjwS9AY = (((b & 0x20u) != 0) ? r.ReadSingle() : 1f);
+					_JEsT6uIdK1eySUKAfntb2FPG6xS = ((((uint)b & (true ? 1u : 0u)) != 0) ? ColorUtil.Read(r) : _sEbsBUoH2nb2Xe0NgbAdtwAYgyn);
+					_Duration = (((b & 0x20u) != 0) ? r.ReadSingle() : 1f);
 					num = 324033816;
 					continue;
 				case 7u:
@@ -93,9 +84,9 @@ internal class ShowEffectPacket : Packet
 					continue;
 				}
 				case 5u:
-					_eVyRGurHYqbAmno19xMZWSdv2to._PositionX = (((b & 2u) != 0) ? r.ReadSingle() : 0f);
-					_eVyRGurHYqbAmno19xMZWSdv2to._PositionY = (((b & 4u) != 0) ? r.ReadSingle() : 0f);
-					_LzqOSouCFw90pddCpHPi77ITQkB._PositionX = (((b & 8u) != 0) ? r.ReadSingle() : 0f);
+					_PositionOne._PositionX = (((b & 2u) != 0) ? r.ReadSingle() : 0f);
+					_PositionOne._PositionY = (((b & 4u) != 0) ? r.ReadSingle() : 0f);
+					_PositionTwo._PositionX = (((b & 8u) != 0) ? r.ReadSingle() : 0f);
 					num = 415062908;
 					continue;
 				case 1u:
@@ -132,7 +123,7 @@ internal class ShowEffectPacket : Packet
 							num = (int)(num2 * 346286873) ^ -1985620056;
 							continue;
 						case 18u:
-							packetWriter.Write((float)_LzqOSouCFw90pddCpHPi77ITQkB._PositionX);
+							packetWriter.Write((float)_PositionTwo._PositionX);
 							num = (int)((num2 * 945097382) ^ 0x7B6A5ADD);
 							continue;
 						case 25u:
@@ -155,7 +146,7 @@ internal class ShowEffectPacket : Packet
 							num = (int)(num2 * 2033619886) ^ -785170886;
 							continue;
 						case 0u:
-							packetWriter.Write(_GqTyCW3dGiBN9DxAMWAsMjwS9AY);
+							packetWriter.Write(_Duration);
 							num = ((int)num2 * -161462346) ^ -1470388677;
 							continue;
 						case 28u:
@@ -182,7 +173,7 @@ internal class ShowEffectPacket : Packet
 						case 12u:
 						{
 							int num13;
-							if (_GqTyCW3dGiBN9DxAMWAsMjwS9AY == 1f)
+							if (_Duration == 1f)
 							{
 								num = -1689447607;
 								num13 = num;
@@ -196,13 +187,13 @@ internal class ShowEffectPacket : Packet
 						}
 						case 6u:
 							b = (byte)(b | 4u);
-							packetWriter.Write((float)_eVyRGurHYqbAmno19xMZWSdv2to._PositionY);
+							packetWriter.Write((float)_PositionOne._PositionY);
 							num = (int)(num2 * 436325175) ^ -903555861;
 							continue;
 						case 27u:
 						{
 							int num8;
-							if (_eVyRGurHYqbAmno19xMZWSdv2to._PositionY == 0.0)
+							if (_PositionOne._PositionY == 0.0)
 							{
 								num = -2027065892;
 								num8 = num;
@@ -228,15 +219,15 @@ internal class ShowEffectPacket : Packet
 							continue;
 						case 21u:
 							b = (byte)(b | 2u);
-							packetWriter.Write((float)_eVyRGurHYqbAmno19xMZWSdv2to._PositionX);
+							packetWriter.Write((float)_PositionOne._PositionX);
 							num = (int)((num2 * 185745312) ^ 0x2EB5111);
 							continue;
 						case 22u:
-							packetWriter.Write((float)_LzqOSouCFw90pddCpHPi77ITQkB._PositionY);
+							packetWriter.Write((float)_PositionTwo._PositionY);
 							num = ((int)num2 * -244112703) ^ 0xFD7BEFF;
 							continue;
 						case 4u:
-							_JEsT6uIdK1eySUKAfntb2FPG6xS._3Wc8kZJjhbRt6nttAKwD2698imm(packetWriter);
+							_JEsT6uIdK1eySUKAfntb2FPG6xS.Read(packetWriter);
 							num = (int)(num2 * 1797545387) ^ -1883970504;
 							continue;
 						case 19u:
@@ -245,13 +236,13 @@ internal class ShowEffectPacket : Packet
 							num = ((int)num2 * -1299203401) ^ 0x50339801;
 							continue;
 						case 1u:
-							w.Write((byte)_sSyCr8bFcSziFMiZ9YqQth5e6Uc);
+							w.Write((byte)_EffectDict);
 							num = -1774599009;
 							continue;
 						case 17u:
 						{
 							int num17;
-							if (_LzqOSouCFw90pddCpHPi77ITQkB._PositionY == 0.0)
+							if (_PositionTwo._PositionY == 0.0)
 							{
 								num = -948864627;
 								num17 = num;
@@ -270,7 +261,7 @@ internal class ShowEffectPacket : Packet
 						case 20u:
 						{
 							int num14;
-							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._e83B5VoPYGBwUAJrm6D3QiZAjKN != _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._e83B5VoPYGBwUAJrm6D3QiZAjKN)
+							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._Alpha != _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._Alpha)
 							{
 								num = -792965841;
 								num14 = num;
@@ -285,7 +276,7 @@ internal class ShowEffectPacket : Packet
 						case 5u:
 						{
 							int num12;
-							if (_eVyRGurHYqbAmno19xMZWSdv2to._PositionX != 0.0)
+							if (_PositionOne._PositionX != 0.0)
 							{
 								num = -177354050;
 								num12 = num;
@@ -301,7 +292,7 @@ internal class ShowEffectPacket : Packet
 						{
 							int num9;
 							int num10;
-							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._h27dzUIWOz6YD4vVCMWISV9HD6E == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._h27dzUIWOz6YD4vVCMWISV9HD6E)
+							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._Blue == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._Blue)
 							{
 								num9 = -1068243522;
 								num10 = num9;
@@ -318,7 +309,7 @@ internal class ShowEffectPacket : Packet
 						{
 							int num6;
 							int num7;
-							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._iY21vLRI7ndcaxztdbqOkfd6QbK == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._iY21vLRI7ndcaxztdbqOkfd6QbK)
+							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._Red == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._Red)
 							{
 								num6 = 1482066757;
 								num7 = num6;
@@ -334,7 +325,7 @@ internal class ShowEffectPacket : Packet
 						case 24u:
 						{
 							int num5;
-							if (_LzqOSouCFw90pddCpHPi77ITQkB._PositionX != 0.0)
+							if (_PositionTwo._PositionX != 0.0)
 							{
 								num = -906859684;
 								num5 = num;
@@ -350,7 +341,7 @@ internal class ShowEffectPacket : Packet
 						{
 							int num3;
 							int num4;
-							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._FceRcYJFuOsQJwJEoG7HX1TihKF == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._FceRcYJFuOsQJwJEoG7HX1TihKF)
+							if (_JEsT6uIdK1eySUKAfntb2FPG6xS._Green == _sEbsBUoH2nb2Xe0NgbAdtwAYgyn._Green)
 							{
 								num3 = 1639746269;
 								num4 = num3;

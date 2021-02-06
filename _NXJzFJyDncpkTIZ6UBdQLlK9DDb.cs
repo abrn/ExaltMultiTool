@@ -11,16 +11,16 @@ internal class _NXJzFJyDncpkTIZ6UBdQLlK9DDb
 
 	private const int _PXPZ6uDcfHG7EfYnwY7secPIfmD = 514;
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private DateTime _lk4TXx0LrA0Y1fFpntuJjMzmkAb = DateTime.Now;
 
-	private WorldPosData _LAY5qDOXeCwwE8WGSZkOMs9oNKh = WorldPosData._wqLcCTm1kWDEf2iYSYXvp4mO05R;
+	private WorldPosData _LAY5qDOXeCwwE8WGSZkOMs9oNKh = WorldPosData.Initial;
 
 	[DllImport("user32.dll", EntryPoint = "PostMessage")]
 	private static extern bool _pJUJvZoXSjrgx8QMiXvHh3JZaJF(IntPtr hWnd, uint Msg, int wParam, int lParam);
 
-	public _NXJzFJyDncpkTIZ6UBdQLlK9DDb(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _NXJzFJyDncpkTIZ6UBdQLlK9DDb(Client client)
 	{
 		while (true)
 		{
@@ -47,7 +47,7 @@ internal class _NXJzFJyDncpkTIZ6UBdQLlK9DDb
 		}
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(_WCTbeWogZHoPyDnxles484v2oK move)
+	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
 	{
 		//Discarded unreachable code: IL_0095
 		if (!Settings.Default.EnableAntiAFK)

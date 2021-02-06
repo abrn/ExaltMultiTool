@@ -47,7 +47,7 @@ internal class _j6xsOu5VJyl0WxN7qnrwKDDPB3e
 		}
 	}
 
-	private _PlferqYaObizDfc28C5jdKSLGq5 _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private static readonly string[] _xR5gzTubbjoNG0jCFXdHoVo0GFA = new string[52]
 	{
@@ -105,12 +105,12 @@ internal class _j6xsOu5VJyl0WxN7qnrwKDDPB3e
 		"rotmgnetwork"
 	};
 
-	public _j6xsOu5VJyl0WxN7qnrwKDDPB3e(_PlferqYaObizDfc28C5jdKSLGq5 client)
+	public _j6xsOu5VJyl0WxN7qnrwKDDPB3e(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}
 
-	public void _N9zjozggCA9FymbKtC3I9dZkIib(_MI3DmqE2rDrkgXZr8nydo4E9TUF text)
+	public void _N9zjozggCA9FymbKtC3I9dZkIib(TextPacket text)
 	{
 		//Discarded unreachable code: IL_005e
 		IEnumerable<string> source = default(IEnumerable<string>);
@@ -132,7 +132,7 @@ internal class _j6xsOu5VJyl0WxN7qnrwKDDPB3e
 				{
 					int num3;
 					int num4;
-					if (text._O0glnQ0AXJDBFp472Nmh0tyva0Y < 0)
+					if (text._NumStars < 0)
 					{
 						num3 = 338835314;
 						num4 = num3;
@@ -157,7 +157,7 @@ internal class _j6xsOu5VJyl0WxN7qnrwKDDPB3e
 					num = (int)((num2 * 1175599272) ^ 0x77B7514);
 					continue;
 				case 3u:
-					text2 = new string(text._N9zjozggCA9FymbKtC3I9dZkIib.Where(delegate(char c)
+					text2 = new string(text._CleanMessage.Where(delegate(char c)
 					{
 						//Discarded unreachable code: IL_0031
 						if (!char.IsLetter(c))
