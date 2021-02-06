@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _3EtyNkiUOatJT2waPaT8y4HiyVB : Packet
+internal class QuestFetchAskPacket : Packet
 {
 	public override PacketType pType => PacketType.QUESTFETCHASK;
 

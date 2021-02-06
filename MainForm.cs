@@ -149,12 +149,12 @@ internal class MainForm : Form {
 
 	public void _QKylz9L5nSub0zyZUBw5cjpWDdL(int id, Keys key)
 	{
-		_KOjvofkzBAzqmEvHRZRNmFojQZH._ays3S5z2xKCPIbcZFwkO0Be8WEE(base.Handle, id, 0, key.GetHashCode());
+		ProcessInjection._ays3S5z2xKCPIbcZFwkO0Be8WEE(base.Handle, id, 0, key.GetHashCode());
 	}
 
 	public void _YnA0nTNh4MhhIPLXkJj3JrCKP6g(int id)
 	{
-		_KOjvofkzBAzqmEvHRZRNmFojQZH._HXVpLlj5YH2Zu8xy1nZBQFDbcJf(base.Handle, id);
+		ProcessInjection._HXVpLlj5YH2Zu8xy1nZBQFDbcJf(base.Handle, id);
 	}
 
 	protected override void _o9LC3d2fqsm2Dt4NyGei59EBiIn(ref Message m)
@@ -200,8 +200,8 @@ internal class MainForm : Form {
 						num = ((int) num2 * -1718558528) ^ 0x335E8644;
 						continue;
 					case 6u: {
-						_KOjvofkzBAzqmEvHRZRNmFojQZH._wFKfbaEwZOTe2nf2ykF62N0jDyf(
-							_KOjvofkzBAzqmEvHRZRNmFojQZH._l5H7QhLROi9mbdVdXeaft7JR9IC(), out var _);
+						ProcessInjection.WindowThreadProcessId(
+							ProcessInjection.GetForegroundWindow(), out var _);
 						num = (int) (num2 * 47308567) ^ -438787740;
 						continue;
 					}

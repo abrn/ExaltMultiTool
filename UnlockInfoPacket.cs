@@ -1,18 +1,18 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _oomUxML6lAHj4WvBsgrc8gmGWNU : Packet
+internal class UnlockInfoPacket : Packet
 {
-	public int _QJzwbDuzkS2qWoyVl5LHx24odpG;
+	public int _ItemId;
 
 	public override PacketType pType => PacketType.UNLOCKINFORMATION;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_QJzwbDuzkS2qWoyVl5LHx24odpG = r.ReadInt32();
+		_ItemId = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_QJzwbDuzkS2qWoyVl5LHx24odpG);
+		w.Write(_ItemId);
 	}
 }

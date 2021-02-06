@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
+internal static class ProcessInjection
 {
 	internal struct _OoJRoKxh0utfWeMP3aFZXh1BWhq
 	{
@@ -13,7 +13,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 		public int _GEcCGP3uzQHyvjpOoZfeVh1Uzl;
 	}
 
-	internal enum _R7VIlSbaO4x4qOemwVuxI4f9qBh
+	internal enum Win32AccessErrorCodes
 	{
 		All = 2035711,
 		Terminate = 1,
@@ -30,7 +30,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 		Synchronize = 0x100000
 	}
 
-	internal enum _63ZPHflV8tPr2rRQbGy2GzPZ7Pf
+	internal enum MemorySetType
 	{
 		MEM_COMMIT = 0x1000,
 		MEM_RESERVE = 0x2000,
@@ -39,7 +39,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 		SecCommit = 0x8000000
 	}
 
-	internal enum _v3DTWBzBMHBbeiVoqERXY4sz4nd
+	internal enum Win32AccessPermissions
 	{
 		PAGE_EXECUTE = 0x10,
 		PAGE_EXECUTE_READ = 0x20,
@@ -104,22 +104,22 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 		public int _VfdJwuvT8GagDI6chBlDFH20VjJ;
 	}
 
-	private struct _dR1Hu3vgXgl5E9Q5TY3KHrChRxG
+	private struct ScreenPosition
 	{
-		public int _bPiafC1vzur71V1bAm1hpLkob2G;
+		public int PosLeft;
 
-		public int _YtMAJhKAM7Gk3cR4KOw2UCivrX;
+		public int PosTop;
 
-		public int _ye5cw2VT4AcyeKPEPVNce4acT2q;
+		public int PosRight;
 
-		public int _aOQLlkaFr1eGsCVZmHpsJX8zRsA;
+		public int PosBottom;
 
-		internal _dR1Hu3vgXgl5E9Q5TY3KHrChRxG(int left, int top, int right, int bottom)
+		internal ScreenPosition(int left, int top, int right, int bottom)
 		{
-			_bPiafC1vzur71V1bAm1hpLkob2G = left;
-			_YtMAJhKAM7Gk3cR4KOw2UCivrX = top;
-			_ye5cw2VT4AcyeKPEPVNce4acT2q = right;
-			_aOQLlkaFr1eGsCVZmHpsJX8zRsA = bottom;
+			PosLeft = left;
+			PosTop = top;
+			PosRight = right;
+			PosBottom = bottom;
 		}
 	}
 
@@ -128,7 +128,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 	public const int _u9sdbAuPi9K33tMKaMoMe418jNL = 5;
 
 	[DllImport("kernel32.dll", EntryPoint = "GetConsoleWindow")]
-	public static extern IntPtr _F4d2TGYd32CefpAHjoOmnZbgvCkb();
+	public static extern IntPtr GetConsoleWindowPtr();
 
 	[DllImport("user32.dll", EntryPoint = "ShowWindow")]
 	public static extern bool _d2DbtJKY9HneawJSRKefBeKIcNi(IntPtr hWnd, int nCmdShow);
@@ -153,7 +153,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 	public static extern bool _HXVpLlj5YH2Zu8xy1nZBQFDbcJf(IntPtr hWnd, int id);
 
 	[DllImport("Kernel32", EntryPoint = "OpenProcess", SetLastError = true)]
-	public static extern IntPtr _INfE8TPjISGD5RZE9CVwrdDdvLp(uint dwDesiredAccess, bool bInheritHandle, uint dwProcessId);
+	public static extern IntPtr OpenProcessPtr(uint dwDesiredAccess, bool bInheritHandle, uint dwProcessId);
 
 	[DllImport("kernel32", EntryPoint = "GetProcAddress", SetLastError = true)]
 	public static extern IntPtr _zqkXaS0fbgW5SfjaOy5EpA6o5N1(IntPtr hModule, string procName);
@@ -189,23 +189,23 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 	internal static extern bool _Ke0Dh6gvqJBjghnfyca8KN8GfxC(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, IntPtr lpCurrentDirectory, [In] ref _pGtEmbuQs0gMWAdcBAhhr6gMqgX lpStartupInfo, out _zjgiwwJZUA8aZTeMCSZeihp47Dw lpProcessInformation);
 
 	[DllImport("user32.dll", EntryPoint = "GetClientRect")]
-	private static extern bool _B9mt75Xcr88LkCEh7UsT57a3zBb(IntPtr hWnd, ref _dR1Hu3vgXgl5E9Q5TY3KHrChRxG lpRect);
+	private static extern bool _B9mt75Xcr88LkCEh7UsT57a3zBb(IntPtr hWnd, ref ScreenPosition lpRect);
 
 	[DllImport("user32.dll", EntryPoint = "ClientToScreen")]
 	private static extern bool _yLGGhk0CwILOXYx24dLZC5RGxtd(IntPtr hWnd, ref Point lpPoint);
 
 	[DllImport("user32.dll", EntryPoint = "GetForegroundWindow")]
-	public static extern IntPtr _l5H7QhLROi9mbdVdXeaft7JR9IC();
+	public static extern IntPtr GetForegroundWindow();
 
 	[DllImport("user32.dll", EntryPoint = "SetForegroundWindow")]
-	public static extern bool _fO4qvqGTT5HMdweoLUi5LAVqnxC(IntPtr hWnd);
+	public static extern bool SetForegroundWindow(IntPtr hWnd);
 
 	[DllImport("user32.dll", EntryPoint = "GetWindowThreadProcessId")]
-	public static extern int _wFKfbaEwZOTe2nf2ykF62N0jDyf(IntPtr hWnd, out int processId);
+	public static extern int WindowThreadProcessId(IntPtr hWnd, out int processId);
 
-	public static Size _XDPabd71DYUFI2ijOdsHblAClVKb(IntPtr h)
+	public static Size GetWindowSize(IntPtr h)
 	{
-		_dR1Hu3vgXgl5E9Q5TY3KHrChRxG lpRect = default(_dR1Hu3vgXgl5E9Q5TY3KHrChRxG);
+		ScreenPosition lpRect = default(ScreenPosition);
 		Size result = default(Size);
 		while (true)
 		{
@@ -220,11 +220,11 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 				case 1u:
 					_B9mt75Xcr88LkCEh7UsT57a3zBb(h, ref lpRect);
 					result = default(Size);
-					result.Width = lpRect._ye5cw2VT4AcyeKPEPVNce4acT2q - lpRect._bPiafC1vzur71V1bAm1hpLkob2G;
+					result.Width = lpRect.PosRight - lpRect.PosLeft;
 					num = ((int)num2 * -1594917739) ^ 0xDB371A3;
 					continue;
 				case 0u:
-					result.Height = lpRect._aOQLlkaFr1eGsCVZmHpsJX8zRsA - lpRect._YtMAJhKAM7Gk3cR4KOw2UCivrX;
+					result.Height = lpRect.PosBottom - lpRect.PosTop;
 					num = (int)(num2 * 585719635) ^ -1481710604;
 					continue;
 				default:
@@ -235,7 +235,7 @@ internal static class _KOjvofkzBAzqmEvHRZRNmFojQZH
 		}
 	}
 
-	public static Point _NSJ3GrIfVJ7vx20dnsm0AVQdIcj(IntPtr h)
+	public static Point GetDll32Poiter(IntPtr h)
 	{
 		Point lpPoint = Point.Empty;
 		_yLGGhk0CwILOXYx24dLZC5RGxtd(h, ref lpPoint);

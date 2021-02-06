@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _Vy9B53uw9b4bx2PVmLuTckVc81U : Packet
+internal class TradeAcceptedPacket : Packet
 {
 	public bool[] _LHbaAVjSQXAgKyzFZayI0skw5HM;
 

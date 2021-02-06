@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _N1V5NSqqkiYLqjRbpWEvBUV8zhe : Packet
+internal class HelloPacket : Packet
 {
 	public string _GfmkzrVWAfImTFxA9RJnJTXkb3k;
 

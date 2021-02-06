@@ -7,7 +7,7 @@ internal class _5gQBYpWvIJQibBR6ggclQe9CpXV
 		_fsOXXPte1p3BX8HsXOLFJ0YHG98 = 0;
 	}
 
-	public void _RaJfLbqtDAWcw1IcTvMZKk5jtcu(_rAh5rrqlwXwT1pemuFWMDZJJxvD invitedToGuild)
+	public void _RaJfLbqtDAWcw1IcTvMZKk5jtcu(GuildInviteRequestPacket invitedToGuild)
 	{
 		int num = _fsOXXPte1p3BX8HsXOLFJ0YHG98++;
 		while (true)

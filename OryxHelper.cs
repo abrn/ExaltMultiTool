@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using ExaltMultiTool;
 
-internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
+internal class OryxHelper
 {
-	private const int _MkCKeDfPwlpFy1kX8n1YR1cK80H = 45363;
+	private const int OryxThreeType = 45363;
 
 	private const int _LBGbKWhBUxll3Xtt3pRjiExIE2O = 8701;
 
@@ -11,9 +11,9 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 
 	private const int _CNOzBJyyZiTc9mpYACbk6Ce1Oxx = 8703;
 
-	private const int _dYyZ1A446QuwUWg9eCNol5kPaqk = 9635;
+	private const int DammahType = 9635;
 
-	private readonly List<string> _BIxpDM3UpjVymy6HlSABzwKxH9l = new List<string>
+	private readonly List<string> ShieldingPhases = new List<string>
 	{
 		"No more! A steep price is to be paid for this brazen insolence in the face of my own grandeur!",
 		"Greetings, dogged peons! I am Dammah, and I shall be your unmaker!",
@@ -22,7 +22,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		"I SAID DO NOT INTERRUPT ME! For this I shall hasten your end!"
 	};
 
-	private readonly List<int> _JYfkQcvHdA2ymd7O7hKWR9A2eWE = new List<int>
+	private readonly List<int> OryxIgnoreTextures = new List<int>
 	{
 		8,
 		9,
@@ -33,9 +33,9 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		94
 	};
 
-	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client CurrentClient;
 
-	private bool _hxMDzH1xd6DA3Y2OhCwBJDCPEqcA;
+	private bool _InSanctuary;
 
 	private int _Iz1POFdHlMFrJHwbDsWXXhNWElj = -1;
 
@@ -53,7 +53,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 
 	private int _Qi8WHb2CLkop1GCwnhQRKKIWiiG = -1;
 
-	public _p5npta5GnNJaEHkQFHtnGkHeQuF(Client client)
+	public OryxHelper(Client client)
 	{
 		while (true)
 		{
@@ -74,21 +74,21 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				}
 				break;
 				IL_00d6:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
+				CurrentClient = client;
 				num = (int)(num2 * 1916784330) ^ -1523435101;
 			}
 		}
 	}
 
-	public void _DT5vfLbxw23gMixKpQ7yxEiQkEe(MapInfoPacket mapInfo)
+	public void OnMapInfo(MapInfoPacket mapInfo)
 	{
-		_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA = mapInfo._MapName == "Oryx's Sanctuary";
+		_InSanctuary = mapInfo._MapName == "Oryx's Sanctuary";
 	}
 
-	public void _NhDelvNDLqZRdULHPiopb6B1ImBA(_Q26w9EeWqdTwt6h6Nc8RFALWcjj enemyHit)
+	public void onEnemyHit(EnemyHitPacket enemyHit)
 	{
 		//Discarded unreachable code: IL_00ee, IL_0295
-		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
+		if (!_InSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -343,10 +343,10 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		goto IL_0010;
 	}
 
-	public void _YmUsIMJpOnkALS3b15SlCrNHpDCA(ShowEffectPacket showEffect)
+	public void onShowEffect(ShowEffectPacket showEffect)
 	{
 		//Discarded unreachable code: IL_00ab, IL_0106, IL_01cd, IL_0228, IL_027a, IL_0285, IL_02c1
-		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
+		if (!_InSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -402,7 +402,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 1u:
 				return;
 			case 15u:
-				jI4Bueou7dItYp5S7QML5vyC6Rc = _50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK[showEffect._91Zhx0OBsUhlR5optw0cihxmls4];
+				jI4Bueou7dItYp5S7QML5vyC6Rc = CurrentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK[showEffect._91Zhx0OBsUhlR5optw0cihxmls4];
 				num = -1602953143;
 				continue;
 			case 11u:
@@ -533,7 +533,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			break;
 			IL_02d3:
 			int num18;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(showEffect._91Zhx0OBsUhlR5optw0cihxmls4))
+			if (!CurrentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(showEffect._91Zhx0OBsUhlR5optw0cihxmls4))
 			{
 				num = -1121230564;
 				num18 = num;
@@ -589,10 +589,10 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		goto IL_0010;
 	}
 
-	public void _emTnZmGyChlXH4IDm60126G1Snf(UpdatePacket update)
+	public void onUpdate(UpdatePacket update)
 	{
 		//Discarded unreachable code: IL_00db, IL_017f
-		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
+		if (!_InSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -649,7 +649,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				num = ((int)num2 * -38438754) ^ -305366763;
 				continue;
 			case 21u:
-				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._Status);
+				ProcessStatData(gameObject._Status);
 				num = ((int)num2 * -106810440) ^ -338325888;
 				continue;
 			case 20u:
@@ -783,10 +783,10 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		goto IL_0010;
 	}
 
-	public void _kcBjTzBYfTPCpKNctSQjw45y1mb(NewTickPacket newTick)
+	public void OnNewTick(NewTickPacket newTick)
 	{
 		//Discarded unreachable code: IL_002b
-		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
+		if (!_InSanctuary)
 		{
 			while (true)
 			{
@@ -846,7 +846,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				case 1u:
 					break;
 				case 3u:
-					_ivabn6yjLrc2oPnFNSOdlTDl0LFb(current);
+					ProcessStatData(current);
 					num2 = ((int)num * -1968250736) ^ -135789842;
 					continue;
 				case 4u:
@@ -857,7 +857,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		}
 	}
 
-	private void _ivabn6yjLrc2oPnFNSOdlTDl0LFb(Status status)
+	private void ProcessStatData(Status status)
 	{
 		//Discarded unreachable code: IL_00e3
 		using List<StatData>.Enumerator enumerator = status._Stats.GetEnumerator();
@@ -887,7 +887,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 				default:
 					return;
 				case 2u:
-					_ZduGw3wt7ZfTqjLJaORYdo257HE = _JYfkQcvHdA2ymd7O7hKWR9A2eWE.Contains(current._StatValue);
+					_ZduGw3wt7ZfTqjLJaORYdo257HE = OryxIgnoreTextures.Contains(current._StatValue);
 					num = ((int)num3 * -1594610543) ^ -885276513;
 					continue;
 				case 4u:
@@ -924,10 +924,10 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 		}
 	}
 
-	internal void _N9zjozggCA9FymbKtC3I9dZkIib(TextPacket text)
+	internal void OnTextPacket(TextPacket text)
 	{
 		//Discarded unreachable code: IL_006d, IL_00b4, IL_00c7
-		if (!_hxMDzH1xd6DA3Y2OhCwBJDCPEqcA)
+		if (!_InSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -969,7 +969,7 @@ internal class _p5npta5GnNJaEHkQFHtnGkHeQuF
 			case 6u:
 				return;
 			case 4u:
-				_2GIxvwUGGhXZDbsdJhlfFL7Aynq = _BIxpDM3UpjVymy6HlSABzwKxH9l.Contains(text._CleanMessage);
+				_2GIxvwUGGhXZDbsdJhlfFL7Aynq = ShieldingPhases.Contains(text._CleanMessage);
 				num = -485222150;
 				continue;
 			case 1u:

@@ -14,67 +14,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd76787-b081-41a6-9172-1d5c928f9cca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ColorUtil.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ExaltMultiTool.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ExaltMultiTool.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ExaltMultiTool.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ExaltMultiTool.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExaltMultiTool/Proxy/DataStructures/PotionInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ExaltMultiTool/Proxy/DataStructures/PotionInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExaltMultiTool/Proxy/Networking/Packets/ReconnectPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ExaltMultiTool/Proxy/Networking/Packets/ReconnectPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InjectionHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InjectionHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PacketStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PacketStructure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShowEffectPacket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShowEffectPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WorldPosData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WorldPosData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_2JsGBNSkFue0Lbceua6NVMaZ7of.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_2JsGBNSkFue0Lbceua6NVMaZ7of.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_43cOn6b6nvUWFQb5wNCxMz6wXbD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_43cOn6b6nvUWFQb5wNCxMz6wXbD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_76D4MgT624TxbKujMwaeOkBn7RI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_76D4MgT624TxbKujMwaeOkBn7RI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_80QarZkxoVBlmdnzXFe8DJ7grmH.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_80QarZkxoVBlmdnzXFe8DJ7grmH.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_2N1xBR044hjFvSdWQy3V7k3jwmC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GotoPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_3EtyNkiUOatJT2waPaT8y4HiyVB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestFetchAskPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_5Agba411QEp31sP04pWGA4DX6Ek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChangeGuildRankPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_5gQBYpWvIJQibBR6ggclQe9CpXV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_5gQBYpWvIJQibBR6ggclQe9CpXV.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_A7ysKB2QYbIeDv1Ii3aLFW50gh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_A7ysKB2QYbIeDv1Ii3aLFW50gh.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_FS6jMJJePXheZSSgdbcle1Cf3eK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_FS6jMJJePXheZSSgdbcle1Cf3eK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_I5hBdMHPSeVO0cbuEcAkM9I29MW.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_I5hBdMHPSeVO0cbuEcAkM9I29MW.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_KcBslMXpDkB2TvFqzjAsEACA1kK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_KcBslMXpDkB2TvFqzjAsEACA1kK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_MI3DmqE2rDrkgXZr8nydo4E9TUF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TextPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_MfxNQEqzrhh7UG8JHpjpW36tvJ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_MfxNQEqzrhh7UG8JHpjpW36tvJ.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_NE4y2xXE2YXla2YQONOAy9ppGMm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_NE4y2xXE2YXla2YQONOAy9ppGMm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_NXJzFJyDncpkTIZ6UBdQLlK9DDb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_NXJzFJyDncpkTIZ6UBdQLlK9DDb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_NybqihfxGL3K5KOsIo5UpOyuEVG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_NybqihfxGL3K5KOsIo5UpOyuEVG.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_PlferqYaObizDfc28C5jdKSLGq5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_RK8R6hn9ZKK2l39ATLncpeClPHq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_RK8R6hn9ZKK2l39ATLncpeClPHq.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Ru1LSKLHrNEz3WkyrVvBhlKtmiN.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UpdatePetPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_S3AnFJw1R0yJE032dKyvkHJHOce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KeyInfoResponsePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_SroO6BArjwxjDOjHnWzqCAeNSvF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestRedeemResponsePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_TmFas5PEXYMVmPQTpu3tg3XuoTo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapStructure.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Tny3AODKKpp40RqAsmrwx2rf6db.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EvolvePetPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_UPjCRL1YuryOyV1C0YJxGziIxXD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PasswordPromptPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_UxpRknX7gelEcCFZ2Vmq3qfU2Fb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShootAckPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_VhiC6MRkf9RQ9nQp4K78vup3R4n.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GroundDamagePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_WCTbeWogZHoPyDnxles484v2oK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EquipTierEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Wfwa0wwjHlBYxHNQ25GIgOEASlS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChooseNamePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_X6f9REQnd8GedncwYfuKQX9BeNq.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_X6f9REQnd8GedncwYfuKQX9BeNq.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_XqKxPhuck2qXBOaCGfEaSvcrlJ6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsePortalPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Yb4dvnW4MKecM7isJerLtbMutC5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GlobalNotificationPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Yt6c0XhxkvbyXpSK3UhpCoLEPUy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuildInvitePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ZoVDPfhFrldGCEcKrA1GxJu8qu2A.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LocalProxy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_j6xsOu5VJyl0WxN7qnrwKDDPB3e.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_j6xsOu5VJyl0WxN7qnrwKDDPB3e.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_p5npta5GnNJaEHkQFHtnGkHeQuF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_p5npta5GnNJaEHkQFHtnGkHeQuF.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_rty1IcsHvwfrnvmDiqvQx9pilH.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_rty1IcsHvwfrnvmDiqvQx9pilH.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sXxBcxQJ5OZEM8d0AIMUAzcF8In.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_sXxBcxQJ5OZEM8d0AIMUAzcF8In.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sY9vGqUSdNuoL3URjGTdmySbFKh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoadPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sZTACcaWtDBvynOP5IuayIXFco8.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AcceptTradePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_shMhgxADd7FcOGMDYYsJmB1XEwU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestRoomMessagePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sxNjjakU7HAxr71DQ3pUOYwp77c.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UpgradePetYardPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_wE7SqajOB1pa4GMrwLcHW3gVSwm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KeyInfoPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_wguSfys04QajKP0Mf8r0cqFC7QM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuildRemovePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_wt1yNLFJnPwFHtB9ax5L0NkwzO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradeRequestedPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_x0bFEWbxXdGdRfNpGQ1c34l1w5r.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_x0bFEWbxXdGdRfNpGQ1c34l1w5r.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_xSbKxKAB2NUAInioqMLBjQdhNTY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PetUpgradePacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_yNixIvVlGhPCEfXGcNUaC9jZYRS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_z14K0skbnHWlBInCNegbucvV6wU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VerifyEmailPacket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_zaToPzsu39B9ILPjZZX95Hsgucc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPlayerShootPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_B9ynjjetvOFjangLlHcsR2WPoSJ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NewCharacterInfoPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_E2yx1YSAB84hQqONVkivX4Ft62P.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradeDonePacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_GzMllWdzMk2scHZ1CoYBfYVJIvo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChangeNameResultPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_KOjvofkzBAzqmEvHRZRNmFojQZH.cs" beforeDir="false" afterPath="$PROJECT_DIR$/_KOjvofkzBAzqmEvHRZRNmFojQZH.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_KiUcmQ3ymplMDQVMoIN3MNQhcVO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ExaltationRedeemPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_MfxNQEqzrhh7UG8JHpjpW36tvJ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TeleportHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_MyVY9AfXVfbAwh8UGgQQ11N7R6l.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradeChangePacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_N1V5NSqqkiYLqjRbpWEvBUV8zhe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_NE4y2xXE2YXla2YQONOAy9ppGMm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AntiDebuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Q26w9EeWqdTwt6h6Nc8RFALWcjj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EnemyHitPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Vy9B53uw9b4bx2PVmLuTckVc81U.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradeAcceptedPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_XghXsLk9Y0aavmsxCXizmnlz2fM.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PetChangeResultPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_YP0dYf5sleBQNEpTWbuTXU3cgl0.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EditAccountListPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ZD5XGucA7QEeG0HdJJp9qh2Ai0c.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SquareHitPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ZVvlI4ZSdiocASQalPBqqC3Rksj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StatDataBitmask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ZYWW3sX8yf6UoG7UYPkLGWHHHRF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilePacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mb69C48hRlTLSdF1p30JoqLeKBj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AllyShootPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_nWdvhR8UBSRRcwtgVQdwdH5TTEj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradeStartPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ogTAZBItuCrpGoZLRZODff8nFz9.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CreatePacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_oomUxML6lAHj4WvBsgrc8gmGWNU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UnlockInfoPacket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_p5npta5GnNJaEHkQFHtnGkHeQuF.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OryxHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_rAh5rrqlwXwT1pemuFWMDZJJxvD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuildInviteRequestPacket.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,30 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ExaltMultiTool/Settings.cs" />
-        <option value="$PROJECT_DIR$/_JI4Bueou7dItYp5S7QML5vyC6Rc.cs" />
-        <option value="$PROJECT_DIR$/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/_AunOm2zlKr0KANkRBzogPcg538K.cs" />
-        <option value="$PROJECT_DIR$/_9jGN6HTdhe4I1rr5gcjTIWSluy6.cs" />
-        <option value="$PROJECT_DIR$/StatData.cs" />
-        <option value="$PROJECT_DIR$/StatType.cs" />
-        <option value="$PROJECT_DIR$/ExaltMultiTool/Proxy/Networking/Packets/PacketType.cs" />
-        <option value="$PROJECT_DIR$/EffectDictionary.cs" />
-        <option value="$PROJECT_DIR$/_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" />
-        <option value="$PROJECT_DIR$/StatDataEnum.cs" />
-        <option value="$PROJECT_DIR$/CompressedInt.cs" />
-        <option value="$PROJECT_DIR$/ExaltMultiTool/Proxy/Networking/Packets/UpdatePacket.cs" />
-        <option value="$PROJECT_DIR$/TileObject.cs" />
-        <option value="$PROJECT_DIR$/IDataObject.cs" />
-        <option value="$PROJECT_DIR$/Status.cs" />
-        <option value="$PROJECT_DIR$/_X6f9REQnd8GedncwYfuKQX9BeNq.cs" />
-        <option value="$PROJECT_DIR$/ShowEffectPacket.cs" />
-        <option value="$PROJECT_DIR$/_yNixIvVlGhPCEfXGcNUaC9jZYRS.cs" />
-        <option value="$PROJECT_DIR$/ColorUtil.cs" />
-        <option value="$PROJECT_DIR$/WorldPosData.cs" />
-        <option value="$PROJECT_DIR$/GameObject.cs" />
-        <option value="$PROJECT_DIR$/LoadPacket.cs" />
-        <option value="$PROJECT_DIR$/MapStructure.cs" />
         <option value="$PROJECT_DIR$/PasswordPromptPacket.cs" />
         <option value="$PROJECT_DIR$/GuildRemovePacket.cs" />
         <option value="$PROJECT_DIR$/EvolvePetPacket.cs" />
@@ -144,6 +91,30 @@
         <option value="$PROJECT_DIR$/_sXxBcxQJ5OZEM8d0AIMUAzcF8In.cs" />
         <option value="$PROJECT_DIR$/Client.cs" />
         <option value="$PROJECT_DIR$/TextPacket.cs" />
+        <option value="$PROJECT_DIR$/EditAccountListPacket.cs" />
+        <option value="$PROJECT_DIR$/PetChangeResultPacket.cs" />
+        <option value="$PROJECT_DIR$/GuildInviteRequestPacket.cs" />
+        <option value="$PROJECT_DIR$/TradeAcceptedPacket.cs" />
+        <option value="$PROJECT_DIR$/StatDataBitmask.cs" />
+        <option value="$PROJECT_DIR$/FilePacket.cs" />
+        <option value="$PROJECT_DIR$/SquareHitPacket.cs" />
+        <option value="$PROJECT_DIR$/AntiDebuff.cs" />
+        <option value="$PROJECT_DIR$/TradeChangePacket.cs" />
+        <option value="$PROJECT_DIR$/HelloPacket.cs" />
+        <option value="$PROJECT_DIR$/ChangeNameResultPacket.cs" />
+        <option value="$PROJECT_DIR$/GotoPacket.cs" />
+        <option value="$PROJECT_DIR$/QuestFetchAskPacket.cs" />
+        <option value="$PROJECT_DIR$/ChangeGuildRankPacket.cs" />
+        <option value="$PROJECT_DIR$/NewCharacterInfoPacket.cs" />
+        <option value="$PROJECT_DIR$/TradeDonePacket.cs" />
+        <option value="$PROJECT_DIR$/UnlockInfoPacket.cs" />
+        <option value="$PROJECT_DIR$/TeleportHelper.cs" />
+        <option value="$PROJECT_DIR$/TradeStartPacket.cs" />
+        <option value="$PROJECT_DIR$/OryxHelper.cs" />
+        <option value="$PROJECT_DIR$/CreatePacket.cs" />
+        <option value="$PROJECT_DIR$/ExaltationRedeemPacket.cs" />
+        <option value="$PROJECT_DIR$/AllyShootPacket.cs" />
+        <option value="$PROJECT_DIR$/_KOjvofkzBAzqmEvHRZRNmFojQZH.cs" />
       </list>
     </option>
   </component>
@@ -186,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612631140739</updated>
-      <workItem from="1612631151004" duration="16913000" />
+      <workItem from="1612631151004" duration="17953000" />
     </task>
     <servers />
   </component>
@@ -231,10 +202,10 @@
           <line>587</line>
           <properties documentPath="C:\Users\admin\Documents\Reverse Engineering\ExaltMultiTool\Client.cs" initialLine="587">
             <startOffsets>
-              <option value="15804" />
+              <option value="15706" />
             </startOffsets>
             <endOffsets>
-              <option value="15805" />
+              <option value="15707" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.Mods;
 
-internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
+internal class AntiDebuff
 {
 	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
@@ -17,7 +17,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 
 	private int _SfV4XqXIATPdqQQB5fsHnSDPz2z;
 
-	public _NE4y2xXE2YXla2YQONOAy9ppGMm(Client client)
+	public AntiDebuff(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}

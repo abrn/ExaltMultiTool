@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _rAh5rrqlwXwT1pemuFWMDZJJxvD : Packet
+internal class GuildInviteRequestPacket : Packet
 {
 	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
 

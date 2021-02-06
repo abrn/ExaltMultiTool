@@ -1,4 +1,4 @@
-internal static class _ZVvlI4ZSdiocASQalPBqqC3Rksj
+internal static class StatDataBitmask
 {
 	public const int _AMVoW0CfzPQmbrbG1HZpiRTYBkC = 32;
 

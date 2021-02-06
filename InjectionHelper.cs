@@ -111,11 +111,11 @@ internal class InjectionHelper {
 			path = Settings.Default.ExaltLauncherPath;
 			goto IL_003b;
 			IL_003b:
-			_KOjvofkzBAzqmEvHRZRNmFojQZH._zjgiwwJZUA8aZTeMCSZeihp47Dw zjgiwwJZUA8aZTeMCSZeihp47Dw =
+			ProcessInjection._zjgiwwJZUA8aZTeMCSZeihp47Dw zjgiwwJZUA8aZTeMCSZeihp47Dw =
 				_KgZs1nuPvFKfOIInCAin5WfVfsb(path, string.Empty);
 			_0kO1k5GUTQHAW84jJNygXOtABJW(zjgiwwJZUA8aZTeMCSZeihp47Dw._QjPrTpWj4dJdFgwgkKtVC8NhIyC,
 				_cdyBaJMdzdveeFZzPT2GyKrT35Z);
-			_KOjvofkzBAzqmEvHRZRNmFojQZH._kQdGqTbeSNpbEs07G8GfCURPn6cA(zjgiwwJZUA8aZTeMCSZeihp47Dw
+			ProcessInjection._kQdGqTbeSNpbEs07G8GfCURPn6cA(zjgiwwJZUA8aZTeMCSZeihp47Dw
 				._JwYWFGBftDuvPOaDpMAqYYZmRpM);
 			int num = 344324600;
 			goto IL_0008;
@@ -140,12 +140,12 @@ internal class InjectionHelper {
 	public static bool _xkSr2Dl3BGfiJPH2Sb33zOcYN0P(string guid, string password)
 	{
 		try {
-			_KOjvofkzBAzqmEvHRZRNmFojQZH._zjgiwwJZUA8aZTeMCSZeihp47Dw zjgiwwJZUA8aZTeMCSZeihp47Dw =
+			ProcessInjection._zjgiwwJZUA8aZTeMCSZeihp47Dw zjgiwwJZUA8aZTeMCSZeihp47Dw =
 				_KgZs1nuPvFKfOIInCAin5WfVfsb(Settings.Default.ExaltGamePath,
 					GetFormattedCredentials(guid, password));
 			_0kO1k5GUTQHAW84jJNygXOtABJW(zjgiwwJZUA8aZTeMCSZeihp47Dw._QjPrTpWj4dJdFgwgkKtVC8NhIyC,
 				_PyAy1AUj53IAIhfdIDSm8z1dUPT);
-			_KOjvofkzBAzqmEvHRZRNmFojQZH._kQdGqTbeSNpbEs07G8GfCURPn6cA(zjgiwwJZUA8aZTeMCSZeihp47Dw
+			ProcessInjection._kQdGqTbeSNpbEs07G8GfCURPn6cA(zjgiwwJZUA8aZTeMCSZeihp47Dw
 				._JwYWFGBftDuvPOaDpMAqYYZmRpM);
 			return true;
 		}
@@ -157,7 +157,7 @@ internal class InjectionHelper {
 		}
 	}
 
-	private static _KOjvofkzBAzqmEvHRZRNmFojQZH._zjgiwwJZUA8aZTeMCSZeihp47Dw _KgZs1nuPvFKfOIInCAin5WfVfsb(string path,
+	private static ProcessInjection._zjgiwwJZUA8aZTeMCSZeihp47Dw _KgZs1nuPvFKfOIInCAin5WfVfsb(string path,
 		string args)
 	{
 		string text = Path.Combine(Path.GetDirectoryName(path), "UnityCrashHandler64.exe");
@@ -221,9 +221,9 @@ internal class InjectionHelper {
 				"\n\nOnly if they exist.", innerException);
 		}
 
-		_KOjvofkzBAzqmEvHRZRNmFojQZH._pGtEmbuQs0gMWAdcBAhhr6gMqgX lpStartupInfo =
-			default(_KOjvofkzBAzqmEvHRZRNmFojQZH._pGtEmbuQs0gMWAdcBAhhr6gMqgX);
-		if (!_KOjvofkzBAzqmEvHRZRNmFojQZH._Ke0Dh6gvqJBjghnfyca8KN8GfxC(path, args, IntPtr.Zero, IntPtr.Zero,
+		ProcessInjection._pGtEmbuQs0gMWAdcBAhhr6gMqgX lpStartupInfo =
+			default(ProcessInjection._pGtEmbuQs0gMWAdcBAhhr6gMqgX);
+		if (!ProcessInjection._Ke0Dh6gvqJBjghnfyca8KN8GfxC(path, args, IntPtr.Zero, IntPtr.Zero,
 			bInheritHandles: true, 4u, IntPtr.Zero, IntPtr.Zero, ref lpStartupInfo, out var lpProcessInformation)) {
 			goto IL_0106;
 		}
@@ -283,25 +283,25 @@ internal class InjectionHelper {
 						continue;
 					}
 					case 3u: {
-						IntPtr intPtr3 = _KOjvofkzBAzqmEvHRZRNmFojQZH._KueE2yTPEjNDAJT08H2DGsGNt7N(pHandle, IntPtr.Zero,
+						IntPtr intPtr3 = ProcessInjection._KueE2yTPEjNDAJT08H2DGsGNt7N(pHandle, IntPtr.Zero,
 							0u, intPtr, intPtr2, 0u, ref lpThreadId);
 						if (intPtr3 == IntPtr.Zero) {
 							throw new Exception("CreateRemoteThread");
 						}
 
-						_KOjvofkzBAzqmEvHRZRNmFojQZH._PxyT4CEJyj4HnJ5DrPzPmhvvhIM(intPtr3, uint.MaxValue);
-						_KOjvofkzBAzqmEvHRZRNmFojQZH._ncvsNr9oXhkaIirRo2KAJ4c9g4y(intPtr3);
+						ProcessInjection._PxyT4CEJyj4HnJ5DrPzPmhvvhIM(intPtr3, uint.MaxValue);
+						ProcessInjection._ncvsNr9oXhkaIirRo2KAJ4c9g4y(intPtr3);
 						num = 81467254;
 						continue;
 					}
 					case 0u:
-						intPtr2 = _KOjvofkzBAzqmEvHRZRNmFojQZH._N0XwljYi7pJKWgAAdvUmfa7ccXE(pHandle, IntPtr.Zero,
+						intPtr2 = ProcessInjection._N0XwljYi7pJKWgAAdvUmfa7ccXE(pHandle, IntPtr.Zero,
 							(uint) bytes.Length, 12288u, 64u);
 						num = 1319501678;
 						continue;
 					case 8u:
-						intPtr = _KOjvofkzBAzqmEvHRZRNmFojQZH._zqkXaS0fbgW5SfjaOy5EpA6o5N1(
-							_KOjvofkzBAzqmEvHRZRNmFojQZH._MpECyuu0ww9WE1mc2JaGfXy7YeQ("kernel32.dll"), "LoadLibraryA");
+						intPtr = ProcessInjection._zqkXaS0fbgW5SfjaOy5EpA6o5N1(
+							ProcessInjection._MpECyuu0ww9WE1mc2JaGfXy7YeQ("kernel32.dll"), "LoadLibraryA");
 						num = ((int) num2 * -326581998) ^ 0x1653E0B7;
 						continue;
 					case 9u:
@@ -310,7 +310,7 @@ internal class InjectionHelper {
 						throw new Exception("GetProcAddress");
 					case 5u: {
 						int num5;
-						if (!_KOjvofkzBAzqmEvHRZRNmFojQZH._O8k7xYpkG5pQyqFh433YTQ9woVE(pHandle, intPtr2, bytes,
+						if (!ProcessInjection._O8k7xYpkG5pQyqFh433YTQ9woVE(pHandle, intPtr2, bytes,
 							(uint) bytes.Length, ref lpNumberOfBytesWritten)) {
 							num = 1164344880;
 							num5 = num;

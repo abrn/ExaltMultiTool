@@ -1,6 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _5Agba411QEp31sP04pWGA4DX6Ek : Packet
+internal class ChangeGuildRankPacket : Packet
 {
 	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
 

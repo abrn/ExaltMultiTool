@@ -5,13 +5,13 @@ using System.Runtime.CompilerServices;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _MfxNQEqzrhh7UG8JHpjpW36tvJ
+internal class TeleportHelper
 {
 	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
 
 	private int _EeeRzHBDOL9AqYJ8CIuFvkR3Qlz = -1;
 
-	public _MfxNQEqzrhh7UG8JHpjpW36tvJ(Client client)
+	public TeleportHelper(Client client)
 	{
 		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
 	}

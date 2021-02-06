@@ -191,7 +191,7 @@ internal class Client
 
 	private _NXJzFJyDncpkTIZ6UBdQLlK9DDb _qEzzfhETXrgbZF6Y037bCMj1ZiW;
 
-	private _NE4y2xXE2YXla2YQONOAy9ppGMm _MQGiUwYJADYUvtWZEyKaTTnHwhG;
+	private AntiDebuff _MQGiUwYJADYUvtWZEyKaTTnHwhG;
 
 	private _5gQBYpWvIJQibBR6ggclQe9CpXV _oSzQCZbBOYIozX7RJv3aqVCVMPx;
 
@@ -209,7 +209,7 @@ internal class Client
 
 	private _80QarZkxoVBlmdnzXFe8DJ7grmH _HHeb9q7rrHLt7HwtYTuHlRRDlMT;
 
-	private _MfxNQEqzrhh7UG8JHpjpW36tvJ _bitlLp8JKl1PbTlHWIEIOAJDyuO;
+	private TeleportHelper _bitlLp8JKl1PbTlHWIEIOAJDyuO;
 
 	private _sXxBcxQJ5OZEM8d0AIMUAzcF8In _TuLDXgoWhZy8CPtlhPaAWviSNq3;
 
@@ -217,7 +217,7 @@ internal class Client
 
 	private _43cOn6b6nvUWFQb5wNCxMz6wXbD _X8Ko4JuJwLwDHPlTH06yuEvAEUl;
 
-	private _p5npta5GnNJaEHkQFHtnGkHeQuF _kdpxlwPITosuhIOBZ8xOg33CYft;
+	private OryxHelper _kdpxlwPITosuhIOBZ8xOg33CYft;
 
 	private _NybqihfxGL3K5KOsIo5UpOyuEVG _m3wMOEouSwmahwc13fW7jfLDEhz;
 
@@ -277,7 +277,7 @@ internal class Client
 					_IBGB2gFxmPDXBY3vtWT4jbTfDiQ = _5XbkslECWDrdUntKuoEYQFkXVlX.GetStream();
 					_5XbkslECWDrdUntKuoEYQFkXVlX.NoDelay = true;
 					_qEzzfhETXrgbZF6Y037bCMj1ZiW = new _NXJzFJyDncpkTIZ6UBdQLlK9DDb(this);
-					_MQGiUwYJADYUvtWZEyKaTTnHwhG = new _NE4y2xXE2YXla2YQONOAy9ppGMm(this);
+					_MQGiUwYJADYUvtWZEyKaTTnHwhG = new AntiDebuff(this);
 					num = ((int)num2 * -695737541) ^ 0xDBA08CA;
 					continue;
 				case 5u:
@@ -287,7 +287,7 @@ internal class Client
 				case 4u:
 					_Yj6Ub8zlrxF6fOL3oEB73K0mFDg = new _2JsGBNSkFue0Lbceua6NVMaZ7of(this);
 					_HHeb9q7rrHLt7HwtYTuHlRRDlMT = new _80QarZkxoVBlmdnzXFe8DJ7grmH(this);
-					_bitlLp8JKl1PbTlHWIEIOAJDyuO = new _MfxNQEqzrhh7UG8JHpjpW36tvJ(this);
+					_bitlLp8JKl1PbTlHWIEIOAJDyuO = new TeleportHelper(this);
 					_oSzQCZbBOYIozX7RJv3aqVCVMPx = new _5gQBYpWvIJQibBR6ggclQe9CpXV();
 					_TuLDXgoWhZy8CPtlhPaAWviSNq3 = new _sXxBcxQJ5OZEM8d0AIMUAzcF8In(this);
 					num = (int)((num2 * 298553203) ^ 0x4ADEF542);
@@ -302,7 +302,7 @@ internal class Client
 				case 7u:
 					_K8f4oiOwgZwEwnKUWcsX1cUgZK = new _76D4MgT624TxbKujMwaeOkBn7RI(this);
 					_X8Ko4JuJwLwDHPlTH06yuEvAEUl = new _43cOn6b6nvUWFQb5wNCxMz6wXbD(this);
-					_kdpxlwPITosuhIOBZ8xOg33CYft = new _p5npta5GnNJaEHkQFHtnGkHeQuF(this);
+					_kdpxlwPITosuhIOBZ8xOg33CYft = new OryxHelper(this);
 					num = ((int)num2 * -1773485249) ^ -1662571904;
 					continue;
 				case 8u:
@@ -1441,7 +1441,7 @@ internal class Client
 		MovePacket wCTbeWogZHoPyDnxles484v2oK = default(MovePacket);
 		ShowEffectPacket showEffectPacket = default(ShowEffectPacket);
 		_mShB8QfJ4yUrwwrfkreflnUqkuX mShB8QfJ4yUrwwrfkreflnUqkuX = default(_mShB8QfJ4yUrwwrfkreflnUqkuX);
-		_Q26w9EeWqdTwt6h6Nc8RFALWcjj q26w9EeWqdTwt6h6Nc8RFALWcjj = default(_Q26w9EeWqdTwt6h6Nc8RFALWcjj);
+		EnemyHitPacket enemyHitPacket = default(EnemyHitPacket);
 		_lRcj7b0Xq67vwsbjqopaQvHrEiC lRcj7b0Xq67vwsbjqopaQvHrEiC = default(_lRcj7b0Xq67vwsbjqopaQvHrEiC);
 		_ax4JtQ0EqqnZh9Ml8sG7hZIwpN ax4JtQ0EqqnZh9Ml8sG7hZIwpN = default(_ax4JtQ0EqqnZh9Ml8sG7hZIwpN);
 		_KGw7UmnaW2UG2pY4rWmZNZTrFCh kGw7UmnaW2UG2pY4rWmZNZTrFCh = default(_KGw7UmnaW2UG2pY4rWmZNZTrFCh);
@@ -1451,10 +1451,10 @@ internal class Client
 		_5mDELbdDeeFjmQtnCFiDaCPaAqz _5mDELbdDeeFjmQtnCFiDaCPaAqz = default(_5mDELbdDeeFjmQtnCFiDaCPaAqz);
 		_Gya6cTkZfLW7T3Mt937EMw3XUvC gya6cTkZfLW7T3Mt937EMw3XUvC = default(_Gya6cTkZfLW7T3Mt937EMw3XUvC);
 		PlayerTextPacket playerTextPacket = default(PlayerTextPacket);
-		_N1V5NSqqkiYLqjRbpWEvBUV8zhe n1V5NSqqkiYLqjRbpWEvBUV8zhe = default(_N1V5NSqqkiYLqjRbpWEvBUV8zhe);
+		HelloPacket helloPacket = default(HelloPacket);
 		_FJ4Ncdgp30LvdfcfBFMzemYCCeT fJ4Ncdgp30LvdfcfBFMzemYCCeT = default(_FJ4Ncdgp30LvdfcfBFMzemYCCeT);
 		_nV9aomeHIThwTmnJfuHyMX6d9RG nV9aomeHIThwTmnJfuHyMX6d9RG = default(_nV9aomeHIThwTmnJfuHyMX6d9RG);
-		_rAh5rrqlwXwT1pemuFWMDZJJxvD rAh5rrqlwXwT1pemuFWMDZJJxvD = default(_rAh5rrqlwXwT1pemuFWMDZJJxvD);
+		GuildInviteRequestPacket guildInviteRequestPacket = default(GuildInviteRequestPacket);
 		NewTickPacket newTickPacket = default(NewTickPacket);
 		QuestObjectPacket questObjectPacket = default(QuestObjectPacket);
 		_HwRk63fatp6UhX41GLENvQv4eDg hwRk63fatp6UhX41GLENvQv4eDg = default(_HwRk63fatp6UhX41GLENvQv4eDg);
@@ -1489,10 +1489,10 @@ internal class Client
 				continue;
 			case 49u:
 			{
-				q26w9EeWqdTwt6h6Nc8RFALWcjj = packet as _Q26w9EeWqdTwt6h6Nc8RFALWcjj;
+				enemyHitPacket = packet as EnemyHitPacket;
 				int num55;
 				int num56;
-				if (q26w9EeWqdTwt6h6Nc8RFALWcjj == null)
+				if (enemyHitPacket == null)
 				{
 					num55 = 455171910;
 					num56 = num55;
@@ -1586,7 +1586,7 @@ internal class Client
 				num = ((int)num2 * -911087682) ^ 0x48860102;
 				continue;
 			case 16u:
-				_kdpxlwPITosuhIOBZ8xOg33CYft._YmUsIMJpOnkALS3b15SlCrNHpDCA(showEffectPacket);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.onShowEffect(showEffectPacket);
 				num = (int)((num2 * 780452967) ^ 0x2F3CD7B4);
 				continue;
 			case 101u:
@@ -1613,7 +1613,7 @@ internal class Client
 				num = ((int)num2 * -1310608981) ^ 0xE485CF6;
 				continue;
 			case 75u:
-				_hfLfHPx99mbKqIe8FeRG1a0Ycef(n1V5NSqqkiYLqjRbpWEvBUV8zhe);
+				_hfLfHPx99mbKqIe8FeRG1a0Ycef(helloPacket);
 				return;
 			case 28u:
 				_agaMD0M3QCPNv9ovQakoMaEEq5A._G32brJa4jmWaZroFncLDOsAha5VA(fJ4Ncdgp30LvdfcfBFMzemYCCeT);
@@ -1624,7 +1624,7 @@ internal class Client
 				num = (int)(num2 * 198270688) ^ -512556363;
 				continue;
 			case 5u:
-				_oSzQCZbBOYIozX7RJv3aqVCVMPx._RaJfLbqtDAWcw1IcTvMZKk5jtcu(rAh5rrqlwXwT1pemuFWMDZJJxvD);
+				_oSzQCZbBOYIozX7RJv3aqVCVMPx._RaJfLbqtDAWcw1IcTvMZKk5jtcu(guildInviteRequestPacket);
 				return;
 			case 78u:
 				gya6cTkZfLW7T3Mt937EMw3XUvC = packet as _Gya6cTkZfLW7T3Mt937EMw3XUvC;
@@ -1732,7 +1732,7 @@ internal class Client
 				num = (int)(num2 * 2033962370) ^ -1451303226;
 				continue;
 			case 0u:
-				_kdpxlwPITosuhIOBZ8xOg33CYft._N9zjozggCA9FymbKtC3I9dZkIib(mI3DmqE2rDrkgXZr8nydo4E9TUF);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.OnTextPacket(mI3DmqE2rDrkgXZr8nydo4E9TUF);
 				num = (int)((num2 * 1379010485) ^ 0x52F51B06);
 				continue;
 			case 45u:
@@ -1765,10 +1765,10 @@ internal class Client
 				continue;
 			case 44u:
 			{
-				n1V5NSqqkiYLqjRbpWEvBUV8zhe = packet as _N1V5NSqqkiYLqjRbpWEvBUV8zhe;
+				helloPacket = packet as HelloPacket;
 				int num23;
 				int num24;
-				if (n1V5NSqqkiYLqjRbpWEvBUV8zhe != null)
+				if (helloPacket != null)
 				{
 					num23 = 1815855043;
 					num24 = num23;
@@ -1863,10 +1863,10 @@ internal class Client
 				continue;
 			case 98u:
 			{
-				rAh5rrqlwXwT1pemuFWMDZJJxvD = packet as _rAh5rrqlwXwT1pemuFWMDZJJxvD;
+				guildInviteRequestPacket = packet as GuildInviteRequestPacket;
 				int num61;
 				int num62;
-				if (rAh5rrqlwXwT1pemuFWMDZJJxvD == null)
+				if (guildInviteRequestPacket == null)
 				{
 					num61 = 263568524;
 					num62 = num61;
@@ -1891,7 +1891,7 @@ internal class Client
 				num = 1689494784;
 				continue;
 			case 80u:
-				_kdpxlwPITosuhIOBZ8xOg33CYft._DT5vfLbxw23gMixKpQ7yxEiQkEe(mapInfoPacket);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.OnMapInfo(mapInfoPacket);
 				num = ((int)num2 * -429447844) ^ 0x3B85866F;
 				continue;
 			case 34u:
@@ -1936,7 +1936,7 @@ internal class Client
 				num = 1717453573;
 				continue;
 			case 127u:
-				_kdpxlwPITosuhIOBZ8xOg33CYft._NhDelvNDLqZRdULHPiopb6B1ImBA(q26w9EeWqdTwt6h6Nc8RFALWcjj);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.onEnemyHit(enemyHitPacket);
 				return;
 			case 116u:
 				return;
@@ -2136,7 +2136,7 @@ internal class Client
 			case 102u:
 				return;
 			case 94u:
-				_kdpxlwPITosuhIOBZ8xOg33CYft._kcBjTzBYfTPCpKNctSQjw45y1mb(newTickPacket);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.OnNewTick(newTickPacket);
 				num = ((int)num2 * -1948027478) ^ -605382549;
 				continue;
 			case 85u:
@@ -2242,7 +2242,7 @@ internal class Client
 			case 9u:
 				_lUGiNuRFo5etEf9KCYfizlmsaId._emTnZmGyChlXH4IDm60126G1Snf(updatePacket);
 				_X8Ko4JuJwLwDHPlTH06yuEvAEUl._emTnZmGyChlXH4IDm60126G1Snf(updatePacket);
-				_kdpxlwPITosuhIOBZ8xOg33CYft._emTnZmGyChlXH4IDm60126G1Snf(updatePacket);
+				_kdpxlwPITosuhIOBZ8xOg33CYft.onUpdate(updatePacket);
 				num = ((int)num2 * -1198978089) ^ -812561677;
 				continue;
 			case 30u:
@@ -2385,7 +2385,7 @@ internal class Client
 		goto IL_0012;
 	}
 
-	private void _hfLfHPx99mbKqIe8FeRG1a0Ycef(_N1V5NSqqkiYLqjRbpWEvBUV8zhe hello)
+	private void _hfLfHPx99mbKqIe8FeRG1a0Ycef(HelloPacket hello)
 	{
 		_QyFBNLtlxoQc1TJPzmx0QAJh70w = new TcpClient();
 		_QyFBNLtlxoQc1TJPzmx0QAJh70w.NoDelay = true;

@@ -1,8 +1,8 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class _KiUcmQ3ymplMDQVMoIN3MNQhcVO : Packet
+internal class ExaltationRedeemPacket : Packet
 {
-	public short _rEvsSM2mDSXW03AGDtCIKkHswsO;
+	public short _ObjectId;
 
 	public int _MamaX4JKMQb7mwH8zsj2tH0wBbm;
 
@@ -24,7 +24,7 @@ internal class _KiUcmQ3ymplMDQVMoIN3MNQhcVO : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_rEvsSM2mDSXW03AGDtCIKkHswsO = r.ReadInt16();
+		_ObjectId = r.ReadInt16();
 		_ixwcW6zy5jkM9OAtEbibDGSG6cL = CompressedInt.Read(r);
 		_nMaG5GTWkDVVngUKjpCbf2dSuQn = CompressedInt.Read(r);
 		while (true)
@@ -59,7 +59,7 @@ internal class _KiUcmQ3ymplMDQVMoIN3MNQhcVO : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_rEvsSM2mDSXW03AGDtCIKkHswsO);
+		w.Write(_ObjectId);
 		while (true)
 		{
 			int num = 141828012;

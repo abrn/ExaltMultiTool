@@ -1804,7 +1804,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 		}
 		goto IL_0010;
 		IL_0010:
-		_mb69C48hRlTLSdF1p30JoqLeKBj mb69C48hRlTLSdF1p30JoqLeKBj = default(_mb69C48hRlTLSdF1p30JoqLeKBj);
+		AllyShootPacket allyShootPacket = default(AllyShootPacket);
 		_KGw7UmnaW2UG2pY4rWmZNZTrFCh kGw7UmnaW2UG2pY4rWmZNZTrFCh = default(_KGw7UmnaW2UG2pY4rWmZNZTrFCh);
 		int num4 = default(int);
 		int iBSqBdwNTiXSzhZbDhEFMC0Gc = default(int);
@@ -1820,7 +1820,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 			default:
 				return;
 			case 22u:
-				mb69C48hRlTLSdF1p30JoqLeKBj._5oFaCQNi71DUAwr2GsRcpozHzAC = kGw7UmnaW2UG2pY4rWmZNZTrFCh._5oFaCQNi71DUAwr2GsRcpozHzAC;
+				allyShootPacket._5oFaCQNi71DUAwr2GsRcpozHzAC = kGw7UmnaW2UG2pY4rWmZNZTrFCh._5oFaCQNi71DUAwr2GsRcpozHzAC;
 				num = ((int)num3 * -680668146) ^ -83327966;
 				continue;
 			case 0u:
@@ -1847,13 +1847,13 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 				num = ((int)num3 * -545284984) ^ -564965075;
 				continue;
 			case 14u:
-				mb69C48hRlTLSdF1p30JoqLeKBj._isVjytSCPjaQXfnhSgmbShfAEYC = kGw7UmnaW2UG2pY4rWmZNZTrFCh._isVjytSCPjaQXfnhSgmbShfAEYC;
+				allyShootPacket._isVjytSCPjaQXfnhSgmbShfAEYC = kGw7UmnaW2UG2pY4rWmZNZTrFCh._isVjytSCPjaQXfnhSgmbShfAEYC;
 				num = (int)(num3 * 2097832356) ^ -737268968;
 				continue;
 			case 17u:
 				return;
 			case 20u:
-				mb69C48hRlTLSdF1p30JoqLeKBj._hjRbCZIgEE6lGZJqDLlpYixCdUT = kGw7UmnaW2UG2pY4rWmZNZTrFCh._hjRbCZIgEE6lGZJqDLlpYixCdUT;
+				allyShootPacket._hjRbCZIgEE6lGZJqDLlpYixCdUT = kGw7UmnaW2UG2pY4rWmZNZTrFCh._hjRbCZIgEE6lGZJqDLlpYixCdUT;
 				num = (int)(num3 * 1604748324) ^ -885872964;
 				continue;
 			case 15u:
@@ -1870,7 +1870,7 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 				num = 1980099783;
 				continue;
 			case 28u:
-				mb69C48hRlTLSdF1p30JoqLeKBj._qL8Qk0RJEu4lcCGcJpKfz1Fn8tb = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+				allyShootPacket._qL8Qk0RJEu4lcCGcJpKfz1Fn8tb = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 				num = (int)((num3 * 1762302371) ^ 0x2B34C990);
 				continue;
 			case 19u:
@@ -1884,12 +1884,12 @@ internal class _A7ysKB2QYbIeDv1Ii3aLFW50gh
 				num = 243953911;
 				continue;
 			case 16u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(mb69C48hRlTLSdF1p30JoqLeKBj);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(allyShootPacket);
 				num9++;
 				num = ((int)num3 * -968646561) ^ 0x223390D;
 				continue;
 			case 26u:
-				mb69C48hRlTLSdF1p30JoqLeKBj = (_mb69C48hRlTLSdF1p30JoqLeKBj)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.ALLYSHOOT);
+				allyShootPacket = (AllyShootPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.ALLYSHOOT);
 				num = (int)((num3 * 1554793405) ^ 0x745818BA);
 				continue;
 			case 21u:
