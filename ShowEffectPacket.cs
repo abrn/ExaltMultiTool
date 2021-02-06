@@ -4,25 +4,25 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class ShowEffectPacket : Packet
 {
-	private const int _20CTFkmYhENv168e4vWUCU2gzxd = 1;
+	private const int BITMASK_COLOR = 1;
 
-	private const int _M3fg6UfmjKeUsEaCxkjrPq1dTVQ = 2;
+	private const int BITMASK_POS1_X = 2;
 
-	private const int _klIc5ITCLEuzHQNXSDvA6oQwpFd = 4;
+	private const int BITMASK_POS1_Y = 4;
 
-	private const int _7LBe6QXkWGuRfaqY1ddzZrfd5Yi = 8;
+	private const int BITMASK_POS2_X = 8;
 
-	private const int _NngJsnW8LIyWO44t397Qvw54OT = 16;
+	private const int BITMASK_POS2_Y = 16;
 
-	private const int _YJv5xGVBpYKKThLButbjbDidxJA = 6;
+	private const int BITMASK_POS1 = 6;
 
-	private const int _fGlKbJzkxG2CCdUoGdTBzokMQJi = 24;
+	private const int BITMASK_POS2 = 24;
 
-	private const int _HycRhDmVl75YbsheUZfiCTLD8gc = 32;
+	private const int BITMASK_DURATION = 32;
 
-	private const int _ucFGSk4CpMnKTarLACLHjxNscfM = 64;
+	private const int BITMASK_BIT_ID = 64;
 
-	private const int _opIVGnMjF9Zdb1DGmUUd3sE1zgJ = 128;
+	private const int BITMASK_ = 128;
 
 	private static readonly _yNixIvVlGhPCEfXGcNUaC9jZYRS _sEbsBUoH2nb2Xe0NgbAdtwAYgyn = new _yNixIvVlGhPCEfXGcNUaC9jZYRS(uint.MaxValue);
 

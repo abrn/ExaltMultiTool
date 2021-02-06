@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/StatData.cs" />
         <option value="$PROJECT_DIR$/StatType.cs" />
         <option value="$PROJECT_DIR$/ExaltMultiTool/Proxy/Networking/Packets/PacketType.cs" />
+        <option value="$PROJECT_DIR$/ShowEffectPacket.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612631140739</updated>
-      <workItem from="1612631151004" duration="11572000" />
+      <workItem from="1612631151004" duration="12078000" />
     </task>
     <servers />
   </component>
@@ -139,9 +140,9 @@
       <screen x="0" y="0" width="1676" height="902" />
     </state>
     <state x="346" y="95" key="SettingsEditor/0.0.1676.902@0.0.1676.902" timestamp="1612631305355" />
-    <state x="517" y="50" width="641" height="801" key="find.popup" timestamp="1612642440329">
+    <state x="517" y="50" width="641" height="801" key="find.popup" timestamp="1612644760000">
       <screen x="0" y="0" width="1676" height="902" />
     </state>
-    <state x="517" y="50" width="641" height="801" key="find.popup/0.0.1676.902@0.0.1676.902" timestamp="1612642440329" />
+    <state x="517" y="50" width="641" height="801" key="find.popup/0.0.1676.902@0.0.1676.902" timestamp="1612644760000" />
   </component>
 </project>

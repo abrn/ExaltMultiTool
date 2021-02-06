@@ -1,0 +1,1 @@
+internal delegate void _KcBslMXpDkB2TvFqzjAsEACA1kK(_PlferqYaObizDfc28C5jdKSLGq5 client);
