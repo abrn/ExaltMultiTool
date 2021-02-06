@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>ExaltMultiTool</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+</Project>

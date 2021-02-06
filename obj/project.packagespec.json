@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\admin\\Documents\\Reverse Engineering\\ExaltMultiTool\\ExaltMultiTool.csproj",
+    "projectName": "ExaltMultiTool",
+    "projectPath": "C:\\Users\\admin\\Documents\\Reverse Engineering\\ExaltMultiTool\\ExaltMultiTool.csproj",
+    "outputPath": "C:\\Users\\admin\\Documents\\Reverse Engineering\\ExaltMultiTool\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "net472"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "net472": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "net472": {
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+    }
+  },
+  "runtimes": {
+    "win7-x64": {
+      "#import": []
+    }
+  }
+}
