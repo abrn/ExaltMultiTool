@@ -175,12 +175,12 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 
 	public void _emTnZmGyChlXH4IDm60126G1Snf(UpdatePacket update)
 	{
-		TileObject[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = update._2CIHnoEa49dfPXyqt9nkkBlUcQf;
+		TileObject[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = update._Tiles;
 		int num = 0;
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		PlayerData jI4Bueou7dItYp5S7QML5vyC6Rc = default(PlayerData);
 		TileObject tileObject = default(TileObject);
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = default(_kWgc6McpJEKeBQJy34XFIJ43khcA[]);
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = default(GameObject[]);
 		StatData current = default(StatData);
 		int key = default(int);
 		int[] lRLF1OvIoGLzzq1APVMdrraeXfZ = default(int[]);
@@ -208,7 +208,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num2 = 413459782;
 					continue;
 				case 9u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Add(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num2 = 366657872;
 					continue;
 				case 11u:
@@ -222,7 +222,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				{
 					int num18;
 					int num19;
-					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
 					{
 						num18 = -859132222;
 						num19 = num18;
@@ -243,7 +243,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				{
 					int num12;
 					int num13;
-					if (kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num12 = -815935218;
 						num13 = num12;
@@ -265,13 +265,13 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num2 = (int)(num4 * 1312364546) ^ -1615361244;
 					continue;
 				case 14u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm = _l9gQO8XQ1GsKFJroGbgdgagiQVO(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._Stats);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._nhFLD7A5r9NSgescGUZ6OSUXLbm = _l9gQO8XQ1GsKFJroGbgdgagiQVO(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Stats);
 					num2 = (int)((num4 * 540449009) ^ 0x5AB61F31);
 					continue;
 				case 2u:
 				{
-					kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num];
-					jI4Bueou7dItYp5S7QML5vyC6Rc = new PlayerData(kWgc6McpJEKeBQJy34XFIJ43khcA);
+					gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num];
+					jI4Bueou7dItYp5S7QML5vyC6Rc = new PlayerData(gameObject);
 					int num20;
 					if (jI4Bueou7dItYp5S7QML5vyC6Rc._LePIFyFWrqLo6WMlJ4cV5MZBUqq)
 					{
@@ -286,18 +286,18 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 7u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Remove(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
 					num2 = (int)((num4 * 1193905894) ^ 0x552F2346);
 					continue;
 				case 15u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Remove(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
 					num2 = ((int)num4 * -140232547) ^ 0x4B83C3E0;
 					continue;
 				case 17u:
 				{
 					int num10;
 					int num11;
-					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.ContainsKey(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
 					{
 						num10 = -1320613151;
 						num11 = num10;
@@ -329,18 +329,18 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num2 = 76370995;
 					continue;
 				case 10u:
-					lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+					lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 					num = 0;
 					goto IL_05c6;
 				case 0u:
 					break;
 				case 3u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Add(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num2 = 1531324731;
 					continue;
 				default:
 				{
-					using (List<StatData>.Enumerator enumerator = kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator())
+					using (List<StatData>.Enumerator enumerator = gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator())
 					{
 						while (true)
 						{
@@ -403,7 +403,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				}
 				case 1u:
 					{
-						if (_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+						if (_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
 						{
 							goto IL_046c;
 						}
@@ -433,7 +433,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 							num9 = 1630524736;
 							continue;
 						case 11u:
-							_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Remove(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK);
+							_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Remove(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId);
 							num9 = (int)((num4 * 1327539164) ^ 0x58236D8D);
 							continue;
 						case 5u:
@@ -531,7 +531,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num9 = 1918360561;
 					goto IL_0471;
 					IL_04f5:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Add(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK, jI4Bueou7dItYp5S7QML5vyC6Rc);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, jI4Bueou7dItYp5S7QML5vyC6Rc);
 					num9 = 151437575;
 					goto IL_0471;
 				}
@@ -726,9 +726,9 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 	public void _kcBjTzBYfTPCpKNctSQjw45y1mb(NewTickPacket newTick)
 	{
 		//Discarded unreachable code: IL_01cb
-		using (List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
+		using (List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
 		{
-			_AunOm2zlKr0KANkRBzogPcg538K current = default(_AunOm2zlKr0KANkRBzogPcg538K);
+			Status current = default(Status);
 			while (true)
 			{
 				int num;
@@ -761,7 +761,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					{
 						int num4;
 						int num5;
-						if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(current._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+						if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(current._ObjectId))
 						{
 							num4 = 575354944;
 							num5 = num4;
@@ -777,7 +777,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					case 3u:
 						break;
 					case 0u:
-						_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK[current._fn2CRnBpjyTWHR9K8SU4iOwhDtK]._JV6zl0lA6JLQZNtpbYVFdWCNsay(current, newTick._MzlKH2guiz5FZ1cN2sOqdMa185b, newTick._D4Xpe2utS1cwv8fGTeXUOkTlvMi, newTick._D4Xpe2utS1cwv8fGTeXUOkTlvMi, _tnzATORRz69PD9QNslfqhszFO2M);
+						_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK[current._ObjectId]._JV6zl0lA6JLQZNtpbYVFdWCNsay(current, newTick._MzlKH2guiz5FZ1cN2sOqdMa185b, newTick._D4Xpe2utS1cwv8fGTeXUOkTlvMi, newTick._D4Xpe2utS1cwv8fGTeXUOkTlvMi, _tnzATORRz69PD9QNslfqhszFO2M);
 						num = (int)(num3 * 562612159) ^ -1251820864;
 						continue;
 					case 2u:
@@ -792,7 +792,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		{
 			return;
 		}
-		_AunOm2zlKr0KANkRBzogPcg538K current2 = default(_AunOm2zlKr0KANkRBzogPcg538K);
+		Status current2 = default(Status);
 		while (true)
 		{
 			int num6 = 1885003006;
@@ -826,7 +826,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				default:
 				{
-					using (List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
+					using (List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
 					{
 						while (true)
 						{
@@ -858,7 +858,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 								{
 									int num9;
 									int num10;
-									if (_50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC == current2._fn2CRnBpjyTWHR9K8SU4iOwhDtK)
+									if (_50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC == current2._ObjectId)
 									{
 										num9 = -1819150616;
 										num10 = num9;
@@ -885,8 +885,8 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 						}
 						end_IL_0189:;
 					}
-					_AunOm2zlKr0KANkRBzogPcg538K aunOm2zlKr0KANkRBzogPcg538K = new _AunOm2zlKr0KANkRBzogPcg538K();
-					aunOm2zlKr0KANkRBzogPcg538K._ObXrbtVZcdprxclR2Ggz9jKwlp = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0;
+					Status status = new Status();
+					status._Position = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0;
 					while (true)
 					{
 						int num11 = 1310959337;
@@ -899,16 +899,16 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 							default:
 								return;
 							case 4u:
-								aunOm2zlKr0KANkRBzogPcg538K._fn2CRnBpjyTWHR9K8SU4iOwhDtK = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC;
+								status._ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC;
 								num11 = (int)((num3 * 1776382028) ^ 0x535B08D0);
 								continue;
 							case 0u:
-								newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(aunOm2zlKr0KANkRBzogPcg538K);
+								newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(status);
 								num11 = ((int)num3 * -726773312) ^ -542037797;
 								continue;
 							case 1u:
-								aunOm2zlKr0KANkRBzogPcg538K._Stats = new List<StatData>();
-								_vK3Un4l0XFJiyoE34BNH9fitpDc(aunOm2zlKr0KANkRBzogPcg538K._Stats);
+								status._Stats = new List<StatData>();
+								_vK3Un4l0XFJiyoE34BNH9fitpDc(status._Stats);
 								num11 = ((int)num3 * -1244988189) ^ -1032351179;
 								continue;
 							case 2u:

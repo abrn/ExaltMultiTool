@@ -98,7 +98,7 @@ internal class _WCTbeWogZHoPyDnxles484v2oK : Packet
 					num = ((int)num2 * -1706295201) ^ -70872812;
 					continue;
 				case 4u:
-					l7h4VBBMc07P3vNnM356szhuAGD[num3]._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					l7h4VBBMc07P3vNnM356szhuAGD[num3].Write(w);
 					num = 479083884;
 					continue;
 				case 2u:
@@ -110,7 +110,7 @@ internal class _WCTbeWogZHoPyDnxles484v2oK : Packet
 					num = (int)(num2 * 1319699151) ^ -1742864315;
 					continue;
 				case 7u:
-					_r0866iEhjgniNmmLz9ygFmfaWPA._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					_r0866iEhjgniNmmLz9ygFmfaWPA.Write(w);
 					num = ((int)num2 * -1995520852) ^ -647707083;
 					continue;
 				case 1u:

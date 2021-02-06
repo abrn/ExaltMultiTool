@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes
+internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 {
 	[Serializable]
 	[CompilerGenerated]
@@ -74,7 +74,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, _o4HuntyroiA06gchVr3Bo
 		_EkEBwRh2h871CbDHcJyGJZ8hqPk = r.ReadBoolean();
 	}
 
-	public _o4HuntyroiA06gchVr3BoA3ebes _kCo2RCMYpYNoTPdfGQVnKgPh7Fc(PacketReader r)
+	public IDataObject _kCo2RCMYpYNoTPdfGQVnKgPh7Fc(PacketReader r)
 	{
 		_KOjHORhb43q8y4PiIIYbFjhd5NP = r.ReadString();
 		int num3 = default(int);
@@ -182,7 +182,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, _o4HuntyroiA06gchVr3Bo
 		}
 	}
 
-	_o4HuntyroiA06gchVr3BoA3ebes _o4HuntyroiA06gchVr3BoA3ebes.readTileData(PacketReader r)
+	IDataObject IDataObject.Read(PacketReader r)
 	{
 		//ILSpy generated this explicit interface implementation from .override directive in readPacketData
 		return this._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r);
@@ -313,7 +313,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, _o4HuntyroiA06gchVr3Bo
 		}
 	}
 
-	void _o4HuntyroiA06gchVr3BoA3ebes.writeTileData(PacketWriter w)
+	void IDataObject.Write(PacketWriter w)
 	{
 		//ILSpy generated this explicit interface implementation from .override directive in writePacketData
 		this._3Wc8kZJjhbRt6nttAKwD2698imm(w);

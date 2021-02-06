@@ -67,7 +67,7 @@ internal class _FJ4Ncdgp30LvdfcfBFMzemYCCeT : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		_hZZqGJ97TiaLFTbiTFhvTTSGkIb._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		_hZZqGJ97TiaLFTbiTFhvTTSGkIb.Write(w);
 		w.Write(_I9LOulXQ6dWoDQOn1L5GkchnJUC);
 		while (true)
 		{

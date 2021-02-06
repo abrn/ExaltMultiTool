@@ -50,7 +50,7 @@ internal class _X6f9REQnd8GedncwYfuKQX9BeNq : WorldPosData
 					num = (int)((num2 * 1849517763) ^ 0x7D51C083);
 					continue;
 				case 0u:
-					base._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r);
+					base.Read(r);
 					num = ((int)num2 * -1983092170) ^ -388642789;
 					continue;
 				case 1u:
@@ -61,7 +61,7 @@ internal class _X6f9REQnd8GedncwYfuKQX9BeNq : WorldPosData
 		}
 	}
 
-	public override _o4HuntyroiA06gchVr3BoA3ebes _kCo2RCMYpYNoTPdfGQVnKgPh7Fc(PacketReader r)
+	public override IDataObject Write(PacketReader r)
 	{
 		_IBSqBdwNTiXSzhZbDhEFMC0Gc51 = r.ReadInt32();
 		while (true)
@@ -81,16 +81,16 @@ internal class _X6f9REQnd8GedncwYfuKQX9BeNq : WorldPosData
 				}
 				break;
 				IL_002e:
-				base._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r);
+				base.Read(r);
 				num = (int)((num2 * 878898289) ^ 0x3610F880);
 			}
 		}
 	}
 
-	public override void _3Wc8kZJjhbRt6nttAKwD2698imm(PacketWriter w)
+	public override void Write(PacketWriter w)
 	{
 		w.Write(_IBSqBdwNTiXSzhZbDhEFMC0Gc51);
-		base._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		base.Write(w);
 	}
 
 	public override object _fFrzINN4428s60nDsq4NVS5FVCb()

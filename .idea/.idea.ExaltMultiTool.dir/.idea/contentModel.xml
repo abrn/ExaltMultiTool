@@ -33,7 +33,6 @@
       <e p="_8vcCdQzyiEUGXVGWnBgKqW9wtPj.cs" t="Include" />
       <e p="_A7ysKB2QYbIeDv1Ii3aLFW50gh.cs" t="Include" />
       <e p="_aRa8l3GoOtWAxr3fiZXNh135ASk.cs" t="Include" />
-      <e p="_AunOm2zlKr0KANkRBzogPcg538K.cs" t="Include" />
       <e p="_ax4JtQ0EqqnZh9Ml8sG7hZIwpN.cs" t="Include" />
       <e p="_B2gBzVDzeVEP19C56oq34otnH9L.cs" t="Include" />
       <e p="_B9ynjjetvOFjangLlHcsR2WPoSJ.cs" t="Include" />
@@ -72,7 +71,6 @@
       <e p="_I0k8LlNrHcobPZgcddPkFUAfaETA.cs" t="Include" />
       <e p="_I5hBdMHPSeVO0cbuEcAkM9I29MW.cs" t="Include" />
       <e p="_I7fsSHtlIjceZxLjj9RuBsOo13q.cs" t="Include" />
-      <e p="_IjlO5UMx1JU6cnQE4rkBstwQlDe.cs" t="Include" />
       <e p="_iO9cPCbc7u8xRXQKm8nIc1hEPrQ.cs" t="Include" />
       <e p="_j6xsOu5VJyl0WxN7qnrwKDDPB3e.cs" t="Include" />
       <e p="_Jb0feCILTkEl6pcg2T1V15k3pU9.cs" t="Include" />
@@ -86,7 +84,6 @@
       <e p="_KiUcmQ3ymplMDQVMoIN3MNQhcVO.cs" t="Include" />
       <e p="_KOjvofkzBAzqmEvHRZRNmFojQZH.cs" t="Include" />
       <e p="_KuAFx9ZtyPqe1b4xuWI3WLidvhC.cs" t="Include" />
-      <e p="_kWgc6McpJEKeBQJy34XFIJ43khcA.cs" t="Include" />
       <e p="_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" t="Include" />
       <e p="_lavIZ7UmGrpPAaSK9eX1QKPGeTe.cs" t="Include" />
       <e p="_lRcj7b0Xq67vwsbjqopaQvHrEiC.cs" t="Include" />
@@ -106,7 +103,6 @@
       <e p="_nWdvhR8UBSRRcwtgVQdwdH5TTEj.cs" t="Include" />
       <e p="_NXJzFJyDncpkTIZ6UBdQLlK9DDb.cs" t="Include" />
       <e p="_NybqihfxGL3K5KOsIo5UpOyuEVG.cs" t="Include" />
-      <e p="_o4HuntyroiA06gchVr3BoA3ebes.cs" t="Include" />
       <e p="_ogTAZBItuCrpGoZLRZODff8nFz9.cs" t="Include" />
       <e p="_oomUxML6lAHj4WvBsgrc8gmGWNU.cs" t="Include" />
       <e p="_otmBPkCCbVZt6dt6wbk58Y1ZM4x.cs" t="Include" />
@@ -150,7 +146,6 @@
       <e p="_Wfwa0wwjHlBYxHNQ25GIgOEASlS.cs" t="Include" />
       <e p="_wguSfys04QajKP0Mf8r0cqFC7QM.cs" t="Include" />
       <e p="_WHXrbNN7BV3Ih4Lxu0Vu8UhFF8C.cs" t="Include" />
-      <e p="_WmDiuvh9rLxydEV6amSWnMXk4yg.cs" t="Include" />
       <e p="_wt1yNLFJnPwFHtB9ax5L0NkwzO.cs" t="Include" />
       <e p="_x0bFEWbxXdGdRfNpGQ1c34l1w5r.cs" t="Include" />
       <e p="_X6f9REQnd8GedncwYfuKQX9BeNq.cs" t="Include" />
@@ -175,6 +170,7 @@
       <e p="BuyResultPacket.cs" t="Include" />
       <e p="CompressedInt.cs" t="Include" />
       <e p="ConfusedByAttribute.cs" t="Include" />
+      <e p="EffectDictionary.cs" t="Include" />
       <e p="ExaltMultiTool" t="Include">
         <e p="Proxy" t="Include">
           <e p="DataStructures" t="Include">
@@ -207,6 +203,8 @@
         <e p="Settings.cs" t="Include" />
       </e>
       <e p="ExaltMultiTool.csproj" t="IncludeRecursive" />
+      <e p="GameObject.cs" t="Include" />
+      <e p="IDataObject.cs" t="Include" />
       <e p="IDataStructure.cs" t="Include" />
       <e p="InjectionHelper.cs" t="Include" />
       <e p="MainForm.cs" t="Include" />
@@ -223,7 +221,9 @@
       <e p="ShowEffectPacket.cs" t="Include" />
       <e p="SlotObjectData.cs" t="Include" />
       <e p="StatData.cs" t="Include" />
+      <e p="StatDataEnum.cs" t="Include" />
       <e p="StatType.cs" t="Include" />
+      <e p="Status.cs" t="Include" />
       <e p="TileObject.cs" t="Include" />
       <e p="WorldPosData.cs" t="Include" />
     </e>

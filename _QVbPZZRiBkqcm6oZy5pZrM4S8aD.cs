@@ -47,7 +47,7 @@ internal class _QVbPZZRiBkqcm6oZy5pZrM4S8aD : Packet
 	public override void writePacketData(PacketWriter w)
 	{
 		w.Write(_IBSqBdwNTiXSzhZbDhEFMC0Gc51);
-		_ObXrbtVZcdprxclR2Ggz9jKwlp._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		_ObXrbtVZcdprxclR2Ggz9jKwlp.Write(w);
 		while (true)
 		{
 			int num = 1916708976;

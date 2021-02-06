@@ -26,7 +26,7 @@ internal class ShowEffectPacket : Packet
 
 	private static readonly _yNixIvVlGhPCEfXGcNUaC9jZYRS _sEbsBUoH2nb2Xe0NgbAdtwAYgyn = new _yNixIvVlGhPCEfXGcNUaC9jZYRS(uint.MaxValue);
 
-	public _IjlO5UMx1JU6cnQE4rkBstwQlDe _sSyCr8bFcSziFMiZ9YqQth5e6Uc;
+	public EffectDictionary _sSyCr8bFcSziFMiZ9YqQth5e6Uc;
 
 	public int _91Zhx0OBsUhlR5optw0cihxmls4;
 
@@ -44,7 +44,7 @@ internal class ShowEffectPacket : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_sSyCr8bFcSziFMiZ9YqQth5e6Uc = (_IjlO5UMx1JU6cnQE4rkBstwQlDe)r.ReadByte();
+		_sSyCr8bFcSziFMiZ9YqQth5e6Uc = (EffectDictionary)r.ReadByte();
 		byte b = r.ReadByte();
 		while (true)
 		{
@@ -215,7 +215,7 @@ internal class ShowEffectPacket : Packet
 							continue;
 						}
 						case 13u:
-							CompressedInt.write(packetWriter, _91Zhx0OBsUhlR5optw0cihxmls4);
+							CompressedInt.Write(packetWriter, _91Zhx0OBsUhlR5optw0cihxmls4);
 							num = (int)(num2 * 1855593005) ^ -29472466;
 							continue;
 						case 7u:

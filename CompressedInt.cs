@@ -82,7 +82,7 @@ internal class CompressedInt
 		}
 	}
 
-	public static void write(BinaryWriter w, int value)
+	public static void Write(BinaryWriter w, int value)
 	{
 		bool num = value < 0;
 		uint num2 = (uint)(num ? (-value) : value);

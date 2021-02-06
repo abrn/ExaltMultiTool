@@ -1,4 +1,4 @@
-internal enum _WmDiuvh9rLxydEV6amSWnMXk4yg
+internal enum StatDataEnum
 {
 	MaximumHP = 0,
 	HP = 1,

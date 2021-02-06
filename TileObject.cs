@@ -1,6 +1,6 @@
 using System;
 
-internal class TileObject : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes {
+internal class TileObject : ICloneable, IDataObject {
 	public short _PositionX;
 
 	public short _PositionY;
@@ -18,7 +18,7 @@ internal class TileObject : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes {
 		_TileType = type;
 	}
 
-	public _o4HuntyroiA06gchVr3BoA3ebes readTileData(PacketReader r)
+	public IDataObject Read(PacketReader r)
 	{
 		_PositionX = r.ReadInt16();
 		_PositionY = r.ReadInt16();
@@ -26,7 +26,7 @@ internal class TileObject : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes {
 		return this;
 	}
 
-	public void writeTileData(PacketWriter w)
+	public void Write(PacketWriter w)
 	{
 		w.Write(_PositionX);
 		w.Write(_PositionY);

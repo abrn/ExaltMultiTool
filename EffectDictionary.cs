@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-internal enum _IjlO5UMx1JU6cnQE4rkBstwQlDe
+internal enum EffectDictionary
 {
 	[Description("Particles around player when they are healed")]
 	Heal = 1,

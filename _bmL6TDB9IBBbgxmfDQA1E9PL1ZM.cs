@@ -53,7 +53,7 @@ internal class _bmL6TDB9IBBbgxmfDQA1E9PL1ZM : Packet
 	public override void writePacketData(PacketWriter w)
 	{
 		w.Write(_fSKKbuiGLkwVuWz5bsJJqEiapf9);
-		CompressedInt.write(w, _IviHfWXXb2hAeeAcf2nbh2a7Zo);
+		CompressedInt.Write(w, _IviHfWXXb2hAeeAcf2nbh2a7Zo);
 		w.Write(_wi6uoGpCUJziwDjOevBcL5nTwFd);
 		w.Write(_tjVjFwqJvTDJurk8Z8rBlq92FuB);
 		w.Write(_1DoCH0mpWaflwoQYn6KAazpVlvl);

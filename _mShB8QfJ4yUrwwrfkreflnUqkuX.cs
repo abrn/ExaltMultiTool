@@ -175,7 +175,7 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 	public override void writePacketData(PacketWriter w)
 	{
 		w.Write(_gFPvIIgzPNQqrOLNrwLvt9L0YiH);
-		CompressedInt.write(w, _itBzbWMkvo0AuQGuR19us26p4TP);
+		CompressedInt.Write(w, _itBzbWMkvo0AuQGuR19us26p4TP);
 		int value2 = default(int);
 		int[] array = default(int[]);
 		int num3 = default(int);
@@ -200,7 +200,7 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 					num = (int)(num2 * 36611475) ^ -1184011531;
 					continue;
 				case 5u:
-					CompressedInt.write(w, _mVrHB9iWE8fKC1cy09EH2Tg38G);
+					CompressedInt.Write(w, _mVrHB9iWE8fKC1cy09EH2Tg38G);
 					num = ((int)num2 * -894590573) ^ 0x47A15075;
 					continue;
 				case 12u:
@@ -225,7 +225,7 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 				case 11u:
 				{
 					int value3 = array[num3];
-					CompressedInt.write(w, value3);
+					CompressedInt.Write(w, value3);
 					num = 266767504;
 					continue;
 				}
@@ -233,15 +233,15 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 					num = (int)((num2 * 2007767239) ^ 0x15F006B3);
 					continue;
 				case 13u:
-					CompressedInt.write(w, _29Cygi7ILPhL4sLWfXR3KEYpYle);
+					CompressedInt.Write(w, _29Cygi7ILPhL4sLWfXR3KEYpYle);
 					num = ((int)num2 * -1728410121) ^ 0x65283AA3;
 					continue;
 				case 1u:
-					CompressedInt.write(w, _geK4oHsbAS9nZM9pjvAHYVUnwQs.Length);
+					CompressedInt.Write(w, _geK4oHsbAS9nZM9pjvAHYVUnwQs.Length);
 					num = ((int)num2 * -1887655639) ^ 0x7A0F1423;
 					continue;
 				case 4u:
-					CompressedInt.write(w, _zGfl045ehROhk6jo6nvkc12rcvH.Length);
+					CompressedInt.Write(w, _zGfl045ehROhk6jo6nvkc12rcvH.Length);
 					array = _zGfl045ehROhk6jo6nvkc12rcvH;
 					num3 = 0;
 					num = (int)(num2 * 585392407) ^ -104694037;
@@ -279,12 +279,12 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 					num = ((int)num2 * -192860514) ^ -1412175719;
 					continue;
 				case 20u:
-					CompressedInt.write(w, value2);
+					CompressedInt.Write(w, value2);
 					num3++;
 					num = (int)((num2 * 824317827) ^ 0x69E2E31E);
 					continue;
 				case 9u:
-					CompressedInt.write(w, _Pg28U1MUv2y9I7GawSrEglFuQNv.Length);
+					CompressedInt.Write(w, _Pg28U1MUv2y9I7GawSrEglFuQNv.Length);
 					num = (int)(num2 * 1056074650) ^ -7496857;
 					continue;
 				case 10u:
@@ -305,7 +305,7 @@ internal class _mShB8QfJ4yUrwwrfkreflnUqkuX : Packet
 				case 16u:
 				{
 					int value = array[num3];
-					CompressedInt.write(w, value);
+					CompressedInt.Write(w, value);
 					num3++;
 					num = 873889578;
 					continue;

@@ -91,7 +91,7 @@ internal class _KGw7UmnaW2UG2pY4rWmZNZTrFCh : Packet
 					num = (int)(num2 * 642629705) ^ -2116979048;
 					continue;
 				case 3u:
-					_ObXrbtVZcdprxclR2Ggz9jKwlp._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					_ObXrbtVZcdprxclR2Ggz9jKwlp.Write(w);
 					num = (int)((num2 * 1420179149) ^ 0x20110AF9);
 					continue;
 				case 7u:

@@ -36,7 +36,7 @@ internal class _2N1xBR044hjFvSdWQy3V7k3jwmC : Packet
 				}
 				break;
 				IL_002e:
-				_hZZqGJ97TiaLFTbiTFhvTTSGkIb._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+				_hZZqGJ97TiaLFTbiTFhvTTSGkIb.Write(w);
 				num = (int)((num2 * 726652732) ^ 0x25C575DE);
 			}
 		}

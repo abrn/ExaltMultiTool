@@ -623,16 +623,16 @@ internal class PlayerData
 		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = objectId;
 	}
 
-	public PlayerData(_kWgc6McpJEKeBQJy34XFIJ43khcA source)
+	public PlayerData(GameObject source)
 	{
-		_y2nCjecGeYsmqDEzaplcuBvYtN7 = source._y2nCjecGeYsmqDEzaplcuBvYtN7;
-		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = source._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+		_y2nCjecGeYsmqDEzaplcuBvYtN7 = source._ObjectType;
+		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = source._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
 		_K9KHPXwzr29YDgek3GVsa0yGGld(source);
 	}
 
-	public void _K9KHPXwzr29YDgek3GVsa0yGGld(_kWgc6McpJEKeBQJy34XFIJ43khcA entity)
+	public void _K9KHPXwzr29YDgek3GVsa0yGGld(GameObject entity)
 	{
-		_y2nCjecGeYsmqDEzaplcuBvYtN7 = entity._y2nCjecGeYsmqDEzaplcuBvYtN7;
+		_y2nCjecGeYsmqDEzaplcuBvYtN7 = entity._ObjectType;
 		ObjectStructure objectStructure = default(ObjectStructure);
 		while (true)
 		{
@@ -646,7 +646,7 @@ internal class PlayerData
 					break;
 				case 14u:
 				{
-					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId;
 					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(_y2nCjecGeYsmqDEzaplcuBvYtN7);
 					int num3;
 					int num4;
@@ -729,9 +729,9 @@ internal class PlayerData
 		}
 	}
 
-	public void _JV6zl0lA6JLQZNtpbYVFdWCNsay(_AunOm2zlKr0KANkRBzogPcg538K status, int tickTime, int tickId, int lastTickId, long lastUpdate, bool selfAndNewTick = false)
+	public void _JV6zl0lA6JLQZNtpbYVFdWCNsay(Status status, int tickTime, int tickId, int lastTickId, long lastUpdate, bool selfAndNewTick = false)
 	{
-		_IlcbhoOIM3MRszn9mfn3IKjnXc0 = (WorldPosData)status._ObXrbtVZcdprxclR2Ggz9jKwlp.Clone();
+		_IlcbhoOIM3MRszn9mfn3IKjnXc0 = (WorldPosData)status._Position.Clone();
 		if (tickTime != 0)
 		{
 			goto IL_001c;
@@ -761,7 +761,7 @@ internal class PlayerData
 			case 2u:
 				break;
 			case 5u:
-				_7bAMJtBIe92eIbgoPI1Ui9hhNlH(status._ObXrbtVZcdprxclR2Ggz9jKwlp._PositionX, status._ObXrbtVZcdprxclR2Ggz9jKwlp._PositionY, tickTime, tickId, lastTickId, lastUpdate);
+				_7bAMJtBIe92eIbgoPI1Ui9hhNlH(status._Position._PositionX, status._Position._PositionY, tickTime, tickId, lastTickId, lastUpdate);
 				num = ((int)num3 * -313916643) ^ 0x346795E5;
 				continue;
 			case 3u:
@@ -787,7 +787,7 @@ internal class PlayerData
 				num = ((int)num3 * -1406304647) ^ 0x5E5A313C;
 				continue;
 			case 1u:
-				_FLMczMOk4gNIJMbSsAnIDIvYlDP = (WorldPosData)status._ObXrbtVZcdprxclR2Ggz9jKwlp.Clone();
+				_FLMczMOk4gNIJMbSsAnIDIvYlDP = (WorldPosData)status._Position.Clone();
 				num = 2124221530;
 				continue;
 			default:

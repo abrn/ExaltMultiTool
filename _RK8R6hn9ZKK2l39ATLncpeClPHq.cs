@@ -177,9 +177,9 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 	public void _Sn9WkTeIYDmxrskgTxWfGmMSREH(UpdatePacket update)
 	{
 		//Discarded unreachable code: IL_003d
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 		int num = 0;
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		StatData current = default(StatData);
 		while (true) {
 			int num2 = -1212604165;
@@ -190,12 +190,12 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 					case 0u:
 						break;
 					case 3u:
-						_f4rWT9AaWpLNyuW0essSbQ79ee = kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh
-							._ObXrbtVZcdprxclR2Ggz9jKwlp;
+						_f4rWT9AaWpLNyuW0essSbQ79ee = gameObject._gVz37u8P9es5e8QAguAJW13BAYh
+							._Position;
 						num2 = (int) (num3 * 1089230358) ^ -33638788;
 						continue;
 					case 4u:
-						if (kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK ==
+						if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId ==
 						    _ObjectId) {
 							num2 = (int) (num3 * 2093831433) ^ -2010683975;
 							continue;
@@ -203,11 +203,11 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 
 						goto IL_014d;
 					case 5u:
-						kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num];
+						gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num];
 						num2 = -1165174114;
 						continue;
 					default: {
-						using (List<StatData>.Enumerator enumerator = kWgc6McpJEKeBQJy34XFIJ43khcA
+						using (List<StatData>.Enumerator enumerator = gameObject
 							._gVz37u8P9es5e8QAguAJW13BAYh._Stats.GetEnumerator()) {
 							while (true) {
 								int num4;
@@ -292,13 +292,13 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 
 	public void _Sn9WkTeIYDmxrskgTxWfGmMSREH(NewTickPacket newTick)
 	{
-		using List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator =
+		using List<Status>.Enumerator enumerator =
 			newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
 		StatData current2 = default(StatData);
 		while (enumerator.MoveNext()) {
 			while (true) {
-				_AunOm2zlKr0KANkRBzogPcg538K current = enumerator.Current;
-				if (current._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _ObjectId) {
+				Status current = enumerator.Current;
+				if (current._ObjectId != _ObjectId) {
 					break;
 				}
 
@@ -344,7 +344,7 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 									goto end_IL_0060;
 								case 4u:
 									current2 = enumerator2.Current;
-									_f4rWT9AaWpLNyuW0essSbQ79ee = current._ObXrbtVZcdprxclR2Ggz9jKwlp;
+									_f4rWT9AaWpLNyuW0essSbQ79ee = current._Position;
 									num3 = -572970423;
 									continue;
 								case 2u:

@@ -11,7 +11,7 @@ internal class NewTickPacket : Packet
 
 	public ushort _sByBjT9fPBLIdH9MbsxJMUIPK0d;
 
-	public List<_AunOm2zlKr0KANkRBzogPcg538K> _UEmErv2L2MQXrwsVtG0rtsVhAnB;
+	public List<Status> _UEmErv2L2MQXrwsVtG0rtsVhAnB;
 
 	public override PacketType pType => PacketType.NEWTICK;
 
@@ -60,12 +60,12 @@ internal class NewTickPacket : Packet
 					num = ((int)num2 * -1288944800) ^ 0x1079F364;
 					continue;
 				case 6u:
-					_UEmErv2L2MQXrwsVtG0rtsVhAnB.Add((_AunOm2zlKr0KANkRBzogPcg538K)new _AunOm2zlKr0KANkRBzogPcg538K()._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r));
+					_UEmErv2L2MQXrwsVtG0rtsVhAnB.Add((Status)new Status()._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r));
 					num3++;
 					num = 1469270968;
 					continue;
 				case 5u:
-					_UEmErv2L2MQXrwsVtG0rtsVhAnB = new List<_AunOm2zlKr0KANkRBzogPcg538K>();
+					_UEmErv2L2MQXrwsVtG0rtsVhAnB = new List<Status>();
 					num = ((int)num2 * -1543659535) ^ -1454138393;
 					continue;
 				case 2u:
@@ -112,7 +112,7 @@ internal class NewTickPacket : Packet
 					continue;
 				default:
 				{
-					using List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = _UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
+					using List<Status>.Enumerator enumerator = _UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
 					while (true)
 					{
 						int num3;

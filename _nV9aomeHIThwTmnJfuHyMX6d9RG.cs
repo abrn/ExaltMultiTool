@@ -48,7 +48,7 @@ internal class _nV9aomeHIThwTmnJfuHyMX6d9RG : Packet
 	{
 		w.Write(_IBSqBdwNTiXSzhZbDhEFMC0Gc51);
 		_obJo3i4uC8yf7c2aS8NBvEttXTO.WriteSlotObjectData(w);
-		_hik7MnmCWLUNupBgHpKPyvAspMh._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		_hik7MnmCWLUNupBgHpKPyvAspMh.Write(w);
 		w.Write(_if0d81H88w2JolCC4orFfcsIICeA);
 	}
 }

@@ -108,7 +108,7 @@ internal class _NenrIcvfEIiBFXCh64MfBebEG7f : Form
 					num = 318335427;
 					continue;
 				case 3u:
-					typeFromHandle = typeof(_IjlO5UMx1JU6cnQE4rkBstwQlDe);
+					typeFromHandle = typeof(EffectDictionary);
 					num = ((int)num2 * -160752310) ^ 0x229499A6;
 					continue;
 				case 8u:

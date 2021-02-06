@@ -41,7 +41,7 @@ internal class StatData : ICloneable
 			w.Write(_StringStatValue);
 		}
 		else {
-			CompressedInt.write(w, _StatValue);
+			CompressedInt.Write(w, _StatValue);
 		}
 		w.Write(_MagicByte);
 	}
@@ -59,6 +59,6 @@ internal class StatData : ICloneable
 
 	public override string ToString()
 	{
-		return $"({Enum.GetName(typeof(_WmDiuvh9rLxydEV6amSWnMXk4yg), StatType.GetStatByteType(_StatType))} = {(IsStringStat() ? _StringStatValue : _StatValue.ToString())} (Extra: {_MagicByte}))";
+		return $"({Enum.GetName(typeof(StatDataEnum), StatType.GetStatByteType(_StatType))} = {(IsStringStat() ? _StringStatValue : _StatValue.ToString())} (Extra: {_MagicByte}))";
 	}
 }

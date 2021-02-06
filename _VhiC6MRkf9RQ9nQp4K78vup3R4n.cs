@@ -17,6 +17,6 @@ internal class _VhiC6MRkf9RQ9nQp4K78vup3R4n : Packet
 	public override void writePacketData(PacketWriter w)
 	{
 		w.Write(_IBSqBdwNTiXSzhZbDhEFMC0Gc51);
-		_ObXrbtVZcdprxclR2Ggz9jKwlp._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		_ObXrbtVZcdprxclR2Ggz9jKwlp.Write(w);
 	}
 }

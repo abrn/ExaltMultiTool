@@ -31,7 +31,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 		}
 		goto IL_0042;
 		IL_0042:
-		_AunOm2zlKr0KANkRBzogPcg538K aunOm2zlKr0KANkRBzogPcg538K = null;
+		Status status = null;
 		int num = 1134552683;
 		goto IL_0011;
 		IL_0011:
@@ -47,9 +47,9 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 			goto IL_0042;
 		default:
 			{
-				using (List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
+				using (List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
 				{
-					_AunOm2zlKr0KANkRBzogPcg538K current = default(_AunOm2zlKr0KANkRBzogPcg538K);
+					Status current = default(Status);
 					while (true)
 					{
 						int num3;
@@ -81,7 +81,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 							{
 								int num5;
 								int num6;
-								if (current._fn2CRnBpjyTWHR9K8SU4iOwhDtK == _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK)
+								if (current._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK)
 								{
 									num5 = 2001633365;
 									num6 = num5;
@@ -99,7 +99,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 							case 0u:
 								break;
 							case 1u:
-								aunOm2zlKr0KANkRBzogPcg538K = current;
+								status = current;
 								num3 = (int)(num2 * 1285772935) ^ -1442473525;
 								continue;
 							case 3u:
@@ -110,7 +110,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 					}
 					end_IL_0057:;
 				}
-				if (aunOm2zlKr0KANkRBzogPcg538K == null)
+				if (status == null)
 				{
 					goto IL_012c;
 				}
@@ -120,7 +120,7 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 			num7 = 1929605748;
 			goto IL_0131;
 			IL_01c5:
-			_D4aGbwZhQI3jcXQuKP8atcOh4zj(aunOm2zlKr0KANkRBzogPcg538K._Stats);
+			_D4aGbwZhQI3jcXQuKP8atcOh4zj(status._Stats);
 			num7 = 1685307734;
 			goto IL_0131;
 			IL_0131:
@@ -133,20 +133,20 @@ internal class _NE4y2xXE2YXla2YQONOAy9ppGMm
 				default:
 					return;
 				case 4u:
-					aunOm2zlKr0KANkRBzogPcg538K = new _AunOm2zlKr0KANkRBzogPcg538K
+					status = new Status
 					{
 						_Stats = new List<StatData>(),
-						_fn2CRnBpjyTWHR9K8SU4iOwhDtK = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC,
-						_ObXrbtVZcdprxclR2Ggz9jKwlp = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0
+						_ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC,
+						_Position = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0
 					};
-					aunOm2zlKr0KANkRBzogPcg538K._Stats.Add(_JsbF2wqg1gNSAs8RRpe2kAMA0wC());
-					aunOm2zlKr0KANkRBzogPcg538K._Stats.Add(_UMNfca321ZYkNk2tClEN6C4ahol());
+					status._Stats.Add(_JsbF2wqg1gNSAs8RRpe2kAMA0wC());
+					status._Stats.Add(_UMNfca321ZYkNk2tClEN6C4ahol());
 					num7 = (int)(num2 * 1623525434) ^ -489251987;
 					continue;
 				case 2u:
 					goto IL_01c5;
 				case 1u:
-					newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(aunOm2zlKr0KANkRBzogPcg538K);
+					newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(status);
 					num7 = (int)(num2 * 1302028564) ^ -283863942;
 					continue;
 				case 3u:

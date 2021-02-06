@@ -733,7 +733,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 				}
 				goto IL_03c1;
 			case 6u:
-				_nGFHI34bFQlA1D7Rbw8sSPcGyBB.AddRange(update._2CIHnoEa49dfPXyqt9nkkBlUcQf);
+				_nGFHI34bFQlA1D7Rbw8sSPcGyBB.AddRange(update._Tiles);
 				num = (int)(num2 * 12203252) ^ -649490241;
 				continue;
 			case 4u:
@@ -934,7 +934,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 					goto IL_03c1;
 				}
 				IL_052f:
-				list = new List<TileObject>(Math.Min(_F7Y8qQ4RTW5wNNysh8CWJAOgnnd.Length + update._2CIHnoEa49dfPXyqt9nkkBlUcQf.Length, 2048));
+				list = new List<TileObject>(Math.Min(_F7Y8qQ4RTW5wNNysh8CWJAOgnnd.Length + update._Tiles.Length, 2048));
 				num13 = -1006583710;
 				goto IL_03d1;
 				IL_03d1:
@@ -947,7 +947,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 					default:
 						return;
 					case 4u:
-						list.AddRange(update._2CIHnoEa49dfPXyqt9nkkBlUcQf);
+						list.AddRange(update._Tiles);
 						num13 = ((int)num2 * -1297623760) ^ -1624655226;
 						continue;
 					case 10u:
@@ -962,7 +962,7 @@ internal class _43cOn6b6nvUWFQb5wNCxMz6wXbD
 						continue;
 					case 8u:
 					{
-						update._2CIHnoEa49dfPXyqt9nkkBlUcQf = list.ToArray();
+						update._Tiles = list.ToArray();
 						int num17;
 						int num18;
 						if (num14 == _F7Y8qQ4RTW5wNNysh8CWJAOgnnd.Length)

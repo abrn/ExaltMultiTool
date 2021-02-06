@@ -126,7 +126,7 @@ internal class _3x8iFljfoYzeYeVnM3YLGbk4Cbc : Packet
 				}
 				case 1u:
 					w.Write(_XkoPVTLGPjjI2mDSH9xlH0vbBOe);
-					_hZZqGJ97TiaLFTbiTFhvTTSGkIb._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					_hZZqGJ97TiaLFTbiTFhvTTSGkIb.Write(w);
 					num = (int)(num2 * 193273343) ^ -776366404;
 					continue;
 				case 4u:

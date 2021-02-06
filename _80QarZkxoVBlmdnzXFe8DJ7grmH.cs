@@ -104,9 +104,9 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 
 	public void _emTnZmGyChlXH4IDm60126G1Snf(UpdatePacket update)
 	{
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 		int num = 0;
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		TileObject[] _2CIHnoEa49dfPXyqt9nkkBlUcQf = default(TileObject[]);
 		_TmFas5PEXYMVmPQTpu3tg3XuoTo tmFas5PEXYMVmPQTpu3tg3XuoTo = default(_TmFas5PEXYMVmPQTpu3tg3XuoTo);
 		ObjectStructure objectStructure = default(ObjectStructure);
@@ -136,7 +136,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 				default:
 					return;
 				case 13u:
-					_Qy1BE24E40cQ133fQhzUEORnxWQ((int)kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._ObXrbtVZcdprxclR2Ggz9jKwlp._PositionX, (int)kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._ObXrbtVZcdprxclR2Ggz9jKwlp._PositionY, value: true);
+					_Qy1BE24E40cQ133fQhzUEORnxWQ((int)gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Position._PositionX, (int)gameObject._gVz37u8P9es5e8QAguAJW13BAYh._Position._PositionY, value: true);
 					num2 = ((int)num4 * -961744554) ^ -243430478;
 					continue;
 				case 16u:
@@ -170,7 +170,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 					continue;
 				}
 				case 6u:
-					kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num];
+					gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num];
 					num2 = 1685888117;
 					continue;
 				case 2u:
@@ -219,7 +219,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 					num2 = (int)(num4 * 1662897317) ^ -1961276272;
 					continue;
 				case 11u:
-					_2CIHnoEa49dfPXyqt9nkkBlUcQf = update._2CIHnoEa49dfPXyqt9nkkBlUcQf;
+					_2CIHnoEa49dfPXyqt9nkkBlUcQf = update._Tiles;
 					num = 0;
 					num2 = (int)((num4 * 913737150) ^ 0x16DB2CE);
 					continue;
@@ -258,7 +258,7 @@ internal class _80QarZkxoVBlmdnzXFe8DJ7grmH
 					continue;
 				case 8u:
 				{
-					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(kWgc6McpJEKeBQJy34XFIJ43khcA._y2nCjecGeYsmqDEzaplcuBvYtN7);
+					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(gameObject._ObjectType);
 					int num18;
 					int num19;
 					if (objectStructure != null)

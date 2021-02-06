@@ -1,6 +1,6 @@
 using System;
 
-internal class WorldPosData : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes
+internal class WorldPosData : ICloneable, IDataObject
 {
 	public double _PositionX;
 
@@ -30,19 +30,19 @@ internal class WorldPosData : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes
 		_PositionY = y;
 	}
 
-	public virtual _o4HuntyroiA06gchVr3BoA3ebes _kCo2RCMYpYNoTPdfGQVnKgPh7Fc(PacketReader r)
+	public virtual IDataObject Read(PacketReader r)
 	{
 		_PositionX = r.ReadSingle();
 		_PositionY = r.ReadSingle();
 		return this;
 	}
 
-	_o4HuntyroiA06gchVr3BoA3ebes _o4HuntyroiA06gchVr3BoA3ebes.readTileData(PacketReader r)
+	IDataObject IDataObject.Read(PacketReader r)
 	{
-		return this._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r);
+		return this.Read(r);
 	}
 
-	public virtual void _3Wc8kZJjhbRt6nttAKwD2698imm(PacketWriter w)
+	public virtual void Write(PacketWriter w)
 	{
 		w.Write((float)_PositionX);
 		while (true)
@@ -70,9 +70,9 @@ internal class WorldPosData : ICloneable, _o4HuntyroiA06gchVr3BoA3ebes
 		}
 	}
 
-	void _o4HuntyroiA06gchVr3BoA3ebes.writeTileData(PacketWriter w)
+	void IDataObject.Write(PacketWriter w)
 	{
-		this._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+		this.Write(w);
 	}
 
 	public double _l97JYrnBrV9Ws5bD3UnHa879cYh(WorldPosData location)

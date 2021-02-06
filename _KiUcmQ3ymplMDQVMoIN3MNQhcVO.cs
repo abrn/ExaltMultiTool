@@ -73,23 +73,23 @@ internal class _KiUcmQ3ymplMDQVMoIN3MNQhcVO : Packet
 				default:
 					return;
 				case 4u:
-					CompressedInt.write(w, _enqLoF2wkbykd5HP5ECm7tJoBei);
-					CompressedInt.write(w, _MamaX4JKMQb7mwH8zsj2tH0wBbm);
+					CompressedInt.Write(w, _enqLoF2wkbykd5HP5ECm7tJoBei);
+					CompressedInt.Write(w, _MamaX4JKMQb7mwH8zsj2tH0wBbm);
 					num = (int)(num2 * 621596617) ^ -2115040405;
 					continue;
 				case 0u:
-					CompressedInt.write(w, _aUEd61EwB5eTqpK2iARmc5wOEJN);
-					CompressedInt.write(w, _kK89095IOsdVAiJNQMQjlsoUmth);
-					CompressedInt.write(w, _adsJ1zavKPklSAlnUA63xUWNzDG);
+					CompressedInt.Write(w, _aUEd61EwB5eTqpK2iARmc5wOEJN);
+					CompressedInt.Write(w, _kK89095IOsdVAiJNQMQjlsoUmth);
+					CompressedInt.Write(w, _adsJ1zavKPklSAlnUA63xUWNzDG);
 					num = ((int)num2 * -1490935030) ^ -877703108;
 					continue;
 				case 1u:
-					CompressedInt.write(w, _ixwcW6zy5jkM9OAtEbibDGSG6cL);
-					CompressedInt.write(w, _nMaG5GTWkDVVngUKjpCbf2dSuQn);
+					CompressedInt.Write(w, _ixwcW6zy5jkM9OAtEbibDGSG6cL);
+					CompressedInt.Write(w, _nMaG5GTWkDVVngUKjpCbf2dSuQn);
 					num = (int)(num2 * 443834525) ^ -1232921910;
 					continue;
 				case 3u:
-					CompressedInt.write(w, _9ThOXrA9ODzXg6wTtdBcI6jEfX0);
+					CompressedInt.Write(w, _9ThOXrA9ODzXg6wTtdBcI6jEfX0);
 					num = ((int)num2 * -1682477755) ^ -851266282;
 					continue;
 				case 2u:

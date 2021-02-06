@@ -37,9 +37,9 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 		}
 		goto IL_0010;
 		IL_0010:
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		int num4 = default(int);
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = default(_kWgc6McpJEKeBQJy34XFIJ43khcA[]);
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = default(GameObject[]);
 		while (true)
 		{
 			uint num3;
@@ -50,7 +50,7 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 			default:
 				return;
 			case 0u:
-				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh);
+				_ivabn6yjLrc2oPnFNSOdlTDl0LFb(gameObject._gVz37u8P9es5e8QAguAJW13BAYh);
 				num = (int)(num3 * 1483856324) ^ -2142246349;
 				continue;
 			case 1u:
@@ -62,7 +62,7 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 			{
 				int num7;
 				int num8;
-				if (kWgc6McpJEKeBQJy34XFIJ43khcA._y2nCjecGeYsmqDEzaplcuBvYtN7 >= 45239)
+				if (gameObject._ObjectType >= 45239)
 				{
 					num7 = -1108408877;
 					num8 = num7;
@@ -81,7 +81,7 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 			{
 				int num5;
 				int num6;
-				if (kWgc6McpJEKeBQJy34XFIJ43khcA._y2nCjecGeYsmqDEzaplcuBvYtN7 <= 45243)
+				if (gameObject._ObjectType <= 45243)
 				{
 					num5 = 1594249089;
 					num6 = num5;
@@ -101,11 +101,11 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 			case 7u:
 				goto IL_0113;
 			case 2u:
-				lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+				lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 				num = -1649087372;
 				continue;
 			case 9u:
-				kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num4];
+				gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num4];
 				num = -692031256;
 				continue;
 			case 11u:
@@ -137,7 +137,7 @@ internal class _NybqihfxGL3K5KOsIo5UpOyuEVG
 		goto IL_0010;
 	}
 
-	private void _ivabn6yjLrc2oPnFNSOdlTDl0LFb(_AunOm2zlKr0KANkRBzogPcg538K status)
+	private void _ivabn6yjLrc2oPnFNSOdlTDl0LFb(Status status)
 	{
 		//Discarded unreachable code: IL_00a7
 		using (List<StatData>.Enumerator enumerator = status._Stats.GetEnumerator())

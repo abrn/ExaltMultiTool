@@ -11,7 +11,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 
 	public float _Z5wTZXZR7WNAVYbrlBqkpXlqERC;
 
-	public _WmDiuvh9rLxydEV6amSWnMXk4yg _iRJdNjdNO3i4OWssXs6R7kraxXo;
+	public StatDataEnum _iRJdNjdNO3i4OWssXs6R7kraxXo;
 
 	public _jsZwrE9lzYULBcuBQfPr4S2Du8c(XElement activate)
 	{
@@ -86,7 +86,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 				{
 					int num3;
 					int num4;
-					if (Enum.TryParse<_WmDiuvh9rLxydEV6amSWnMXk4yg>(text, out _iRJdNjdNO3i4OWssXs6R7kraxXo))
+					if (Enum.TryParse<StatDataEnum>(text, out _iRJdNjdNO3i4OWssXs6R7kraxXo))
 					{
 						num3 = 1065933758;
 						num4 = num3;

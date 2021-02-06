@@ -210,9 +210,9 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 	public void _BDXhTDiNPztbD7xb5Gi0tEvg8yG(UpdatePacket update)
 	{
 		//Discarded unreachable code: IL_0043
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 		int num = 0;
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		while (true)
 		{
 			int num2 = -945457398;
@@ -229,9 +229,9 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					return;
 				case 7u:
 				{
-					kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num];
+					gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num];
 					int num5;
-					if (kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num2 = -820964269;
 						num5 = num2;
@@ -248,7 +248,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num2 = -1325262464;
 					continue;
 				case 4u:
-					_svydDteItTikqFWEdfihYLPjcdD(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
+					_svydDteItTikqFWEdfihYLPjcdD(gameObject._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
 					num2 = (int)((num3 * 816166144) ^ 0x7D17649D);
 					continue;
 				case 3u:
@@ -279,9 +279,9 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 
 	public void _emTnZmGyChlXH4IDm60126G1Snf(UpdatePacket update)
 	{
-		_kWgc6McpJEKeBQJy34XFIJ43khcA[] lakUpSXZB1zdJcCECL20tl6SVrT = update._lakUpSXZB1zdJcCECL20tl6SVrT;
+		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
 		int num3 = default(int);
-		_kWgc6McpJEKeBQJy34XFIJ43khcA kWgc6McpJEKeBQJy34XFIJ43khcA = default(_kWgc6McpJEKeBQJy34XFIJ43khcA);
+		GameObject gameObject = default(GameObject);
 		while (true)
 		{
 			int num = 361955118;
@@ -301,7 +301,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				case 4u:
 				{
 					int num7;
-					if (!_upSS8MT1MDBXesl0chZtogspZ0B.ContainsKey(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+					if (!_upSS8MT1MDBXesl0chZtogspZ0B.ContainsKey(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId))
 					{
 						num = 4652208;
 						num7 = num;
@@ -317,7 +317,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					num = ((int)num2 * -2035521373) ^ 0x31402DBA;
 					continue;
 				case 6u:
-					_upSS8MT1MDBXesl0chZtogspZ0B.Add(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK, kWgc6McpJEKeBQJy34XFIJ43khcA._y2nCjecGeYsmqDEzaplcuBvYtN7);
+					_upSS8MT1MDBXesl0chZtogspZ0B.Add(gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId, gameObject._ObjectType);
 					num = ((int)num2 * -351150587) ^ -75449674;
 					continue;
 				case 1u:
@@ -336,18 +336,18 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					continue;
 				}
 				case 2u:
-					_KQrCDNrUysA4qKaWspdpLvKfrZf(kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
+					_KQrCDNrUysA4qKaWspdpLvKfrZf(gameObject._gVz37u8P9es5e8QAguAJW13BAYh, fromUpdate: true);
 					num = ((int)num2 * -806065401) ^ -2062763528;
 					continue;
 				case 7u:
-					kWgc6McpJEKeBQJy34XFIJ43khcA = lakUpSXZB1zdJcCECL20tl6SVrT[num3];
+					gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num3];
 					num = 1167391357;
 					continue;
 				case 8u:
 				{
 					int num4;
 					int num5;
-					if (kWgc6McpJEKeBQJy34XFIJ43khcA._gVz37u8P9es5e8QAguAJW13BAYh._fn2CRnBpjyTWHR9K8SU4iOwhDtK == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (gameObject._gVz37u8P9es5e8QAguAJW13BAYh._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num4 = -168142646;
 						num5 = num4;
@@ -375,8 +375,8 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 	public void _MFLBEFZIoAzGuS9ckjivIcS84uOA(NewTickPacket newTick)
 	{
 		//Discarded unreachable code: IL_009e
-		using List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
-		_AunOm2zlKr0KANkRBzogPcg538K current = default(_AunOm2zlKr0KANkRBzogPcg538K);
+		using List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
+		Status current = default(Status);
 		while (true)
 		{
 			int num;
@@ -405,7 +405,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				{
 					current = enumerator.Current;
 					int num4;
-					if (current._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+					if (current._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 					{
 						num = -604683750;
 						num4 = num;
@@ -437,9 +437,9 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 	{
 		//Discarded unreachable code: IL_0052
 		bool flag = false;
-		using (List<_AunOm2zlKr0KANkRBzogPcg538K>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
+		using (List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator())
 		{
-			_AunOm2zlKr0KANkRBzogPcg538K current = default(_AunOm2zlKr0KANkRBzogPcg538K);
+			Status current = default(Status);
 			while (true)
 			{
 				int num;
@@ -474,7 +474,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					{
 						int num4;
 						int num5;
-						if (current._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+						if (current._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 						{
 							num4 = -28756743;
 							num5 = num4;
@@ -527,7 +527,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 		goto IL_0109;
 		IL_0109:
-		_AunOm2zlKr0KANkRBzogPcg538K aunOm2zlKr0KANkRBzogPcg538K = default(_AunOm2zlKr0KANkRBzogPcg538K);
+		Status status = default(Status);
 		while (true)
 		{
 			uint num3;
@@ -563,12 +563,12 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				num6 = -541597202;
 				continue;
 			case 11u:
-				aunOm2zlKr0KANkRBzogPcg538K._Stats = new List<StatData>();
+				status._Stats = new List<StatData>();
 				num6 = (int)((num3 * 1077544489) ^ 0x74CF5B56);
 				continue;
 			case 13u:
-				aunOm2zlKr0KANkRBzogPcg538K = new _AunOm2zlKr0KANkRBzogPcg538K();
-				aunOm2zlKr0KANkRBzogPcg538K._ObXrbtVZcdprxclR2Ggz9jKwlp = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0;
+				status = new Status();
+				status._Position = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0;
 				num6 = ((int)num3 * -1708476795) ^ 0x67B651F5;
 				continue;
 			case 7u:
@@ -612,11 +612,11 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				num6 = (int)((num3 * 229356041) ^ 0x10EEFC6D);
 				continue;
 			case 14u:
-				newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(aunOm2zlKr0KANkRBzogPcg538K);
+				newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.Add(status);
 				num6 = (int)(num3 * 388627580) ^ -2131692329;
 				continue;
 			case 8u:
-				_CN0aFF2oVUmBjLQeRGfPCrCKo42(aunOm2zlKr0KANkRBzogPcg538K._Stats);
+				_CN0aFF2oVUmBjLQeRGfPCrCKo42(status._Stats);
 				num6 = (int)((num3 * 1157689800) ^ 0x27BF26E9);
 				continue;
 			case 9u:
@@ -624,7 +624,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				num6 = -906307187;
 				continue;
 			case 12u:
-				aunOm2zlKr0KANkRBzogPcg538K._fn2CRnBpjyTWHR9K8SU4iOwhDtK = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC;
+				status._ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC;
 				num6 = ((int)num3 * -748124581) ^ -1044902389;
 				continue;
 			case 6u:
@@ -635,7 +635,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		goto IL_0104;
 	}
 
-	private void _svydDteItTikqFWEdfihYLPjcdD(_AunOm2zlKr0KANkRBzogPcg538K status, bool fromUpdate = false)
+	private void _svydDteItTikqFWEdfihYLPjcdD(Status status, bool fromUpdate = false)
 	{
 		//Discarded unreachable code: IL_0030
 		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC == null)
@@ -754,7 +754,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 	}
 
-	private void _KQrCDNrUysA4qKaWspdpLvKfrZf(_AunOm2zlKr0KANkRBzogPcg538K status, bool fromUpdate = false)
+	private void _KQrCDNrUysA4qKaWspdpLvKfrZf(Status status, bool fromUpdate = false)
 	{
 		using (List<StatData>.Enumerator enumerator = status._Stats.GetEnumerator())
 		{

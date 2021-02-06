@@ -106,7 +106,7 @@ internal class QuestObjectPacket : Packet
 				case 1u:
 				{
 					int value = array[num3];
-					CompressedInt.write(w, value);
+					CompressedInt.Write(w, value);
 					num = -1355846221;
 					continue;
 				}
@@ -118,7 +118,7 @@ internal class QuestObjectPacket : Packet
 					num = ((int)num2 * -1500272918) ^ -1747861037;
 					continue;
 				case 5u:
-					CompressedInt.write(w, _0m8NlaV4OCNiAPRjFijgkuWdRKi.Length);
+					CompressedInt.Write(w, _0m8NlaV4OCNiAPRjFijgkuWdRKi.Length);
 					array = _0m8NlaV4OCNiAPRjFijgkuWdRKi;
 					num = (int)(num2 * 533298544) ^ -2092753487;
 					continue;
