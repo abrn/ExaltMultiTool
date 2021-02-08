@@ -2,23 +2,23 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class MapInfoPacket : Packet
 {
-	public int _6HwO75kWNssUCje1MLwKd3pGXmk;
+	public int _Width;
 
-	public int _CmwC8GuQ56hi7QXOmmQpFukQ49j;
+	public int _Height;
 
 	public string _MapName;
 
-	public string _z97gpe5BUDjB0oRkKw2Cz87VXu4;
+	public string _DisplayName;
 
-	public string _op3z64rJcxOdtLGKzxcdjUYkReU;
+	public string _RealmName;
 
-	public int _pWn1D3hAvi6SsFr2X1rlrn8Y29G;
+	public int _Difficulty;
 
 	public uint _uV5tlOqeszD4IoJi3t2CRjvcLIB;
 
 	public int _bRVHFhdBcSJWan12L0XjvcvSoFJ;
 
-	public bool _skxAEPaJimueRO7GpeJbF0oo0pR;
+	public bool _AllowTeleports;
 
 	public bool _EaX49CukAVNKfIBBQdS5YMzPXsN;
 
@@ -28,7 +28,7 @@ internal class MapInfoPacket : Packet
 
 	public uint _UcIacBkNQn7bM1Lf5WOTMsrHnPG;
 
-	public string _D9eVzmyjoUAO59kpZe1YLOuKYP;
+	public string _ConnectionGuid;
 
 	public string[] _985N0u7Jv9AaCXxFLrn6YWvcKJ7 = new string[0];
 
@@ -38,8 +38,8 @@ internal class MapInfoPacket : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_6HwO75kWNssUCje1MLwKd3pGXmk = r.ReadInt32();
-		_CmwC8GuQ56hi7QXOmmQpFukQ49j = r.ReadInt32();
+		_Width = r.ReadInt32();
+		_Height = r.ReadInt32();
 		int num4 = default(int);
 		int num3 = default(int);
 		while (true)
@@ -77,12 +77,12 @@ internal class MapInfoPacket : Packet
 					num = ((int)num2 * -716002193) ^ 0x8A03CEA;
 					continue;
 				case 0u:
-					_z97gpe5BUDjB0oRkKw2Cz87VXu4 = r.ReadString();
-					_op3z64rJcxOdtLGKzxcdjUYkReU = r.ReadString();
+					_DisplayName = r.ReadString();
+					_RealmName = r.ReadString();
 					num = (int)(num2 * 897228632) ^ -1672279116;
 					continue;
 				case 4u:
-					_skxAEPaJimueRO7GpeJbF0oo0pR = r.ReadBoolean();
+					_AllowTeleports = r.ReadBoolean();
 					_EaX49CukAVNKfIBBQdS5YMzPXsN = r.ReadBoolean();
 					_ul3HClgRiLsu0fJNqiUygJqWIYC = r.ReadInt16();
 					num = (int)((num2 * 855409582) ^ 0x740BCE1F);
@@ -132,7 +132,7 @@ internal class MapInfoPacket : Packet
 					continue;
 				case 16u:
 					_bRVHFhdBcSJWan12L0XjvcvSoFJ = r.ReadInt32();
-					_pWn1D3hAvi6SsFr2X1rlrn8Y29G = r.ReadInt32();
+					_Difficulty = r.ReadInt32();
 					num = (int)(num2 * 1343964844) ^ -1305346855;
 					continue;
 				case 8u:
@@ -144,7 +144,7 @@ internal class MapInfoPacket : Packet
 					num = (int)(num2 * 1589705456) ^ -387418465;
 					continue;
 				default:
-					_D9eVzmyjoUAO59kpZe1YLOuKYP = r.ReadString();
+					_ConnectionGuid = r.ReadString();
 					return;
 				}
 				break;
@@ -154,8 +154,8 @@ internal class MapInfoPacket : Packet
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_6HwO75kWNssUCje1MLwKd3pGXmk);
-		w.Write(_CmwC8GuQ56hi7QXOmmQpFukQ49j);
+		w.Write(_Width);
+		w.Write(_Height);
 		w.Write(_MapName);
 		string value2 = default(string);
 		string[] iWbYq2cyKx27pCItWhIxVaOyD4E = default(string[]);
@@ -172,7 +172,7 @@ internal class MapInfoPacket : Packet
 				case 17u:
 					break;
 				case 4u:
-					w.Write(_skxAEPaJimueRO7GpeJbF0oo0pR);
+					w.Write(_AllowTeleports);
 					num = (int)((num2 * 57062996) ^ 0xC4D3AA);
 					continue;
 				case 0u:
@@ -214,7 +214,7 @@ internal class MapInfoPacket : Packet
 					num = (int)((num2 * 1343302640) ^ 0x2913CEF9);
 					continue;
 				case 18u:
-					w.Write(_pWn1D3hAvi6SsFr2X1rlrn8Y29G);
+					w.Write(_Difficulty);
 					num = ((int)num2 * -1182796911) ^ 0x21D8BCD5;
 					continue;
 				case 3u:
@@ -248,11 +248,11 @@ internal class MapInfoPacket : Packet
 					num = 441238220;
 					continue;
 				case 15u:
-					w.Write(_z97gpe5BUDjB0oRkKw2Cz87VXu4);
+					w.Write(_DisplayName);
 					num = ((int)num2 * -1728815921) ^ -1764788491;
 					continue;
 				case 8u:
-					w.Write(_op3z64rJcxOdtLGKzxcdjUYkReU);
+					w.Write(_RealmName);
 					w.Write(_uV5tlOqeszD4IoJi3t2CRjvcLIB);
 					num = (int)(num2 * 962594943) ^ -237560802;
 					continue;
@@ -269,7 +269,7 @@ internal class MapInfoPacket : Packet
 					num = ((int)num2 * -716197436) ^ -607097047;
 					continue;
 				default:
-					w.Write(_D9eVzmyjoUAO59kpZe1YLOuKYP);
+					w.Write(_ConnectionGuid);
 					return;
 				}
 				break;

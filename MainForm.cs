@@ -13,9 +13,9 @@ internal class MainForm : Form {
 
 	private _K3TiPWyBDUpgQKKDVFVeRQ0N4cX _0p3Brd5rbHU6G4v0UTyLsnWPJ2d;
 
-	private _qX9PHCvTgbFMgA9BBqqvecsdhWG _nG2MucfACsUyiknR5T0En28BPR9;
+	private ControlPanelForm _nG2MucfACsUyiknR5T0En28BPR9;
 
-	private _0pKus8qT7dJs8MOfxxX028Sucbf _tWgVuVjdz9gN1kXjtaNba3vSuog;
+	private InstructionsForm _tWgVuVjdz9gN1kXjtaNba3vSuog;
 
 	private IContainer _Container;
 
@@ -612,7 +612,7 @@ internal class MainForm : Form {
 		try {
 			Program.LogInfoMessage("core", "Initializing proxy...");
 			ResourceDownloader._uLt6b1uwFNgoZycBDqE02WmgdfB();
-			_I7fsSHtlIjceZxLjj9RuBsOo13q._J120yKYbtEVgxfxC5akH1UoBgjq();
+			ServerList._J120yKYbtEVgxfxC5akH1UoBgjq();
 			while (true) {
 				int num = 1317307132;
 				while (true) {

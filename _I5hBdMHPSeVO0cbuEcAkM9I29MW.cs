@@ -129,7 +129,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 				continue;
 			case 0u:
 				gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num10];
-				if (Enum.IsDefined(typeof(_5097dNG31hfxaENwC9LeZFiVozC), gameObject._ObjectType))
+				if (Enum.IsDefined(typeof(LootBagTypeEnum), gameObject._ObjectType))
 				{
 					num = -667193173;
 					continue;
@@ -156,7 +156,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 				goto IL_013c;
 			case 7u:
 			{
-				QuestObjectPacket questObjectPacket = (QuestObjectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.QUESTOBJID);
+				QuestObjectPacket questObjectPacket = (QuestObjectPacket)Packet.CreatePacketFromType(PacketType.QUESTOBJID);
 				questObjectPacket._fn2CRnBpjyTWHR9K8SU4iOwhDtK = _EeeRzHBDOL9AqYJ8CIuFvkR3Qlz;
 				questObjectPacket._0m8NlaV4OCNiAPRjFijgkuWdRKi = new int[0];
 				_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(questObjectPacket);
@@ -240,7 +240,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 				num9 = -128843282;
 				goto IL_027e;
 				IL_025d:
-				if (Enum.IsDefined(typeof(_f3qpQzCY0N0Jz5kd9DSZHQj0ZJG), gameObject._ObjectType))
+				if (Enum.IsDefined(typeof(BagTypeEnum), gameObject._ObjectType))
 				{
 					goto IL_0279;
 				}
@@ -382,7 +382,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 				{
 					int num4;
 					int num5;
-					if (Enum.IsDefined(typeof(_f3qpQzCY0N0Jz5kd9DSZHQj0ZJG), value._y2nCjecGeYsmqDEzaplcuBvYtN7))
+					if (Enum.IsDefined(typeof(BagTypeEnum), value._y2nCjecGeYsmqDEzaplcuBvYtN7))
 					{
 						num4 = 1625238494;
 						num5 = num4;
@@ -407,7 +407,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 		}
 	}
 
-	public void _1UIxXEL495RF9327ls9jIZFBwaA(_QVbPZZRiBkqcm6oZy5pZrM4S8aD invSwap)
+	public void _1UIxXEL495RF9327ls9jIZFBwaA(InvSwapPacket invSwap)
 	{
 		//Discarded unreachable code: IL_0309
 		if (!Settings.Default.EnableAutoLoot)
@@ -584,7 +584,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 		goto IL_0014;
 	}
 
-	public void _n0JAIElTXMoPeH6KBaRBdWaaWov(_lRcj7b0Xq67vwsbjqopaQvHrEiC invResult)
+	public void _n0JAIElTXMoPeH6KBaRBdWaaWov(InvResultPacket invResult)
 	{
 		if (!Settings.Default.EnableAutoLoot)
 		{
@@ -902,7 +902,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 						{
 							current = enumerator.Current;
 							int num30;
-							if (Enum.IsDefined(typeof(_5097dNG31hfxaENwC9LeZFiVozC), current._y2nCjecGeYsmqDEzaplcuBvYtN7))
+							if (Enum.IsDefined(typeof(LootBagTypeEnum), current._y2nCjecGeYsmqDEzaplcuBvYtN7))
 							{
 								num3 = 389754700;
 								num30 = num3;
@@ -1012,7 +1012,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 							continue;
 						}
 						case 18u:
-							obj = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI._EOUVvVncv0meCCDQkGXOyUOLU5F((ushort)potionInfo.Type)._WL2DOBxBuX9DARzf2KPoaJbgZiCb;
+							obj = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)potionInfo.Type)._WL2DOBxBuX9DARzf2KPoaJbgZiCb;
 							goto IL_056a;
 						case 3u:
 						{
@@ -1032,7 +1032,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 						case 23u:
 							return;
 						case 25u:
-							questObjectPacket = (QuestObjectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.QUESTOBJID);
+							questObjectPacket = (QuestObjectPacket)Packet.CreatePacketFromType(PacketType.QUESTOBJID);
 							questObjectPacket._fn2CRnBpjyTWHR9K8SU4iOwhDtK = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 							questObjectPacket._0m8NlaV4OCNiAPRjFijgkuWdRKi = new int[0];
 							num3 = ((int)num2 * -991640481) ^ -908211324;
@@ -1203,12 +1203,12 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 			default:
 				return;
 			case 8u:
-				_1UIxXEL495RF9327ls9jIZFBwaA(time, pos, bagObjectId, targetType, slotId, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK, targetType, potionSlot, ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI._EOUVvVncv0meCCDQkGXOyUOLU5F((ushort)targetType)._WL2DOBxBuX9DARzf2KPoaJbgZiCb);
+				_1UIxXEL495RF9327ls9jIZFBwaA(time, pos, bagObjectId, targetType, slotId, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK, targetType, potionSlot, ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)targetType)._WL2DOBxBuX9DARzf2KPoaJbgZiCb);
 				return;
 			case 0u:
 				goto IL_008d;
 			case 2u:
-				_1UIxXEL495RF9327ls9jIZFBwaA(time, pos, bagObjectId, targetType, slotId, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK, -1, b, ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI._EOUVvVncv0meCCDQkGXOyUOLU5F((ushort)targetType)._WL2DOBxBuX9DARzf2KPoaJbgZiCb);
+				_1UIxXEL495RF9327ls9jIZFBwaA(time, pos, bagObjectId, targetType, slotId, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK, -1, b, ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)targetType)._WL2DOBxBuX9DARzf2KPoaJbgZiCb);
 				return;
 			case 3u:
 				goto IL_00fa;
@@ -1255,7 +1255,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 
 	private void _1UIxXEL495RF9327ls9jIZFBwaA(int time, WorldPosData position, int objectId1, int itemType1, int slotId1, int objectId2, int itemType2, int slotId2, string itemName)
 	{
-		_QVbPZZRiBkqcm6oZy5pZrM4S8aD qVbPZZRiBkqcm6oZy5pZrM4S8aD = (_QVbPZZRiBkqcm6oZy5pZrM4S8aD)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.INVSWAP);
+		InvSwapPacket invSwapPacket = (InvSwapPacket)Packet.CreatePacketFromType(PacketType.INVSWAP);
 		SlotObjectData satIHTodVDCbi0PS6kYN9LHBYAE2 = default(SlotObjectData);
 		SlotObjectData slotObjectData = default(SlotObjectData);
 		while (true)
@@ -1290,15 +1290,15 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 					continue;
 				case 8u:
 					_42GPN9YDdixtPULe0BHbgMev6eG = time;
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(qVbPZZRiBkqcm6oZy5pZrM4S8aD);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(invSwapPacket);
 					num = -997990793;
 					continue;
 				case 9u:
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._sEYqjeelWD912mJ6sF5MhQRyISf = satIHTodVDCbi0PS6kYN9LHBYAE2;
+					invSwapPacket._sEYqjeelWD912mJ6sF5MhQRyISf = satIHTodVDCbi0PS6kYN9LHBYAE2;
 					num = -20321210;
 					continue;
 				case 5u:
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._ObXrbtVZcdprxclR2Ggz9jKwlp = position;
+					invSwapPacket._ObXrbtVZcdprxclR2Ggz9jKwlp = position;
 					num = ((int)num2 * -1886174151) ^ -1009503898;
 					continue;
 				case 2u:
@@ -1319,7 +1319,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 					continue;
 				}
 				case 7u:
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._IBSqBdwNTiXSzhZbDhEFMC0Gc51 = time;
+					invSwapPacket._IBSqBdwNTiXSzhZbDhEFMC0Gc51 = time;
 					num = ((int)num2 * -1702867057) ^ 0x8A32490;
 					continue;
 				case 11u:
@@ -1327,12 +1327,12 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 					num = ((int)num2 * -651355170) ^ 0x7351B3B7;
 					continue;
 				case 4u:
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._sEYqjeelWD912mJ6sF5MhQRyISf = slotObjectData;
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._YnPcTOJB6UrXk2tL1AzY4w0ohpAA = satIHTodVDCbi0PS6kYN9LHBYAE2;
+					invSwapPacket._sEYqjeelWD912mJ6sF5MhQRyISf = slotObjectData;
+					invSwapPacket._YnPcTOJB6UrXk2tL1AzY4w0ohpAA = satIHTodVDCbi0PS6kYN9LHBYAE2;
 					num = (int)(num2 * 1596770087) ^ -448550908;
 					continue;
 				case 10u:
-					qVbPZZRiBkqcm6oZy5pZrM4S8aD._YnPcTOJB6UrXk2tL1AzY4w0ohpAA = slotObjectData;
+					invSwapPacket._YnPcTOJB6UrXk2tL1AzY4w0ohpAA = slotObjectData;
 					num = (int)(num2 * 1419814212) ^ -2097462204;
 					continue;
 				case 1u:
@@ -1346,7 +1346,7 @@ internal class _I5hBdMHPSeVO0cbuEcAkM9I29MW
 	private bool _MTkqZ37d4ONVGDoas85KliOhxXk(ushort itemId)
 	{
 		//Discarded unreachable code: IL_00ac, IL_00ee, IL_0155, IL_0161, IL_01e6, IL_01fa, IL_0288, IL_02f5, IL_0437, IL_048b, IL_04db
-		_x0bFEWbxXdGdRfNpGQ1c34l1w5r x0bFEWbxXdGdRfNpGQ1c34l1w5r = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI._EOUVvVncv0meCCDQkGXOyUOLU5F(itemId);
+		_x0bFEWbxXdGdRfNpGQ1c34l1w5r x0bFEWbxXdGdRfNpGQ1c34l1w5r = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById(itemId);
 		byte _8vNcgGDuWbW1NeAU33KZ6cm2n7i = default(byte);
 		while (true)
 		{

@@ -108,7 +108,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				num = ((int)num2 * -1230663376) ^ -2096333964;
 				continue;
 			case 5u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ((_7ajM1beVeTpzgibjLSn3it6YeYb)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.ESCAPE));
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ((EscapePacket)Packet.CreatePacketFromType(PacketType.ESCAPE));
 				num = (int)(num2 * 1100234449) ^ -370973563;
 				continue;
 			case 4u:
@@ -124,7 +124,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 
 	private ReconnectPacket _9FdBRxYlILRHkGBLs3x2MgRM6()
 	{
-		ReconnectPacket reconnectPacket = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
+		ReconnectPacket reconnectPacket = (ReconnectPacket)Packet.CreatePacketFromType(PacketType.RECONNECT);
 		while (true)
 		{
 			int num = 547239233;
@@ -202,7 +202,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 	}
 
-	public void _cF9xoeWl31WrMWsesvaCUCXzbjb(_bmL6TDB9IBBbgxmfDQA1E9PL1ZM death)
+	public void _cF9xoeWl31WrMWsesvaCUCXzbjb(DeathPacket death)
 	{
 		Program.LogNetworkError("client", $"We died at {_fEgmKLJBX4eDyOg6a5xshzKbnJN} health, when nexusing at {Settings.Default.AutoNexusPercentageThreshold}% ({_wpv3L2x9SVwVG8oTXkB9xlrWfYf} hp)! {death}");
 	}
@@ -1036,7 +1036,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		}
 	}
 
-	public void _clpx4Sn1ScoFsLzGLg7gEAbKG8(_ax4JtQ0EqqnZh9Ml8sG7hZIwpN notification)
+	public void _clpx4Sn1ScoFsLzGLg7gEAbKG8(NotificationPacket notification)
 	{
 		//Discarded unreachable code: IL_0093, IL_00e2, IL_0141, IL_01a3, IL_01f2
 		if (notification._fn2CRnBpjyTWHR9K8SU4iOwhDtK != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
@@ -1202,12 +1202,12 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		goto IL_001b;
 	}
 
-	public void _G32brJa4jmWaZroFncLDOsAha5VA(_FJ4Ncdgp30LvdfcfBFMzemYCCeT aoe)
+	public void _G32brJa4jmWaZroFncLDOsAha5VA(AoEPacket aoe)
 	{
 		_Rjfm4PW3aMRNwsporG8wkl5wG5G.Add(new _Jb0feCILTkEl6pcg2T1V15k3pU9(aoe));
 	}
 
-	public void _f8Cv4bMnfjjwRWfQwllvwFZDPuI(_Gya6cTkZfLW7T3Mt937EMw3XUvC aoeAck)
+	public void _f8Cv4bMnfjjwRWfQwllvwFZDPuI(AoEAckPacket aoeAck)
 	{
 		if (_VczQDeMDvlxm06HSYLiD8FbT7qj)
 		{
@@ -1265,7 +1265,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 					default:
 						goto end_IL_005a;
 					case 0u:
-						objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(current._Rgo6h5q8HOGdwEcalhyNY8ouOAE);
+						objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ById(current._Rgo6h5q8HOGdwEcalhyNY8ouOAE);
 						num3 = ((int)num2 * -1758931004) ^ -654394973;
 						continue;
 					case 4u:
@@ -1398,7 +1398,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 		goto IL_0010;
 	}
 
-	public void _gHqtNcWyCVVFxHdmeuer3tJSw4p(_gPMJGxrLGVpRbk6vQWa2ycqHSqh playerHit)
+	public void _gHqtNcWyCVVFxHdmeuer3tJSw4p(PlayerHitPacket playerHit)
 	{
 		//Discarded unreachable code: IL_025f
 		if (_VczQDeMDvlxm06HSYLiD8FbT7qj)
@@ -1435,7 +1435,7 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 			case 3u:
 				goto IL_00b6;
 			case 13u:
-				text = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(_upSS8MT1MDBXesl0chZtogspZ0B[playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK]).Name;
+				text = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ById(_upSS8MT1MDBXesl0chZtogspZ0B[playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK]).Name;
 				num = (int)(num2 * 1724429531) ^ -248865415;
 				continue;
 			case 9u:
@@ -2127,8 +2127,8 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 
 	private void _20ZlLRRKR3DBHjWNv9JH1t5WaLt(int time, SlotObjectData slot, WorldPosData location)
 	{
-		_nV9aomeHIThwTmnJfuHyMX6d9RG nV9aomeHIThwTmnJfuHyMX6d9RG = (_nV9aomeHIThwTmnJfuHyMX6d9RG)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.USEITEM);
-		nV9aomeHIThwTmnJfuHyMX6d9RG._obJo3i4uC8yf7c2aS8NBvEttXTO = slot;
+		UseItemPacket useItemPacket = (UseItemPacket)Packet.CreatePacketFromType(PacketType.USEITEM);
+		useItemPacket._obJo3i4uC8yf7c2aS8NBvEttXTO = slot;
 		while (true)
 		{
 			int num = 2116146147;
@@ -2142,13 +2142,13 @@ internal class _rty1IcsHvwfrnvmDiqvQx9pilH
 				default:
 					return;
 				case 1u:
-					nV9aomeHIThwTmnJfuHyMX6d9RG._IBSqBdwNTiXSzhZbDhEFMC0Gc51 = time;
-					nV9aomeHIThwTmnJfuHyMX6d9RG._hik7MnmCWLUNupBgHpKPyvAspMh = location;
+					useItemPacket._IBSqBdwNTiXSzhZbDhEFMC0Gc51 = time;
+					useItemPacket._hik7MnmCWLUNupBgHpKPyvAspMh = location;
 					num = (int)((num2 * 53575751) ^ 0x7B3B4F8A);
 					continue;
 				case 3u:
-					nV9aomeHIThwTmnJfuHyMX6d9RG._if0d81H88w2JolCC4orFfcsIICeA = (byte)((slot._SlotId < 1000000) ? 1u : 0u);
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(nV9aomeHIThwTmnJfuHyMX6d9RG);
+					useItemPacket._if0d81H88w2JolCC4orFfcsIICeA = (byte)((slot._SlotId < 1000000) ? 1u : 0u);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(useItemPacket);
 					num = 719896622;
 					continue;
 				case 0u:

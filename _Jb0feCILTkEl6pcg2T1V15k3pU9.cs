@@ -10,7 +10,7 @@ internal class _Jb0feCILTkEl6pcg2T1V15k3pU9
 
 	public readonly bool _l0mdLwT0Lqvn0oV26TZ8wa7mjTf;
 
-	public _Jb0feCILTkEl6pcg2T1V15k3pU9(_FJ4Ncdgp30LvdfcfBFMzemYCCeT aoe)
+	public _Jb0feCILTkEl6pcg2T1V15k3pU9(AoEPacket aoe)
 	{
 		while (true)
 		{

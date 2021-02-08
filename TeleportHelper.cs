@@ -34,7 +34,7 @@ internal class TeleportHelper
 		PlayerData jI4Bueou7dItYp5S7QML5vyC6Rc2 = default(PlayerData);
 		double num14 = default(double);
 		PlayerData current2 = default(PlayerData);
-		_gXkgDctfNPN0Xyz8qvjQDIS73of gXkgDctfNPN0Xyz8qvjQDIS73of2 = default(_gXkgDctfNPN0Xyz8qvjQDIS73of);
+		TeleportPacket gXkgDctfNPN0Xyz8qvjQDIS73of2 = default(TeleportPacket);
 		ReconnectPacket reconnectPacket = default(ReconnectPacket);
 		string value = default(string);
 		string text = default(string);
@@ -312,7 +312,7 @@ internal class TeleportHelper
 								num17 = (int)(num2 * 1686821117) ^ -2054065793;
 								continue;
 							case 32u:
-								reconnectPacket = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
+								reconnectPacket = (ReconnectPacket)Packet.CreatePacketFromType(PacketType.RECONNECT);
 								num17 = ((int)num2 * -1436860093) ^ -1342146281;
 								continue;
 							case 22u:
@@ -353,7 +353,7 @@ internal class TeleportHelper
 								num17 = -2142874341;
 								continue;
 							case 6u:
-								gXkgDctfNPN0Xyz8qvjQDIS73of2 = (_gXkgDctfNPN0Xyz8qvjQDIS73of)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TELEPORT);
+								gXkgDctfNPN0Xyz8qvjQDIS73of2 = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
 								gXkgDctfNPN0Xyz8qvjQDIS73of2._fn2CRnBpjyTWHR9K8SU4iOwhDtK = jI4Bueou7dItYp5S7QML5vyC6Rc2._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 								num17 = (int)(num2 * 931766000) ^ -1673800875;
 								continue;
@@ -423,7 +423,7 @@ internal class TeleportHelper
 							{
 								int num28;
 								int num29;
-								if (_I7fsSHtlIjceZxLjj9RuBsOo13q._aCrqUtEobC4JELAJ9SKdNpyMHvF.TryGetValue(array[1].ToLower(), out value))
+								if (ServerList._aCrqUtEobC4JELAJ9SKdNpyMHvF.TryGetValue(array[1].ToLower(), out value))
 								{
 									num28 = -229036871;
 									num29 = num28;
@@ -584,7 +584,7 @@ internal class TeleportHelper
 				case 8u:
 				{
 					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to self!");
-					_gXkgDctfNPN0Xyz8qvjQDIS73of gXkgDctfNPN0Xyz8qvjQDIS73of3 = (_gXkgDctfNPN0Xyz8qvjQDIS73of)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TELEPORT);
+					TeleportPacket gXkgDctfNPN0Xyz8qvjQDIS73of3 = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
 					gXkgDctfNPN0Xyz8qvjQDIS73of3._fn2CRnBpjyTWHR9K8SU4iOwhDtK = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(gXkgDctfNPN0Xyz8qvjQDIS73of3);
 					num = ((int)num2 * -247600723) ^ -171822290;
@@ -676,9 +676,9 @@ internal class TeleportHelper
 								case 1u:
 								{
 									_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to " + current._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
-									_gXkgDctfNPN0Xyz8qvjQDIS73of gXkgDctfNPN0Xyz8qvjQDIS73of = (_gXkgDctfNPN0Xyz8qvjQDIS73of)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TELEPORT);
-									gXkgDctfNPN0Xyz8qvjQDIS73of._fn2CRnBpjyTWHR9K8SU4iOwhDtK = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
-									_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(gXkgDctfNPN0Xyz8qvjQDIS73of);
+									TeleportPacket teleportPacket = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
+									teleportPacket._fn2CRnBpjyTWHR9K8SU4iOwhDtK = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+									_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(teleportPacket);
 									num3 = (int)((num2 * 2016917650) ^ 0x3A7C32A1);
 									continue;
 								}

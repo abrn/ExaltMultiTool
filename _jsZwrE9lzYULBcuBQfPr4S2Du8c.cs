@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 {
-	public _8syfAqvj4kYi6KUbWf82OVQIauP _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
+	public ActivationTypeEnum _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
 
 	public int _Qh0BQXXjPEcRT8iSpFFQRoYAmun;
 
@@ -69,7 +69,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 				{
 					int num7;
 					int num8;
-					if (!Enum.TryParse<_8syfAqvj4kYi6KUbWf82OVQIauP>(activate.Value, out _WL2DOBxBuX9DARzf2KPoaJbgZiCb))
+					if (!Enum.TryParse<ActivationTypeEnum>(activate.Value, out _WL2DOBxBuX9DARzf2KPoaJbgZiCb))
 					{
 						num7 = 384404279;
 						num8 = num7;

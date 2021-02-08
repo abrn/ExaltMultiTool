@@ -321,7 +321,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					continue;
 				case 5u:
 					key = Client._fvjeDdCWCcAa9Yq1lOCAy0ktNXt(bytes);
-					ourReconnect = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
+					ourReconnect = (ReconnectPacket)Packet.CreatePacketFromType(PacketType.RECONNECT);
 					num = ((int)num2 * -1850591630) ^ -1298746286;
 					continue;
 				case 8u:
@@ -367,7 +367,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					num = (int)((num2 * 2141346971) ^ 0x316C309C);
 					continue;
 				case 3u:
-					reconnectPacket = (ReconnectPacket)Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.RECONNECT);
+					reconnectPacket = (ReconnectPacket)Packet.CreatePacketFromType(PacketType.RECONNECT);
 					num = (int)(num2 * 126422092) ^ -2068186299;
 					continue;
 				case 2u:

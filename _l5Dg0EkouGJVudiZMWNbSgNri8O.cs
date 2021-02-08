@@ -159,7 +159,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 		}
 	}
 
-	public void _C3mvDTxTLKOCwcaeO4BKeVV1ydo(_otmBPkCCbVZt6dt6wbk58Y1ZM4x damage)
+	public void _C3mvDTxTLKOCwcaeO4BKeVV1ydo(DamagePacket damage)
 	{
 		//Discarded unreachable code: IL_003b
 		if (!Settings.Default.BlockDamageNumbers)

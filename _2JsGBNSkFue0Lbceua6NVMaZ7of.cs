@@ -48,7 +48,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 
 	public void _DT5vfLbxw23gMixKpQ7yxEiQkEe(MapInfoPacket mapInfo)
 	{
-		_qHZZzoli0IgcIAn5PLmFGLabsyC = mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk;
+		_qHZZzoli0IgcIAn5PLmFGLabsyC = mapInfo._Width;
 		KeyValuePair<int, Dictionary<int, Projectile>> current = default(KeyValuePair<int, Dictionary<int, Projectile>>);
 		while (true)
 		{
@@ -62,11 +62,11 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					break;
 				case 1u:
 					_50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA = mapInfo._MapName;
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf = new MapStructure[mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk * mapInfo._CmwC8GuQ56hi7QXOmmQpFukQ49j];
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf = new MapStructure[mapInfo._Width * mapInfo._Height];
 					num = ((int)num2 * -65262235) ^ -1695567190;
 					continue;
 				case 3u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._wfbcaMLbXqoFK8XA49K6agBsnJ2 = mapInfo._CmwC8GuQ56hi7QXOmmQpFukQ49j;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._wfbcaMLbXqoFK8XA49K6agBsnJ2 = mapInfo._Height;
 					num = ((int)num2 * -64165182) ^ 0x605D2948;
 					continue;
 				case 0u:
@@ -75,7 +75,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					num = (int)(num2 * 2096364102) ^ -741491552;
 					continue;
 				case 6u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._cxb8gnBAB0y1aqWJdLdNoIeqOI0 = mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PositionX = mapInfo._Width;
 					num = ((int)num2 * -790648029) ^ 0x1DBFBC51;
 					continue;
 				case 5u:
@@ -236,7 +236,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 13u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf[tileObject._PositionX * _qHZZzoli0IgcIAn5PLmFGLabsyC + tileObject._PositionY] = new MapStructure(ResourceDownloader._2CIHnoEa49dfPXyqt9nkkBlUcQf._EOUVvVncv0meCCDQkGXOyUOLU5F(tileObject._TileType), tileObject._PositionX, tileObject._PositionY, tileObject._TileType);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._2CIHnoEa49dfPXyqt9nkkBlUcQf[tileObject._PositionX * _qHZZzoli0IgcIAn5PLmFGLabsyC + tileObject._PositionY] = new MapStructure(ResourceDownloader.GetTile.ById(tileObject._TileType), tileObject._PositionX, tileObject._PositionY, tileObject._TileType);
 					num2 = (int)(num4 * 2016845451) ^ -1538371851;
 					continue;
 				case 12u:
@@ -956,7 +956,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		}
 	}
 
-	public void _D9IW2BuNJJegmeKKBdYfjD1lrHd(_3x8iFljfoYzeYeVnM3YLGbk4Cbc enemyShoot)
+	public void _D9IW2BuNJJegmeKKBdYfjD1lrHd(EnemyShootPacket enemyShoot)
 	{
 		//Discarded unreachable code: IL_00d8, IL_0213, IL_02a6
 		if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(enemyShoot._qL8Qk0RJEu4lcCGcJpKfz1Fn8tb))
@@ -1152,7 +1152,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		goto IL_0020;
 	}
 
-	public void _n0JAIElTXMoPeH6KBaRBdWaaWov(_lRcj7b0Xq67vwsbjqopaQvHrEiC invResult)
+	public void _n0JAIElTXMoPeH6KBaRBdWaaWov(InvResultPacket invResult)
 	{
 		//Discarded unreachable code: IL_0122, IL_02ae, IL_03fb
 		_h01g85taqEzEcEAUdKYKgvZNupF(invResult._sEYqjeelWD912mJ6sF5MhQRyISf);
@@ -1584,7 +1584,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		goto IL_0015;
 	}
 
-	public void _taxEBWytYWTbIPVQiT7CFc8K58q(_nV9aomeHIThwTmnJfuHyMX6d9RG useItem)
+	public void _taxEBWytYWTbIPVQiT7CFc8K58q(UseItemPacket useItem)
 	{
 		if (!useItem._Send)
 		{
@@ -1648,9 +1648,9 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 		}
 	}
 
-	public void _YuIoQqglfhTOjnYm6YzkponW9HF(_5mDELbdDeeFjmQtnCFiDaCPaAqz invDrop)
+	public void _YuIoQqglfhTOjnYm6YzkponW9HF(InvDropPacket invDrop)
 	{
-		if (invDrop._GPJ1Yp8tCEXEoq8RmZNbc43WC7C._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+		if (invDrop._SlotObject._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			return;
 		}
@@ -1670,7 +1670,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				{
 					int num3;
 					int num4;
-					if (invDrop._GPJ1Yp8tCEXEoq8RmZNbc43WC7C._SlotId >= 1000000)
+					if (invDrop._SlotObject._SlotId >= 1000000)
 					{
 						num3 = 571265783;
 						num4 = num3;
@@ -1684,7 +1684,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				}
 				case 0u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invDrop._GPJ1Yp8tCEXEoq8RmZNbc43WC7C._SlotId - 1000000].Quantity--;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[invDrop._SlotObject._SlotId - 1000000].Quantity--;
 					num = ((int)num2 * -65986427) ^ -436039163;
 					continue;
 				case 1u:

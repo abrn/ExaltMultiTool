@@ -28,20 +28,20 @@ internal class Packet {
 		w.Write(_PacketBytes);
 	}
 
-	public static Packet _dEXwEtTmoE7bx8WSEboFALz7jek(PacketType type)
+	public static Packet CreatePacketFromType(PacketType type)
 	{
 		PacketStructure packetStructure =
-			ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB._CIP8YWjFYfHaxjiqS7kJqwxkotm(type.ToString());
+			ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB.ByName(type.ToString());
 		Packet obj = (Packet) Activator.CreateInstance(packetStructure._bjQd3Vpt6RdoySpzKxn7K2gQGoM);
 		obj.ID = packetStructure._QjKHGXZ7ohXwrDQImauPaSixsVg;
 		return obj;
 	}
 
-	public static _0001 _dEXwEtTmoE7bx8WSEboFALz7jek<_0001>(PacketType type)
+	public static _0001 CreatePacketFromType<_0001>(PacketType type)
 	{
 		Packet obj = (Packet) Activator.CreateInstance(typeof(_0001));
 		obj.ID = ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB
-			._CIP8YWjFYfHaxjiqS7kJqwxkotm(type.ToString())._QjKHGXZ7ohXwrDQImauPaSixsVg;
+			.ByName(type.ToString())._QjKHGXZ7ohXwrDQImauPaSixsVg;
 		return (_0001) Convert.ChangeType(obj, typeof(_0001));
 	}
 
@@ -50,7 +50,7 @@ internal class Packet {
 		return (_0001) Convert.ChangeType(this, typeof(_0001));
 	}
 
-	public static Packet _dEXwEtTmoE7bx8WSEboFALz7jek(byte[] data)
+	public static Packet CreatePacketFromType(byte[] data)
 	{
 		PacketReader packetReader = new PacketReader(new MemoryStream(data));
 		try {
@@ -72,7 +72,7 @@ internal class Packet {
 							break;
 						case 1u:
 							packetStructure = ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB
-								._EOUVvVncv0meCCDQkGXOyUOLU5F(b);
+								.ById(b);
 							num = (int) (num2 * 1863705160) ^ -398980535;
 							continue;
 						case 7u:
@@ -362,7 +362,7 @@ internal class Packet {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.Append(pType.ToString() + " [" +
 		                     ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB
-			                     ._CIP8YWjFYfHaxjiqS7kJqwxkotm(pType.ToString())
+			                     .ByName(pType.ToString())
 			                     ._QjKHGXZ7ohXwrDQImauPaSixsVg + "] \nPacket Structure:\n{");
 		FieldInfo[] array = fields;
 		int num3 = default(int);

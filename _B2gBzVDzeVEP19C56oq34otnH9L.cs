@@ -27,9 +27,9 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 
 	public string _KOjHORhb43q8y4PiIIYbFjhd5NP;
 
-	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
+	public string _Description;
 
-	public string _MnmGYCb8dvGB8oUd7qbruz9VBWQ;
+	public string _Requirements;
 
 	public string _OH2RdAEJ3JzMCfcZT4EwnMQdhhx;
 
@@ -37,7 +37,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 
 	public int[] _tktbhaXMSz2sxAqeBLRBEVG9ZI6;
 
-	public bool _O0kV7ezc95P6PJbVG8sd3mF9G0v;
+	public bool _Completed;
 
 	public bool _bDriXxQ9hSMQTkTDJrI4sxl4Izo;
 
@@ -54,8 +54,8 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 	public _B2gBzVDzeVEP19C56oq34otnH9L(PacketReader r)
 	{
 		_KOjHORhb43q8y4PiIIYbFjhd5NP = r.ReadString();
-		_WL2DOBxBuX9DARzf2KPoaJbgZiCb = r.ReadString();
-		_MnmGYCb8dvGB8oUd7qbruz9VBWQ = r.ReadString();
+		_Description = r.ReadString();
+		_Requirements = r.ReadString();
 		_OH2RdAEJ3JzMCfcZT4EwnMQdhhx = r.ReadString();
 		_RVUfzbRunbPBz524BtXZWSS7n1P = r.ReadInt32();
 		_RdTnBIaKd4ABhDrGYB7oNqHgxoZ = r.ReadInt32();
@@ -69,7 +69,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 		{
 			_tktbhaXMSz2sxAqeBLRBEVG9ZI6[j] = r.ReadInt32();
 		}
-		_O0kV7ezc95P6PJbVG8sd3mF9G0v = r.ReadBoolean();
+		_Completed = r.ReadBoolean();
 		_bDriXxQ9hSMQTkTDJrI4sxl4Izo = r.ReadBoolean();
 		_EkEBwRh2h871CbDHcJyGJZ8hqPk = r.ReadBoolean();
 	}
@@ -107,8 +107,8 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 					num = (int)(num2 * 671811585) ^ -1812700938;
 					continue;
 				case 9u:
-					_WL2DOBxBuX9DARzf2KPoaJbgZiCb = r.ReadString();
-					_MnmGYCb8dvGB8oUd7qbruz9VBWQ = r.ReadString();
+					_Description = r.ReadString();
+					_Requirements = r.ReadString();
 					num = ((int)num2 * -314437507) ^ 0x104343C9;
 					continue;
 				case 11u:
@@ -120,7 +120,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 					num = ((int)num2 * -1446170012) ^ 0x5A1C2A78;
 					continue;
 				case 3u:
-					_O0kV7ezc95P6PJbVG8sd3mF9G0v = r.ReadBoolean();
+					_Completed = r.ReadBoolean();
 					num = ((int)num2 * -601183020) ^ -554591109;
 					continue;
 				case 6u:
@@ -220,7 +220,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 					num = (int)((num2 * 1153127061) ^ 0x25AE9149);
 					continue;
 				case 0u:
-					w.Write(_MnmGYCb8dvGB8oUd7qbruz9VBWQ);
+					w.Write(_Requirements);
 					w.Write(_OH2RdAEJ3JzMCfcZT4EwnMQdhhx);
 					num = (int)(num2 * 235815682) ^ -1810458855;
 					continue;
@@ -229,7 +229,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 					num = ((int)num2 * -1328998515) ^ 0x3BAAA027;
 					continue;
 				case 18u:
-					w.Write(_O0kV7ezc95P6PJbVG8sd3mF9G0v);
+					w.Write(_Completed);
 					w.Write(_bDriXxQ9hSMQTkTDJrI4sxl4Izo);
 					w.Write(_EkEBwRh2h871CbDHcJyGJZ8hqPk);
 					num = (int)(num2 * 1645388434) ^ -324489947;
@@ -279,7 +279,7 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 					num = ((int)num2 * -773443965) ^ 0x130DC855;
 					continue;
 				case 3u:
-					w.Write(_WL2DOBxBuX9DARzf2KPoaJbgZiCb);
+					w.Write(_Description);
 					num = (int)(num2 * 17834748) ^ -1378014736;
 					continue;
 				case 10u:
@@ -324,11 +324,11 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 		return new _B2gBzVDzeVEP19C56oq34otnH9L
 		{
 			_KOjHORhb43q8y4PiIIYbFjhd5NP = _KOjHORhb43q8y4PiIIYbFjhd5NP,
-			_WL2DOBxBuX9DARzf2KPoaJbgZiCb = _WL2DOBxBuX9DARzf2KPoaJbgZiCb,
-			_MnmGYCb8dvGB8oUd7qbruz9VBWQ = _MnmGYCb8dvGB8oUd7qbruz9VBWQ,
+			_Description = _Description,
+			_Requirements = _Requirements,
 			_E0W0Pyz3ZcZB2MfsOiCX7Avf6es = _E0W0Pyz3ZcZB2MfsOiCX7Avf6es,
 			_tktbhaXMSz2sxAqeBLRBEVG9ZI6 = _tktbhaXMSz2sxAqeBLRBEVG9ZI6,
-			_O0kV7ezc95P6PJbVG8sd3mF9G0v = _O0kV7ezc95P6PJbVG8sd3mF9G0v,
+			_Completed = _Completed,
 			_bDriXxQ9hSMQTkTDJrI4sxl4Izo = _bDriXxQ9hSMQTkTDJrI4sxl4Izo,
 			_RdTnBIaKd4ABhDrGYB7oNqHgxoZ = _RdTnBIaKd4ABhDrGYB7oNqHgxoZ,
 			_EkEBwRh2h871CbDHcJyGJZ8hqPk = _EkEBwRh2h871CbDHcJyGJZ8hqPk
@@ -343,11 +343,11 @@ internal class _B2gBzVDzeVEP19C56oq34otnH9L : ICloneable, IDataObject
 
 	public override string _SflzbyPcrkdh9uZXinsV7KrbBMw()
 	{
-		return string.Format("{{ Id={0}, Name={1}, Description={2}, Requirements={3}, Rewards={4}, Completed={5}, ItemOfChoice={6}, Category={7}, Repeatable={8} }}", _KOjHORhb43q8y4PiIIYbFjhd5NP, _WL2DOBxBuX9DARzf2KPoaJbgZiCb, _MnmGYCb8dvGB8oUd7qbruz9VBWQ, _E0W0Pyz3ZcZB2MfsOiCX7Avf6es.Select((int x) => x + " "), _tktbhaXMSz2sxAqeBLRBEVG9ZI6.Select((int x) => x + " "), _O0kV7ezc95P6PJbVG8sd3mF9G0v, _bDriXxQ9hSMQTkTDJrI4sxl4Izo, _RdTnBIaKd4ABhDrGYB7oNqHgxoZ, _EkEBwRh2h871CbDHcJyGJZ8hqPk);
+		return string.Format("{{ Id={0}, Name={1}, Description={2}, Requirements={3}, Rewards={4}, Completed={5}, ItemOfChoice={6}, Category={7}, Repeatable={8} }}", _KOjHORhb43q8y4PiIIYbFjhd5NP, _Description, _Requirements, _E0W0Pyz3ZcZB2MfsOiCX7Avf6es.Select((int x) => x + " "), _tktbhaXMSz2sxAqeBLRBEVG9ZI6.Select((int x) => x + " "), _Completed, _bDriXxQ9hSMQTkTDJrI4sxl4Izo, _RdTnBIaKd4ABhDrGYB7oNqHgxoZ, _EkEBwRh2h871CbDHcJyGJZ8hqPk);
 	}
 
 	public string _UZGgz4bP7SMNERWpkWxMiSF1QFb()
 	{
-		return "{ Name=" + _WL2DOBxBuX9DARzf2KPoaJbgZiCb + ", Id=" + _KOjHORhb43q8y4PiIIYbFjhd5NP + " }";
+		return "{ Name=" + _Description + ", Id=" + _KOjHORhb43q8y4PiIIYbFjhd5NP + " }";
 	}
 }

@@ -187,7 +187,7 @@ internal class AntiDebuff
 		_tnzATORRz69PD9QNslfqhszFO2M = Environment.TickCount;
 	}
 
-	public void _G32brJa4jmWaZroFncLDOsAha5VA(_FJ4Ncdgp30LvdfcfBFMzemYCCeT aoe)
+	public void _G32brJa4jmWaZroFncLDOsAha5VA(AoEPacket aoe)
 	{
 		if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(aoe._hZZqGJ97TiaLFTbiTFhvTTSGkIb) <= (double)(aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC * aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC)))
 		{
@@ -218,7 +218,7 @@ internal class AntiDebuff
 		}
 	}
 
-	public void _gHqtNcWyCVVFxHdmeuer3tJSw4p(_gPMJGxrLGVpRbk6vQWa2ycqHSqh playerHit)
+	public void _gHqtNcWyCVVFxHdmeuer3tJSw4p(PlayerHitPacket playerHit)
 	{
 		//Discarded unreachable code: IL_00ea, IL_01c1, IL_0226, IL_0344, IL_035e, IL_03c9, IL_03e3, IL_03fd, IL_0479, IL_04b5, IL_04cf, IL_052b, IL_053e, IL_0593, IL_06a4
 		_yBlclxXVrFdHr9Rj4By8io5M4Bg = true;

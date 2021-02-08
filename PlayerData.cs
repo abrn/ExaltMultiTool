@@ -647,7 +647,7 @@ internal class PlayerData
 				case 14u:
 				{
 					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._Status._ObjectId;
-					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._EOUVvVncv0meCCDQkGXOyUOLU5F(_y2nCjecGeYsmqDEzaplcuBvYtN7);
+					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ById(_y2nCjecGeYsmqDEzaplcuBvYtN7);
 					int num3;
 					int num4;
 					if (objectStructure != null)

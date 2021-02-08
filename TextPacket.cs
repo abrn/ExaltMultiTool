@@ -111,7 +111,7 @@ internal class TextPacket : Packet {
 
 	public static TextPacket SendToPlayer(string sender, string message)
 	{
-		TextPacket obj = (TextPacket) Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TEXT);
+		TextPacket obj = (TextPacket) Packet.CreatePacketFromType(PacketType.TEXT);
 		obj._StarBackground = 0;
 		obj._Message = message;
 		obj._Name = (sender.StartsWith("#") ? sender : ("#" + sender));
@@ -124,7 +124,7 @@ internal class TextPacket : Packet {
 
 	public static TextPacket _AXNXHsenc7q4bGIXtJncJXAdxxW(string message)
 	{
-		TextPacket obj = (TextPacket) Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TEXT);
+		TextPacket obj = (TextPacket) Packet.CreatePacketFromType(PacketType.TEXT);
 		obj._StarBackground = 0;
 		obj._Message = message;
 		obj._Name = string.Empty;
@@ -137,7 +137,7 @@ internal class TextPacket : Packet {
 
 	public static TextPacket _cuj5TuKzQrJc4m81deq6Jyw3r0H(string name, string message)
 	{
-		TextPacket obj = (TextPacket) Packet._dEXwEtTmoE7bx8WSEboFALz7jek(PacketType.TEXT);
+		TextPacket obj = (TextPacket) Packet.CreatePacketFromType(PacketType.TEXT);
 		obj._StarBackground = 0;
 		obj._Message = message;
 		obj._Name = name;

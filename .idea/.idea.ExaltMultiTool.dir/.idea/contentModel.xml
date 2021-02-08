@@ -6,130 +6,82 @@
     <e p="C:\Users\admin\Documents\Reverse Engineering\ExaltMultiTool" t="IncludeRecursive">
       <e p=".gitattributes" t="Include" />
       <e p="_0e95pRmOma7jMYcnTtJbSNEfZnr.cs" t="Include" />
-      <e p="_0pKus8qT7dJs8MOfxxX028Sucbf.cs" t="Include" />
-      <e p="_0pKus8qT7dJs8MOfxxX028Sucbf.resx" t="Include" />
-      <e p="_1i3D8fWZ5ibv7FUpZPXBpTJjvLU.cs" t="Include" />
       <e p="_2JsGBNSkFue0Lbceua6NVMaZ7of.cs" t="Include" />
       <e p="_2ps8kFLJTvG4bg5idZlm5pGiQry.cs" t="Include" />
-      <e p="_3OZHAhKHKj0OoPCRW4X7EdepzNS.cs" t="Include" />
-      <e p="_3UhdqvdbZ0ParS6o6piDivI6gFl.cs" t="Include" />
-      <e p="_3vb6jdMAI07TtNEfUPsbt6RSdTk.cs" t="Include" />
-      <e p="_3x8iFljfoYzeYeVnM3YLGbk4Cbc.cs" t="Include" />
-      <e p="_43cOn6b6nvUWFQb5wNCxMz6wXbD.cs" t="Include" />
-      <e p="_4SeamfzzWB0Ely1wlNoHQjn94po.cs" t="Include" />
-      <e p="_5097dNG31hfxaENwC9LeZFiVozC.cs" t="Include" />
       <e p="_5gQBYpWvIJQibBR6ggclQe9CpXV.cs" t="Include" />
-      <e p="_5mDELbdDeeFjmQtnCFiDaCPaAqz.cs" t="Include" />
-      <e p="_5QBmCSMkQME7fyiMBXRW7PfXsIu.cs" t="Include" />
       <e p="_6JrSSEICcB5DlepJsu6PpCDtaIU.cs" t="Include" />
-      <e p="_6pKdmCCsY94cj5aeuO02vIF8pTF.cs" t="Include" />
-      <e p="_76D4MgT624TxbKujMwaeOkBn7RI.cs" t="Include" />
-      <e p="_7ajM1beVeTpzgibjLSn3it6YeYb.cs" t="Include" />
-      <e p="_80QarZkxoVBlmdnzXFe8DJ7grmH.cs" t="Include" />
-      <e p="_8syfAqvj4kYi6KUbWf82OVQIauP.cs" t="Include" />
       <e p="_8vcCdQzyiEUGXVGWnBgKqW9wtPj.cs" t="Include" />
-      <e p="_A7ysKB2QYbIeDv1Ii3aLFW50gh.cs" t="Include" />
       <e p="_aRa8l3GoOtWAxr3fiZXNh135ASk.cs" t="Include" />
-      <e p="_ax4JtQ0EqqnZh9Ml8sG7hZIwpN.cs" t="Include" />
       <e p="_B2gBzVDzeVEP19C56oq34otnH9L.cs" t="Include" />
-      <e p="_BgwbWVhMCpHt4Qye5k0QE7YYIqx.cs" t="Include" />
-      <e p="_bmL6TDB9IBBbgxmfDQA1E9PL1ZM.cs" t="Include" />
-      <e p="_bvW9B9nQePjvuk6nYxFBG5wA5YB.cs" t="Include" />
-      <e p="_CAO3ZYuiib9sruNv9k80V5ZaZ9k.cs" t="Include" />
-      <e p="_CoMLfxKgxJ2cGaQD6nYof8rIfe.cs" t="Include" />
-      <e p="_cpMJfKWZu6xGTZNnjZcUQuYV0gC.cs" t="Include" />
-      <e p="_CppOE2NkBb90oUwZ4SALWD8aVuk.cs" t="Include" />
-      <e p="_d8eZzs6iSi8EpCpVp4Dp8KfBQ8m.cs" t="Include" />
-      <e p="_DJYMvdNvmgERnWgfcUW8wYZDzjE.cs" t="Include" />
-      <e p="_dPrfWu73gpRoGZKabrRKV7ZZrCs.cs" t="Include" />
-      <e p="_DukbXkosFIGhdR1wOpjdGHKkONz.cs" t="Include" />
-      <e p="_DXIZr3yz8ZmAVeVR5qgHl9rpPNc.cs" t="Include" />
-      <e p="_dzwN9CIamZnvbdL3z641RrSFHqS.cs" t="Include" />
-      <e p="_Ei0fPtn6JWoKWbA8iIaFZ2Od9Ff.cs" t="Include" />
-      <e p="_eMpR71HFJXgI74M89kodrRpV5fA.cs" t="Include" />
-      <e p="_EyEIiDlY0pK32dI0h0r89QhtSab.cs" t="Include" />
-      <e p="_f3qpQzCY0N0Jz5kd9DSZHQj0ZJG.cs" t="Include" />
-      <e p="_FJ4Ncdgp30LvdfcfBFMzemYCCeT.cs" t="Include" />
       <e p="_FS6jMJJePXheZSSgdbcle1Cf3eK.cs" t="Include" />
       <e p="_FS6jMJJePXheZSSgdbcle1Cf3eK.resx" t="Include" />
-      <e p="_fUPdRVGlY66uCJkAXdtcnDQC5Au.cs" t="Include" />
-      <e p="_GdzETLvTw9bGTlzsf1Fd1F5pC9d.cs" t="Include" />
-      <e p="_ghXR5d4B0MeXoLdmxvlpWeEF3en.cs" t="Include" />
-      <e p="_gPMJGxrLGVpRbk6vQWa2ycqHSqh.cs" t="Include" />
-      <e p="_GpNYhJMkwVEdQGpCkwKndWv8Hiq.cs" t="Include" />
-      <e p="_gXkgDctfNPN0Xyz8qvjQDIS73of.cs" t="Include" />
-      <e p="_Gya6cTkZfLW7T3Mt937EMw3XUvC.cs" t="Include" />
-      <e p="_hF9G82JXqyMZ02zIeBTZbpDSUUA.cs" t="Include" />
-      <e p="_hGYadtqaPivfBQqN2hayNDq4l5db.cs" t="Include" />
-      <e p="_HwRk63fatp6UhX41GLENvQv4eDg.cs" t="Include" />
-      <e p="_I0k8LlNrHcobPZgcddPkFUAfaETA.cs" t="Include" />
       <e p="_I5hBdMHPSeVO0cbuEcAkM9I29MW.cs" t="Include" />
-      <e p="_I7fsSHtlIjceZxLjj9RuBsOo13q.cs" t="Include" />
-      <e p="_iO9cPCbc7u8xRXQKm8nIc1hEPrQ.cs" t="Include" />
       <e p="_j6xsOu5VJyl0WxN7qnrwKDDPB3e.cs" t="Include" />
       <e p="_Jb0feCILTkEl6pcg2T1V15k3pU9.cs" t="Include" />
-      <e p="_jbmqShxEBPPIXvTSTGvAM41gDTF.cs" t="Include" />
       <e p="_jsZwrE9lzYULBcuBQfPr4S2Du8c.cs" t="Include" />
-      <e p="_JXJuLAo3EZBX032BaVb3SajyJPk.cs" t="Include" />
       <e p="_K3TiPWyBDUpgQKKDVFVeRQ0N4cX.cs" t="Include" />
       <e p="_K3TiPWyBDUpgQKKDVFVeRQ0N4cX.resx" t="Include" />
       <e p="_KcBslMXpDkB2TvFqzjAsEACA1kK.cs" t="Include" />
-      <e p="_KGw7UmnaW2UG2pY4rWmZNZTrFCh.cs" t="Include" />
-      <e p="_KuAFx9ZtyPqe1b4xuWI3WLidvhC.cs" t="Include" />
       <e p="_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" t="Include" />
-      <e p="_lavIZ7UmGrpPAaSK9eX1QKPGeTe.cs" t="Include" />
-      <e p="_lRcj7b0Xq67vwsbjqopaQvHrEiC.cs" t="Include" />
-      <e p="_lVzFq38Br1q8t9BOXaquxLXkDqj.cs" t="Include" />
-      <e p="_LXbCOycHP7zYgHhLep3p3g2tzNh.cs" t="Include" />
-      <e p="_mShB8QfJ4yUrwwrfkreflnUqkuX.cs" t="Include" />
-      <e p="_NB4byfVM5WCqUaucqm3d8XcmeGT.cs" t="Include" />
       <e p="_NenrIcvfEIiBFXCh64MfBebEG7f.cs" t="Include" />
       <e p="_NenrIcvfEIiBFXCh64MfBebEG7f.resx" t="Include" />
-      <e p="_nV9aomeHIThwTmnJfuHyMX6d9RG.cs" t="Include" />
       <e p="_NXJzFJyDncpkTIZ6UBdQLlK9DDb.cs" t="Include" />
-      <e p="_NybqihfxGL3K5KOsIo5UpOyuEVG.cs" t="Include" />
-      <e p="_otmBPkCCbVZt6dt6wbk58Y1ZM4x.cs" t="Include" />
-      <e p="_PfEm9LpbH0UtFkBYhxlnFtVFDQ2.cs" t="Include" />
-      <e p="_pIudz2LKGePom7A7L8fqnAJmXZz.cs" t="Include" />
-      <e p="_PUpefZ8WOU2tKcPbBOBoE74Yj5m.cs" t="Include" />
-      <e p="_qOkkFQURSjUBuDewhe5oRfO4jIX.cs" t="Include" />
-      <e p="_QVbPZZRiBkqcm6oZy5pZrM4S8aD.cs" t="Include" />
-      <e p="_qX9PHCvTgbFMgA9BBqqvecsdhWG.cs" t="Include" />
-      <e p="_qX9PHCvTgbFMgA9BBqqvecsdhWG.resx" t="Include" />
       <e p="_r81eyljcpx9fMtE3XUSUstNFtOI.cs" t="Include" />
       <e p="_rdMCw9C9LaemtQR2ZnzJk97z12o.cs" t="Include" />
-      <e p="_RfL7gcjreNufbtQkULpOnwcUPuo.cs" t="Include" />
-      <e p="_RfL7gcjreNufbtQkULpOnwcUPuo.resx" t="Include" />
       <e p="_RK8R6hn9ZKK2l39ATLncpeClPHq.cs" t="Include" />
       <e p="_rty1IcsHvwfrnvmDiqvQx9pilH.cs" t="Include" />
       <e p="_sXxBcxQJ5OZEM8d0AIMUAzcF8In.cs" t="Include" />
-      <e p="_T9CRlGl5cMye085x04E5GUP8aVo.cs" t="Include" />
-      <e p="_T9CRlGl5cMye085x04E5GUP8aVo.resx" t="Include" />
       <e p="_tAHBHched3PZoxIRth1tEToCLCz.cs" t="Include" />
       <e p="_VHWgt8pn9AXryODuVtLv9GmmHeH.cs" t="Include" />
       <e p="_x0bFEWbxXdGdRfNpGQ1c34l1w5r.cs" t="Include" />
       <e p="_X6f9REQnd8GedncwYfuKQX9BeNq.cs" t="Include" />
-      <e p="_XbmOucTFf2lAzR2snXyKdOr7FTJ.cs" t="Include" />
-      <e p="_Z6mcoysfA486zZohnfFHPPhvq04.cs" t="Include" />
       <e p="_zVFeZ2O0dLyAgYedMwD2SrzVOFB.cs" t="Include" />
+      <e p="AcceptArenaDeathPacket.cs" t="Include" />
       <e p="AcceptTradePacket.cs" t="Include" />
+      <e p="AccountListPacket.cs" t="Include" />
+      <e p="ActivationTypeEnum.cs" t="Include" />
+      <e p="ActivePetUpdatePacket.cs" t="Include" />
       <e p="AllyShootPacket.cs" t="Include" />
       <e p="AntiDebuff.cs" t="Include" />
+      <e p="AoEAckPacket.cs" t="Include" />
+      <e p="AoEPacket.cs" t="Include" />
       <e p="app.ico" t="Include" />
+      <e p="ArenaDeathPacket.cs" t="Include" />
+      <e p="AutoAbility.cs" t="Include" />
+      <e p="BagTypeEnum.cs" t="Include" />
+      <e p="BazaarTimer.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="BuyPacket.cs" t="Include" />
       <e p="BuyResultPacket.cs" t="Include" />
+      <e p="CancelTradePacket.cs" t="Include" />
       <e p="ChangeGuildRankPacket.cs" t="Include" />
       <e p="ChangeNameResultPacket.cs" t="Include" />
+      <e p="CheckCreditsPacket.cs" t="Include" />
       <e p="ChooseNamePacket.cs" t="Include" />
+      <e p="ClaimLoginRewardsPacket.cs" t="Include" />
+      <e p="ClassTypeEnum.cs" t="Include" />
       <e p="Client.cs" t="Include" />
+      <e p="ClientStatPacket.cs" t="Include" />
       <e p="ColorUtil.cs" t="Include" />
       <e p="CompressedInt.cs" t="Include" />
+      <e p="ConditionEffectEnum.cs" t="Include" />
       <e p="ConfusedByAttribute.cs" t="Include" />
+      <e p="ControlPanelForm.cs" t="Include" />
+      <e p="ControlPanelForm.resx" t="Include" />
+      <e p="CreateGuildPacket.cs" t="Include" />
       <e p="CreatePacket.cs" t="Include" />
+      <e p="CreateSuccessPacket.cs" t="Include" />
+      <e p="DamagePacket.cs" t="Include" />
+      <e p="DeathPacket.cs" t="Include" />
+      <e p="DebuffBitmaskEnum.cs" t="Include" />
+      <e p="DeletePetPacket.cs" t="Include" />
       <e p="EditAccountListPacket.cs" t="Include" />
       <e p="EffectDictionary.cs" t="Include" />
       <e p="EnemyHitPacket.cs" t="Include" />
+      <e p="EnemyShootPacket.cs" t="Include" />
+      <e p="EnterArenaPacket.cs" t="Include" />
       <e p="EquipTierEnum.cs" t="Include" />
+      <e p="EscapePacket.cs" t="Include" />
       <e p="EvolvePetPacket.cs" t="Include" />
       <e p="ExaltationRedeemPacket.cs" t="Include" />
       <e p="ExaltMultiTool" t="Include">
@@ -164,45 +116,87 @@
         <e p="Settings.cs" t="Include" />
       </e>
       <e p="ExaltMultiTool.csproj" t="IncludeRecursive" />
+      <e p="FailurePacket.cs" t="Include" />
       <e p="FilePacket.cs" t="Include" />
+      <e p="ForgeDismantleResponsePacket.cs" t="Include" />
       <e p="GameObject.cs" t="Include" />
       <e p="GlobalNotificationPacket.cs" t="Include" />
+      <e p="GotoAckPacket.cs" t="Include" />
       <e p="GotoPacket.cs" t="Include" />
       <e p="GroundDamagePacket.cs" t="Include" />
       <e p="GuildInvitePacket.cs" t="Include" />
       <e p="GuildInviteRequestPacket.cs" t="Include" />
       <e p="GuildRemovePacket.cs" t="Include" />
+      <e p="GuildResultPacket.cs" t="Include" />
+      <e p="HatchPetPacket.cs" t="Include" />
       <e p="HelloPacket.cs" t="Include" />
       <e p="IDataObject.cs" t="Include" />
       <e p="IDataStructure.cs" t="Include" />
+      <e p="IgnoreEnemiesForm.cs" t="Include" />
+      <e p="IgnoreEnemiesForm.resx" t="Include" />
+      <e p="ImminentArenaWavePacket.cs" t="Include" />
       <e p="InjectionHelper.cs" t="Include" />
+      <e p="InstructionsForm.cs" t="Include" />
+      <e p="InstructionsForm.resx" t="Include" />
+      <e p="InvDropPacket.cs" t="Include" />
+      <e p="InvResultPacket.cs" t="Include" />
+      <e p="InvSwapPacket.cs" t="Include" />
+      <e p="JoinGuildPacket.cs" t="Include" />
       <e p="KeyInfoPacket.cs" t="Include" />
       <e p="KeyInfoResponsePacket.cs" t="Include" />
       <e p="LoadPacket.cs" t="Include" />
       <e p="LocalProxy.cs" t="Include" />
+      <e p="LoginRewardMessagePacket.cs" t="Include" />
+      <e p="LootBagTypeEnum.cs" t="Include" />
+      <e p="LostHallsHelper.cs" t="Include" />
       <e p="MainForm.cs" t="Include" />
       <e p="MainForm.resx" t="Include" />
+      <e p="MapHack.cs" t="Include" />
       <e p="MapStructure.cs" t="Include" />
       <e p="MovePacket.cs" t="Include" />
+      <e p="NewAbilityPacket.cs" t="Include" />
       <e p="NewCharacterInfoPacket.cs" t="Include" />
+      <e p="NotificationPacket.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="OryxHelper.cs" t="Include" />
+      <e p="OtherHitPacket.cs" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PacketStructure.cs" t="Include" />
       <e p="PasswordPromptPacket.cs" t="Include" />
+      <e p="PetChangeFormPacket.cs" t="Include" />
       <e p="PetChangeResultPacket.cs" t="Include" />
       <e p="PetUpgradePacket.cs" t="Include" />
+      <e p="PicPacket.cs" t="Include" />
+      <e p="PingPacket.cs" t="Include" />
       <e p="PlayerData.cs" t="Include" />
+      <e p="PlayerHitPacket.cs" t="Include" />
+      <e p="PlayerShootPacket.cs" t="Include" />
+      <e p="PlaySoundPacket.cs" t="Include" />
+      <e p="PongPacket.cs" t="Include" />
       <e p="ProcessInjection.cs" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
       </e>
       <e p="QuestFetchAskPacket.cs" t="Include" />
+      <e p="QuestFetchResponsePacket.cs" t="Include" />
+      <e p="QuestRedeemPacket.cs" t="Include" />
       <e p="QuestRedeemResponsePacket.cs" t="Include" />
       <e p="QuestRoomMessagePacket.cs" t="Include" />
+      <e p="QueueCancelPacket.cs" t="Include" />
+      <e p="QueueInfoPacket.cs" t="Include" />
+      <e p="RealmHeroesLeftPacket.cs" t="Include" />
+      <e p="RequestTradePacket.cs" t="Include" />
+      <e p="ResetDailyQuestsPacket.cs" t="Include" />
+      <e p="ReskinPacket.cs" t="Include" />
+      <e p="ReskinUnlockPacket.cs" t="Include" />
       <e p="ResourceDownloader.cs" t="Include" />
+      <e p="Resources.cs" t="Include" />
+      <e p="Resources.resx" t="Include" />
+      <e p="SafeWalk.cs" t="Include" />
+      <e p="ServerList.cs" t="Include" />
       <e p="ServerPlayerShootPacket.cs" t="Include" />
+      <e p="SetConditionPacket.cs" t="Include" />
       <e p="ShootAckPacket.cs" t="Include" />
       <e p="ShowEffectPacket.cs" t="Include" />
       <e p="SlotObjectData.cs" t="Include" />
@@ -213,17 +207,23 @@
       <e p="StatType.cs" t="Include" />
       <e p="Status.cs" t="Include" />
       <e p="TeleportHelper.cs" t="Include" />
+      <e p="TeleportPacket.cs" t="Include" />
       <e p="TextPacket.cs" t="Include" />
       <e p="TileObject.cs" t="Include" />
       <e p="TradeAcceptedPacket.cs" t="Include" />
+      <e p="TradeChangedPacket.cs" t="Include" />
       <e p="TradeChangePacket.cs" t="Include" />
       <e p="TradeDonePacket.cs" t="Include" />
       <e p="TradeRequestedPacket.cs" t="Include" />
       <e p="TradeStartPacket.cs" t="Include" />
+      <e p="Unknown120Packet.cs" t="Include" />
       <e p="UnlockInfoPacket.cs" t="Include" />
+      <e p="UpdateAckPacket.cs" t="Include" />
       <e p="UpdatePetPacket.cs" t="Include" />
       <e p="UpgradePetYardPacket.cs" t="Include" />
+      <e p="UseItemPacket.cs" t="Include" />
       <e p="UsePortalPacket.cs" t="Include" />
+      <e p="VaultUpdatePacket.cs" t="Include" />
       <e p="VerifyEmailPacket.cs" t="Include" />
       <e p="WorldPosData.cs" t="Include" />
     </e>

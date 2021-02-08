@@ -618,7 +618,7 @@ internal class _K3TiPWyBDUpgQKKDVFVeRQ0N4cX : UserControl
 
 	private void _xjyxmIkjHBxDBbM4WaAcRRUdRQo(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		new _RfL7gcjreNufbtQkULpOnwcUPuo().ShowDialog();
+		new IgnoreEnemiesForm().ShowDialog();
 	}
 
 	private void _RE4UT2FBLp2nMkNLhZTfwqKeesJ(object sender, LinkLabelLinkClickedEventArgs e)

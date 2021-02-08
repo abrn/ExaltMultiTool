@@ -67,7 +67,7 @@ internal class _VHWgt8pn9AXryODuVtLv9GmmHeH<_0001, _0002> where _0002 : class, I
 		}
 	}
 
-	public _0002 _EOUVvVncv0meCCDQkGXOyUOLU5F(_0001 id)
+	public _0002 ById(_0001 id)
 	{
 		//Discarded unreachable code: IL_0038
 		if (_oQlNWqxOoe5LqobGdGJlgo4YIsh.TryGetValue(id, out var value))
@@ -98,7 +98,7 @@ internal class _VHWgt8pn9AXryODuVtLv9GmmHeH<_0001, _0002> where _0002 : class, I
 		goto IL_0015;
 	}
 
-	public _0002 _CIP8YWjFYfHaxjiqS7kJqwxkotm(string name)
+	public _0002 ByName(string name)
 	{
 		//Discarded unreachable code: IL_008c
 		_0002 result = default(_0002);

@@ -57,7 +57,7 @@ internal class InjectionHelper {
 					}
 						IL_0189:
 						File.WriteAllBytes(_PyAy1AUj53IAIhfdIDSm8z1dUPT,
-							_T9CRlGl5cMye085x04E5GUP8aVo._mIXBok2E5zl0Quy2gqNPCgrVWCH);
+							Resources.ExaltKit);
 						while (true) {
 							int num5 = -496090244;
 							while (true) {
@@ -74,7 +74,7 @@ internal class InjectionHelper {
 								break;
 								IL_01ba:
 								File.WriteAllBytes(_cdyBaJMdzdveeFZzPT2GyKrT35Z,
-									_T9CRlGl5cMye085x04E5GUP8aVo._6A0Q900Ex3rHgl6AYIH0kUsKMVE);
+									Resources.ExaltKitLauncher);
 								num5 = (int) ((num2 * 2056268191) ^ 0xA2CE205);
 							}
 						}

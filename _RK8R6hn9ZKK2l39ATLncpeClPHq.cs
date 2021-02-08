@@ -125,7 +125,7 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 
 	public WorldPosData _f4rWT9AaWpLNyuW0essSbQ79ee = new WorldPosData();
 
-	public _CAO3ZYuiib9sruNv9k80V5ZaZ9k _yCu8vKGtBoetsRXBksObOZRUIWN;
+	public ClassTypeEnum _yCu8vKGtBoetsRXBksObOZRUIWN;
 
 	public _RK8R6hn9ZKK2l39ATLncpeClPHq(int ownerObjectId)
 	{
@@ -149,8 +149,8 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 						num = (int) (num2 * 864859043) ^ -773326333;
 						continue;
 					case 6u:
-						_cxb8gnBAB0y1aqWJdLdNoIeqOI0 = mapInfo._6HwO75kWNssUCje1MLwKd3pGXmk;
-						_wfbcaMLbXqoFK8XA49K6agBsnJ2 = mapInfo._CmwC8GuQ56hi7QXOmmQpFukQ49j;
+						_cxb8gnBAB0y1aqWJdLdNoIeqOI0 = mapInfo._Width;
+						_wfbcaMLbXqoFK8XA49K6agBsnJ2 = mapInfo._Height;
 						num = ((int) num2 * -1173241995) ^ -247255795;
 						continue;
 					case 1u:
@@ -162,7 +162,7 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 						num = ((int) num2 * -139633693) ^ -2048119159;
 						continue;
 					case 3u:
-						_F4GodCkEBWk3gekx200E2eKUC8z = mapInfo._skxAEPaJimueRO7GpeJbF0oo0pR;
+						_F4GodCkEBWk3gekx200E2eKUC8z = mapInfo._AllowTeleports;
 						num = ((int) num2 * -1233625526) ^ 0x2ED48C37;
 						continue;
 					case 2u:
@@ -1665,7 +1665,7 @@ internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 		goto IL_001a;
 	}
 
-	public bool _54I9l0Brvu0qDKoCtOG0paFkxQE(_DukbXkosFIGhdR1wOpjdGHKkONz effect)
+	public bool _54I9l0Brvu0qDKoCtOG0paFkxQE(DebuffBitmaskEnum effect)
 	{
 		return ((uint) _kvTyEminxJMM6fREzgqsVjHaInC & (uint) effect) != 0;
 	}
