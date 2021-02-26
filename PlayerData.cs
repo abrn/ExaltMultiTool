@@ -8,7 +8,7 @@ internal class PlayerData
 
 	public int _fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 
-	public WorldPosData _FLMczMOk4gNIJMbSsAnIDIvYlDP = WorldPosData.Initial;
+	public WorldPosData _Position = WorldPosData.Initial;
 
 	public WorldPosData _IlcbhoOIM3MRszn9mfn3IKjnXc0 = WorldPosData.Initial;
 
@@ -740,7 +740,7 @@ internal class PlayerData
 		IL_00b4:
 		int num;
 		int num2;
-		if (_FLMczMOk4gNIJMbSsAnIDIvYlDP != null)
+		if (_Position != null)
 		{
 			num = 1640521631;
 			num2 = num;
@@ -768,7 +768,7 @@ internal class PlayerData
 			{
 				int num6;
 				int num7;
-				if (_FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX != 0.0)
+				if (_Position._PositionX != 0.0)
 				{
 					num6 = 357745828;
 					num7 = num6;
@@ -787,7 +787,7 @@ internal class PlayerData
 				num = ((int)num3 * -1406304647) ^ 0x5E5A313C;
 				continue;
 			case 1u:
-				_FLMczMOk4gNIJMbSsAnIDIvYlDP = (WorldPosData)status._Position.Clone();
+				_Position = (WorldPosData)status._Position.Clone();
 				num = 2124221530;
 				continue;
 			default:
@@ -1653,41 +1653,19 @@ internal class PlayerData
 
 	public void _eSz0iOUBXwTpn30BSOBJreajpHr(float x, float y)
 	{
-		_FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX = x;
-		while (true)
-		{
-			int num = 493451936;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0x69273ADFu) % 3u)
-				{
-				case 2u:
-					break;
-				default:
-					return;
-				case 1u:
-					goto IL_002f;
-				case 0u:
-					return;
-				}
-				break;
-				IL_002f:
-				_FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY = y;
-				num = ((int)num2 * -1242681247) ^ 0x714153BD;
-			}
-		}
+		_Position._PositionX = x;
+		_Position._PositionY = y;
 	}
 
 	public void _eSz0iOUBXwTpn30BSOBJreajpHr(double x, double y)
 	{
-		_FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX = (float)x;
-		_FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY = (float)y;
+		_Position._PositionX = (float)x;
+		_Position._PositionY = (float)y;
 	}
 
 	public void _eSz0iOUBXwTpn30BSOBJreajpHr(WorldPosData loc)
 	{
-		_FLMczMOk4gNIJMbSsAnIDIvYlDP = loc;
+		_Position = loc;
 	}
 
 	public void _7bAMJtBIe92eIbgoPI1Ui9hhNlH(double x, double y, int tickTime, int tickId, int lastTickId, long lastUpdate)
@@ -1712,12 +1690,12 @@ internal class PlayerData
 			default:
 				return;
 			case 7u:
-				_gxXmUOgMLDKiilyMaEoh5Odf0mw._PositionY = (_IlcbhoOIM3MRszn9mfn3IKjnXc0._PositionY - _FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY) / (double)tickTime;
+				_gxXmUOgMLDKiilyMaEoh5Odf0mw._PositionY = (_IlcbhoOIM3MRszn9mfn3IKjnXc0._PositionY - _Position._PositionY) / (double)tickTime;
 				num = ((int)num2 * -196675681) ^ -477953587;
 				continue;
 			case 4u:
 				_IlcbhoOIM3MRszn9mfn3IKjnXc0._PositionY = (float)y;
-				_gxXmUOgMLDKiilyMaEoh5Odf0mw._PositionX = (_IlcbhoOIM3MRszn9mfn3IKjnXc0._PositionX - _FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX) / (double)tickTime;
+				_gxXmUOgMLDKiilyMaEoh5Odf0mw._PositionX = (_IlcbhoOIM3MRszn9mfn3IKjnXc0._PositionX - _Position._PositionX) / (double)tickTime;
 				num = (int)(num2 * 169425411) ^ -1367604754;
 				continue;
 			case 2u:
@@ -1752,7 +1730,6 @@ internal class PlayerData
 
 	public bool _Ms58u9xXswhwQbTTVbOxgFTCB1p()
 	{
-		//Discarded unreachable code: IL_0056
 		if (_LePIFyFWrqLo6WMlJ4cV5MZBUqq)
 		{
 			while (true)
@@ -1970,21 +1947,9 @@ internal class PlayerData
 
 	public bool _9zLynim4HlmFvQv3AqAl2vIblhc()
 	{
-		//Discarded unreachable code: IL_003f
 		if (!_Tzs80AG7yuyH3MdkwBtecxKKzlB.Invulnerable)
 		{
-			while (true)
-			{
-				uint num;
-				switch ((num = 0xEBF078Du ^ 0x4578AEE3u) % 3u)
-				{
-				case 0u:
-					continue;
-				case 1u:
-					return (_ITMdkMmK3E7TJrGaRGy1ivI4A9U & 0x1000000) != 0;
-				}
-				break;
-			}
+			return (_ITMdkMmK3E7TJrGaRGy1ivI4A9U & 0x1000000) != 0;
 		}
 		return true;
 	}

@@ -228,11 +228,11 @@ internal class StatType
 
 	public static readonly StatType _BkRbgq91U6EIOe08wxRKr0e0WYl;
 
-	public static readonly StatType _SbG99DT4Q20EiNjBNzIakE3Jugt;
+	public static readonly StatType QuickslotOne;
 
-	public static readonly StatType _dSvzyTzpt52eGfhdOI4AAtAyfTp;
+	public static readonly StatType QuickslotTwo;
 
-	public static readonly StatType _6McE94HGZ7Fc2g6W7ikQ3Ucw6Gh;
+	public static readonly StatType QuickslotThree;
 
 	public static readonly StatType _imGbj1j4ApxweUK0jaNduYIrmEq;
 
@@ -474,7 +474,7 @@ internal class StatType
 					num = (int)(num2 * 1500665985) ^ -70539519;
 					continue;
 				case 62u:
-					_dSvzyTzpt52eGfhdOI4AAtAyfTp = CreateStatFromInt(117);
+					QuickslotTwo = CreateStatFromInt(117);
 					num = (int)(num2 * 141365307) ^ -1975535067;
 					continue;
 				case 73u:
@@ -547,7 +547,7 @@ internal class StatType
 					num = ((int)num2 * -1648985166) ^ -461108762;
 					continue;
 				case 66u:
-					_6McE94HGZ7Fc2g6W7ikQ3Ucw6Gh = CreateStatFromInt(118);
+					QuickslotThree = CreateStatFromInt(118);
 					num = (int)(num2 * 486512217) ^ -1239335618;
 					continue;
 				case 26u:
@@ -654,7 +654,7 @@ internal class StatType
 				case 36u:
 					_swBWhrQhKnLy5JBS8y1e81DHOme = CreateStatFromInt(114);
 					_BkRbgq91U6EIOe08wxRKr0e0WYl = CreateStatFromInt(115);
-					_SbG99DT4Q20EiNjBNzIakE3Jugt = CreateStatFromInt(116);
+					QuickslotOne = CreateStatFromInt(116);
 					num = ((int)num2 * -1579779308) ^ 0x6004CD9C;
 					continue;
 				case 30u:

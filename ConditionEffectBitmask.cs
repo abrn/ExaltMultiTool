@@ -1,4 +1,4 @@
-internal static class StatDataBitmask
+internal static class ConditionEffectBitmask
 {
 	public const int _AMVoW0CfzPQmbrbG1HZpiRTYBkC = 32;
 

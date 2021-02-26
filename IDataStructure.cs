@@ -1,11 +1,11 @@
 internal interface IDataStructure<_0001>
 {
-	string _WL2DOBxBuX9DARzf2KPoaJbgZiCb
+	string _ItemName
 	{
 		get;
 	}
 
-	_0001 _QjKHGXZ7ohXwrDQImauPaSixsVg
+	_0001 _ItemId
 	{
 		get;
 	}

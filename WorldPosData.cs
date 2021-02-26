@@ -1,7 +1,6 @@
 using System;
 
-internal class WorldPosData : ICloneable, IDataObject
-{
+internal class WorldPosData : ICloneable, IDataObject {
 	public double _PositionX;
 
 	public double _PositionY;
@@ -44,30 +43,8 @@ internal class WorldPosData : ICloneable, IDataObject
 
 	public virtual void Write(PacketWriter w)
 	{
-		w.Write((float)_PositionX);
-		while (true)
-		{
-			int num = -1475927726;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0xB16607A5u) % 3u)
-				{
-				case 0u:
-					break;
-				default:
-					return;
-				case 2u:
-					goto IL_002f;
-				case 1u:
-					return;
-				}
-				break;
-				IL_002f:
-				w.Write((float)_PositionY);
-				num = ((int)num2 * -465647702) ^ 0x1184CC4E;
-			}
-		}
+		w.Write((float) _PositionX);
+		w.Write((float) _PositionY);
 	}
 
 	void IDataObject.Write(PacketWriter w)
@@ -106,7 +83,8 @@ internal class WorldPosData : ICloneable, IDataObject
 		return new WorldPosData(x, y);
 	}
 
-	public static WorldPosData _KxM3gmGBMkIUCunUOzDZpSVchT0(double sourceX, double sourceY, double targetAngle, double targetDistance)
+	public static WorldPosData _KxM3gmGBMkIUCunUOzDZpSVchT0(double sourceX, double sourceY, double targetAngle,
+		double targetDistance)
 	{
 		double x = sourceX + Math.Cos(targetAngle) * targetDistance;
 		double y = sourceY + Math.Sin(targetAngle) * targetDistance;
@@ -125,58 +103,51 @@ internal class WorldPosData : ICloneable, IDataObject
 
 	public override bool Clone(object obj)
 	{
-		WorldPosData worldPosData = (WorldPosData)obj;
-		
-		if (worldPosData != null)
-		{
-			num4 = 2101672636;
-			num5 = num4;
+		WorldPosData worldPosData = (WorldPosData) obj;
+
+		if (worldPosData != null) {
+			if (_PositionX == worldPosData._PositionX) {
+				num = 814708805;
+				num3 = num;
+			}
+			else {
+				num = 1631409242;
+				num3 = num;
+			}
 		}
-		else
-		{
+		else {
 			num4 = 1441042217;
 			num5 = num4;
 		}
-		while (true)
-		{
+
+		while (true) {
 			int num = 329794215;
-			while (true)
-			{
+			while (true) {
 				uint num2;
-				switch ((num2 = (uint)num ^ 0x4CE87B9Au) % 6u)
-				{
-				case 4u:
-					break;
-				case 1u:
-				{
-					int num4;
-					int num5;
-					
-					num = num4 ^ (int)(num2 * 172426017);
-					continue;
-				}
-				case 3u:
-					return _PositionY == worldPosData._PositionY;
-				case 5u:
-				{
-					int num3;
-					if (_PositionX == worldPosData._PositionX)
-					{
-						num = 814708805;
-						num3 = num;
+				switch ((num2 = (uint) num ^ 0x4CE87B9Au) % 6u) {
+					case 4u:
+						break;
+					case 1u: {
+						int num4;
+						int num5;
+
+						num = num4 ^ (int) (num2 * 172426017);
+						continue;
 					}
-					else
-					{
-						num = 1631409242;
-						num3 = num;
+					case 3u:
+						return _PositionY == worldPosData._PositionY;
+					case 5u: {
+						int num3;
+						
+
+						continue;
 					}
-					continue;
+					case 0u:
+						return false;
+					default:
+						return false;
 				}
-				case 0u:
-					return false;
-				default:
-					return false;
-				}
+
 				break;
 			}
 		}
@@ -204,7 +175,7 @@ internal class WorldPosData : ICloneable, IDataObject
 
 	object ICloneable.Clone()
 	{
-		return this.Clone();
+		return Clone();
 	}
 
 	public override string ToString()

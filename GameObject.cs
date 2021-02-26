@@ -1,7 +1,6 @@
 using System;
 
-internal class GameObject : ICloneable, IDataObject
-{
+internal class GameObject : ICloneable, IDataObject {
 	public ushort _ObjectType;
 
 	public Status _Status = new Status();
@@ -18,7 +17,7 @@ internal class GameObject : ICloneable, IDataObject
 		return this.Read(r);
 	}
 
-	public void Write(PacketWriter w)
+	private void Write(PacketWriter w)
 	{
 		w.Write(_ObjectType);
 		_Status.Write(w);
@@ -29,12 +28,12 @@ internal class GameObject : ICloneable, IDataObject
 		this.Write(w);
 	}
 
-	public object Clone()
+	private object Clone()
 	{
 		return new GameObject
 		{
 			_ObjectType = _ObjectType,
-			_Status = (Status)_Status.Clone()
+			_Status = (Status) _Status.Clone()
 		};
 	}
 

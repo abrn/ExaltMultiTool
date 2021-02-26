@@ -152,11 +152,11 @@ namespace ExaltMultiTool.Proxy.DataStructures
 					default:
 						return;
 					case 17u:
-						Size = (ushort)obj._bUyefY83pIQc4tdCSCBCAwGEWxF("Size", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+						Size = (ushort)obj.GetChildValue("Size", "0").ParseInt();
 						num = (int)((num2 * 99713434) ^ 0x2D57A715);
 						continue;
 					case 18u:
-						OccupySquare = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("OccupySquare");
+						OccupySquare = obj.ContainsElement("OccupySquare");
 						num = ((int)num2 * -1384973929) ^ -1760575149;
 						continue;
 					case 31u:
@@ -168,8 +168,8 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						num = (int)((num2 * 1171460625) ^ 0x476FC9DA);
 						continue;
 					case 25u:
-						EnemyOccupySquare = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("EnemyOccupySquare");
-						FullOccupy = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("FullOccupy");
+						EnemyOccupySquare = obj.ContainsElement("EnemyOccupySquare");
+						FullOccupy = obj.ContainsElement("FullOccupy");
 						num = ((int)num2 * -140336572) ^ 0x6BDACD59;
 						continue;
 					case 12u:
@@ -192,15 +192,15 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						continue;
 					}
 					case 1u:
-						Flying = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Flying");
+						Flying = obj.ContainsElement("Flying");
 						num = (int)(num2 * 1168361225) ^ -1332595424;
 						continue;
 					case 8u:
-						BlocksSight = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("BlocksSight");
+						BlocksSight = obj.ContainsElement("BlocksSight");
 						num = (int)((num2 * 1605934978) ^ 0x6F2FB3F2);
 						continue;
 					case 11u:
-						Defense = (ushort)obj._bUyefY83pIQc4tdCSCBCAwGEWxF("Defense", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+						Defense = (ushort)obj.GetChildValue("Defense", "0").ParseInt();
 						num = (int)(num2 * 1891330989) ^ -957009768;
 						continue;
 					case 36u:
@@ -243,8 +243,8 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						continue;
 					case 4u:
 						sTbDMXqF9HeMn0Lda14uXKLE4RD = new _sTbDMXqF9HeMn0Lda14uXKLE4RD();
-						ID = (ushort)obj._4qMIb2N5gf9DdhWw9LENt8TJhOK("type", "0x0")._59ab9VkqetpIwwmGzw45eRNlLMg();
-						ObjectClass = obj._bUyefY83pIQc4tdCSCBCAwGEWxF("Class", "GameObject");
+						ID = (ushort)obj.GetElementAttrib("type", "0x0").ToInt32();
+						ObjectClass = obj.GetChildValue("Class", "GameObject");
 						num = (int)((num2 * 176662042) ^ 0x8757B7F);
 						continue;
 					case 15u:
@@ -267,8 +267,8 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						continue;
 					}
 					case 29u:
-						Pet = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Pet");
-						DrawOnGround = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("DrawOnGround");
+						Pet = obj.ContainsElement("Pet");
+						DrawOnGround = obj.ContainsElement("DrawOnGround");
 						num = ((int)num2 * -1488010765) ^ -1760201955;
 						continue;
 					case 10u:
@@ -291,11 +291,11 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						num = (int)((num2 * 589989725) ^ 0x3A26DF27);
 						continue;
 					case 20u:
-						God = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("God");
-						Cube = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Cube");
-						Quest = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Quest");
-						Invulnerable = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Invulnerable");
-						Invincible = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Invincible");
+						God = obj.ContainsElement("God");
+						Cube = obj.ContainsElement("Cube");
+						Quest = obj.ContainsElement("Quest");
+						Invulnerable = obj.ContainsElement("Invulnerable");
+						Invincible = obj.ContainsElement("Invincible");
 						num = ((int)num2 * -162984076) ^ -175663583;
 						continue;
 					case 16u:
@@ -339,7 +339,7 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						continue;
 					}
 					case 19u:
-						Player = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Player");
+						Player = obj.ContainsElement("Player");
 						num = ((int)num2 * -1144756049) ^ -693728569;
 						continue;
 					case 13u:
@@ -364,7 +364,7 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						num = ((int)num2 * -888289257) ^ 0x68C01001;
 						continue;
 					case 35u:
-						Static = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Static");
+						Static = obj.ContainsElement("Static");
 						num = (int)((num2 * 1324164087) ^ 0x3DBE28FF);
 						continue;
 					case 2u:
@@ -383,32 +383,32 @@ namespace ExaltMultiTool.Proxy.DataStructures
 						continue;
 					}
 					case 26u:
-						MaxHP = (ushort)obj._bUyefY83pIQc4tdCSCBCAwGEWxF("MaxHitPoints", "0")._59ab9VkqetpIwwmGzw45eRNlLMg();
-						XPMult = obj._bUyefY83pIQc4tdCSCBCAwGEWxF("XpMult", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
+						MaxHP = (ushort)obj.GetChildValue("MaxHitPoints", "0").ToInt32();
+						XPMult = obj.GetChildValue("XpMult", "0").ParseFloat();
 						num = ((int)num2 * -1842834529) ^ 0x1C532820;
 						continue;
 					case 5u:
-						ShadowSize = (ushort)obj._bUyefY83pIQc4tdCSCBCAwGEWxF("ShadowSize", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+						ShadowSize = (ushort)obj.GetChildValue("ShadowSize", "0").ParseInt();
 						num = ((int)num2 * -887962358) ^ 0x3590B683;
 						continue;
 					case 6u:
-						ProtectFromSink = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("ProtectFromSink");
-						Enemy = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Enemy");
+						ProtectFromSink = obj.ContainsElement("ProtectFromSink");
+						Enemy = obj.ContainsElement("Enemy");
 						num = ((int)num2 * -834111851) ^ -660226433;
 						continue;
 					case 28u:
-						ProtectFromGroundDamage = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("ProtectFromGroundDamage");
+						ProtectFromGroundDamage = obj.ContainsElement("ProtectFromGroundDamage");
 						num = (int)(num2 * 2041484975) ^ -621457841;
 						continue;
 					case 30u:
-						Item = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Item");
-						Usable = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Usable");
-						Soulbound = obj._ujE3VgDdVnbxGy9qIazxpFzbjrY("Soulbound");
-						MpCost = (ushort)obj._bUyefY83pIQc4tdCSCBCAwGEWxF("MpCost", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+						Item = obj.ContainsElement("Item");
+						Usable = obj.ContainsElement("Usable");
+						Soulbound = obj.ContainsElement("Soulbound");
+						MpCost = (ushort)obj.GetChildValue("MpCost", "0").ParseInt();
 						sTbDMXqF9HeMn0Lda14uXKLE4RD._1Y65ux6ODW11oQa4WNlqrraKG6e = new List<ProjectileStructure>();
 						obj.Elements("Projectile")._rvkyhEufCiuaZq8jbaYgthJoLEx(sTbDMXqF9HeMn0Lda14uXKLE4RD._IZjAljPdl5GZBrivAgReV1Wxf62);
 						Projectiles = sTbDMXqF9HeMn0Lda14uXKLE4RD._1Y65ux6ODW11oQa4WNlqrraKG6e.ToArray();
-						Name = obj._4qMIb2N5gf9DdhWw9LENt8TJhOK("id", "");
+						Name = obj.GetElementAttrib("id", "");
 						num = ((int)num2 * -861282579) ^ 0x75A6C6FC;
 						continue;
 					case 22u:

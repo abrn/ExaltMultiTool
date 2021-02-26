@@ -35,7 +35,7 @@ internal class PacketStructure : IDataStructure<byte>
 					}
 					break;
 					IL_0029:
-					_Y47d6cq6yur6qR7gPJQSTOJl5Wm[packetStructure._QjKHGXZ7ohXwrDQImauPaSixsVg] = packetStructure;
+					_Y47d6cq6yur6qR7gPJQSTOJl5Wm[packetStructure._ItemId] = packetStructure;
 					num = (int)((num2 * 344809797) ^ 0x76A5466E);
 				}
 			}
@@ -65,13 +65,13 @@ internal class PacketStructure : IDataStructure<byte>
 
 	public Type _bjQd3Vpt6RdoySpzKxn7K2gQGoM;
 
-	public byte _QjKHGXZ7ohXwrDQImauPaSixsVg
+	public byte _ItemId
 	{
 		get;
 		private set;
 	}
 
-	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb => _hhdVlV7UnNEwYJGKyXm4ylA4ZAi.ToString();
+	public string _ItemName => _hhdVlV7UnNEwYJGKyXm4ylA4ZAi.ToString();
 
 	internal static Dictionary<byte, PacketStructure> _uLt6b1uwFNgoZycBDqE02WmgdfB(XDocument doc)
 	{
@@ -111,7 +111,7 @@ internal class PacketStructure : IDataStructure<byte>
 								}
 								break;
 								IL_0029:
-								_Y47d6cq6yur6qR7gPJQSTOJl5Wm[packetStructure._QjKHGXZ7ohXwrDQImauPaSixsVg] = packetStructure;
+								_Y47d6cq6yur6qR7gPJQSTOJl5Wm[packetStructure._ItemId] = packetStructure;
 								num3 = (int)((num4 * 344809797) ^ 0x76A5466E);
 							}
 						}
@@ -145,10 +145,10 @@ internal class PacketStructure : IDataStructure<byte>
 					return;
 				case 1u:
 				{
-					_QjKHGXZ7ohXwrDQImauPaSixsVg = (byte)packet._bUyefY83pIQc4tdCSCBCAwGEWxF("PacketId", "")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+					_ItemId = (byte)packet.GetChildValue("PacketId", "").ParseInt();
 					int num5;
 					int num6;
-					if (Enum.TryParse<PacketType>(packet._bUyefY83pIQc4tdCSCBCAwGEWxF("PacketName", ""), out _hhdVlV7UnNEwYJGKyXm4ylA4ZAi))
+					if (Enum.TryParse<PacketType>(packet.GetChildValue("PacketName", ""), out _hhdVlV7UnNEwYJGKyXm4ylA4ZAi))
 					{
 						num5 = -983037334;
 						num6 = num5;
@@ -231,7 +231,7 @@ internal class PacketStructure : IDataStructure<byte>
 
 	public override string _SflzbyPcrkdh9uZXinsV7KrbBMw()
 	{
-		return $"Packet: {_hhdVlV7UnNEwYJGKyXm4ylA4ZAi} (0x{_QjKHGXZ7ohXwrDQImauPaSixsVg:X})";
+		return $"Packet: {_hhdVlV7UnNEwYJGKyXm4ylA4ZAi} (0x{_ItemId:X})";
 	}
 
 	static PacketStructure()

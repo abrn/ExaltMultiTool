@@ -136,25 +136,25 @@ namespace ExaltMultiTool.Proxy.DataStructures
 					default:
 						return;
 					case 3u:
-						MaxDamage = (ushort)tile._bUyefY83pIQc4tdCSCBCAwGEWxF("MaxDamage", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-						Name = tile._4qMIb2N5gf9DdhWw9LENt8TJhOK("id", "");
+						MaxDamage = (ushort)tile.GetChildValue("MaxDamage", "0").ParseInt();
+						Name = tile.GetElementAttrib("id", "");
 						num = (int)(num2 * 1341983415) ^ -1138864212;
 						continue;
 					case 2u:
-						Speed = tile._bUyefY83pIQc4tdCSCBCAwGEWxF("Speed", "1")._y09e3EoPW54jYelUtQzj66l0jRF();
+						Speed = tile.GetChildValue("Speed", "1").ParseFloat();
 						num = (int)(num2 * 885202684) ^ -1854957785;
 						continue;
 					case 5u:
-						MinDamage = (ushort)tile._bUyefY83pIQc4tdCSCBCAwGEWxF("MinDamage", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+						MinDamage = (ushort)tile.GetChildValue("MinDamage", "0").ParseInt();
 						num = ((int)num2 * -1751959065) ^ 0x4C8A942;
 						continue;
 					case 1u:
-						Sink = tile._ujE3VgDdVnbxGy9qIazxpFzbjrY("Sink");
+						Sink = tile.ContainsElement("Sink");
 						num = ((int)num2 * -1698047252) ^ -1056319404;
 						continue;
 					case 4u:
-						ID = (ushort)tile._4qMIb2N5gf9DdhWw9LENt8TJhOK("type", "0x0")._59ab9VkqetpIwwmGzw45eRNlLMg();
-						NoWalk = tile._ujE3VgDdVnbxGy9qIazxpFzbjrY("NoWalk");
+						ID = (ushort)tile.GetElementAttrib("type", "0x0").ToInt32();
+						NoWalk = tile.ContainsElement("NoWalk");
 						num = ((int)num2 * -1890881105) ^ -934611142;
 						continue;
 					case 6u:

@@ -13,7 +13,7 @@ namespace ExaltMultiTool.Proxy.DataStructures
 
 			internal void _IZjAljPdl5GZBrivAgReV1Wxf62(XElement effect)
 			{
-				_It1aIrgN2hpi17Mr9UNmoUQ00pO[effect.Value] = effect._4qMIb2N5gf9DdhWw9LENt8TJhOK("duration", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
+				_It1aIrgN2hpi17Mr9UNmoUQ00pO[effect.Value] = effect.GetElementAttrib("duration", "0").ParseFloat();
 			}
 		}
 
@@ -69,29 +69,29 @@ namespace ExaltMultiTool.Proxy.DataStructures
 
 		public ProjectileStructure(XElement projectile)
 		{
-			ID = (byte)projectile._4qMIb2N5gf9DdhWw9LENt8TJhOK("id", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-			Damage = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Damage", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-			Speed = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Speed", "0")._y09e3EoPW54jYelUtQzj66l0jRF() / 10000f;
-			Size = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Size", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-			Lifetime = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("LifetimeMS", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
-			MaxDamage = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("MaxDamage", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-			MinDamage = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("MinDamage", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
-			Magnitude = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Magnitude", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
-			Amplitude = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Amplitude", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
-			Frequency = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("Frequency", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
-			Wavy = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("Wavy");
-			Parametric = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("Parametric");
-			Boomerang = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("Boomerang");
-			ArmorPiercing = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("ArmorPiercing");
-			MultiHit = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("MultiHit");
-			PassesCover = projectile._ujE3VgDdVnbxGy9qIazxpFzbjrY("PassesCover");
+			ID = (byte)projectile.GetElementAttrib("id", "0").ParseInt();
+			Damage = projectile.GetChildValue("Damage", "0").ParseInt();
+			Speed = projectile.GetChildValue("Speed", "0").ParseFloat() / 10000f;
+			Size = projectile.GetChildValue("Size", "0").ParseInt();
+			Lifetime = projectile.GetChildValue("LifetimeMS", "0").ParseFloat();
+			MaxDamage = projectile.GetChildValue("MaxDamage", "0").ParseInt();
+			MinDamage = projectile.GetChildValue("MinDamage", "0").ParseInt();
+			Magnitude = projectile.GetChildValue("Magnitude", "0").ParseFloat();
+			Amplitude = projectile.GetChildValue("Amplitude", "0").ParseFloat();
+			Frequency = projectile.GetChildValue("Frequency", "0").ParseFloat();
+			Wavy = projectile.ContainsElement("Wavy");
+			Parametric = projectile.ContainsElement("Parametric");
+			Boomerang = projectile.ContainsElement("Boomerang");
+			ArmorPiercing = projectile.ContainsElement("ArmorPiercing");
+			MultiHit = projectile.ContainsElement("MultiHit");
+			PassesCover = projectile.ContainsElement("PassesCover");
 			Dictionary<string, float> _It1aIrgN2hpi17Mr9UNmoUQ00pO = new Dictionary<string, float>();
 			projectile.Elements("ConditionEffect")._rvkyhEufCiuaZq8jbaYgthJoLEx(delegate(XElement effect)
 			{
-				_It1aIrgN2hpi17Mr9UNmoUQ00pO[effect.Value] = effect._4qMIb2N5gf9DdhWw9LENt8TJhOK("duration", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
+				_It1aIrgN2hpi17Mr9UNmoUQ00pO[effect.Value] = effect.GetElementAttrib("duration", "0").ParseFloat();
 			});
 			StatusEffects = _It1aIrgN2hpi17Mr9UNmoUQ00pO;
-			Name = projectile._bUyefY83pIQc4tdCSCBCAwGEWxF("ObjectId", "");
+			Name = projectile.GetChildValue("ObjectId", "");
 		}
 
 		public override string ToString()

@@ -1,7 +1,6 @@
 using System;
 
-internal class StatData : ICloneable
-{
+internal class StatData : ICloneable {
 	public StatType _StatType;
 
 	public int _StatValue;
@@ -32,17 +31,17 @@ internal class StatData : ICloneable
 
 		_MagicByte = r.ReadByte();
 	}
-	
+
 	public void Write(PacketWriter w)
 	{
 		w.Write(StatType.GetStatByteType(_StatType));
-		if (IsStringStat())
-		{
+		if (IsStringStat()) {
 			w.Write(_StringStatValue);
 		}
 		else {
 			CompressedInt.Write(w, _StatValue);
 		}
+
 		w.Write(_MagicByte);
 	}
 
@@ -59,6 +58,7 @@ internal class StatData : ICloneable
 
 	public override string ToString()
 	{
-		return $"({Enum.GetName(typeof(StatDataEnum), StatType.GetStatByteType(_StatType))} = {(IsStringStat() ? _StringStatValue : _StatValue.ToString())} (Extra: {_MagicByte}))";
+		return
+			$"({Enum.GetName(typeof(StatDataEnum), StatType.GetStatByteType(_StatType))} = {(IsStringStat() ? _StringStatValue : _StatValue.ToString())} (Extra: {_MagicByte}))";
 	}
 }
