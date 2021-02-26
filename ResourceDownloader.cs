@@ -4,7 +4,7 @@ using System.Xml.Linq;
 using ExaltMultiTool.Proxy.DataStructures;
 
 internal static class ResourceDownloader {
-	public static _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, _x0bFEWbxXdGdRfNpGQ1c34l1w5r> _3ndzvDGHhvqls1BD8vzizSQBDdI;
+	public static _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, ParseXML> _3ndzvDGHhvqls1BD8vzizSQBDdI;
 
 	public static _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, TileStructure> GetTile;
 
@@ -23,7 +23,7 @@ internal static class ResourceDownloader {
 		WebClient webClient = new WebClient();
 		try {
 			Program.LogInfoMessage("core", "Downloading OBJECTS...");
-			string objectData = Resources._VPArsrlUa0uEsW6OxAYV9WHJAMK;
+			string objectData = Resources.Objects;
 
 			Program.LogInfoMessage("core", "Downloading PACKETS...");
 			string packetData = webClient.DownloadString("https://realmstock.network/Public/PacketsExalt");
@@ -44,8 +44,8 @@ internal static class ResourceDownloader {
 			
 			Program.LogInfoMessage("core", "Parsing Items...");
 			_3ndzvDGHhvqls1BD8vzizSQBDdI =
-				new _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, _x0bFEWbxXdGdRfNpGQ1c34l1w5r>(
-					_x0bFEWbxXdGdRfNpGQ1c34l1w5r._uLt6b1uwFNgoZycBDqE02WmgdfB(parsedObjects));
+				new _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, ParseXML>(
+					ParseXML._uLt6b1uwFNgoZycBDqE02WmgdfB(parsedObjects));
 			
 			Program.LogInfoMessage("core", "Parsing Packets...");
 			_PP85pw5fC3jVm7LDMzFra717hdB =

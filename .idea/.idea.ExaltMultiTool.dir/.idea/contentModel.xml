@@ -5,14 +5,10 @@
     <e p="C:\Users\admin\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_.19.00" t="ExcludeRecursive" />
     <e p="C:\Users\admin\Documents\Reverse Engineering\ExaltMultiTool" t="IncludeRecursive">
       <e p=".gitattributes" t="Include" />
-      <e p="_0e95pRmOma7jMYcnTtJbSNEfZnr.cs" t="Include" />
       <e p="_2JsGBNSkFue0Lbceua6NVMaZ7of.cs" t="Include" />
-      <e p="_2ps8kFLJTvG4bg5idZlm5pGiQry.cs" t="Include" />
       <e p="_5gQBYpWvIJQibBR6ggclQe9CpXV.cs" t="Include" />
       <e p="_6JrSSEICcB5DlepJsu6PpCDtaIU.cs" t="Include" />
-      <e p="_8vcCdQzyiEUGXVGWnBgKqW9wtPj.cs" t="Include" />
       <e p="_aRa8l3GoOtWAxr3fiZXNh135ASk.cs" t="Include" />
-      <e p="_B2gBzVDzeVEP19C56oq34otnH9L.cs" t="Include" />
       <e p="_FS6jMJJePXheZSSgdbcle1Cf3eK.cs" t="Include" />
       <e p="_FS6jMJJePXheZSSgdbcle1Cf3eK.resx" t="Include" />
       <e p="_I5hBdMHPSeVO0cbuEcAkM9I29MW.cs" t="Include" />
@@ -23,18 +19,12 @@
       <e p="_K3TiPWyBDUpgQKKDVFVeRQ0N4cX.resx" t="Include" />
       <e p="_KcBslMXpDkB2TvFqzjAsEACA1kK.cs" t="Include" />
       <e p="_l5Dg0EkouGJVudiZMWNbSgNri8O.cs" t="Include" />
-      <e p="_NenrIcvfEIiBFXCh64MfBebEG7f.cs" t="Include" />
-      <e p="_NenrIcvfEIiBFXCh64MfBebEG7f.resx" t="Include" />
       <e p="_NXJzFJyDncpkTIZ6UBdQLlK9DDb.cs" t="Include" />
       <e p="_r81eyljcpx9fMtE3XUSUstNFtOI.cs" t="Include" />
-      <e p="_rdMCw9C9LaemtQR2ZnzJk97z12o.cs" t="Include" />
       <e p="_RK8R6hn9ZKK2l39ATLncpeClPHq.cs" t="Include" />
-      <e p="_rty1IcsHvwfrnvmDiqvQx9pilH.cs" t="Include" />
       <e p="_sXxBcxQJ5OZEM8d0AIMUAzcF8In.cs" t="Include" />
       <e p="_tAHBHched3PZoxIRth1tEToCLCz.cs" t="Include" />
       <e p="_VHWgt8pn9AXryODuVtLv9GmmHeH.cs" t="Include" />
-      <e p="_x0bFEWbxXdGdRfNpGQ1c34l1w5r.cs" t="Include" />
-      <e p="_X6f9REQnd8GedncwYfuKQX9BeNq.cs" t="Include" />
       <e p="_zVFeZ2O0dLyAgYedMwD2SrzVOFB.cs" t="Include" />
       <e p="AcceptArenaDeathPacket.cs" t="Include" />
       <e p="AcceptTradePacket.cs" t="Include" />
@@ -43,11 +33,14 @@
       <e p="ActivePetUpdatePacket.cs" t="Include" />
       <e p="AllyShootPacket.cs" t="Include" />
       <e p="AntiDebuff.cs" t="Include" />
+      <e p="AntiLagForm.cs" t="Include" />
+      <e p="AntiLagForm.resx" t="Include" />
       <e p="AoEAckPacket.cs" t="Include" />
       <e p="AoEPacket.cs" t="Include" />
       <e p="app.ico" t="Include" />
       <e p="ArenaDeathPacket.cs" t="Include" />
       <e p="AutoAbility.cs" t="Include" />
+      <e p="AutoNexus.cs" t="Include" />
       <e p="BagTypeEnum.cs" t="Include" />
       <e p="BazaarTimer.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
@@ -64,6 +57,7 @@
       <e p="ClientStatPacket.cs" t="Include" />
       <e p="ColorUtil.cs" t="Include" />
       <e p="CompressedInt.cs" t="Include" />
+      <e p="ConditionEffectBitmask.cs" t="Include" />
       <e p="ConditionEffectEnum.cs" t="Include" />
       <e p="ConfusedByAttribute.cs" t="Include" />
       <e p="ControlPanelForm.cs" t="Include" />
@@ -119,6 +113,7 @@
       <e p="FailurePacket.cs" t="Include" />
       <e p="FilePacket.cs" t="Include" />
       <e p="ForgeDismantleResponsePacket.cs" t="Include" />
+      <e p="ForgeUnlockedBlueprintsPacket.cs" t="Include" />
       <e p="GameObject.cs" t="Include" />
       <e p="GlobalNotificationPacket.cs" t="Include" />
       <e p="GotoAckPacket.cs" t="Include" />
@@ -154,6 +149,8 @@
       <e p="MapHack.cs" t="Include" />
       <e p="MapStructure.cs" t="Include" />
       <e p="MovePacket.cs" t="Include" />
+      <e p="MoveRecord.cs" t="Include" />
+      <e p="NetworkBuffer.cs" t="Include" />
       <e p="NewAbilityPacket.cs" t="Include" />
       <e p="NewCharacterInfoPacket.cs" t="Include" />
       <e p="NotificationPacket.cs" t="Include" />
@@ -162,6 +159,8 @@
       <e p="OtherHitPacket.cs" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="PacketStructure.cs" t="Include" />
+      <e p="ParseXML.cs" t="Include" />
+      <e p="ParsingHelper.cs" t="Include" />
       <e p="PasswordPromptPacket.cs" t="Include" />
       <e p="PetChangeFormPacket.cs" t="Include" />
       <e p="PetChangeResultPacket.cs" t="Include" />
@@ -180,11 +179,13 @@
       </e>
       <e p="QuestFetchAskPacket.cs" t="Include" />
       <e p="QuestFetchResponsePacket.cs" t="Include" />
+      <e p="QuestObjectData.cs" t="Include" />
       <e p="QuestRedeemPacket.cs" t="Include" />
       <e p="QuestRedeemResponsePacket.cs" t="Include" />
       <e p="QuestRoomMessagePacket.cs" t="Include" />
       <e p="QueueCancelPacket.cs" t="Include" />
       <e p="QueueInfoPacket.cs" t="Include" />
+      <e p="RC4Cipher.cs" t="Include" />
       <e p="RealmHeroesLeftPacket.cs" t="Include" />
       <e p="RequestTradePacket.cs" t="Include" />
       <e p="ResetDailyQuestsPacket.cs" t="Include" />
@@ -202,7 +203,6 @@
       <e p="SlotObjectData.cs" t="Include" />
       <e p="SquareHitPacket.cs" t="Include" />
       <e p="StatData.cs" t="Include" />
-      <e p="StatDataBitmask.cs" t="Include" />
       <e p="StatDataEnum.cs" t="Include" />
       <e p="StatType.cs" t="Include" />
       <e p="Status.cs" t="Include" />
@@ -214,9 +214,9 @@
       <e p="TradeChangedPacket.cs" t="Include" />
       <e p="TradeChangePacket.cs" t="Include" />
       <e p="TradeDonePacket.cs" t="Include" />
+      <e p="TradeItemData.cs" t="Include" />
       <e p="TradeRequestedPacket.cs" t="Include" />
       <e p="TradeStartPacket.cs" t="Include" />
-      <e p="Unknown120Packet.cs" t="Include" />
       <e p="UnlockInfoPacket.cs" t="Include" />
       <e p="UpdateAckPacket.cs" t="Include" />
       <e p="UpdatePetPacket.cs" t="Include" />

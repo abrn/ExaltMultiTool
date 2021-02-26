@@ -205,7 +205,7 @@ internal class MapInfoPacket : Packet
 					num = (int)((num2 * 1889692583) ^ 0x36F666CA);
 					continue;
 				case 9u:
-					w._9UoQbcRa99e4xjcrtzdQLYTHK2N(value2);
+					w.WriteString(value2);
 					num3++;
 					num = (int)(num2 * 509503245) ^ -1016971766;
 					continue;
@@ -239,7 +239,7 @@ internal class MapInfoPacket : Packet
 					continue;
 				}
 				case 12u:
-					w._9UoQbcRa99e4xjcrtzdQLYTHK2N(value);
+					w.WriteString(value);
 					num3++;
 					num = ((int)num2 * -1617037846) ^ 0x19DFC98C;
 					continue;

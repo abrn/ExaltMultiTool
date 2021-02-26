@@ -12,7 +12,7 @@ internal class _VHWgt8pn9AXryODuVtLv9GmmHeH<_0001, _0002> where _0002 : class, I
 
 		internal bool _hPZ3Qk5vdL1qjb6o5PpX0gnKNed(KeyValuePair<_0001, _0002> e)
 		{
-			return e.Value._WL2DOBxBuX9DARzf2KPoaJbgZiCb == _r3fk3kS68X0yhIs2zUOR9wPYMag;
+			return e.Value._ItemName == _r3fk3kS68X0yhIs2zUOR9wPYMag;
 		}
 	}
 
@@ -144,7 +144,7 @@ internal class _VHWgt8pn9AXryODuVtLv9GmmHeH<_0001, _0002> where _0002 : class, I
 					return keyValuePair.Value;
 				case 1u:
 					_r3fk3kS68X0yhIs2zUOR9wPYMag = name;
-					source = _oQlNWqxOoe5LqobGdGJlgo4YIsh.Where((KeyValuePair<_0001, _0002> e) => e.Value._WL2DOBxBuX9DARzf2KPoaJbgZiCb == _r3fk3kS68X0yhIs2zUOR9wPYMag);
+					source = _oQlNWqxOoe5LqobGdGJlgo4YIsh.Where((KeyValuePair<_0001, _0002> e) => e.Value._ItemName == _r3fk3kS68X0yhIs2zUOR9wPYMag);
 					num = (int)((num2 * 1932747763) ^ 0x5453EBD1);
 					continue;
 				default:

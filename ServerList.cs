@@ -2,33 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml;
 
-internal class ServerList
+internal static class ServerList
 {
-	[CompilerGenerated]
-	private static Dictionary<string, string> _n9VcfhrortuyRmTzzlfmx4XJ2io = new Dictionary<string, string>();
+	public static Dictionary<string, string> _ServerList => null;
 
-	[CompilerGenerated]
-	private static Dictionary<string, string> _NR5hIaCz0jhcJtAcM1w2uHNPLhE = new Dictionary<string, string>();
+	public static Dictionary<string, string> _aCrqUtEobC4JELAJ9SKdNpyMHvF => null;
 
-	public static Dictionary<string, string> _ServerList
+	public static void GetServerList()
 	{
-		get;
-		private set;
-	}
-
-	public static Dictionary<string, string> _aCrqUtEobC4JELAJ9SKdNpyMHvF
-	{
-		get;
-		private set;
-	}
-
-	public static void _J120yKYbtEVgxfxC5akH1UoBgjq()
-	{
-		//Discarded unreachable code: IL_0419
 		Program.LogInfoMessage("core", "Parsing servers...");
 		XmlDocument xmlDocument = default(XmlDocument);
 		StringBuilder stringBuilder = default(StringBuilder);
@@ -269,8 +253,7 @@ internal class ServerList
 					}
 					finally
 					{
-						IDisposable disposable = enumerator as IDisposable;
-						if (disposable != null)
+						if (enumerator is IDisposable disposable)
 						{
 							while (true)
 							{

@@ -2,11 +2,11 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class TradeStartPacket : Packet
 {
-	public _0e95pRmOma7jMYcnTtJbSNEfZnr[] _md574KakEwdeK8VyFjDGu2o4g1D;
+	public TradeItemData[] _md574KakEwdeK8VyFjDGu2o4g1D;
 
 	public string _I6ghzagbfWQACBjpHyBbVsaZAqwb;
 
-	public _0e95pRmOma7jMYcnTtJbSNEfZnr[] _8rqZ24IVjbUHpgqSlWFNuF2sT3E;
+	public TradeItemData[] _8rqZ24IVjbUHpgqSlWFNuF2sT3E;
 
 	public int _M1cHg3qnMRHoafox7e6AU5bZjJm;
 
@@ -14,7 +14,7 @@ internal class TradeStartPacket : Packet
 
 	public override void readPacketData(PacketReader r)
 	{
-		_md574KakEwdeK8VyFjDGu2o4g1D = new _0e95pRmOma7jMYcnTtJbSNEfZnr[r.ReadInt16()];
+		_md574KakEwdeK8VyFjDGu2o4g1D = new TradeItemData[r.ReadInt16()];
 		int num5 = default(int);
 		int num3 = default(int);
 		while (true)
@@ -42,7 +42,7 @@ internal class TradeStartPacket : Packet
 					num = (int)(num2 * 1729192900) ^ -1914123549;
 					continue;
 				case 3u:
-					_md574KakEwdeK8VyFjDGu2o4g1D[num5] = new _0e95pRmOma7jMYcnTtJbSNEfZnr(r);
+					_md574KakEwdeK8VyFjDGu2o4g1D[num5] = new TradeItemData(r);
 					num = -269174898;
 					continue;
 				case 13u:
@@ -53,11 +53,11 @@ internal class TradeStartPacket : Packet
 					num = (int)((num2 * 1078887131) ^ 0x202AB2CB);
 					continue;
 				case 7u:
-					_8rqZ24IVjbUHpgqSlWFNuF2sT3E = new _0e95pRmOma7jMYcnTtJbSNEfZnr[r.ReadInt16()];
+					_8rqZ24IVjbUHpgqSlWFNuF2sT3E = new TradeItemData[r.ReadInt16()];
 					num = ((int)num2 * -1086104957) ^ -1972135118;
 					continue;
 				case 1u:
-					_8rqZ24IVjbUHpgqSlWFNuF2sT3E[num3] = new _0e95pRmOma7jMYcnTtJbSNEfZnr(r);
+					_8rqZ24IVjbUHpgqSlWFNuF2sT3E[num3] = new TradeItemData(r);
 					num = -1724143246;
 					continue;
 				case 12u:
@@ -110,7 +110,7 @@ internal class TradeStartPacket : Packet
 	{
 		w.Write((ushort)_md574KakEwdeK8VyFjDGu2o4g1D.Length);
 		int num3 = default(int);
-		_0e95pRmOma7jMYcnTtJbSNEfZnr[] md574KakEwdeK8VyFjDGu2o4g1D = default(_0e95pRmOma7jMYcnTtJbSNEfZnr[]);
+		TradeItemData[] md574KakEwdeK8VyFjDGu2o4g1D = default(TradeItemData[]);
 		while (true)
 		{
 			int num = 597197271;
@@ -137,7 +137,7 @@ internal class TradeStartPacket : Packet
 					continue;
 				}
 				case 0u:
-					md574KakEwdeK8VyFjDGu2o4g1D[num3]._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					md574KakEwdeK8VyFjDGu2o4g1D[num3].Write(w);
 					num = 616559938;
 					continue;
 				case 10u:
@@ -163,7 +163,7 @@ internal class TradeStartPacket : Packet
 					num = (int)((num2 * 315024839) ^ 0x56AFF4E4);
 					continue;
 				case 12u:
-					md574KakEwdeK8VyFjDGu2o4g1D[num3]._3Wc8kZJjhbRt6nttAKwD2698imm(w);
+					md574KakEwdeK8VyFjDGu2o4g1D[num3].Write(w);
 					num = 613638088;
 					continue;
 				case 3u:

@@ -29,7 +29,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 				default:
 					return;
 				case 2u:
-					text = activate._4qMIb2N5gf9DdhWw9LENt8TJhOK("stat", "");
+					text = activate.GetElementAttrib("stat", "");
 					num = ((int)num2 * -1823707508) ^ -1804385891;
 					continue;
 				case 7u:
@@ -37,7 +37,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 					num = (int)((num2 * 7086867) ^ 0x530EB2D5);
 					continue;
 				case 3u:
-					_GqTyCW3dGiBN9DxAMWAsMjwS9AY = activate._4qMIb2N5gf9DdhWw9LENt8TJhOK("duration", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
+					_GqTyCW3dGiBN9DxAMWAsMjwS9AY = activate.GetElementAttrib("duration", "0").ParseFloat();
 					num = ((int)num2 * -1761234068) ^ -778895462;
 					continue;
 				case 6u:
@@ -62,7 +62,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 					num = ((int)num2 * -1995378946) ^ 0x36F8A1BA;
 					continue;
 				case 5u:
-					_Qh0BQXXjPEcRT8iSpFFQRoYAmun = activate._4qMIb2N5gf9DdhWw9LENt8TJhOK("amount", "0")._sO4kfypgWPkSczoRzkVQIGw3fyF();
+					_Qh0BQXXjPEcRT8iSpFFQRoYAmun = activate.GetElementAttrib("amount", "0").ParseInt();
 					num = -1267578482;
 					continue;
 				case 1u:
@@ -100,7 +100,7 @@ internal class _jsZwrE9lzYULBcuBQfPr4S2Du8c
 					continue;
 				}
 				case 10u:
-					_Z5wTZXZR7WNAVYbrlBqkpXlqERC = activate._4qMIb2N5gf9DdhWw9LENt8TJhOK("range", "0")._y09e3EoPW54jYelUtQzj66l0jRF();
+					_Z5wTZXZR7WNAVYbrlBqkpXlqERC = activate.GetElementAttrib("range", "0").ParseFloat();
 					num = (int)(num2 * 162106928) ^ -994261581;
 					continue;
 				case 8u:

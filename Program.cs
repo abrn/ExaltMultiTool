@@ -16,9 +16,9 @@ internal static class Program {
 	[STAThread]
 	private static void _JNpXAQtl22CH9YoBkXPbqOkmi9r()
 	{
-		ProcessInjection._d2DbtJKY9HneawJSRKefBeKIcNi(
+		ProcessInjection.WindowShown(
 			ProcessInjection.GetConsoleWindowPtr(), 0);
-		ProcessInjection._axlrZfcSb8gyZSepzTKbbvUFwkF();
+		ProcessInjection.SetProcDPIAware();
 		ProcessStartInfo processStartInfo = default(ProcessStartInfo);
 		string location = default(string);
 

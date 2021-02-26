@@ -623,7 +623,7 @@ internal class _K3TiPWyBDUpgQKKDVFVeRQ0N4cX : UserControl
 
 	private void _RE4UT2FBLp2nMkNLhZTfwqKeesJ(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		new _NenrIcvfEIiBFXCh64MfBebEG7f().ShowDialog();
+		new AntiLagForm().ShowDialog();
 	}
 
 	private void _IvMcOYR81kCryOaKe84CjqhAxgJ(object sender, EventArgs e)

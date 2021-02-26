@@ -19,7 +19,6 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 
 		internal bool _lipIcUcmAhsDO4TVmjbEEG1DBbW(char c)
 		{
-			//Discarded unreachable code: IL_0052
 			if (!char.IsLetterOrDigit(c))
 			{
 				while (true)
@@ -102,7 +101,6 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 
 	public void HandlePlayerCommand(PlayerTextPacket playerText)
 	{
-		//Discarded unreachable code: IL_00b1, IL_00c4, IL_015b
 		if (!Settings.Default.EnableGotoCommand)
 		{
 			goto IL_000f;
@@ -199,7 +197,6 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 			{
 				string ip = new string(array[1].Where(delegate(char c)
 				{
-					//Discarded unreachable code: IL_0052
 					if (!char.IsLetterOrDigit(c))
 					{
 						while (true)
@@ -359,7 +356,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					num = ((int)num2 * -702639827) ^ -505394950;
 					continue;
 				case 0u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(reconnectPacket);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToClient(reconnectPacket);
 					num = (int)(num2 * 2145446387) ^ -379275228;
 					continue;
 				case 4u:

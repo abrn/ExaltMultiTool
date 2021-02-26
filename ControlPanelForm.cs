@@ -49,7 +49,6 @@ internal class ControlPanelForm : UserControl
 
 	private void _QRcwaZj653csryjbBV8hLrGY0Kj(object sender, EventArgs e)
 	{
-		//Discarded unreachable code: IL_008d
 		if (File.Exists(Settings.Default.ExaltGamePath))
 		{
 			goto IL_0011;
@@ -373,7 +372,6 @@ internal class ControlPanelForm : UserControl
 
 	private void _BZABXjKLnE64O1pYeWPLWvBZ4KM(object sender, EventArgs e)
 	{
-		//Discarded unreachable code: IL_0053, IL_011f
 		object selectedItem = _0tDYu1wkyKBkjLMcGP57spRp1Mb.SelectedItem;
 		string text = default(string);
 		while (true)
@@ -426,7 +424,7 @@ internal class ControlPanelForm : UserControl
 				case 0u:
 				{
 					string[] array = text.Split(':');
-					InjectionHelper._xkSr2Dl3BGfiJPH2Sb33zOcYN0P(array[0], array[1]);
+					InjectionHelper.StartExalt(array[0], array[1]);
 					num = 587591612;
 					continue;
 				}
@@ -504,7 +502,6 @@ internal class ControlPanelForm : UserControl
 
 	private string _C3AfjFhWoqFhx3X66WyLSXtO17F(string guid = "", string secret = "")
 	{
-		//Discarded unreachable code: IL_0051, IL_0066, IL_00aa
 		if (MessageBox.Show("WARNING: This is for advanced users only.\nAccounts using this method are not verified - If you enter incorrect details, you will just be stock loading forever when you launch Exalt.\nAlso, you will not be able to purchase gold when in game, due to the client needing to be linked to Steam.\n\nContinue?", "RealmStock Multi-Tool", MessageBoxButtons.YesNo) == DialogResult.No)
 		{
 			goto IL_0016;

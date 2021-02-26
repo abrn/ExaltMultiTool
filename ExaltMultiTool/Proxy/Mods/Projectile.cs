@@ -18,7 +18,6 @@ namespace ExaltMultiTool.Proxy.Mods
 
 			internal void _19Lde4gkcANgQee3MdN6VOHdP58(ObjectStructure enemy)
 			{
-				//Discarded unreachable code: IL_01f8
 				if (!enemy.Projectiles.Any())
 				{
 					goto IL_0010;
@@ -161,7 +160,6 @@ namespace ExaltMultiTool.Proxy.Mods
 
 		public static bool IsPiercing(int enemyType, byte projectileType)
 		{
-			//Discarded unreachable code: IL_0041
 			if (_ZBH1FpPAnW1jZrUD0KruZCQObYF.ContainsKey(enemyType))
 			{
 				while (true)
@@ -182,7 +180,6 @@ namespace ExaltMultiTool.Proxy.Mods
 
 		public static bool IsArmorBreaking(int enemyType, byte projectileType)
 		{
-			//Discarded unreachable code: IL_0041
 			if (_9dlEBQRajgHUPe01BLJS9ymRjkc.ContainsKey(enemyType))
 			{
 				while (true)
@@ -203,7 +200,6 @@ namespace ExaltMultiTool.Proxy.Mods
 
 		public static void Initialize()
 		{
-			//Discarded unreachable code: IL_007a
 			if (_263QE1fWcJWpQPNDEcgmZApCd9h)
 			{
 				goto IL_0007;
@@ -226,7 +222,6 @@ namespace ExaltMultiTool.Proxy.Mods
 				case 1u:
 					ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK._oQlNWqxOoe5LqobGdGJlgo4YIsh.Values._rvkyhEufCiuaZq8jbaYgthJoLEx(delegate(ObjectStructure enemy)
 					{
-						//Discarded unreachable code: IL_01f8
 						if (!enemy.Projectiles.Any())
 						{
 							goto IL_0010;

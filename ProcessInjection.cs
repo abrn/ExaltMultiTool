@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 internal static class ProcessInjection
 {
-	internal struct _OoJRoKxh0utfWeMP3aFZXh1BWhq
+	internal struct PipeAttributes
 	{
 		public int _mEbPYUUehKpduXYDS9B1ORcMJaN;
 
@@ -54,7 +54,7 @@ internal static class ProcessInjection
 	}
 
 	[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-	internal struct _pGtEmbuQs0gMWAdcBAhhr6gMqgX
+	internal struct ProcStartupInfo
 	{
 		public int _mdWEP8NZZlu3FiC9tO1hmdgtuYf;
 
@@ -93,11 +93,11 @@ internal static class ProcessInjection
 		public IntPtr _yMCAg5Qr3jEREKHfwkloM16c9Xm;
 	}
 
-	internal struct _zjgiwwJZUA8aZTeMCSZeihp47Dw
+	internal struct ProcessInfo
 	{
-		public IntPtr _QjPrTpWj4dJdFgwgkKtVC8NhIyC;
+		public IntPtr ProcHandle;
 
-		public IntPtr _JwYWFGBftDuvPOaDpMAqYYZmRpM;
+		public IntPtr ProcThread;
 
 		public int _Xfy86MzBYkDHYV6eC0jeyWpmMqW;
 
@@ -123,76 +123,72 @@ internal static class ProcessInjection
 		}
 	}
 
-	public const int _Y4MAL8AVbMRxpBHrPFdRhOOm0sj = 0;
-
-	public const int _u9sdbAuPi9K33tMKaMoMe418jNL = 5;
-
 	[DllImport("kernel32.dll", EntryPoint = "GetConsoleWindow")]
 	public static extern IntPtr GetConsoleWindowPtr();
 
 	[DllImport("user32.dll", EntryPoint = "ShowWindow")]
-	public static extern bool _d2DbtJKY9HneawJSRKefBeKIcNi(IntPtr hWnd, int nCmdShow);
+	public static extern bool WindowShown(IntPtr hWnd, int nCmdShow);
 
 	[DllImport("kernel32.dll", CharSet = CharSet.Auto, EntryPoint = "CreatePipe", SetLastError = true)]
-	public static extern bool _eZsfnUgbAukknt7JFdL5HMS53wm(out IntPtr hReadPipe, out IntPtr hWritePipe, ref _OoJRoKxh0utfWeMP3aFZXh1BWhq lpPipeAttributes, int nSize);
+	public static extern bool CreatePipe(out IntPtr hReadPipe, out IntPtr hWritePipe, ref PipeAttributes lpPipeAttributes, int nSize);
 
 	[DllImport("kernel32.dll", EntryPoint = "GetStdHandle", SetLastError = true)]
-	public static extern IntPtr _v3uV5i4dzWksns6Q6XeKKw8eCFo(int nStdHandle);
+	public static extern IntPtr GetStdHandlePtr(int nStdHandle);
 
 	[DllImport("user32.dll", EntryPoint = "SetProcessDPIAware", SetLastError = true)]
-	public static extern bool _axlrZfcSb8gyZSepzTKbbvUFwkF();
+	public static extern bool SetProcDPIAware();
 
 	[DllImport("kernel32.dll", EntryPoint = "AllocConsole", SetLastError = true)]
 	[return: MarshalAs(UnmanagedType.Bool)]
-	public static extern bool _mctOsq0P6OgKSXWnN9lcNn5Inxf();
+	public static extern bool AllocConsole();
 
 	[DllImport("user32.dll", EntryPoint = "RegisterHotKey")]
-	public static extern bool _ays3S5z2xKCPIbcZFwkO0Be8WEE(IntPtr hWnd, int id, int fsModifiers, int vk);
+	public static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
 
 	[DllImport("user32.dll", EntryPoint = "UnregisterHotKey")]
-	public static extern bool _HXVpLlj5YH2Zu8xy1nZBQFDbcJf(IntPtr hWnd, int id);
+	public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
 	[DllImport("Kernel32", EntryPoint = "OpenProcess", SetLastError = true)]
 	public static extern IntPtr OpenProcessPtr(uint dwDesiredAccess, bool bInheritHandle, uint dwProcessId);
 
 	[DllImport("kernel32", EntryPoint = "GetProcAddress", SetLastError = true)]
-	public static extern IntPtr _zqkXaS0fbgW5SfjaOy5EpA6o5N1(IntPtr hModule, string procName);
+	public static extern IntPtr GetProcAddrPtr(IntPtr hModule, string procName);
 
 	[DllImport("kernel32.dll", EntryPoint = "GetModuleHandleA", SetLastError = true)]
-	public static extern IntPtr _MpECyuu0ww9WE1mc2JaGfXy7YeQ(string lpModuleName);
+	public static extern IntPtr GetModuleHandlePtr(string lpModuleName);
 
 	[DllImport("Kernel32", EntryPoint = "VirtualAllocEx", SetLastError = true)]
-	public static extern IntPtr _N0XwljYi7pJKWgAAdvUmfa7ccXE(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);
+	public static extern IntPtr VirtualAllocExPtr(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);
 
 	[DllImport("Kernel32", EntryPoint = "WriteProcessMemory", SetLastError = true)]
-	public static extern bool _O8k7xYpkG5pQyqFh433YTQ9woVE(IntPtr hProcess, IntPtr lpBaseAddress, [MarshalAs(UnmanagedType.AsAny)] object lpBuffer, uint nSize, ref uint lpNumberOfBytesWritten);
+	public static extern bool WriteProcMemory(IntPtr hProcess, IntPtr lpBaseAddress, [MarshalAs(UnmanagedType.AsAny)] object lpBuffer, uint nSize, ref uint lpNumberOfBytesWritten);
 
 	[DllImport("Kernel32", EntryPoint = "CreateRemoteThread", SetLastError = true)]
-	public static extern IntPtr _KueE2yTPEjNDAJT08H2DGsGNt7N(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, ref uint lpThreadId);
+	public static extern IntPtr CreateRemoteThrdPtr(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, ref uint lpThreadId);
 
 	[DllImport("Kernel32", EntryPoint = "CloseHandle", SetLastError = true)]
-	public static extern bool _ncvsNr9oXhkaIirRo2KAJ4c9g4y(IntPtr hObject);
+	public static extern bool CloseHandle(IntPtr hObject);
 
 	[DllImport("Kernel32", EntryPoint = "WaitForSingleObject", SetLastError = true)]
-	public static extern bool _PxyT4CEJyj4HnJ5DrPzPmhvvhIM(IntPtr hHandle, uint dwMilliseconds);
+	public static extern bool WaitForObj(IntPtr hHandle, uint dwMilliseconds);
 
 	[DllImport("kernel32.dll", EntryPoint = "SetConsoleMode", SetLastError = true)]
-	public static extern bool _XOXrSxeqaweHkDitAaSTRWG1GLo(IntPtr hConsoleHandle, int mode);
+	public static extern bool SetConsoleMode(IntPtr hConsoleHandle, int mode);
 
 	[DllImport("kernel32.dll", EntryPoint = "GetConsoleMode", SetLastError = true)]
-	public static extern bool _l02Th1Qv5Vru0NgUCuGd1xJmQKG(IntPtr handle, out int mode);
+	public static extern bool GetConsoleMode(IntPtr handle, out int mode);
 
 	[DllImport("kernel32.dll", EntryPoint = "ResumeThread", SetLastError = true)]
-	internal static extern uint _kQdGqTbeSNpbEs07G8GfCURPn6cA(IntPtr hThread);
+	internal static extern uint ResumeThread(IntPtr hThread);
 
 	[DllImport("kernel32.dll", CharSet = CharSet.Auto, EntryPoint = "CreateProcess", SetLastError = true)]
-	internal static extern bool _Ke0Dh6gvqJBjghnfyca8KN8GfxC(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, IntPtr lpCurrentDirectory, [In] ref _pGtEmbuQs0gMWAdcBAhhr6gMqgX lpStartupInfo, out _zjgiwwJZUA8aZTeMCSZeihp47Dw lpProcessInformation);
+	internal static extern bool CreateProc(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment, IntPtr lpCurrentDirectory, [In] ref ProcStartupInfo lpStartupInfo, out ProcessInfo lpProcessInformation);
 
 	[DllImport("user32.dll", EntryPoint = "GetClientRect")]
-	private static extern bool _B9mt75Xcr88LkCEh7UsT57a3zBb(IntPtr hWnd, ref ScreenPosition lpRect);
+	private static extern bool GetClientRect(IntPtr hWnd, ref ScreenPosition lpRect);
 
 	[DllImport("user32.dll", EntryPoint = "ClientToScreen")]
-	private static extern bool _yLGGhk0CwILOXYx24dLZC5RGxtd(IntPtr hWnd, ref Point lpPoint);
+	private static extern bool ClientToScreen(IntPtr hWnd, ref Point lpPoint);
 
 	[DllImport("user32.dll", EntryPoint = "GetForegroundWindow")]
 	public static extern IntPtr GetForegroundWindow();
@@ -205,40 +201,19 @@ internal static class ProcessInjection
 
 	public static Size GetWindowSize(IntPtr h)
 	{
-		ScreenPosition lpRect = default(ScreenPosition);
-		Size result = default(Size);
-		while (true)
-		{
-			int num = 592156571;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0x394AC2FAu) % 4u)
-				{
-				case 3u:
-					break;
-				case 1u:
-					_B9mt75Xcr88LkCEh7UsT57a3zBb(h, ref lpRect);
-					result = default(Size);
-					result.Width = lpRect.PosRight - lpRect.PosLeft;
-					num = ((int)num2 * -1594917739) ^ 0xDB371A3;
-					continue;
-				case 0u:
-					result.Height = lpRect.PosBottom - lpRect.PosTop;
-					num = (int)(num2 * 585719635) ^ -1481710604;
-					continue;
-				default:
-					return result;
-				}
-				break;
-			}
-		}
+		ScreenPosition lpRect = default;
+
+		GetClientRect(h, ref lpRect);
+		var result = default(Size);
+		result.Width = lpRect.PosRight - lpRect.PosLeft;
+		result.Height = lpRect.PosBottom - lpRect.PosTop;
+		return result;
 	}
 
-	public static Point GetDll32Poiter(IntPtr h)
+	public static Point GetDll32Pointer(IntPtr h)
 	{
 		Point lpPoint = Point.Empty;
-		_yLGGhk0CwILOXYx24dLZC5RGxtd(h, ref lpPoint);
+		ClientToScreen(h, ref lpPoint);
 		return lpPoint;
 	}
 }

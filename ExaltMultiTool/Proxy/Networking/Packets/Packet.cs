@@ -33,7 +33,7 @@ internal class Packet {
 		PacketStructure packetStructure =
 			ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB.ByName(type.ToString());
 		Packet obj = (Packet) Activator.CreateInstance(packetStructure._bjQd3Vpt6RdoySpzKxn7K2gQGoM);
-		obj.ID = packetStructure._QjKHGXZ7ohXwrDQImauPaSixsVg;
+		obj.ID = packetStructure._ItemId;
 		return obj;
 	}
 
@@ -41,7 +41,7 @@ internal class Packet {
 	{
 		Packet obj = (Packet) Activator.CreateInstance(typeof(_0001));
 		obj.ID = ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB
-			.ByName(type.ToString())._QjKHGXZ7ohXwrDQImauPaSixsVg;
+			.ByName(type.ToString())._ItemId;
 		return (_0001) Convert.ChangeType(obj, typeof(_0001));
 	}
 
@@ -194,7 +194,6 @@ internal class Packet {
 
 	private static bool _J2zSa3Pi55JBq33YmgBGt7heSAv(PacketType packetType)
 	{
-		//Discarded unreachable code: IL_00db
 		if (packetType <= PacketType.UPDATEACK) {
 			goto IL_0008;
 		}
@@ -363,7 +362,7 @@ internal class Packet {
 		stringBuilder.Append(pType.ToString() + " [" +
 		                     ResourceDownloader._PP85pw5fC3jVm7LDMzFra717hdB
 			                     .ByName(pType.ToString())
-			                     ._QjKHGXZ7ohXwrDQImauPaSixsVg + "] \nPacket Structure:\n{");
+			                     ._ItemId + "] \nPacket Structure:\n{");
 		FieldInfo[] array = fields;
 		int num3 = default(int);
 		FieldInfo fieldInfo = default(FieldInfo);

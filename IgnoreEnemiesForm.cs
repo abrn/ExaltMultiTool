@@ -65,8 +65,7 @@ internal class IgnoreEnemiesForm : Form
 
 		internal bool _c89bWSCAhBYgjaCfjSBJ6a2YBs1A(string name)
 		{
-			//Discarded unreachable code: IL_0046
-			if (!(_3VUqGiVvV7FjTf0llC5g9L1DDfq == ""))
+			if (_3VUqGiVvV7FjTf0llC5g9L1DDfq != "")
 			{
 				while (true)
 				{
@@ -169,7 +168,6 @@ internal class IgnoreEnemiesForm : Form
 			where type.Enemy
 			select type.Name).Where(delegate(string name)
 		{
-			//Discarded unreachable code: IL_0046
 			if (!(filter == ""))
 			{
 				while (true)

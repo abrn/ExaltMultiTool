@@ -326,7 +326,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			{
 				int num6;
 				int num7;
-				if (!text._CleanMessage.Contains(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ROI49ai7g89LZTXhpoAd3C7Qa4I))
+				if (!text._CleanMessage.Contains(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._ROI49ai7g89LZTXhpoAd3C7Qa4I))
 				{
 					num6 = 1998134989;
 					num7 = num6;
@@ -669,7 +669,6 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 
 	private bool _yM13KvXU9cLnZX3zNfsAEJ8e8UE(GameObject entity)
 	{
-		//Discarded unreachable code: IL_003e
 		if (entity._Status._ObjectId - 1 != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			while (true)
@@ -690,7 +689,6 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 
 	private bool _Gh2VHcPTkEUMxCEVgHnOW695CDd(GameObject entity)
 	{
-		//Discarded unreachable code: IL_0041
 		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.ContainsKey(entity._Status._ObjectId))
 		{
 			while (true)
@@ -756,7 +754,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			}
 			end_IL_000c:;
 		}
-		_bzWKi3O4BpntfsYKqrrA0hsxlMI = !string.IsNullOrEmpty(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ROI49ai7g89LZTXhpoAd3C7Qa4I);
+		_bzWKi3O4BpntfsYKqrrA0hsxlMI = !string.IsNullOrEmpty(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._ROI49ai7g89LZTXhpoAd3C7Qa4I);
 		if (!_74KKKuVtZqkVRDxOFUQeDoXCmfJ)
 		{
 			goto IL_00af;
@@ -938,7 +936,6 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 
 	private int _EVhCC0ekBrEVLjZ30fXud3hsfYm(int objectId)
 	{
-		//Discarded unreachable code: IL_007d, IL_008f, IL_011d, IL_0138, IL_01f8
 		PlayerData jI4Bueou7dItYp5S7QML5vyC6Rc = _50w8wVuv8bL5nhKaR2EHxjrTamB._VPArsrlUa0uEsW6OxAYV9WHJAMK[objectId];
 		if (jI4Bueou7dItYp5S7QML5vyC6Rc._W6bpBrAw6dPSILcVRK394JGD7tC)
 		{
@@ -1053,7 +1050,7 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 			num = (int)(num3 * 505869908) ^ -1023120466;
 			continue;
 			IL_00c4:
-			num11 = ((jI4Bueou7dItYp5S7QML5vyC6Rc._ROI49ai7g89LZTXhpoAd3C7Qa4I == _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ROI49ai7g89LZTXhpoAd3C7Qa4I) ? 1 : 0);
+			num11 = ((jI4Bueou7dItYp5S7QML5vyC6Rc._ROI49ai7g89LZTXhpoAd3C7Qa4I == _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._ROI49ai7g89LZTXhpoAd3C7Qa4I) ? 1 : 0);
 			goto IL_00e2;
 			IL_00e2:
 			antiLagApplyToGuildMates = Settings.Default.AntiLagApplyToGuildMates;
@@ -1092,7 +1089,6 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 
 	private void _KQrCDNrUysA4qKaWspdpLvKfrZf(Status status)
 	{
-		//Discarded unreachable code: IL_0139
 		using List<StatData>.Enumerator enumerator = status._Stats.GetEnumerator();
 		StatData current = default(StatData);
 		while (true)
@@ -1192,7 +1188,6 @@ internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 	[CompilerGenerated]
 	private void _bXBAQSQDuRQKpJb0pK866XdaUHU(string name, string guild)
 	{
-		//Discarded unreachable code: IL_0092
 		using Dictionary<int, PlayerData>.Enumerator enumerator = _50w8wVuv8bL5nhKaR2EHxjrTamB._naDcMlPfaanTh6qrJ3cOuO4HNwz.GetEnumerator();
 		while (true)
 		{

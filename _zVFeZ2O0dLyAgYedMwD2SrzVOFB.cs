@@ -43,7 +43,6 @@ internal class _zVFeZ2O0dLyAgYedMwD2SrzVOFB : ICloneable, IDataObject
 
 	IDataObject IDataObject.Read(PacketReader r)
 	{
-		//ILSpy generated this explicit interface implementation from .override directive in readPacketData
 		return this._kCo2RCMYpYNoTPdfGQVnKgPh7Fc(r);
 	}
 
@@ -80,48 +79,29 @@ internal class _zVFeZ2O0dLyAgYedMwD2SrzVOFB : ICloneable, IDataObject
 
 	void IDataObject.Write(PacketWriter w)
 	{
-		//ILSpy generated this explicit interface implementation from .override directive in writePacketData
 		this._3Wc8kZJjhbRt6nttAKwD2698imm(w);
 	}
 
 	public object Clone()
 	{
 		byte[] destinationArray = new byte[_6HwO75kWNssUCje1MLwKd3pGXmk * _CmwC8GuQ56hi7QXOmmQpFukQ49j * 4];
-		while (true)
+		
+		Array.Copy(_0WMjfJphUj6JnIm1ZkD3ScpYc0F, destinationArray, _0WMjfJphUj6JnIm1ZkD3ScpYc0F.Length);
+		
+		return new _zVFeZ2O0dLyAgYedMwD2SrzVOFB
 		{
-			int num = 735452797;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0x7EC1CE50u) % 3u)
-				{
-				case 2u:
-					break;
-				case 1u:
-					goto IL_0037;
-				default:
-					return new _zVFeZ2O0dLyAgYedMwD2SrzVOFB
-					{
-						_6HwO75kWNssUCje1MLwKd3pGXmk = _6HwO75kWNssUCje1MLwKd3pGXmk,
-						_CmwC8GuQ56hi7QXOmmQpFukQ49j = _CmwC8GuQ56hi7QXOmmQpFukQ49j,
-						_0WMjfJphUj6JnIm1ZkD3ScpYc0F = destinationArray
-					};
-				}
-				break;
-				IL_0037:
-				Array.Copy(_0WMjfJphUj6JnIm1ZkD3ScpYc0F, destinationArray, _0WMjfJphUj6JnIm1ZkD3ScpYc0F.Length);
-				num = ((int)num2 * -1613993706) ^ -1108353295;
-			}
-		}
+			_6HwO75kWNssUCje1MLwKd3pGXmk = _6HwO75kWNssUCje1MLwKd3pGXmk,
+			_CmwC8GuQ56hi7QXOmmQpFukQ49j = _CmwC8GuQ56hi7QXOmmQpFukQ49j,
+			_0WMjfJphUj6JnIm1ZkD3ScpYc0F = destinationArray
+		};
 	}
 
 	object ICloneable.Clone()
 	{
-		//ILSpy generated this explicit interface implementation from .override directive in Clone
 		return this.Clone();
 	}
 
-	public override string _SflzbyPcrkdh9uZXinsV7KrbBMw()
+	public override string ToString()
 	{
 		return "{ Width=" + _6HwO75kWNssUCje1MLwKd3pGXmk + ", Height=" + _CmwC8GuQ56hi7QXOmmQpFukQ49j + " }";
 	}

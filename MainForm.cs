@@ -13,36 +13,36 @@ internal class MainForm : Form {
 
 	private _K3TiPWyBDUpgQKKDVFVeRQ0N4cX _0p3Brd5rbHU6G4v0UTyLsnWPJ2d;
 
-	private ControlPanelForm _nG2MucfACsUyiknR5T0En28BPR9;
+	private ControlPanelForm ctrlPanelForm;
 
-	private InstructionsForm _tWgVuVjdz9gN1kXjtaNba3vSuog;
+	private InstructionsForm instructionsForm;
 
 	private IContainer _Container;
 
-	private ImageList _flZd9LBaLgVakccv6pbLoGboeCNC;
+	private ImageList imageList;
 
-	private Panel _cfQ2nBR9VK5laOFiZilpN0GbzVR;
+	private Panel pnlContent;
 
-	private Panel _pAd0oJasDmAkdcjhMZe1JDlbSjr;
+	private Panel pnlStrip;
 
-	private MenuStrip _hb5d30EUq0EopY266mbeS55K6Ii;
+	private MenuStrip menuStrip;
 
-	private ToolStripMenuItem _FX7AVuhJzGgyhrUztEbr6Gya5ZO;
+	private ToolStripMenuItem btnAbout;
 
-	private ToolStripMenuItem _EfkqSC9gduqvfMt8mYtx5jO0THg;
+	private ToolStripMenuItem btnHacks;
 
-	private ToolStripMenuItem _xtcKg1sWRCBuiuJxm3CtyQ3G3sc;
+	private ToolStripMenuItem lblVersion;
 
-	private ToolStripMenuItem _oT4alXeTqsHmh8APqbHB941Uzlc;
+	private ToolStripMenuItem instructionsToolStripMenuItem;
 
-	private Timer _O3LpaCvM1vP0FMX2OknddbMCJAn;
+	private Timer timer;
 
-	public LocalProxy _K7ZdnyAWKqJeAPIhC4xsrSzRGat { get; private set; }
+	public LocalProxy _ProxyServer { get; private set; }
 
 	public MainForm()
 	{
 		LoadResources();
-		_K7ZdnyAWKqJeAPIhC4xsrSzRGat = new LocalProxy();
+		_ProxyServer = new LocalProxy();
 	}
 
 	[AsyncStateMachine(typeof(_FjdiqLrGVaHBcAu4Rq92FM9vL7I))]
@@ -87,59 +87,28 @@ internal class MainForm : Form {
 
 	public void _8oPM3VHU7XKNB30XxFjCRfroQLo(object sender, EventArgs e)
 	{
-		_nG2MucfACsUyiknR5T0En28BPR9.BringToFront();
+		ctrlPanelForm.BringToFront();
 	}
 
 	public void _GU6csqtcZcVmT42WMdJViL1lkGK(object sender, EventArgs e)
 	{
-		_tWgVuVjdz9gN1kXjtaNba3vSuog.BringToFront();
+		instructionsForm.BringToFront();
 	}
 
-	private void _OcW4ga88AD1dLk4jK6VSMcUIehK(object sender, EventArgs e)
+	private void OnClientLinkClick(object sender, EventArgs e)
 	{
 		Process.Start("https://realmstock.com/pages/rotmg-unity-exalt-hacks-cheats");
 	}
 
-	private void _WrLHruSzr730Cwj4t9rYX0YJtGe(object sender, FormClosingEventArgs e)
+	private void OnCloseWindow(object sender, FormClosingEventArgs e)
 	{
-		//Discarded unreachable code: IL_0038
-		if (!_hb5d30EUq0EopY266mbeS55K6Ii.Enabled) {
-			goto IL_000d;
+		if (!menuStrip.Enabled) {
+			return;
 		}
 
-		goto IL_0060;
-		IL_0060:
 		DialogResult dialogResult = MessageBox.Show(base.ParentForm, "Are you sure you want to EXIT?",
 			"RealmStock Multi-Tool", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-		int num = 1625179209;
-		goto IL_0012;
-		IL_0012:
-		while (true) {
-			uint num2;
-			switch ((num2 = (uint) num ^ 0x1F9A9EFEu) % 5u) {
-				case 0u:
-					break;
-				default:
-					return;
-				case 3u:
-					return;
-				case 1u:
-					e.Cancel = dialogResult == DialogResult.No;
-					num = (int) (num2 * 1692052679) ^ -1068942345;
-					continue;
-				case 4u:
-					goto IL_0060;
-				case 2u:
-					return;
-			}
-
-			break;
-		}
-
-		goto IL_000d;
-		IL_000d:
-		num = 2029686428;
-		goto IL_0012;
+		e.Cancel = dialogResult == DialogResult.No;
 	}
 
 	private void onFormClose(object sender, FormClosedEventArgs e)
@@ -147,14 +116,14 @@ internal class MainForm : Form {
 		Settings.Default.Save();
 	}
 
-	public void _QKylz9L5nSub0zyZUBw5cjpWDdL(int id, Keys key)
+	public void OnSetHotKey(int id, Keys key)
 	{
-		ProcessInjection._ays3S5z2xKCPIbcZFwkO0Be8WEE(base.Handle, id, 0, key.GetHashCode());
+		ProcessInjection.RegisterHotKey(base.Handle, id, 0, key.GetHashCode());
 	}
 
-	public void _YnA0nTNh4MhhIPLXkJj3JrCKP6g(int id)
+	public void OnUnsetHotKey(int id)
 	{
-		ProcessInjection._HXVpLlj5YH2Zu8xy1nZBQFDbcJf(base.Handle, id);
+		ProcessInjection.UnregisterHotKey(base.Handle, id);
 	}
 
 	protected override void _o9LC3d2fqsm2Dt4NyGei59EBiIn(ref Message m)
@@ -187,7 +156,7 @@ internal class MainForm : Form {
 						continue;
 					}
 					case 2u:
-						_K7ZdnyAWKqJeAPIhC4xsrSzRGat._VEPDVp0jqs3FA5VFgwULGcPV6RZ(id);
+						_ProxyServer._VEPDVp0jqs3FA5VFgwULGcPV6RZ(id);
 						num = (int) ((num2 * 1645570847) ^ 0x1FEED4DB);
 						continue;
 					case 1u:
@@ -214,7 +183,7 @@ internal class MainForm : Form {
 		}
 	}
 
-	private void _AhpKC6FE5BCubyreqY5O2lZYQAN(object sender, EventArgs e)
+	private void OnStartLauncherClick(object sender, EventArgs e)
 	{
 		Process[] processesByName = Process.GetProcessesByName("RotMG Exalt Launcher");
 		int num3 = default(int);
@@ -235,7 +204,7 @@ internal class MainForm : Form {
 					case 7u: {
 						int num5;
 						int num6;
-						if (!InjectionHelper._xybJ0vsmMJNJo4QA7CWP9YTKANn.Contains(process.Id)) {
+						if (!InjectionHelper._ProcessIds.Contains(process.Id)) {
 							num5 = 1155318803;
 							num6 = num5;
 						}
@@ -248,7 +217,7 @@ internal class MainForm : Form {
 						continue;
 					}
 					case 1u:
-						InjectionHelper._xybJ0vsmMJNJo4QA7CWP9YTKANn.Add(process.Id);
+						InjectionHelper._ProcessIds.Add(process.Id);
 						MessageBox.Show("RotMG Exalt must be launched via the Multi Tool in order for hacks to apply!",
 							"Exalt Multi-Tool", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 						num = (int) (num2 * 621592506) ^ -1340124238;
@@ -286,7 +255,7 @@ internal class MainForm : Form {
 		}
 	}
 
-	protected override void _8H2QqjADGkx30Hq77Uf9ZGuRzFD(bool disposing)
+	protected override void Dispose(bool disposing)
 	{
 		if (disposing) {
 			goto IL_0003;
@@ -351,11 +320,11 @@ internal class MainForm : Form {
 					case 8u:
 						break;
 					case 0u:
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Text = "For Exalt X1.3.1.0.0";
+						lblVersion.Text = "For Exalt X1.3.1.0.0";
 						num = ((int) num2 * -360168117) ^ -1384489657;
 						continue;
 					case 35u:
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Click += _nWNC2n3d6mM4TKIRjZMk5IcaAc3;
+						btnAbout.Click += _nWNC2n3d6mM4TKIRjZMk5IcaAc3;
 						num = ((int) num2 * -39973096) ^ 0x466EF761;
 						continue;
 					case 16u:
@@ -369,7 +338,7 @@ internal class MainForm : Form {
 						num = ((int) num2 * -1728412453) ^ 0x2CCDFF6E;
 						continue;
 					case 28u:
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Text = "Start";
+						btnAbout.Text = "Start";
 						num = ((int) num2 * -1461797703) ^ -1893020231;
 						continue;
 					case 30u:
@@ -378,62 +347,62 @@ internal class MainForm : Form {
 						num = ((int) num2 * -891468744) ^ 0x2181CD45;
 						continue;
 					case 20u:
-						_hb5d30EUq0EopY266mbeS55K6Ii.ResumeLayout(performLayout: false);
-						_hb5d30EUq0EopY266mbeS55K6Ii.PerformLayout();
+						menuStrip.ResumeLayout(performLayout: false);
+						menuStrip.PerformLayout();
 						num = ((int) num2 * -1400860324) ^ 0x8F351EB;
 						continue;
 					case 18u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.SuspendLayout();
-						_hb5d30EUq0EopY266mbeS55K6Ii.SuspendLayout();
+						pnlStrip.SuspendLayout();
+						menuStrip.SuspendLayout();
 						SuspendLayout();
 						num = ((int) num2 * -41414382) ^ -601297836;
 						continue;
 					case 27u:
-						_hb5d30EUq0EopY266mbeS55K6Ii = new MenuStrip();
+						menuStrip = new MenuStrip();
 						num = (int) ((num2 * 667676371) ^ 0x43BE611D);
 						continue;
 					case 4u:
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Image =
+						lblVersion.Image =
 							(Image) componentResourceManager.GetObject("lblVersion.Image");
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Name = "lblVersion";
+						lblVersion.Name = "lblVersion";
 						num = (int) ((num2 * 1117308565) ^ 0x11927395);
 						continue;
 					case 14u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.Name = "pnlContent";
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.Size = new Size(560, 342);
+						pnlContent.Name = "pnlContent";
+						pnlContent.Size = new Size(560, 342);
 						num = ((int) num2 * -878268699) ^ -621013233;
 						continue;
 					case 41u:
 						MinimumSize = new Size(600, 450);
 						base.Name = "FrmMultiTool";
 						Text = "RealmStock Exalt Multi-Tool v0.23d";
-						base.FormClosing += _WrLHruSzr730Cwj4t9rYX0YJtGe;
+						base.FormClosing += OnCloseWindow;
 						num = (int) ((num2 * 882658797) ^ 0x4DD90D45);
 						continue;
 					case 34u:
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Image =
+						btnHacks.Image =
 							(Image) componentResourceManager.GetObject("btnHacks.Image");
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Name = "btnHacks";
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Size = new Size(85, 33);
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Text = "Hacks";
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Click += _cjAqFPFbW329JYZnkT0wAIi7ehk;
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Alignment = ToolStripItemAlignment.Right;
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.ForeColor = Color.Gold;
+						btnHacks.Name = "btnHacks";
+						btnHacks.Size = new Size(85, 33);
+						btnHacks.Text = "Hacks";
+						btnHacks.Click += _cjAqFPFbW329JYZnkT0wAIi7ehk;
+						lblVersion.Alignment = ToolStripItemAlignment.Right;
+						lblVersion.ForeColor = Color.Gold;
 						num = ((int) num2 * -3383682) ^ 0x3BAFB7E;
 						continue;
 					case 23u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR = new Panel();
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr = new Panel();
+						pnlContent = new Panel();
+						pnlStrip = new Panel();
 						num = ((int) num2 * -1326145905) ^ -803245292;
 						continue;
 					case 32u:
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Name = "instructionsToolStripMenuItem";
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Size = new Size(121, 33);
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Text = "Instructions";
+						instructionsToolStripMenuItem.Name = "instructionsToolStripMenuItem";
+						instructionsToolStripMenuItem.Size = new Size(121, 33);
+						instructionsToolStripMenuItem.Text = "Instructions";
 						num = ((int) num2 * -551465386) ^ -1161875193;
 						continue;
 					case 9u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.PerformLayout();
+						pnlStrip.PerformLayout();
 						num = (int) (num2 * 525322542) ^ -271075268;
 						continue;
 					case 44u:
@@ -442,8 +411,8 @@ internal class MainForm : Form {
 						continue;
 					case 21u:
 						base.ClientSize = new Size(584, 411);
-						base.Controls.Add(_pAd0oJasDmAkdcjhMZe1JDlbSjr);
-						base.Controls.Add(_cfQ2nBR9VK5laOFiZilpN0GbzVR);
+						base.Controls.Add(pnlStrip);
+						base.Controls.Add(pnlContent);
 						num = ((int) num2 * -56046519) ^ 0x5A7134E5;
 						continue;
 					case 46u:
@@ -451,15 +420,15 @@ internal class MainForm : Form {
 						num = (int) ((num2 * 1105271890) ^ 0x353F7DA0);
 						continue;
 					case 36u:
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Image =
+						btnAbout.Image =
 							(Image) componentResourceManager.GetObject("btnAbout.Image");
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Name = "btnAbout";
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Size = new Size(77, 33);
+						btnAbout.Name = "btnAbout";
+						btnAbout.Size = new Size(77, 33);
 						num = (int) (num2 * 1393430669) ^ -1440301394;
 						continue;
 					case 13u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.BorderStyle = BorderStyle.FixedSingle;
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.Location = new Point(12, 57);
+						pnlContent.BorderStyle = BorderStyle.FixedSingle;
+						pnlContent.Location = new Point(12, 57);
 						num = ((int) num2 * -1853723983) ^ 0x43513875;
 						continue;
 					case 38u:
@@ -467,20 +436,20 @@ internal class MainForm : Form {
 						num = ((int) num2 * -1347633006) ^ 0x6F2602D4;
 						continue;
 					case 15u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.TabIndex = 1;
+						pnlContent.TabIndex = 1;
 						num = (int) (num2 * 1809742800) ^ -2002911046;
 						continue;
 					case 25u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.Anchor = AnchorStyles.Top | AnchorStyles.Bottom |
+						pnlContent.Anchor = AnchorStyles.Top | AnchorStyles.Bottom |
 						                                      AnchorStyles.Left | AnchorStyles.Right;
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.BackColor = Color.FromArgb(14, 11, 22);
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.BackgroundImage =
+						pnlContent.BackColor = Color.FromArgb(14, 11, 22);
+						pnlContent.BackgroundImage =
 							(Image) componentResourceManager.GetObject("pnlContent.BackgroundImage");
 						num = (int) (num2 * 1946084431) ^ -2119255767;
 						continue;
 					case 42u:
-						_O3LpaCvM1vP0FMX2OknddbMCJAn.Interval = 3000;
-						_O3LpaCvM1vP0FMX2OknddbMCJAn.Tick += _AhpKC6FE5BCubyreqY5O2lZYQAN;
+						timer.Interval = 3000;
+						timer.Tick += OnStartLauncherClick;
 						num = ((int) num2 * -1394676259) ^ -89096063;
 						continue;
 					case 5u:
@@ -488,9 +457,9 @@ internal class MainForm : Form {
 						num = ((int) num2 * -540032257) ^ -533037427;
 						continue;
 					case 6u:
-						_flZd9LBaLgVakccv6pbLoGboeCNC.ImageStream =
+						imageList.ImageStream =
 							(ImageListStreamer) componentResourceManager.GetObject("imagesTabs.ImageStream");
-						_flZd9LBaLgVakccv6pbLoGboeCNC.TransparentColor = Color.Transparent;
+						imageList.TransparentColor = Color.Transparent;
 						num = ((int) num2 * -200336298) ^ 0x49CA0C67;
 						continue;
 					case 2u:
@@ -498,102 +467,102 @@ internal class MainForm : Form {
 						num = (int) (num2 * 1918292426) ^ -2099668482;
 						continue;
 					case 3u:
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
-						_EfkqSC9gduqvfMt8mYtx5jO0THg.ForeColor = Color.Gold;
+						btnHacks.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
+						btnHacks.ForeColor = Color.Gold;
 						num = (int) ((num2 * 1157351681) ^ 0x3F0AE6C7);
 						continue;
 					case 43u:
-						_flZd9LBaLgVakccv6pbLoGboeCNC = new ImageList(_Container);
+						imageList = new ImageList(_Container);
 						num = (int) ((num2 * 1146838945) ^ 0x2A42382A);
 						continue;
 					case 40u:
-						_cfQ2nBR9VK5laOFiZilpN0GbzVR.BackgroundImageLayout = ImageLayout.Zoom;
+						pnlContent.BackgroundImageLayout = ImageLayout.Zoom;
 						num = (int) (num2 * 414665822) ^ -935751221;
 						continue;
 					case 11u:
-						_hb5d30EUq0EopY266mbeS55K6Ii.Enabled = false;
-						_hb5d30EUq0EopY266mbeS55K6Ii.ImageScalingSize = new Size(24, 24);
-						_hb5d30EUq0EopY266mbeS55K6Ii.Items.AddRange(new ToolStripItem[4]
+						menuStrip.Enabled = false;
+						menuStrip.ImageScalingSize = new Size(24, 24);
+						menuStrip.Items.AddRange(new ToolStripItem[4]
 						{
-							_FX7AVuhJzGgyhrUztEbr6Gya5ZO,
-							_oT4alXeTqsHmh8APqbHB941Uzlc,
-							_EfkqSC9gduqvfMt8mYtx5jO0THg,
-							_xtcKg1sWRCBuiuJxm3CtyQ3G3sc
+							btnAbout,
+							instructionsToolStripMenuItem,
+							btnHacks,
+							lblVersion
 						});
 						num = ((int) num2 * -1967784721) ^ 0x781B6725;
 						continue;
 					case 22u:
-						_hb5d30EUq0EopY266mbeS55K6Ii.Location = new Point(0, 0);
+						menuStrip.Location = new Point(0, 0);
 						num = (int) (num2 * 1708947951) ^ -29506013;
 						continue;
 					case 17u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.Name = "pnlStrip";
+						pnlStrip.Name = "pnlStrip";
 						num = (int) ((num2 * 1868666428) ^ 0xB4FFA37);
 						continue;
 					case 31u:
-						_hb5d30EUq0EopY266mbeS55K6Ii.Name = "stripMain";
-						_hb5d30EUq0EopY266mbeS55K6Ii.Size = new Size(558, 37);
-						_hb5d30EUq0EopY266mbeS55K6Ii.TabIndex = 2;
-						_hb5d30EUq0EopY266mbeS55K6Ii.Text = "menuStrip1";
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO.ForeColor = Color.Gold;
+						menuStrip.Name = "stripMain";
+						menuStrip.Size = new Size(558, 37);
+						menuStrip.TabIndex = 2;
+						menuStrip.Text = "menuStrip1";
+						btnAbout.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
+						btnAbout.ForeColor = Color.Gold;
 						num = ((int) num2 * -2037727789) ^ -2011314785;
 						continue;
 					case 10u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.ResumeLayout(performLayout: false);
+						pnlStrip.ResumeLayout(performLayout: false);
 						num = (int) (num2 * 2106473021) ^ -2076455043;
 						continue;
 					case 45u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.Size = new Size(560, 39);
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.TabIndex = 2;
-						_hb5d30EUq0EopY266mbeS55K6Ii.BackgroundImage =
+						pnlStrip.Size = new Size(560, 39);
+						pnlStrip.TabIndex = 2;
+						menuStrip.BackgroundImage =
 							(Image) componentResourceManager.GetObject("stripMain.BackgroundImage");
-						_hb5d30EUq0EopY266mbeS55K6Ii.Dock = DockStyle.Fill;
+						menuStrip.Dock = DockStyle.Fill;
 						num = (int) (num2 * 242745370) ^ -449790337;
 						continue;
 					case 33u:
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Click += _OcW4ga88AD1dLk4jK6VSMcUIehK;
+						lblVersion.Click += OnClientLinkClick;
 						num = (int) ((num2 * 469677311) ^ 0x6CDE9F1E);
 						continue;
 					case 24u:
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc = new ToolStripMenuItem();
-						_O3LpaCvM1vP0FMX2OknddbMCJAn = new Timer(_Container);
+						lblVersion = new ToolStripMenuItem();
+						timer = new Timer(_Container);
 						num = ((int) num2 * -191228145) ^ -1894647636;
 						continue;
 					case 47u:
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
-						_oT4alXeTqsHmh8APqbHB941Uzlc.ForeColor = Color.Gold;
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Image =
+						instructionsToolStripMenuItem.Font = new Font("Segoe UI", 10.5f, FontStyle.Bold);
+						instructionsToolStripMenuItem.ForeColor = Color.Gold;
+						instructionsToolStripMenuItem.Image =
 							(Image) componentResourceManager.GetObject("instructionsToolStripMenuItem.Image");
 						num = (int) ((num2 * 315973106) ^ 0x156547E8);
 						continue;
 					case 12u:
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.BorderStyle = BorderStyle.FixedSingle;
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.Controls.Add(_hb5d30EUq0EopY266mbeS55K6Ii);
-						_pAd0oJasDmAkdcjhMZe1JDlbSjr.Location = new Point(12, 12);
+						pnlStrip.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+						pnlStrip.BorderStyle = BorderStyle.FixedSingle;
+						pnlStrip.Controls.Add(menuStrip);
+						pnlStrip.Location = new Point(12, 12);
 						num = (int) ((num2 * 535178139) ^ 0x279318C3);
 						continue;
 					case 1u:
-						_oT4alXeTqsHmh8APqbHB941Uzlc.Click += _GU6csqtcZcVmT42WMdJViL1lkGK;
+						instructionsToolStripMenuItem.Click += _GU6csqtcZcVmT42WMdJViL1lkGK;
 						num = ((int) num2 * -740485682) ^ -1190279413;
 						continue;
 					case 26u:
-						_FX7AVuhJzGgyhrUztEbr6Gya5ZO = new ToolStripMenuItem();
-						_oT4alXeTqsHmh8APqbHB941Uzlc = new ToolStripMenuItem();
-						_EfkqSC9gduqvfMt8mYtx5jO0THg = new ToolStripMenuItem();
+						btnAbout = new ToolStripMenuItem();
+						instructionsToolStripMenuItem = new ToolStripMenuItem();
+						btnHacks = new ToolStripMenuItem();
 						num = (int) ((num2 * 558971674) ^ 0x2DD6D94A);
 						continue;
 					case 39u:
-						_O3LpaCvM1vP0FMX2OknddbMCJAn.Enabled = true;
+						timer.Enabled = true;
 						num = ((int) num2 * -1331710237) ^ -2045404391;
 						continue;
 					case 37u:
-						_flZd9LBaLgVakccv6pbLoGboeCNC.Images.SetKeyName(0, "Crown.png");
+						imageList.Images.SetKeyName(0, "Crown.png");
 						num = ((int) num2 * -492535975) ^ -765312382;
 						continue;
 					case 7u:
-						_xtcKg1sWRCBuiuJxm3CtyQ3G3sc.Size = new Size(139, 33);
+						lblVersion.Size = new Size(139, 33);
 						num = ((int) num2 * -1204561361) ^ 0xE57226F;
 						continue;
 					default:
@@ -607,12 +576,12 @@ internal class MainForm : Form {
 	}
 
 	[CompilerGenerated]
-	private void _MCH6UlJVJa7Eth5XB55s5irFMTF()
+	private void StartProxy()
 	{
 		try {
 			Program.LogInfoMessage("core", "Initializing proxy...");
 			ResourceDownloader._uLt6b1uwFNgoZycBDqE02WmgdfB();
-			ServerList._J120yKYbtEVgxfxC5akH1UoBgjq();
+			ServerList.GetServerList();
 			while (true) {
 				int num = 1317307132;
 				while (true) {
@@ -630,7 +599,7 @@ internal class MainForm : Form {
 
 					break;
 					IL_003b:
-					_K7ZdnyAWKqJeAPIhC4xsrSzRGat.Start();
+					_ProxyServer.Start();
 					num = (int) (num2 * 1401915683) ^ -2028665882;
 				}
 			}

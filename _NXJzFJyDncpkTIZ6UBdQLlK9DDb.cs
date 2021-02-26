@@ -59,7 +59,7 @@ internal class _NXJzFJyDncpkTIZ6UBdQLlK9DDb
 		DateTime now = DateTime.Now;
 		int num;
 		int num2;
-		if (_LAY5qDOXeCwwE8WGSZkOMs9oNKh._PositionX != move._r0866iEhjgniNmmLz9ygFmfaWPA._PositionX)
+		if (_LAY5qDOXeCwwE8WGSZkOMs9oNKh._PositionX != move._NewPosition._PositionX)
 		{
 			num = -893787978;
 			num2 = num;
@@ -85,7 +85,7 @@ internal class _NXJzFJyDncpkTIZ6UBdQLlK9DDb
 			{
 				int num6;
 				int num7;
-				if (_LAY5qDOXeCwwE8WGSZkOMs9oNKh._PositionY != move._r0866iEhjgniNmmLz9ygFmfaWPA._PositionY)
+				if (_LAY5qDOXeCwwE8WGSZkOMs9oNKh._PositionY != move._NewPosition._PositionY)
 				{
 					num6 = -1515855326;
 					num7 = num6;
@@ -132,7 +132,7 @@ internal class _NXJzFJyDncpkTIZ6UBdQLlK9DDb
 				continue;
 			}
 			case 6u:
-				_LAY5qDOXeCwwE8WGSZkOMs9oNKh = move._r0866iEhjgniNmmLz9ygFmfaWPA;
+				_LAY5qDOXeCwwE8WGSZkOMs9oNKh = move._NewPosition;
 				num = (int)(num3 * 849265353) ^ -1527796078;
 				continue;
 			case 8u:
