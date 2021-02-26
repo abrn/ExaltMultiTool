@@ -5,15 +5,15 @@ internal class OryxHelper
 {
 	private const int OryxThreeType = 45363;
 
-	private const int _LBGbKWhBUxll3Xtt3pRjiExIE2O = 8701;
+	private const int CoinTypeOne = 8701;
 
-	private const int _RPZhafYf8fZwNkmJFT3mZE3w06V = 8702;
+	private const int CoinTypeTwo = 8702;
 
-	private const int _CNOzBJyyZiTc9mpYACbk6Ce1Oxx = 8703;
+	private const int CoinTypeThree = 8703;
 
 	private const int DammahType = 9635;
 
-	private readonly List<string> ShieldingPhases = new List<string>
+	private readonly List<string> _ShieldingPhrases = new List<string>
 	{
 		"No more! A steep price is to be paid for this brazen insolence in the face of my own grandeur!",
 		"Greetings, dogged peons! I am Dammah, and I shall be your unmaker!",
@@ -22,7 +22,7 @@ internal class OryxHelper
 		"I SAID DO NOT INTERRUPT ME! For this I shall hasten your end!"
 	};
 
-	private readonly List<int> OryxIgnoreTextures = new List<int>
+	private readonly List<int> _OryxShieldingTextures = new List<int>
 	{
 		8,
 		9,
@@ -33,62 +33,39 @@ internal class OryxHelper
 		94
 	};
 
-	private Client CurrentClient;
+	private Client _currentClient;
 
-	private bool _InSanctuary;
+	private bool _inSanctuary;
 
-	private int _Iz1POFdHlMFrJHwbDsWXXhNWElj = -1;
+	private int _iz1PoFdHlMFrJHwbDsWxXhNwElj = -1;
 
-	private int _r7ZdM6xdXiqvbZJtINNDT2dEpAS = -1;
+	private int _r7ZdM6XdXiqvbZJtInndt2dEpAs = -1;
 
-	private int _477CT08hnzYliCGcgisOnOsuJrd = -1;
+	private int _477Ct08HnzYliCGcgisOnOsuJrd = -1;
 
-	private int _uVJ77yndSE01nQVrPjFse5CsyYE = -1;
+	private int _uVj77YndSe01NQVrPjFse5CsyYe = -1;
 
-	private bool _ZduGw3wt7ZfTqjLJaORYdo257HE;
+	private bool _OryxShielding;
 
-	private int _St84Xd2QJfrycOmAcQiCvr92mAq = -1;
+	private int _st84Xd2QJfrycOmAcQiCvr92MAq = -1;
 
-	private bool _2GIxvwUGGhXZDbsdJhlfFL7Aynq;
+	private bool _IgnoreDammah;
 
-	private int _Qi8WHb2CLkop1GCwnhQRKKIWiiG = -1;
+	private int _qi8WHb2CLkop1GCwnhQrkkiWiiG = -1;
 
 	public OryxHelper(Client client)
 	{
-		while (true)
-		{
-			int num = -1444855683;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0xF5D3C5D7u) % 3u)
-				{
-				case 2u:
-					break;
-				default:
-					return;
-				case 1u:
-					goto IL_00d6;
-				case 0u:
-					return;
-				}
-				break;
-				IL_00d6:
-				CurrentClient = client;
-				num = (int)(num2 * 1916784330) ^ -1523435101;
-			}
-		}
+		_currentClient = client;
 	}
 
 	public void OnMapInfo(MapInfoPacket mapInfo)
 	{
-		_InSanctuary = mapInfo._MapName == "Oryx's Sanctuary";
+		_inSanctuary = mapInfo._MapName == "Oryx's Sanctuary";
 	}
 
-	public void onEnemyHit(EnemyHitPacket enemyHit)
+	public void OnEnemyHit(EnemyHitPacket enemyHit)
 	{
-		//Discarded unreachable code: IL_00ee, IL_0295
-		if (!_InSanctuary)
+		if (!_inSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -121,7 +98,7 @@ internal class OryxHelper
 			{
 				int num18;
 				int num19;
-				if (enemyHit._91Zhx0OBsUhlR5optw0cihxmls4 != _uVJ77yndSE01nQVrPjFse5CsyYE)
+				if (enemyHit._TargetId != _uVj77YndSe01NQVrPjFse5CsyYe)
 				{
 					num18 = -1555264406;
 					num19 = num18;
@@ -138,7 +115,7 @@ internal class OryxHelper
 			{
 				int num12;
 				int num13;
-				if (!_ZduGw3wt7ZfTqjLJaORYdo257HE)
+				if (!_OryxShielding)
 				{
 					num12 = -749704523;
 					num13 = num12;
@@ -155,7 +132,7 @@ internal class OryxHelper
 			{
 				int num20;
 				int num21;
-				if (enemyHit._91Zhx0OBsUhlR5optw0cihxmls4 != _r7ZdM6xdXiqvbZJtINNDT2dEpAS)
+				if (enemyHit._TargetId != _r7ZdM6XdXiqvbZJtInndt2dEpAs)
 				{
 					num20 = 792036648;
 					num21 = num20;
@@ -176,7 +153,7 @@ internal class OryxHelper
 			{
 				int num14;
 				int num15;
-				if (enemyHit._91Zhx0OBsUhlR5optw0cihxmls4 == _St84Xd2QJfrycOmAcQiCvr92mAq)
+				if (enemyHit._TargetId == _st84Xd2QJfrycOmAcQiCvr92MAq)
 				{
 					num14 = 684389852;
 					num15 = num14;
@@ -197,7 +174,7 @@ internal class OryxHelper
 			{
 				int num8;
 				int num9;
-				if (_St84Xd2QJfrycOmAcQiCvr92mAq == -1)
+				if (_st84Xd2QJfrycOmAcQiCvr92MAq == -1)
 				{
 					num8 = -1434498008;
 					num9 = num8;
@@ -222,7 +199,7 @@ internal class OryxHelper
 			{
 				int num6;
 				int num7;
-				if (enemyHit._91Zhx0OBsUhlR5optw0cihxmls4 == _477CT08hnzYliCGcgisOnOsuJrd)
+				if (enemyHit._TargetId == _477Ct08HnzYliCGcgisOnOsuJrd)
 				{
 					num6 = -918164499;
 					num7 = num6;
@@ -239,7 +216,7 @@ internal class OryxHelper
 			{
 				int num16;
 				int num17;
-				if (!_2GIxvwUGGhXZDbsdJhlfFL7Aynq)
+				if (!_IgnoreDammah)
 				{
 					num16 = -1026590777;
 					num17 = num16;
@@ -260,7 +237,7 @@ internal class OryxHelper
 			{
 				int num10;
 				int num11;
-				if (_Iz1POFdHlMFrJHwbDsWXXhNWElj != enemyHit._91Zhx0OBsUhlR5optw0cihxmls4)
+				if (_iz1PoFdHlMFrJHwbDsWxXhNwElj != enemyHit._TargetId)
 				{
 					num10 = -307074337;
 					num11 = num10;
@@ -277,7 +254,7 @@ internal class OryxHelper
 			{
 				int num4;
 				int num5;
-				if (enemyHit._91Zhx0OBsUhlR5optw0cihxmls4 == _Qi8WHb2CLkop1GCwnhQRKKIWiiG)
+				if (enemyHit._TargetId == _qi8WHb2CLkop1GCwnhQrkkiWiiG)
 				{
 					num4 = -1143198530;
 					num5 = num4;
@@ -343,12 +320,10 @@ internal class OryxHelper
 		goto IL_0010;
 	}
 
-	public void onShowEffect(ShowEffectPacket showEffect)
+	public void OnShowEffect(ShowEffectPacket showEffect)
 	{
-		//Discarded unreachable code: IL_00ab, IL_0106, IL_01cd, IL_0228, IL_027a, IL_0285, IL_02c1
-		if (!_InSanctuary)
-		{
-			goto IL_000b;
+		if (!_inSanctuary) {
+			return;
 		}
 		goto IL_01ac;
 		IL_01ac:
@@ -366,7 +341,7 @@ internal class OryxHelper
 		}
 		goto IL_0010;
 		IL_0010:
-		PlayerData jI4Bueou7dItYp5S7QML5vyC6Rc = default(PlayerData);
+		PlayerData jI4Bueou7dItYp5S7Qml5VyC6Rc = default(PlayerData);
 		while (true)
 		{
 			uint num3;
@@ -402,14 +377,14 @@ internal class OryxHelper
 			case 1u:
 				return;
 			case 15u:
-				jI4Bueou7dItYp5S7QML5vyC6Rc = CurrentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK[showEffect._91Zhx0OBsUhlR5optw0cihxmls4];
+				jI4Bueou7dItYp5S7Qml5VyC6Rc = _currentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK[showEffect._91Zhx0OBsUhlR5optw0cihxmls4];
 				num = -1602953143;
 				continue;
 			case 11u:
 			{
 				int num16;
 				int num17;
-				if (jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 == 8703)
+				if (jI4Bueou7dItYp5S7Qml5VyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 == CoinTypeThree)
 				{
 					num16 = 281729621;
 					num17 = num16;
@@ -426,7 +401,7 @@ internal class OryxHelper
 			{
 				int num6;
 				int num7;
-				if (jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 != 8702)
+				if (jI4Bueou7dItYp5S7Qml5VyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 != CoinTypeTwo)
 				{
 					num6 = -1194934049;
 					num7 = num6;
@@ -449,7 +424,7 @@ internal class OryxHelper
 			{
 				int num12;
 				int num13;
-				if (jI4Bueou7dItYp5S7QML5vyC6Rc == null)
+				if (jI4Bueou7dItYp5S7Qml5VyC6Rc == null)
 				{
 					num12 = -1084491816;
 					num13 = num12;
@@ -482,7 +457,7 @@ internal class OryxHelper
 			case 16u:
 				return;
 			case 6u:
-				_St84Xd2QJfrycOmAcQiCvr92mAq = showEffect._91Zhx0OBsUhlR5optw0cihxmls4;
+				_st84Xd2QJfrycOmAcQiCvr92MAq = showEffect._91Zhx0OBsUhlR5optw0cihxmls4;
 				num = -1169534473;
 				continue;
 			case 3u:
@@ -533,7 +508,7 @@ internal class OryxHelper
 			break;
 			IL_02d3:
 			int num18;
-			if (!CurrentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(showEffect._91Zhx0OBsUhlR5optw0cihxmls4))
+			if (!_currentClient._VPArsrlUa0uEsW6OxAYV9WHJAMK.ContainsKey(showEffect._91Zhx0OBsUhlR5optw0cihxmls4))
 			{
 				num = -1121230564;
 				num18 = num;
@@ -572,7 +547,7 @@ internal class OryxHelper
 			continue;
 			IL_018b:
 			int num21;
-			if (jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 == 8701)
+			if (jI4Bueou7dItYp5S7Qml5VyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7 == CoinTypeOne)
 			{
 				num = -1390578631;
 				num21 = num;
@@ -589,16 +564,14 @@ internal class OryxHelper
 		goto IL_0010;
 	}
 
-	public void onUpdate(UpdatePacket update)
+	public void OnUpdate(UpdatePacket update)
 	{
-		//Discarded unreachable code: IL_00db, IL_017f
-		if (!_InSanctuary)
-		{
-			goto IL_000b;
+		if (!_inSanctuary) {
+			return;
 		}
 		goto IL_0272;
 		IL_0272:
-		GameObject[] lakUpSXZB1zdJcCECL20tl6SVrT = update._NewObjects;
+		GameObject[] lakUpSxzb1ZdJcCecl20Tl6SVrT = update._NewObjects;
 		int num = 1478668764;
 		goto IL_0010;
 		IL_0010:
@@ -619,7 +592,7 @@ internal class OryxHelper
 			{
 				int num6;
 				int num7;
-				if (gameObject._ObjectType != 8701)
+				if (gameObject._ObjectType != CoinTypeOne)
 				{
 					num6 = 999094473;
 					num7 = num6;
@@ -638,7 +611,7 @@ internal class OryxHelper
 			case 17u:
 				return;
 			case 2u:
-				_uVJ77yndSE01nQVrPjFse5CsyYE = gameObject._Status._ObjectId;
+				_uVj77YndSe01NQVrPjFse5CsyYe = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1744324475) ^ -1038323731;
 				continue;
 			case 6u:
@@ -655,7 +628,7 @@ internal class OryxHelper
 			case 20u:
 				return;
 			case 8u:
-				_Qi8WHb2CLkop1GCwnhQRKKIWiiG = gameObject._Status._ObjectId;
+				_qi8WHb2CLkop1GCwnhQrkkiWiiG = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1355130168) ^ 0x5EB52ABF;
 				continue;
 			case 14u:
@@ -663,25 +636,25 @@ internal class OryxHelper
 				num = 2112293538;
 				continue;
 			case 1u:
-				_Iz1POFdHlMFrJHwbDsWXXhNWElj = gameObject._Status._ObjectId;
+				_iz1PoFdHlMFrJHwbDsWxXhNwElj = gameObject._Status._ObjectId;
 				num = (int)(num2 * 1378612742) ^ -1920847158;
 				continue;
 			case 18u:
-				_r7ZdM6xdXiqvbZJtINNDT2dEpAS = gameObject._Status._ObjectId;
+				_r7ZdM6XdXiqvbZJtInndt2dEpAs = gameObject._Status._ObjectId;
 				num = ((int)num2 * -1419229404) ^ -1181828291;
 				continue;
 			case 10u:
 				num = ((int)num2 * -1428227740) ^ -107318422;
 				continue;
 			case 9u:
-				gameObject = lakUpSXZB1zdJcCECL20tl6SVrT[num3];
+				gameObject = lakUpSxzb1ZdJcCecl20Tl6SVrT[num3];
 				num = 563293405;
 				continue;
 			case 4u:
 			{
 				int num4;
 				int num5;
-				if (gameObject._ObjectType == 45363)
+				if (gameObject._ObjectType == OryxThreeType)
 				{
 					num4 = -1361773264;
 					num5 = num4;
@@ -699,7 +672,7 @@ internal class OryxHelper
 			case 0u:
 				goto IL_0272;
 			case 3u:
-				_477CT08hnzYliCGcgisOnOsuJrd = gameObject._Status._ObjectId;
+				_477Ct08HnzYliCGcgisOnOsuJrd = gameObject._Status._ObjectId;
 				num = ((int)num2 * -408297481) ^ 0x5A20968F;
 				continue;
 			case 5u:
@@ -714,7 +687,7 @@ internal class OryxHelper
 			break;
 			IL_02a6:
 			int num8;
-			if (gameObject._ObjectType == 8703)
+			if (gameObject._ObjectType == CoinTypeThree)
 			{
 				num = 1790976131;
 				num8 = num;
@@ -727,7 +700,7 @@ internal class OryxHelper
 			continue;
 			IL_0085:
 			int num9;
-			if (num3 >= lakUpSXZB1zdJcCECL20tl6SVrT.Length)
+			if (num3 >= lakUpSxzb1ZdJcCecl20Tl6SVrT.Length)
 			{
 				num = 844560977;
 				num9 = num;
@@ -740,7 +713,7 @@ internal class OryxHelper
 			continue;
 			IL_0131:
 			int num10;
-			if (_Iz1POFdHlMFrJHwbDsWXXhNWElj != -1)
+			if (_iz1PoFdHlMFrJHwbDsWxXhNwElj != -1)
 			{
 				num = 675459199;
 				num10 = num;
@@ -753,7 +726,7 @@ internal class OryxHelper
 			continue;
 			IL_0251:
 			int num11;
-			if (gameObject._ObjectType != 9635)
+			if (gameObject._ObjectType != DammahType)
 			{
 				num = 675459199;
 				num11 = num;
@@ -766,7 +739,7 @@ internal class OryxHelper
 			continue;
 			IL_0110:
 			int num12;
-			if (gameObject._ObjectType != 8702)
+			if (gameObject._ObjectType != CoinTypeTwo)
 			{
 				num = 1695284284;
 				num12 = num;
@@ -785,21 +758,8 @@ internal class OryxHelper
 
 	public void OnNewTick(NewTickPacket newTick)
 	{
-		//Discarded unreachable code: IL_002b
-		if (!_InSanctuary)
-		{
-			while (true)
-			{
-				uint num;
-				switch ((num = 0x848923A3u ^ 0xD4C84076u) % 3u)
-				{
-				case 2u:
-					continue;
-				case 1u:
-					return;
-				}
-				break;
-			}
+		if (!_inSanctuary) {
+			return;
 		}
 		using List<Status>.Enumerator enumerator = newTick._UEmErv2L2MQXrwsVtG0rtsVhAnB.GetEnumerator();
 		Status current = default(Status);
@@ -831,7 +791,7 @@ internal class OryxHelper
 				{
 					current = enumerator.Current;
 					int num4;
-					if (current._ObjectId == _Iz1POFdHlMFrJHwbDsWXXhNWElj)
+					if (current._ObjectId == _iz1PoFdHlMFrJHwbDsWxXhNwElj)
 					{
 						num2 = -1108682560;
 						num4 = num2;
@@ -859,7 +819,6 @@ internal class OryxHelper
 
 	private void ProcessStatData(Status status)
 	{
-		//Discarded unreachable code: IL_00e3
 		using List<StatData>.Enumerator enumerator = status._Stats.GetEnumerator();
 		StatData current = default(StatData);
 		while (true)
@@ -887,7 +846,7 @@ internal class OryxHelper
 				default:
 					return;
 				case 2u:
-					_ZduGw3wt7ZfTqjLJaORYdo257HE = OryxIgnoreTextures.Contains(current._StatValue);
+					_OryxShielding = _OryxShieldingTextures.Contains(current._StatValue);
 					num = ((int)num3 * -1594610543) ^ -885276513;
 					continue;
 				case 4u:
@@ -910,7 +869,7 @@ internal class OryxHelper
 				case 0u:
 					break;
 				case 1u:
-					Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Oryx shielding: {_ZduGw3wt7ZfTqjLJaORYdo257HE} (alt texture id {current._StatValue})");
+					Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Oryx shielding: {_OryxShielding} (alt texture id {current._StatValue})");
 					return;
 				case 6u:
 					current = enumerator.Current;
@@ -926,8 +885,7 @@ internal class OryxHelper
 
 	internal void OnTextPacket(TextPacket text)
 	{
-		//Discarded unreachable code: IL_006d, IL_00b4, IL_00c7
-		if (!_InSanctuary)
+		if (!_inSanctuary)
 		{
 			goto IL_000b;
 		}
@@ -961,7 +919,7 @@ internal class OryxHelper
 			case 5u:
 				return;
 			case 8u:
-				Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Ignoring Dammah: {_2GIxvwUGGhXZDbsdJhlfFL7Aynq}, raw text: {text._CleanMessage}");
+				Program._JWptdPwuTlZYlLpGrinhw8DeS3h("client", $"Ignoring Dammah: {_IgnoreDammah}, raw text: {text._CleanMessage}");
 				num = (int)(num3 * 54915312) ^ -593345678;
 				continue;
 			case 3u:
@@ -969,7 +927,7 @@ internal class OryxHelper
 			case 6u:
 				return;
 			case 4u:
-				_2GIxvwUGGhXZDbsdJhlfFL7Aynq = ShieldingPhases.Contains(text._CleanMessage);
+				_IgnoreDammah = _ShieldingPhrases.Contains(text._CleanMessage);
 				num = -485222150;
 				continue;
 			case 1u:
@@ -980,7 +938,7 @@ internal class OryxHelper
 			break;
 			IL_0049:
 			int num4;
-			if (!(text._Name != "#Chancellor Dammah"))
+			if (text._Name == "#Chancellor Dammah")
 			{
 				num = -1247957691;
 				num4 = num;

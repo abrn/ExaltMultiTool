@@ -23,7 +23,6 @@ internal class TeleportHelper
 
 	public void _CgwO1K8tgdyKPdKvCtJupNhapLD(PlayerTextPacket playerText)
 	{
-		//Discarded unreachable code: IL_00c6, IL_00f6, IL_012d, IL_0184, IL_038d, IL_0446, IL_04e2, IL_07c9, IL_07fc, IL_0917, IL_0ac1, IL_0b23, IL_0b2e, IL_0b42
 		if (string.IsNullOrEmpty(playerText._Message))
 		{
 			return;
@@ -208,7 +207,7 @@ internal class TeleportHelper
 										continue;
 									case 5u:
 										jI4Bueou7dItYp5S7QML5vyC6Rc2 = current2;
-										num14 = current2._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num14 = current2._Position.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._Position);
 										num18 = -2029029138;
 										continue;
 									case 8u:
@@ -232,7 +231,7 @@ internal class TeleportHelper
 									{
 										int num22;
 										int num23;
-										if (current2._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._FLMczMOk4gNIJMbSsAnIDIvYlDP) >= num14)
+										if (current2._Position.GetDistance(jI4Bueou7dItYp5S7QML5vyC6Rc._Position) >= num14)
 										{
 											num22 = -2076566562;
 											num23 = num22;
@@ -268,7 +267,7 @@ internal class TeleportHelper
 									{
 										int num20;
 										int num21;
-										if (current2 == _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC)
+										if (current2 == _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData)
 										{
 											num20 = -1385695744;
 											num21 = num20;
@@ -308,7 +307,7 @@ internal class TeleportHelper
 							case 26u:
 								goto IL_0753;
 							case 10u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(gXkgDctfNPN0Xyz8qvjQDIS73of2);
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(gXkgDctfNPN0Xyz8qvjQDIS73of2);
 								num17 = (int)(num2 * 1686821117) ^ -2054065793;
 								continue;
 							case 32u:
@@ -354,7 +353,7 @@ internal class TeleportHelper
 								continue;
 							case 6u:
 								gXkgDctfNPN0Xyz8qvjQDIS73of2 = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
-								gXkgDctfNPN0Xyz8qvjQDIS73of2._fn2CRnBpjyTWHR9K8SU4iOwhDtK = jI4Bueou7dItYp5S7QML5vyC6Rc2._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+								gXkgDctfNPN0Xyz8qvjQDIS73of2._ObjectId = jI4Bueou7dItYp5S7QML5vyC6Rc2._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 								num17 = (int)(num2 * 931766000) ^ -1673800875;
 								continue;
 							case 27u:
@@ -414,7 +413,7 @@ internal class TeleportHelper
 								goto IL_098f;
 							case 5u:
 								playerText._Send = false;
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0($"Current location: {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX, 1)}, {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY, 1)}");
+								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0($"Current location: {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionX, 1)}, {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionY, 1)}");
 								num17 = -1483513078;
 								continue;
 							case 23u:
@@ -443,7 +442,7 @@ internal class TeleportHelper
 								num17 = ((int)num2 * -1527675920) ^ 0x3050A16A;
 								continue;
 							case 14u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(reconnectPacket);
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToClient(reconnectPacket);
 								return;
 							case 0u:
 								reconnectPacket._Port = 2050;
@@ -585,8 +584,8 @@ internal class TeleportHelper
 				{
 					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to self!");
 					TeleportPacket gXkgDctfNPN0Xyz8qvjQDIS73of3 = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
-					gXkgDctfNPN0Xyz8qvjQDIS73of3._fn2CRnBpjyTWHR9K8SU4iOwhDtK = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(gXkgDctfNPN0Xyz8qvjQDIS73of3);
+					gXkgDctfNPN0Xyz8qvjQDIS73of3._ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(gXkgDctfNPN0Xyz8qvjQDIS73of3);
 					num = ((int)num2 * -247600723) ^ -171822290;
 					continue;
 				}
@@ -677,8 +676,8 @@ internal class TeleportHelper
 								{
 									_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to " + current._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
 									TeleportPacket teleportPacket = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
-									teleportPacket._fn2CRnBpjyTWHR9K8SU4iOwhDtK = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
-									_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(teleportPacket);
+									teleportPacket._ObjectId = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+									_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(teleportPacket);
 									num3 = (int)((num2 * 2016917650) ^ 0x3A7C32A1);
 									continue;
 								}

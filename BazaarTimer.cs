@@ -47,7 +47,7 @@ internal class BazaarTimer
 		IL_0104:
 		int num;
 		int num2;
-		if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA.Contains("Bazaar"))
+		if (!_50w8wVuv8bL5nhKaR2EHxjrTamB.CurrentMapName.Contains("Bazaar"))
 		{
 			num = 352386156;
 			num2 = num;
@@ -93,7 +93,7 @@ internal class BazaarTimer
 				continue;
 			}
 			case 7u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB.sendChatNotification("Bazaar Timer", _FWeRrJeEUAPVIWA2J2od8vfnvJh + " seconds until you can enter portals");
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendChatNotification("Bazaar Timer", _FWeRrJeEUAPVIWA2J2od8vfnvJh + " seconds until you can enter portals");
 				num = (int)((num3 * 1730820426) ^ 0x43F873EC);
 				continue;
 			case 0u:
@@ -127,7 +127,6 @@ internal class BazaarTimer
 
 	private int _GzL3tpUK57dZuf2yDfFBQYL16Rj(int percent)
 	{
-		//Discarded unreachable code: IL_0038
 		if (percent > 50)
 		{
 			while (true)

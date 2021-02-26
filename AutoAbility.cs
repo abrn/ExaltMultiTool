@@ -102,7 +102,7 @@ internal class AutoAbility
 					continue;
 				}
 				case 1u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(pingPacket);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToClient(pingPacket);
 					num = (int)(num2 * 486706613) ^ -2014501258;
 					continue;
 				case 6u:
@@ -144,14 +144,13 @@ internal class AutoAbility
 		_QVjGB66zFJuKS0AifvnmBrMmpUA = 0;
 	}
 
-	public void _AcQdxLqe2Qsfg5dAgI14UK7PVxab(PlayerShootPacket playerShoot)
+	public void OnPlayerShoot(PlayerShootPacket playerShoot)
 	{
-		_REqTtrf1f1UI7k1CKnC1oikFdjd = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._KxM3gmGBMkIUCunUOzDZpSVchT0(playerShoot._hjRbCZIgEE6lGZJqDLlpYixCdUT, 6.0);
+		_REqTtrf1f1UI7k1CKnC1oikFdjd = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._KxM3gmGBMkIUCunUOzDZpSVchT0(playerShoot._hjRbCZIgEE6lGZJqDLlpYixCdUT, 6.0);
 	}
 
-	public void _taxEBWytYWTbIPVQiT7CFc8K58q(UseItemPacket useItem)
+	public void OnUseItem(UseItemPacket useItem)
 	{
-		//Discarded unreachable code: IL_0090
 		if (useItem._obJo3i4uC8yf7c2aS8NBvEttXTO._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			while (true)
@@ -222,7 +221,7 @@ internal class AutoAbility
 						continue;
 					}
 					case 1u:
-						_50w8wVuv8bL5nhKaR2EHxjrTamB.sendChatNotification("AutoAbility", "Ability is on cooldown!");
+						_50w8wVuv8bL5nhKaR2EHxjrTamB.SendChatNotification("AutoAbility", "Ability is on cooldown!");
 						num = ((int)num2 * -938611376) ^ 0x45E756B;
 						continue;
 					default:
@@ -239,7 +238,7 @@ internal class AutoAbility
 
 	public void _kcBjTzBYfTPCpKNctSQjw45y1mb()
 	{
-		bool flag = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._NZkIxbUdmBjjOtUfYiWJzYBCOdP();
+		bool flag = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._NZkIxbUdmBjjOtUfYiWJzYBCOdP();
 		while (true)
 		{
 			int num = -1068856169;
@@ -327,14 +326,14 @@ internal class AutoAbility
 					_g2ed0KEBqIrhCPMnJz2fI3hXM2CA = false;
 					_F83qcJjBWlsOfjlt8CcrQ3L7Tko = true;
 					AoEPacket obj = (AoEPacket)Packet.CreatePacketFromType(PacketType.AOE);
-					obj._JEsT6uIdK1eySUKAfntb2FPG6xS = 0;
-					obj._C3mvDTxTLKOCwcaeO4BKeVV1ydo = 0;
-					obj._kvTyEminxJMM6fREzgqsVjHaInC = ConditionEffectEnum.Dead;
-					obj._hZZqGJ97TiaLFTbiTFhvTTSGkIb = WorldPosData.Initial;
-					obj._I9LOulXQ6dWoDQOn1L5GkchnJUC = 0f;
-					obj._l0mdLwT0Lqvn0oV26TZ8wa7mjTf = false;
-					obj._4ryHqycpd0BcdbojLHcVLB3vF4Z = 0f;
-					obj._Rgo6h5q8HOGdwEcalhyNY8ouOAE = 1536;
+					obj._Color = 0;
+					obj._Damage = 0;
+					obj._Effect = ConditionEffectEnum.Dead;
+					obj._Position = WorldPosData.Initial;
+					obj._Radius = 0f;
+					obj._ArmorBreaking = false;
+					obj._Duration = 0f;
+					obj._OriginalType = 1536;
 					num = (int)(num2 * 1650920370) ^ -2075628211;
 					continue;
 				}
@@ -349,7 +348,6 @@ internal class AutoAbility
 
 	public void OnAoEPacket(AoEAckPacket aoeAck)
 	{
-		//Discarded unreachable code: IL_00a0, IL_00c5
 		if (!_F83qcJjBWlsOfjlt8CcrQ3L7Tko)
 		{
 			return;
@@ -375,7 +373,7 @@ internal class AutoAbility
 					continue;
 				case 12u:
 				{
-					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num3];
+					potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB.PotionSlots[num3];
 					int num10;
 					if (potionInfo.Type == 2595)
 					{
@@ -433,7 +431,7 @@ internal class AutoAbility
 				case 11u:
 				{
 					int num7;
-					if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[num4] == 2595)
+					if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[num4] == 2595)
 					{
 						num = -962120403;
 						num7 = num;
@@ -448,7 +446,7 @@ internal class AutoAbility
 				case 7u:
 				{
 					int num6;
-					if (num3 >= _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
+					if (num3 >= _50w8wVuv8bL5nhKaR2EHxjrTamB.PotionSlots.Length)
 					{
 						num = -1526753199;
 						num6 = num;
@@ -463,7 +461,7 @@ internal class AutoAbility
 				case 14u:
 				{
 					int num5;
-					if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory.Length)
+					if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory.Length)
 					{
 						num = -1877122567;
 						num5 = num;
@@ -490,7 +488,6 @@ internal class AutoAbility
 
 	public void _w523XOeezIrQZ8eMr8WGCIMyQ8N(PongPacket pong)
 	{
-		//Discarded unreachable code: IL_02b7, IL_02cb, IL_030f, IL_03d0, IL_03e4, IL_0479, IL_04b9, IL_054c, IL_05a3, IL_061a, IL_062e, IL_0655, IL_07ac, IL_0823, IL_089f, IL_08d3, IL_095d, IL_0971, IL_0985, IL_09e0, IL_0a17, IL_0a3c, IL_0a6c, IL_0a80, IL_0aca, IL_0ade
 		if (pong._PingHash == -1)
 		{
 			goto IL_000c;
@@ -512,7 +509,7 @@ internal class AutoAbility
 		goto IL_0011;
 		IL_0011:
 		int num4 = default(int);
-		_x0bFEWbxXdGdRfNpGQ1c34l1w5r x0bFEWbxXdGdRfNpGQ1c34l1w5r = default(_x0bFEWbxXdGdRfNpGQ1c34l1w5r);
+		ParseXML parseXml = default(ParseXML);
 		int num7 = default(int);
 		int iBSqBdwNTiXSzhZbDhEFMC0Gc = default(int);
 		ushort y2nCjecGeYsmqDEzaplcuBvYtN = default(ushort);
@@ -537,7 +534,7 @@ internal class AutoAbility
 			{
 				int num8;
 				int num9;
-				if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._v6scruPI8GbKsVXu2rpqDMycX0Q * 100 / _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fBkfBLhhMp7FH6BVjSag96CvhnT > Settings.Default.AutoAbilityHealHpPercent)
+				if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._v6scruPI8GbKsVXu2rpqDMycX0Q * 100 / _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fBkfBLhhMp7FH6BVjSag96CvhnT > Settings.Default.AutoAbilityHealHpPercent)
 				{
 					num8 = 261586315;
 					num9 = num8;
@@ -551,7 +548,7 @@ internal class AutoAbility
 				continue;
 			}
 			case 0u:
-				x0bFEWbxXdGdRfNpGQ1c34l1w5r = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)num7);
+				parseXml = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)num7);
 				num = 721113957;
 				continue;
 			case 33u:
@@ -563,7 +560,7 @@ internal class AutoAbility
 			case 9u:
 				goto IL_0262;
 			case 46u:
-				_1ewKC7M4NL9N81VglwFrDKTJTfK(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, _xtAgQ5haM04bei6mwatHB09hm8E(x0bFEWbxXdGdRfNpGQ1c34l1w5r._QjKHGXZ7ohXwrDQImauPaSixsVg), _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+				_1ewKC7M4NL9N81VglwFrDKTJTfK(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, _xtAgQ5haM04bei6mwatHB09hm8E(parseXml._ItemId), _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position);
 				return;
 			case 34u:
 				return;
@@ -591,7 +588,7 @@ internal class AutoAbility
 			case 7u:
 				goto IL_0361;
 			case 31u:
-				_bgSVetCGPR3zNWnEkr4cuYlGGJg(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP, 1);
+				_bgSVetCGPR3zNWnEkr4cuYlGGJg(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position, 1);
 				num = 934895401;
 				continue;
 			case 15u:
@@ -607,10 +604,10 @@ internal class AutoAbility
 			case 4u:
 				goto IL_0428;
 			case 10u:
-				_1ewKC7M4NL9N81VglwFrDKTJTfK(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, 9.0, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+				_1ewKC7M4NL9N81VglwFrDKTJTfK(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, 9.0, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position);
 				return;
 			case 18u:
-				_bgSVetCGPR3zNWnEkr4cuYlGGJg(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP, 1);
+				_bgSVetCGPR3zNWnEkr4cuYlGGJg(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position, 1);
 				num = ((int)num3 * -1896787685) ^ 0x6393C5F2;
 				continue;
 			case 54u:
@@ -646,7 +643,7 @@ internal class AutoAbility
 			{
 				int num15;
 				int num16;
-				if (x0bFEWbxXdGdRfNpGQ1c34l1w5r != null)
+				if (parseXml != null)
 				{
 					num15 = -295600776;
 					num16 = num15;
@@ -660,7 +657,7 @@ internal class AutoAbility
 				continue;
 			}
 			case 24u:
-				_20ZlLRRKR3DBHjWNv9JH1t5WaLt(pong._IBSqBdwNTiXSzhZbDhEFMC0Gc51, 2595, num14, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+				_20ZlLRRKR3DBHjWNv9JH1t5WaLt(pong._IBSqBdwNTiXSzhZbDhEFMC0Gc51, 2595, num14, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position);
 				return;
 			case 13u:
 				_F83qcJjBWlsOfjlt8CcrQ3L7Tko = false;
@@ -680,7 +677,7 @@ internal class AutoAbility
 			case 63u:
 				return;
 			case 65u:
-				_PRhnVDn3ZtczdfIW02GMGzedebA(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc);
+				_PRhnVDn3ZtczdfIW02GMGzedebA(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc);
 				num = 1575038679;
 				continue;
 			case 6u:
@@ -688,7 +685,7 @@ internal class AutoAbility
 			case 20u:
 				goto IL_0668;
 			case 22u:
-				_bgSVetCGPR3zNWnEkr4cuYlGGJg(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP, 1);
+				_bgSVetCGPR3zNWnEkr4cuYlGGJg(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position, 1);
 				num = (int)((num3 * 1492989263) ^ 0x2B783B1A);
 				continue;
 			case 25u:
@@ -709,7 +706,7 @@ internal class AutoAbility
 				continue;
 			}
 			case 56u:
-				num7 = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[1];
+				num7 = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[1];
 				num = 514220764;
 				continue;
 			case 75u:
@@ -725,7 +722,7 @@ internal class AutoAbility
 			case 78u:
 				return;
 			case 43u:
-				_1ewKC7M4NL9N81VglwFrDKTJTfK(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, 12.0, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+				_1ewKC7M4NL9N81VglwFrDKTJTfK(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, double.NaN, 12.0, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position);
 				num = ((int)num3 * -1495283867) ^ -1591803500;
 				continue;
 			case 30u:
@@ -826,7 +823,7 @@ internal class AutoAbility
 			case 17u:
 				return;
 			case 42u:
-				y2nCjecGeYsmqDEzaplcuBvYtN = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._y2nCjecGeYsmqDEzaplcuBvYtN7;
+				y2nCjecGeYsmqDEzaplcuBvYtN = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._y2nCjecGeYsmqDEzaplcuBvYtN7;
 				num = 1329759523;
 				continue;
 			case 3u:
@@ -848,20 +845,20 @@ internal class AutoAbility
 			case 37u:
 				goto IL_0b15;
 			case 16u:
-				_20ZlLRRKR3DBHjWNv9JH1t5WaLt(pong._IBSqBdwNTiXSzhZbDhEFMC0Gc51, 2595, 1000000 + num4, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+				_20ZlLRRKR3DBHjWNv9JH1t5WaLt(pong._IBSqBdwNTiXSzhZbDhEFMC0Gc51, 2595, 1000000 + num4, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position);
 				num = (int)(num3 * 1264397979) ^ -687601629;
 				continue;
 			case 11u:
 				return;
 				IL_09f3:
-				_bgSVetCGPR3zNWnEkr4cuYlGGJg(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP, 1);
+				_bgSVetCGPR3zNWnEkr4cuYlGGJg(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position, 1);
 				num = 33984751;
 				continue;
 				IL_0949:
 				num = (int)((num3 * 1725044678) ^ 0x2F7060F3);
 				continue;
 				IL_0322:
-				_bgSVetCGPR3zNWnEkr4cuYlGGJg(x0bFEWbxXdGdRfNpGQ1c34l1w5r, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP, 1);
+				_bgSVetCGPR3zNWnEkr4cuYlGGJg(parseXml, iBSqBdwNTiXSzhZbDhEFMC0Gc, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position, 1);
 				num = 141522170;
 				continue;
 				IL_02fb:
@@ -871,7 +868,7 @@ internal class AutoAbility
 			break;
 			IL_0af1:
 			int num19;
-			if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots.Length)
+			if (num4 < _50w8wVuv8bL5nhKaR2EHxjrTamB.PotionSlots.Length)
 			{
 				num = 62381122;
 				num19 = num;
@@ -884,7 +881,7 @@ internal class AutoAbility
 			continue;
 			IL_0428:
 			int num20;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 433288628;
 				num20 = num;
@@ -897,7 +894,7 @@ internal class AutoAbility
 			continue;
 			IL_06fe:
 			int num21;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[num14] == 2595)
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[num14] == 2595)
 			{
 				num = 269183436;
 				num21 = num;
@@ -910,7 +907,7 @@ internal class AutoAbility
 			continue;
 			IL_0b15:
 			int num22;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 1759627644;
 				num22 = num;
@@ -923,7 +920,7 @@ internal class AutoAbility
 			continue;
 			IL_0741:
 			int num23;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._kL78aC3fQlfwdoczYeIaP61dqe3 * 100 / _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fF7gBqWhNS2rU2VVZ6MjwK2DhTU >= Settings.Default.AutoAbilityMinimumManaLeftThreshold)
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._kL78aC3fQlfwdoczYeIaP61dqe3 * 100 / _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fF7gBqWhNS2rU2VVZ6MjwK2DhTU >= Settings.Default.AutoAbilityMinimumManaLeftThreshold)
 			{
 				num = 1299634104;
 				num23 = num;
@@ -935,7 +932,7 @@ internal class AutoAbility
 			}
 			continue;
 			IL_03f7:
-			potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB._PotionSlots[num4];
+			potionInfo = _50w8wVuv8bL5nhKaR2EHxjrTamB.PotionSlots[num4];
 			int num24;
 			if (potionInfo.Type == 2595)
 			{
@@ -950,7 +947,7 @@ internal class AutoAbility
 			continue;
 			IL_08e6:
 			int num25;
-			if (num14 < _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory.Length)
+			if (num14 < _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory.Length)
 			{
 				num = 1098754622;
 				num25 = num;
@@ -963,7 +960,7 @@ internal class AutoAbility
 			continue;
 			IL_0668:
 			int num26;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC == null)
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData == null)
 			{
 				num = 1011869876;
 				num26 = num;
@@ -1002,7 +999,7 @@ internal class AutoAbility
 			continue;
 			IL_0220:
 			int num29;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 33984751;
 				num29 = num;
@@ -1015,7 +1012,7 @@ internal class AutoAbility
 			continue;
 			IL_05f3:
 			int num30;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 101648945;
 				num30 = num;
@@ -1028,7 +1025,7 @@ internal class AutoAbility
 			continue;
 			IL_0878:
 			int num31;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._KG2rM9oPz7YTVnnGu1fHJm8zZQB())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._KG2rM9oPz7YTVnnGu1fHJm8zZQB())
 			{
 				num = 234813398;
 				num31 = num;
@@ -1067,7 +1064,7 @@ internal class AutoAbility
 			continue;
 			IL_0836:
 			int num34;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._QpgZcrpUzDvD724s39cRtNW05SF())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._QpgZcrpUzDvD724s39cRtNW05SF())
 			{
 				num = 1838029410;
 				num34 = num;
@@ -1080,7 +1077,7 @@ internal class AutoAbility
 			continue;
 			IL_0525:
 			int num35;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 1031185096;
 				num35 = num;
@@ -1093,7 +1090,7 @@ internal class AutoAbility
 			continue;
 			IL_01fa:
 			int num36;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 931302649;
 				num36 = num;
@@ -1106,7 +1103,7 @@ internal class AutoAbility
 			continue;
 			IL_07fc:
 			int num37;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._lgMifiCLrejnMztlnTpKHxYmG3E())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._lgMifiCLrejnMztlnTpKHxYmG3E())
 			{
 				num = 1031185096;
 				num37 = num;
@@ -1132,7 +1129,7 @@ internal class AutoAbility
 			continue;
 			IL_0509:
 			int num39;
-			if (x0bFEWbxXdGdRfNpGQ1c34l1w5r._Hgcuj8Yk2qRXttXX0EHvRYXq7I == 0)
+			if (parseXml._NumProjectiles == 0)
 			{
 				num = 1592370997;
 				num39 = num;
@@ -1145,7 +1142,7 @@ internal class AutoAbility
 			continue;
 			IL_0785:
 			int num40;
-			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._NZkIxbUdmBjjOtUfYiWJzYBCOdP())
+			if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._NZkIxbUdmBjjOtUfYiWJzYBCOdP())
 			{
 				num = 1164645145;
 				num40 = num;
@@ -1158,7 +1155,7 @@ internal class AutoAbility
 			continue;
 			IL_0262:
 			int num41;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._OmrvgK9zU9Rzw8cBaUJhDmZVvpQ())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._OmrvgK9zU9Rzw8cBaUJhDmZVvpQ())
 			{
 				num = 271534256;
 				num41 = num;
@@ -1171,7 +1168,7 @@ internal class AutoAbility
 			continue;
 			IL_0361:
 			int num42;
-			if (x0bFEWbxXdGdRfNpGQ1c34l1w5r._YhNTfG1vuMJNUDMG7X4kP1ERPFD <= _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._kL78aC3fQlfwdoczYeIaP61dqe3)
+			if (parseXml._MpCost <= _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._kL78aC3fQlfwdoczYeIaP61dqe3)
 			{
 				num = 1772834625;
 				num42 = num;
@@ -1254,10 +1251,9 @@ internal class AutoAbility
 		goto IL_000d;
 	}
 
-	public void _1UIxXEL495RF9327ls9jIZFBwaA(InvSwapPacket invSwap)
+	public void OnInvSwap(InvSwapPacket invSwap)
 	{
-		//Discarded unreachable code: IL_0130
-		if (invSwap._sEYqjeelWD912mJ6sF5MhQRyISf._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+		if (invSwap._SlotOne._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			goto IL_001b;
 		}
@@ -1265,7 +1261,7 @@ internal class AutoAbility
 		IL_00af:
 		int num;
 		int num2;
-		if (invSwap._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
+		if (invSwap._SlotTwo._ObjectId != _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC)
 		{
 			num = -1448837816;
 			num2 = num;
@@ -1287,11 +1283,11 @@ internal class AutoAbility
 			default:
 				return;
 			case 7u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[1] = invSwap._sEYqjeelWD912mJ6sF5MhQRyISf._ObjectType;
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[1] = invSwap._SlotOne._ObjectType;
 				num = ((int)num3 * -1581448077) ^ 0x10ACAC2D;
 				continue;
 			case 2u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[1] = invSwap._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._ObjectType;
+				_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[1] = invSwap._SlotTwo._ObjectType;
 				num = (int)((num3 * 1330916770) ^ 0x2FD0825A);
 				continue;
 			case 4u:
@@ -1300,7 +1296,7 @@ internal class AutoAbility
 			{
 				int num6;
 				int num7;
-				if (invSwap._YnPcTOJB6UrXk2tL1AzY4w0ohpAA._SlotId != 1)
+				if (invSwap._SlotTwo._SlotId != 1)
 				{
 					num6 = 2076402859;
 					num7 = num6;
@@ -1317,7 +1313,7 @@ internal class AutoAbility
 			{
 				int num4;
 				int num5;
-				if (invSwap._sEYqjeelWD912mJ6sF5MhQRyISf._SlotId == 1)
+				if (invSwap._SlotOne._SlotId == 1)
 				{
 					num4 = -564293412;
 					num5 = num4;
@@ -1376,13 +1372,13 @@ internal class AutoAbility
 				break;
 				IL_0075:
 				useItemPacket._if0d81H88w2JolCC4orFfcsIICeA = (byte)num3;
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(useItemPacket);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(useItemPacket);
 				num = 1690754912;
 			}
 		}
 	}
 
-	private void _bgSVetCGPR3zNWnEkr4cuYlGGJg(_x0bFEWbxXdGdRfNpGQ1c34l1w5r item, int time, WorldPosData position = null, byte useType = 1)
+	private void _bgSVetCGPR3zNWnEkr4cuYlGGJg(ParseXML item, int time, WorldPosData position = null, byte useType = 1)
 	{
 		if (position == null)
 		{
@@ -1390,7 +1386,7 @@ internal class AutoAbility
 		}
 		goto IL_00ad;
 		IL_00ad:
-		int num = (int)item._un2pqQ1kxK1zeYQjxzNqrHVDGKD;
+		int num = (int)item._Cooldown;
 		int num2;
 		if (num != 0)
 		{
@@ -1421,7 +1417,7 @@ internal class AutoAbility
 			default:
 				return;
 			case 10u:
-				position = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP;
+				position = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position;
 				num2 = ((int)num4 * -1849057531) ^ -1620100871;
 				continue;
 			case 0u:
@@ -1436,7 +1432,7 @@ internal class AutoAbility
 				goto IL_00ad;
 			case 6u:
 				useItemPacket._hik7MnmCWLUNupBgHpKPyvAspMh = position;
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(useItemPacket);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(useItemPacket);
 				num2 = (int)(num4 * 1543429164) ^ -28080670;
 				continue;
 			case 4u:
@@ -1468,9 +1464,9 @@ internal class AutoAbility
 				useItemPacket = (UseItemPacket)Packet.CreatePacketFromType(PacketType.USEITEM);
 				useItemPacket._obJo3i4uC8yf7c2aS8NBvEttXTO = new SlotObjectData
 				{
-					_ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK,
+					_ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fn2CRnBpjyTWHR9K8SU4iOwhDtK,
 					_SlotId = 1,
-					_ObjectType = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[1]
+					_ObjectType = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[1]
 				};
 				num2 = (int)((num4 * 695724290) ^ 0x60D8F24);
 				continue;
@@ -1488,7 +1484,7 @@ internal class AutoAbility
 		goto IL_0006;
 	}
 
-	private void _PRhnVDn3ZtczdfIW02GMGzedebA(_x0bFEWbxXdGdRfNpGQ1c34l1w5r item, int time, bool requireHeal = false)
+	private void _PRhnVDn3ZtczdfIW02GMGzedebA(ParseXML item, int time, bool requireHeal = false)
 	{
 		_q5bAS2GGlyEXggyfH1UYW81UmnS q5bAS2GGlyEXggyfH1UYW81UmnS = default(_q5bAS2GGlyEXggyfH1UYW81UmnS);
 		q5bAS2GGlyEXggyfH1UYW81UmnS._7DEudk1H4zeA6HRBegB5UK6RcSYA = this;
@@ -1585,7 +1581,7 @@ internal class AutoAbility
 								case 13u:
 								{
 									int num15;
-									if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) > 144.0))
+									if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position.GetDistance(current._Position) > 144.0))
 									{
 										num3 = -1056592192;
 										num15 = num3;
@@ -1741,7 +1737,6 @@ internal class AutoAbility
 
 	private void _tExbGVr38Q9WmU2JSuGsUJ2EITe(int Time)
 	{
-		//Discarded unreachable code: IL_00e1, IL_0135, IL_0274, IL_0319, IL_032d, IL_03f2, IL_0423
 		if (CurrentMap)
 		{
 			goto IL_000b;
@@ -1750,7 +1745,7 @@ internal class AutoAbility
 		IL_0340:
 		int num;
 		int num2;
-		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC != null)
+		if (_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData != null)
 		{
 			num = 1786572071;
 			num2 = num;
@@ -1766,7 +1761,7 @@ internal class AutoAbility
 		PlayerShootPacket playerShootPacket = default(PlayerShootPacket);
 		int num4 = default(int);
 		int iBSqBdwNTiXSzhZbDhEFMC0Gc = default(int);
-		_x0bFEWbxXdGdRfNpGQ1c34l1w5r x0bFEWbxXdGdRfNpGQ1c34l1w5r = default(_x0bFEWbxXdGdRfNpGQ1c34l1w5r);
+		ParseXML parseXml = default(ParseXML);
 		int num9 = default(int);
 		while (true)
 		{
@@ -1817,18 +1812,18 @@ internal class AutoAbility
 			case 15u:
 				goto IL_0169;
 			case 1u:
-				playerShootPacket._ObXrbtVZcdprxclR2Ggz9jKwlp = new WorldPosData(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX + Math.Cos(playerShootPacket._hjRbCZIgEE6lGZJqDLlpYixCdUT) * 0.3, _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY + Math.Sin(playerShootPacket._hjRbCZIgEE6lGZJqDLlpYixCdUT) * 0.3);
+				playerShootPacket._ObXrbtVZcdprxclR2Ggz9jKwlp = new WorldPosData(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionX + Math.Cos(playerShootPacket._hjRbCZIgEE6lGZJqDLlpYixCdUT) * 0.3, _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionY + Math.Sin(playerShootPacket._hjRbCZIgEE6lGZJqDLlpYixCdUT) * 0.3);
 				playerShootPacket._IBSqBdwNTiXSzhZbDhEFMC0Gc51 = iBSqBdwNTiXSzhZbDhEFMC0Gc;
 				playerShootPacket._isVjytSCPjaQXfnhSgmbShfAEYC = _50w8wVuv8bL5nhKaR2EHxjrTamB._5F11zlatiaeKtzrzg30JrtdXmjH();
-				playerShootPacket._5oFaCQNi71DUAwr2GsRcpozHzAC = (short)x0bFEWbxXdGdRfNpGQ1c34l1w5r._QjKHGXZ7ohXwrDQImauPaSixsVg;
+				playerShootPacket._5oFaCQNi71DUAwr2GsRcpozHzAC = (short)parseXml._ItemId;
 				num = (int)((num3 * 1440970593) ^ 0x17243C03);
 				continue;
 			case 18u:
-				x0bFEWbxXdGdRfNpGQ1c34l1w5r = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)num4);
+				parseXml = ResourceDownloader._3ndzvDGHhvqls1BD8vzizSQBDdI.ById((ushort)num4);
 				num = 1980099783;
 				continue;
 			case 28u:
-				allyShootPacket._qL8Qk0RJEu4lcCGcJpKfz1Fn8tb = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
+				allyShootPacket._qL8Qk0RJEu4lcCGcJpKfz1Fn8tb = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 				num = (int)((num3 * 1762302371) ^ 0x2B34C990);
 				continue;
 			case 19u:
@@ -1842,7 +1837,7 @@ internal class AutoAbility
 				num = 243953911;
 				continue;
 			case 16u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._xRCQ3Y8enVTevEwMAZe8WUmANbE(allyShootPacket);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToClient(allyShootPacket);
 				num9++;
 				num = ((int)num3 * -968646561) ^ 0x223390D;
 				continue;
@@ -1854,7 +1849,7 @@ internal class AutoAbility
 			{
 				int num5;
 				int num6;
-				if (x0bFEWbxXdGdRfNpGQ1c34l1w5r != null)
+				if (parseXml != null)
 				{
 					num5 = 1832987712;
 					num6 = num5;
@@ -1874,7 +1869,7 @@ internal class AutoAbility
 			case 7u:
 				goto IL_0340;
 			case 24u:
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._WEI99xvr4YqzD1PAnL2WmiBhWKJ(playerShootPacket);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(playerShootPacket);
 				num = ((int)num3 * -1102663789) ^ -1280874214;
 				continue;
 			case 2u:
@@ -1884,13 +1879,13 @@ internal class AutoAbility
 			case 8u:
 				goto IL_03c4;
 			case 3u:
-				_ = x0bFEWbxXdGdRfNpGQ1c34l1w5r._owzIa4SA35UDyEgHwZLCFxJRPQ4;
+				_ = parseXml.Projectile;
 				num = 659381070;
 				continue;
 			case 25u:
 				return;
 			case 11u:
-				num4 = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC.Inventory[1];
+				num4 = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData.Inventory[1];
 				num = 53621624;
 				continue;
 			case 4u:
@@ -1901,7 +1896,7 @@ internal class AutoAbility
 			break;
 			IL_03c4:
 			int num10;
-			if (x0bFEWbxXdGdRfNpGQ1c34l1w5r._Hgcuj8Yk2qRXttXX0EHvRYXq7I == 0)
+			if (parseXml._NumProjectiles == 0)
 			{
 				num = 1538023833;
 				num10 = num;
@@ -1914,7 +1909,7 @@ internal class AutoAbility
 			continue;
 			IL_0381:
 			int num11;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._QpgZcrpUzDvD724s39cRtNW05SF())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._QpgZcrpUzDvD724s39cRtNW05SF())
 			{
 				num = 663709774;
 				num11 = num;
@@ -1928,7 +1923,7 @@ internal class AutoAbility
 			IL_0169:
 			iBSqBdwNTiXSzhZbDhEFMC0Gc = Time;
 			int num12;
-			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._SysWm7wHzXLG03yfcsOJjhD8d8R())
+			if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._SysWm7wHzXLG03yfcsOJjhD8d8R())
 			{
 				num = 1178452604;
 				num12 = num;
@@ -1941,7 +1936,7 @@ internal class AutoAbility
 			continue;
 			IL_03a7:
 			int num13;
-			if (num9 < x0bFEWbxXdGdRfNpGQ1c34l1w5r._Hgcuj8Yk2qRXttXX0EHvRYXq7I)
+			if (num9 < parseXml._NumProjectiles)
 			{
 				num = 1956691123;
 				num13 = num;
@@ -1958,9 +1953,8 @@ internal class AutoAbility
 		goto IL_0010;
 	}
 
-	private void _1ewKC7M4NL9N81VglwFrDKTJTfK(_x0bFEWbxXdGdRfNpGQ1c34l1w5r item, int time, double projSpeed, double maxDist, WorldPosData playerPos)
+	private void _1ewKC7M4NL9N81VglwFrDKTJTfK(ParseXML item, int time, double projSpeed, double maxDist, WorldPosData playerPos)
 	{
-		//Discarded unreachable code: IL_0345, IL_08be, IL_0ce7
 		maxDist *= maxDist;
 		int num23 = default(int);
 		WorldPosData worldPosData = default(WorldPosData);
@@ -2233,7 +2227,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 14u:
-										num10 = playerPos.GetDistance(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current3._Position);
 										num65 = 1753802518;
 										continue;
 									case 32u:
@@ -2325,7 +2319,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 27u:
-										worldPosData = new WorldPosData(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX, current3._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY);
+										worldPosData = new WorldPosData(current3._Position._PositionX, current3._Position._PositionY);
 										num65 = 21607826;
 										continue;
 									case 0u:
@@ -2346,7 +2340,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 2u:
-										num10 = playerPos.GetDistance(current3._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current3._Position);
 										num65 = (int)((num2 * 1040524434) ^ 0x3E116A2B);
 										continue;
 									case 9u:
@@ -2635,7 +2629,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 12u:
-										worldPosData = new WorldPosData(current2._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX, current2._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY);
+										worldPosData = new WorldPosData(current2._Position._PositionX, current2._Position._PositionY);
 										num37 = 1584080509;
 										continue;
 									case 10u:
@@ -2735,7 +2729,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 14u:
-										num10 = playerPos.GetDistance(current2._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current2._Position);
 										num37 = ((int)num2 * -1104049786) ^ -1050221418;
 										continue;
 									case 8u:
@@ -2975,7 +2969,7 @@ internal class AutoAbility
 										continue;
 									}
 									case 23u:
-										worldPosData = new WorldPosData(current._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionX, current._FLMczMOk4gNIJMbSsAnIDIvYlDP._PositionY);
+										worldPosData = new WorldPosData(current._Position._PositionX, current._Position._PositionY);
 										num3 = 66855471;
 										continue;
 									case 22u:
@@ -3102,7 +3096,7 @@ internal class AutoAbility
 									}
 									case 13u:
 									{
-										num10 = playerPos.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP);
+										num10 = playerPos.GetDistance(current._Position);
 										int num19;
 										int num20;
 										if (num10 > maxDist)
@@ -3361,7 +3355,6 @@ internal class AutoAbility
 
 	public void _CgwO1K8tgdyKPdKvCtJupNhapLD(PlayerTextPacket playerText)
 	{
-		//Discarded unreachable code: IL_007a
 		if (string.IsNullOrEmpty(playerText._Message))
 		{
 			return;
@@ -3405,7 +3398,7 @@ internal class AutoAbility
 					continue;
 				}
 				default:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB.sendChatNotification("AutoAbility", Settings.Default.EnableAutoAbility ? "Enabled" : "Disabled");
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendChatNotification("AutoAbility", Settings.Default.EnableAutoAbility ? "Enabled" : "Disabled");
 					return;
 				}
 				break;
@@ -3539,7 +3532,7 @@ internal class AutoAbility
 				case 3u:
 				{
 					int num5;
-					if (!(target._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(current._FLMczMOk4gNIJMbSsAnIDIvYlDP) <= (double)P_1._TQs3I5HnEqElZoiO4Dsa88IEj3u))
+					if (!(target._Position.GetDistance(current._Position) <= (double)P_1._TQs3I5HnEqElZoiO4Dsa88IEj3u))
 					{
 						num2 = 885423107;
 						num5 = num2;

@@ -5,13 +5,13 @@ using ExaltMultiTool.Proxy.Mods;
 
 internal class AntiDebuff
 {
-	private Client _50w8wVuv8bL5nhKaR2EHxjrTamB;
+	private Client _Client;
 
 	private bool _vFzBaWeCkk5hgjdL49TmYLedeuRB;
 
 	private bool _yBlclxXVrFdHr9Rj4By8io5M4Bg;
 
-	private int _tnzATORRz69PD9QNslfqhszFO2M;
+	private int _LastUpdate;
 
 	private object _EQz1nzyL5YvZsDraKsHSPRSNTvE = new object();
 
@@ -19,12 +19,11 @@ internal class AntiDebuff
 
 	public AntiDebuff(Client client)
 	{
-		_50w8wVuv8bL5nhKaR2EHxjrTamB = client;
+		_Client = client;
 	}
 
-	public void _kcBjTzBYfTPCpKNctSQjw45y1mb(NewTickPacket newTick)
+	public void OnNewTick(NewTickPacket newTick)
 	{
-		//Discarded unreachable code: IL_0033, IL_00d3
 		if (!Settings.Default.EnableAntiDebuffs)
 		{
 			goto IL_000c;
@@ -81,7 +80,7 @@ internal class AntiDebuff
 							{
 								int num5;
 								int num6;
-								if (current._ObjectId == _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._fn2CRnBpjyTWHR9K8SU4iOwhDtK)
+								if (current._ObjectId == _Client._PlayerData._fn2CRnBpjyTWHR9K8SU4iOwhDtK)
 								{
 									num5 = 2001633365;
 									num6 = num5;
@@ -136,8 +135,8 @@ internal class AntiDebuff
 					status = new Status
 					{
 						_Stats = new List<StatData>(),
-						_ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._UqAoky1lauc0gYPMEYUcYfMlJkC,
-						_Position = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._IlcbhoOIM3MRszn9mfn3IKjnXc0
+						_ObjectId = _Client._UqAoky1lauc0gYPMEYUcYfMlJkC,
+						_Position = _Client._PlayerData._IlcbhoOIM3MRszn9mfn3IKjnXc0
 					};
 					status._Stats.Add(_JsbF2wqg1gNSAs8RRpe2kAMA0wC());
 					status._Stats.Add(_UMNfca321ZYkNk2tClEN6C4ahol());
@@ -167,7 +166,7 @@ internal class AntiDebuff
 		return new StatData
 		{
 			_StatType = StatType._kvTyEminxJMM6fREzgqsVjHaInC,
-			_StatValue = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._ITMdkMmK3E7TJrGaRGy1ivI4A9U,
+			_StatValue = _Client._PlayerData._ITMdkMmK3E7TJrGaRGy1ivI4A9U,
 			_StringStatValue = string.Empty
 		};
 	}
@@ -177,50 +176,27 @@ internal class AntiDebuff
 		return new StatData
 		{
 			_StatType = StatType._HmqFDGwB69awhIJ5Ik12W8iBBYW,
-			_StatValue = _50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._HmqFDGwB69awhIJ5Ik12W8iBBYW,
+			_StatValue = _Client._PlayerData._HmqFDGwB69awhIJ5Ik12W8iBBYW,
 			_StringStatValue = string.Empty
 		};
 	}
 
-	public void _tX4Fl2mBYL4XNqNEIW0OPnopM9i(MovePacket move)
+	public void OnMove(MovePacket move)
 	{
-		_tnzATORRz69PD9QNslfqhszFO2M = Environment.TickCount;
+		_LastUpdate = Environment.TickCount;
 	}
 
-	public void _G32brJa4jmWaZroFncLDOsAha5VA(AoEPacket aoe)
+	public void OnAoE(AoEPacket aoe)
 	{
-		if (!(_50w8wVuv8bL5nhKaR2EHxjrTamB._W6bpBrAw6dPSILcVRK394JGD7tC._FLMczMOk4gNIJMbSsAnIDIvYlDP.GetDistance(aoe._hZZqGJ97TiaLFTbiTFhvTTSGkIb) <= (double)(aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC * aoe._I9LOulXQ6dWoDQOn1L5GkchnJUC)))
+		if (!(_Client._PlayerData._Position.GetDistance(aoe._Position) <= (double)(aoe._Radius * aoe._Radius)))
 		{
 			return;
 		}
-		while (true)
-		{
-			int num = -435798972;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0xEDDD66E5u) % 3u)
-				{
-				case 0u:
-					break;
-				default:
-					return;
-				case 1u:
-					goto IL_004d;
-				case 2u:
-					return;
-				}
-				break;
-				IL_004d:
-				_vFzBaWeCkk5hgjdL49TmYLedeuRB = true;
-				num = (int)(num2 * 630407991) ^ -567693601;
-			}
-		}
+		_vFzBaWeCkk5hgjdL49TmYLedeuRB = true;
 	}
 
-	public void _gHqtNcWyCVVFxHdmeuer3tJSw4p(PlayerHitPacket playerHit)
+	public void OnPlayerHit(PlayerHitPacket playerHit)
 	{
-		//Discarded unreachable code: IL_00ea, IL_01c1, IL_0226, IL_0344, IL_035e, IL_03c9, IL_03e3, IL_03fd, IL_0479, IL_04b5, IL_04cf, IL_052b, IL_053e, IL_0593, IL_06a4
 		_yBlclxXVrFdHr9Rj4By8io5M4Bg = true;
 		Dictionary<string, float> statusEffects = default(Dictionary<string, float>);
 		Dictionary<int, Projectile> dictionary = default(Dictionary<int, Projectile>);
@@ -423,7 +399,7 @@ internal class AntiDebuff
 				}
 				case 4u:
 				{
-					dictionary = _50w8wVuv8bL5nhKaR2EHxjrTamB._N5GofMpQbwbVNiYLmSHHRmpmKhg[playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK];
+					dictionary = _Client._N5GofMpQbwbVNiYLmSHHRmpmKhg[playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK];
 					int num4;
 					if (dictionary.ContainsKey(playerHit._isVjytSCPjaQXfnhSgmbShfAEYC))
 					{
@@ -619,7 +595,7 @@ internal class AntiDebuff
 				case 13u:
 				{
 					int num23;
-					if (!_50w8wVuv8bL5nhKaR2EHxjrTamB._N5GofMpQbwbVNiYLmSHHRmpmKhg.ContainsKey(playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
+					if (!_Client._N5GofMpQbwbVNiYLmSHHRmpmKhg.ContainsKey(playerHit._fn2CRnBpjyTWHR9K8SU4iOwhDtK))
 					{
 						num = 745400093;
 						num23 = num;
@@ -741,7 +717,6 @@ internal class AntiDebuff
 
 	private void _D4aGbwZhQI3jcXQuKP8atcOh4zj(List<StatData> statData)
 	{
-		//Discarded unreachable code: IL_0128, IL_07a1
 		StatData _9jGN6HTdhe4I1rr5gcjTIWSluy = null;
 		StatData _9jGN6HTdhe4I1rr5gcjTIWSluy2 = null;
 		using (List<StatData>.Enumerator enumerator = statData.GetEnumerator())

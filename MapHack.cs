@@ -138,7 +138,6 @@ internal class MapHack
 
 	private static void _a3EFUCdw6YgGgD3X2gxdrKBlSIf()
 	{
-		//Discarded unreachable code: IL_002f
 		if (_mSvpBPlipdsNUWuyAElUB63MoQT != null)
 		{
 			goto IL_0007;
@@ -488,7 +487,6 @@ internal class MapHack
 
 	public void _DT5vfLbxw23gMixKpQ7yxEiQkEe(MapInfoPacket mapInfo)
 	{
-		//Discarded unreachable code: IL_0084, IL_00ec, IL_02dd
 		_2rY9Z6KeYzFoyTpIKnOXk8JbiYg = 0;
 		if (_mSvpBPlipdsNUWuyAElUB63MoQT == null)
 		{
@@ -694,7 +692,6 @@ internal class MapHack
 
 	public void _emTnZmGyChlXH4IDm60126G1Snf(UpdatePacket update)
 	{
-		//Discarded unreachable code: IL_0086, IL_0344, IL_0456
 		if (!Settings.Default.EnableMapHack)
 		{
 			goto IL_000f;
@@ -748,7 +745,7 @@ internal class MapHack
 			case 0u:
 				goto IL_00b6;
 			case 3u:
-				if (_50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA == "Realm of the Mad God")
+				if (_50w8wVuv8bL5nhKaR2EHxjrTamB.CurrentMapName == "Realm of the Mad God")
 				{
 					num = (int)(num2 * 2110633429) ^ -316582061;
 					continue;
@@ -1130,7 +1127,7 @@ internal class MapHack
 			{
 				int num14;
 				int num15;
-				if (_50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA == "Realm of the Mad God")
+				if (_50w8wVuv8bL5nhKaR2EHxjrTamB.CurrentMapName == "Realm of the Mad God")
 				{
 					num14 = -163698863;
 					num15 = num14;
@@ -1313,7 +1310,7 @@ internal class MapHack
 									}
 								}
 								byte[] bytes = _CbMmKhs21CLB3H4EaQTZreneGph(memoryStream.ToArray());
-								File.WriteAllBytes("map_" + _50w8wVuv8bL5nhKaR2EHxjrTamB._XJlaeK8gdtamxYwZJIRc2tEXKcQA + " " + Environment.TickCount + ".gz", bytes);
+								File.WriteAllBytes("map_" + _50w8wVuv8bL5nhKaR2EHxjrTamB.CurrentMapName + " " + Environment.TickCount + ".gz", bytes);
 								return;
 							}
 							}
