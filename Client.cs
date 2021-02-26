@@ -848,251 +848,48 @@ internal class Client
 		Task.Run(delegate
 		{
 			Task.Delay(ms).Wait();
-			while (true)
+			SendPacket(packet, client: false);
+			if (log)
 			{
-				int num = 1839955475;
-				while (true)
-				{
-					uint num2;
-					switch ((num2 = (uint)num ^ 0x206A155Au) % 4u)
-					{
-					case 3u:
-						break;
-					default:
-						return;
-					case 1u:
-					{
-						SendPacket(packet, client: false);
-						int num3;
-						int num4;
-						if (log)
-						{
-							num3 = -1026084545;
-							num4 = num3;
-						}
-						else
-						{
-							num3 = -1646496967;
-							num4 = num3;
-						}
-						num = num3 ^ (int)(num2 * 1077843825);
-						continue;
-					}
-					case 0u:
-						Console.WriteLine($"Sent packet after {ms}ms {packet}");
-						num = ((int)num2 * -1173995700) ^ -1648230832;
-						continue;
-					case 2u:
-						return;
-					}
-					break;
-				}
+				Console.WriteLine($"Sent packet after {ms}ms {packet}");
 			}
 		});
 	}
 
 	private void SendPacket(Packet packet, bool client)
 	{
-		object obj = (client ? _AdmkvARnFctcdXLciZNvHDJInwT : _Gwx0kZiSAw3quYoIxjEIop3DixH);
-		bool lockTaken = false;
-		try
+		lock (client ? _AdmkvARnFctcdXLciZNvHDJInwT : _Gwx0kZiSAw3quYoIxjEIop3DixH)
 		{
-			Monitor.Enter(obj, ref lockTaken);
 			try
 			{
-				MemoryStream memoryStream = new MemoryStream();
-				try
+				using MemoryStream memoryStream = new MemoryStream();
+				using (PacketWriter packetWriter = new PacketWriter(memoryStream))
 				{
-					PacketWriter packetWriter = new PacketWriter(memoryStream);
-					try
+					packetWriter.Write(0);
+					packetWriter.Write(packet.ID);
+					packet.writePacketData(packetWriter);
+					if (packet._p6Ga5HaW6HbwlLT3tvYuJi2GRQN.Length != 0)
 					{
-						packetWriter.Write(0);
-						packetWriter.Write(packet.ID);
-						packet.writePacketData(packetWriter);
-						while (true)
-						{
-							int num = -1603937422;
-							while (true)
-							{
-								uint num2;
-								switch ((num2 = (uint)num ^ 0xBEB1C141u) % 4u)
-								{
-								case 0u:
-									break;
-								default:
-									goto end_IL_002a;
-								case 3u:
-								{
-									int num3;
-									int num4;
-									if (packet._p6Ga5HaW6HbwlLT3tvYuJi2GRQN.Length != 0)
-									{
-										num3 = 147408185;
-										num4 = num3;
-									}
-									else
-									{
-										num3 = 1019331610;
-										num4 = num3;
-									}
-									num = num3 ^ ((int)num2 * -452991218);
-									continue;
-								}
-								case 2u:
-									packetWriter.Write(packet._p6Ga5HaW6HbwlLT3tvYuJi2GRQN);
-									num = ((int)num2 * -867714153) ^ 0x4FD6A82E;
-									continue;
-								case 1u:
-									goto end_IL_002a;
-								}
-								break;
-							}
-						}
-						end_IL_002a:;
+						packetWriter.Write(packet._p6Ga5HaW6HbwlLT3tvYuJi2GRQN);
 					}
-					finally
-					{
-						if (packetWriter != null)
-						{
-							while (true)
-							{
-								int num5 = -673999405;
-								while (true)
-								{
-									uint num2;
-									switch ((num2 = (uint)num5 ^ 0xBEB1C141u) % 3u)
-									{
-									case 2u:
-										break;
-									default:
-										goto end_IL_00b0;
-									case 1u:
-										goto IL_00d7;
-									case 0u:
-										goto end_IL_00b0;
-									}
-									break;
-									IL_00d7:
-									((IDisposable)packetWriter).Dispose();
-									num5 = (int)(num2 * 1342490601) ^ -1399705580;
-								}
-							}
-						}
-						end_IL_00b0:;
-					}
-					byte[] array = memoryStream.ToArray();
-					PacketWriter._XIRKdXnWUNtF0ipzDYlXXjcMYic(array, array.Length);
-					if (client)
-					{
-						goto IL_0105;
-					}
-					goto IL_01ad;
-					IL_0105:
-					int num6 = -2136842679;
-					goto IL_010a;
-					IL_01ad:
-					_ntAEc5DBjY43rTpB2x5NeHQac3K._zAcJWalBH8qNGGEljyZyZCOwX2m(array);
-					num6 = -1199536039;
-					goto IL_010a;
-					IL_010a:
-					while (true)
-					{
-						uint num2;
-						switch ((num2 = (uint)num6 ^ 0xBEB1C141u) % 7u)
-						{
-						case 4u:
-							break;
-						default:
-							return;
-						case 0u:
-							_l6WDeCVHHMrhbTcgVYNTZajxMYy.Write(array, 0, array.Length);
-							num6 = (int)(num2 * 387498030) ^ -1683585112;
-							continue;
-						case 3u:
-							num6 = ((int)num2 * -345814316) ^ -2053504388;
-							continue;
-						case 1u:
-							_IBGB2gFxmPDXBY3vtWT4jbTfDiQ.Write(array, 0, array.Length);
-							num6 = ((int)num2 * -494685655) ^ 0x3C422E17;
-							continue;
-						case 2u:
-							_7nagdRNfwEzsojGhddpNUNMOyTN._zAcJWalBH8qNGGEljyZyZCOwX2m(array);
-							num6 = (int)(num2 * 102325453) ^ -1169048422;
-							continue;
-						case 5u:
-							goto IL_01ad;
-						case 6u:
-							return;
-						}
-						break;
-					}
-					goto IL_0105;
 				}
-				finally
+				byte[] array = memoryStream.ToArray();
+				PacketWriter._XIRKdXnWUNtF0ipzDYlXXjcMYic(array, array.Length);
+				if (client)
 				{
-					if (memoryStream != null)
-					{
-						while (true)
-						{
-							int num7 = -470131088;
-							while (true)
-							{
-								uint num2;
-								switch ((num2 = (uint)num7 ^ 0xBEB1C141u) % 3u)
-								{
-								case 0u:
-									break;
-								default:
-									goto end_IL_01c5;
-								case 1u:
-									goto IL_01eb;
-								case 2u:
-									goto end_IL_01c5;
-								}
-								break;
-								IL_01eb:
-								((IDisposable)memoryStream).Dispose();
-								num7 = (int)((num2 * 1900802038) ^ 0x777CBC2E);
-							}
-						}
-					}
-					end_IL_01c5:;
+					_ntAEc5DBjY43rTpB2x5NeHQac3K._zAcJWalBH8qNGGEljyZyZCOwX2m(array);
+					_l6WDeCVHHMrhbTcgVYNTZajxMYy.Write(array, 0, array.Length);
+				}
+				else
+				{
+					_IBGB2gFxmPDXBY3vtWT4jbTfDiQ.Write(array, 0, array.Length);
+					_7nagdRNfwEzsojGhddpNUNMOyTN._zAcJWalBH8qNGGEljyZyZCOwX2m(array);
 				}
 			}
 			catch (Exception reason)
 			{
 				_8H2QqjADGkx30Hq77Uf9ZGuRzFD(reason);
 			}
-		}
-		finally
-		{
-			if (lockTaken)
-			{
-				while (true)
-				{
-					int num8 = -1769227687;
-					while (true)
-					{
-						uint num2;
-						switch ((num2 = (uint)num8 ^ 0xBEB1C141u) % 3u)
-						{
-						case 0u:
-							break;
-						default:
-							goto end_IL_0210;
-						case 2u:
-							goto IL_0236;
-						case 1u:
-							goto end_IL_0210;
-						}
-						break;
-						IL_0236:
-						Monitor.Exit(obj);
-						num8 = ((int)num2 * -1882346378) ^ 0x56AB1995;
-					}
-				}
-			}
-			end_IL_0210:;
 		}
 	}
 

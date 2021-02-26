@@ -92,7 +92,7 @@ internal class ParseXML : IDataStructure<ushort>
 		_IsPotion = item.ContainsElement("Potion");
 		if (item.ContainsElement("Activate"))
 		{
-			_OYi1qaJT2aAdaDNBCEJR5XP69kU(item.Elements("Activate"));
+			ParseActivations(item.Elements("Activate"));
 		}
 		if (item.ContainsElement("Activate"))
 		{
@@ -116,80 +116,11 @@ internal class ParseXML : IDataStructure<ushort>
 		}
 	}
 
-	private void _OYi1qaJT2aAdaDNBCEJR5XP69kU(IEnumerable<XElement> activateXMLs)
+	private void ParseActivations(IEnumerable<XElement> activateXMLs)
 	{
-		IEnumerator<XElement> enumerator = activateXMLs.GetEnumerator();
-		try
+		foreach (XElement activateXML in activateXMLs)
 		{
-			while (true)
-			{
-				int num;
-				int num2;
-				if (enumerator.MoveNext())
-				{
-					num = 917993727;
-					num2 = num;
-				}
-				else
-				{
-					num = 836987830;
-					num2 = num;
-				}
-				while (true)
-				{
-					uint num3;
-					switch ((num3 = (uint)num ^ 0x15CA08AAu) % 4u)
-					{
-					case 2u:
-						num = 917993727;
-						continue;
-					default:
-						return;
-					case 1u:
-					{
-						XElement current = enumerator.Current;
-						_jCpZRWOsJvipfVcsNeGLqx7e6rd.Add(new _jsZwrE9lzYULBcuBQfPr4S2Du8c(current));
-						num = 1547689017;
-						continue;
-					}
-					case 3u:
-						break;
-					case 0u:
-						return;
-					}
-					break;
-				}
-			}
-		}
-		finally
-		{
-			if (enumerator != null)
-			{
-				while (true)
-				{
-					int num4 = 1779621298;
-					while (true)
-					{
-						uint num3;
-						switch ((num3 = (uint)num4 ^ 0x15CA08AAu) % 3u)
-						{
-						case 0u:
-							break;
-						default:
-							goto end_IL_0069;
-						case 1u:
-							goto IL_008e;
-						case 2u:
-							goto end_IL_0069;
-						}
-						break;
-						IL_008e:
-						enumerator.Dispose();
-						num4 = (int)((num3 * 1604957102) ^ 0x56F1056);
-					}
-				}
-			}
-			end_IL_0069:;
+			_jCpZRWOsJvipfVcsNeGLqx7e6rd.Add(new _jsZwrE9lzYULBcuBQfPr4S2Du8c(activateXML));
 		}
 	}
 

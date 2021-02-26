@@ -204,7 +204,7 @@ internal class MainForm : Form {
 					case 7u: {
 						int num5;
 						int num6;
-						if (!InjectionHelper._ProcessIds.Contains(process.Id)) {
+						if (!InjectionHelper.ProcessIds.Contains(process.Id)) {
 							num5 = 1155318803;
 							num6 = num5;
 						}
@@ -217,7 +217,7 @@ internal class MainForm : Form {
 						continue;
 					}
 					case 1u:
-						InjectionHelper._ProcessIds.Add(process.Id);
+						InjectionHelper.ProcessIds.Add(process.Id);
 						MessageBox.Show("RotMG Exalt must be launched via the Multi Tool in order for hacks to apply!",
 							"Exalt Multi-Tool", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 						num = (int) (num2 * 621592506) ^ -1340124238;
