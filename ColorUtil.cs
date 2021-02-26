@@ -1,5 +1,6 @@
 using System.Drawing;
 using System.IO;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal struct ColorUtil
 {

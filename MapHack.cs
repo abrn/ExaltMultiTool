@@ -8,6 +8,7 @@ using System.Linq;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using ExaltMultiTool;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class MapHack
 {

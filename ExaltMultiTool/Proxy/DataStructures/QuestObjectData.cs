@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class QuestObjectData : ICloneable, IDataObject {
 	public string _Id;

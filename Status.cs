@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class Status : IDataObject, ICloneable
 {

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class _RK8R6hn9ZKK2l39ATLncpeClPHq {
 	public int _ObjectId;

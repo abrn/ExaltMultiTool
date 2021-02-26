@@ -1,4 +1,5 @@
 using System;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class StatData : ICloneable {
 	public StatType _StatType;

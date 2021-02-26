@@ -1,4 +1,5 @@
 using System;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal interface IDataObject : ICloneable
 {

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.DataStructures;
 using ExaltMultiTool.Proxy.Mods;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 {

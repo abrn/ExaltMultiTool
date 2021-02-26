@@ -1,3 +1,5 @@
+using ExaltMultiTool.Proxy.Networking.Packets;
+
 internal class MoveRecord : WorldPosData {
 	private int _time;
 

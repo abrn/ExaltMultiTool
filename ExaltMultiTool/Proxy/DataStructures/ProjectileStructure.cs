@@ -98,5 +98,8 @@ namespace ExaltMultiTool.Proxy.DataStructures
 		{
 			return $"Projectile: {Name} (0x{ID:X})";
 		}
+
+		public string _ItemName { get; }
+		public byte _ItemId { get; }
 	}
 }

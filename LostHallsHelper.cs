@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using ExaltMultiTool;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class LostHallsHelper {
 	private bool _InLostHalls;

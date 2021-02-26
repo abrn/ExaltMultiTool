@@ -423,5 +423,8 @@ namespace ExaltMultiTool.Proxy.DataStructures
 		{
 			return $"Object: {Name} (0x{ID:X})";
 		}
+
+		public string _ItemName { get; }
+		public ushort _ItemId { get; }
 	}
 }

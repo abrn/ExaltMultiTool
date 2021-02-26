@@ -2,6 +2,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.DataStructures;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class SafeWalk {
 	[CompilerGenerated]

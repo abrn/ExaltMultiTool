@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.Mods;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class AntiDebuff
 {

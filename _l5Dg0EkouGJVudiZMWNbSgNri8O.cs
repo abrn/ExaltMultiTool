@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using ExaltMultiTool;
 using ExaltMultiTool.Proxy.DataStructures;
+using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class _l5Dg0EkouGJVudiZMWNbSgNri8O
 {
