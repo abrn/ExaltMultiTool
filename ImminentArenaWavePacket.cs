@@ -1,18 +1,17 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class ImminentArenaWavePacket : Packet
-{
-	public int _HFKCbZGsDhWUhb8bPzzqjZi7LZN;
+internal class ImminentArenaWavePacket : Packet {
+	public int _WaveNumber;
 
 	public override PacketType pType => PacketType.IMMINENTARENAWAVE;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_HFKCbZGsDhWUhb8bPzzqjZi7LZN = r.ReadInt32();
+		_WaveNumber = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_HFKCbZGsDhWUhb8bPzzqjZi7LZN);
+		w.Write(_WaveNumber);
 	}
 }

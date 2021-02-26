@@ -2,21 +2,21 @@ using ExaltMultiTool.Proxy.Networking.Packets;
 
 internal class ChangeGuildRankPacket : Packet
 {
-	public string _WL2DOBxBuX9DARzf2KPoaJbgZiCb;
+	public string _Username;
 
-	public int _YCfC0ECakwSpoRjhhTPvs25i7e8;
+	public int _Rank;
 
 	public override PacketType pType => PacketType.CHANGEGUILDRANK;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_WL2DOBxBuX9DARzf2KPoaJbgZiCb = r.ReadString();
-		_YCfC0ECakwSpoRjhhTPvs25i7e8 = r.ReadInt32();
+		_Username = r.ReadString();
+		_Rank = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_WL2DOBxBuX9DARzf2KPoaJbgZiCb);
-		w.Write(_YCfC0ECakwSpoRjhhTPvs25i7e8);
+		w.Write(_Username);
+		w.Write(_Rank);
 	}
 }

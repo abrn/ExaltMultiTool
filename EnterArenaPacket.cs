@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class EnterArenaPacket : Packet
-{
+internal class EnterArenaPacket : Packet {
 	public int _Currency;
 
 	public override PacketType pType => PacketType.ENTERARENA;

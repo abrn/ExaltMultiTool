@@ -1,52 +1,29 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class FailurePacket : Packet
-{
+internal class FailurePacket : Packet {
 	public int _Id;
 
-	public string _ZaKxnVNRWP2P7B6HMmkG6GPTmLC;
+	public string _Description;
 
-	public string _KOWNDNzUE5rabyhZldRZxfnZg6E;
+	public string _Place;
 
-	public string _1WeNs4yAo8xdNRaT8aJiJ81Srzi;
+	public string _ConnectionId;
 
 	public override PacketType pType => PacketType.FAILURE;
 
 	public override void readPacketData(PacketReader r)
 	{
 		_Id = r.ReadInt32();
-		_ZaKxnVNRWP2P7B6HMmkG6GPTmLC = r.ReadString();
-		while (true)
-		{
-			int num = -341922627;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0xC36A15A5u) % 3u)
-				{
-				case 0u:
-					break;
-				default:
-					return;
-				case 1u:
-					goto IL_003a;
-				case 2u:
-					return;
-				}
-				break;
-				IL_003a:
-				_KOWNDNzUE5rabyhZldRZxfnZg6E = r.ReadString();
-				_1WeNs4yAo8xdNRaT8aJiJ81Srzi = r.ReadString();
-				num = ((int)num2 * -832543119) ^ -1264455995;
-			}
-		}
+		_Description = r.ReadString();
+		_Place = r.ReadString();
+		_ConnectionId = r.ReadString();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
 		w.Write(_Id);
-		w.Write(_ZaKxnVNRWP2P7B6HMmkG6GPTmLC);
-		w.Write(_KOWNDNzUE5rabyhZldRZxfnZg6E);
-		w.Write(_1WeNs4yAo8xdNRaT8aJiJ81Srzi);
+		w.Write(_Description);
+		w.Write(_Place);
+		w.Write(_ConnectionId);
 	}
 }

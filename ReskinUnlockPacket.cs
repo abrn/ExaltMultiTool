@@ -1,22 +1,21 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class ReskinUnlockPacket : Packet
-{
-	public int _7vFayYqfXoqBdjHAYbi8EhSQ15C;
+internal class ReskinUnlockPacket : Packet {
+	public int _SkinId;
 
-	public int _a86ap9HYVwHYFgKLzAETrP6Yjip;
+	public int _SkinType;
 
 	public override PacketType pType => PacketType.RESKINUNLOCK;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_7vFayYqfXoqBdjHAYbi8EhSQ15C = r.ReadInt32();
-		_a86ap9HYVwHYFgKLzAETrP6Yjip = r.ReadInt32();
+		_SkinId = r.ReadInt32();
+		_SkinType = r.ReadInt32();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_7vFayYqfXoqBdjHAYbi8EhSQ15C);
-		w.Write(_a86ap9HYVwHYFgKLzAETrP6Yjip);
+		w.Write(_SkinId);
+		w.Write(_SkinType);
 	}
 }

@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class GuildResultPacket : Packet
-{
+internal class GuildResultPacket : Packet {
 	public bool _Success;
 
 	public string _Message;

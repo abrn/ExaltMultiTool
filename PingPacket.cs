@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class PingPacket : Packet
-{
+internal class PingPacket : Packet {
 	public int _PingHash;
 
 	public override PacketType pType => PacketType.PING;

@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class InvDropPacket : Packet
-{
+internal class InvDropPacket : Packet {
 	public SlotObjectData _SlotObject;
 
 	public bool _Unknown;

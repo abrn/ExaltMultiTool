@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class EscapePacket : Packet
-{
+internal class EscapePacket : Packet {
 	public override PacketType pType => PacketType.ESCAPE;
 
 	public override void readPacketData(PacketReader r)

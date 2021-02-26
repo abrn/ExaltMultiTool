@@ -1,22 +1,21 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class PlaySoundPacket : Packet
-{
-	public int _qL8Qk0RJEu4lcCGcJpKfz1Fn8tb;
+internal class PlaySoundPacket : Packet {
+	public int _OwnerId;
 
-	public int _PWbB7SCLVcYTV40xoOcBn68wTeE;
+	public int _SoundId;
 
 	public override PacketType pType => PacketType.PLAYSOUND;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_qL8Qk0RJEu4lcCGcJpKfz1Fn8tb = r.ReadInt32();
-		_PWbB7SCLVcYTV40xoOcBn68wTeE = r.ReadByte();
+		_OwnerId = r.ReadInt32();
+		_SoundId = r.ReadByte();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_qL8Qk0RJEu4lcCGcJpKfz1Fn8tb);
-		w.Write((byte)_PWbB7SCLVcYTV40xoOcBn68wTeE);
+		w.Write(_OwnerId);
+		w.Write((byte) _SoundId);
 	}
 }

@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class GuildRemovePacket : Packet
-{
+internal class GuildRemovePacket : Packet {
 	public string _Username;
 
 	public override PacketType pType => PacketType.GUILDREMOVE;

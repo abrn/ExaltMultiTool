@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class GroundDamagePacket : Packet
-{
+internal class GroundDamagePacket : Packet {
 	public int _Amount;
 
 	public WorldPosData _Position;

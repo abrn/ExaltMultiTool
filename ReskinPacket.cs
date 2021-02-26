@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class ReskinPacket : Packet
-{
+internal class ReskinPacket : Packet {
 	public int _SkinId;
 
 	public override PacketType pType => PacketType.RESKIN;

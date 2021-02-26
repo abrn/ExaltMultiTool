@@ -1,22 +1,21 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class QueueInfoPacket : Packet
-{
-	public ushort _HRlp0f9oR4tySMNuTZBcZmI2bJe;
+internal class QueueInfoPacket : Packet {
+	public ushort _CurrentPosition;
 
-	public ushort _KSurbhigRQLtqPXMCa0EaApVLa0;
+	public ushort _MaxPosition;
 
 	public override PacketType pType => PacketType.QUEUEINFORMATION;
 
 	public override void readPacketData(PacketReader r)
 	{
-		_HRlp0f9oR4tySMNuTZBcZmI2bJe = r.ReadUInt16();
-		_KSurbhigRQLtqPXMCa0EaApVLa0 = r.ReadUInt16();
+		_CurrentPosition = r.ReadUInt16();
+		_MaxPosition = r.ReadUInt16();
 	}
 
 	public override void writePacketData(PacketWriter w)
 	{
-		w.Write(_HRlp0f9oR4tySMNuTZBcZmI2bJe);
-		w.Write(_KSurbhigRQLtqPXMCa0EaApVLa0);
+		w.Write(_CurrentPosition);
+		w.Write(_MaxPosition);
 	}
 }

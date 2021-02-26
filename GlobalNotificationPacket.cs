@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class GlobalNotificationPacket : Packet
-{
+internal class GlobalNotificationPacket : Packet {
 	public int _Time;
 
 	public string _Message;

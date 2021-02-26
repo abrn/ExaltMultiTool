@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class KeyInfoPacket : Packet
-{
+internal class KeyInfoPacket : Packet {
 	public byte[] _Key;
 
 	public int _KeyTime;

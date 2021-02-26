@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class RealmHeroesLeftPacket : Packet
-{
+internal class RealmHeroesLeftPacket : Packet {
 	public int _Amount;
 
 	public override PacketType pType => PacketType.REALMHEROLEFTMSG;

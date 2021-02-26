@@ -1,7 +1,6 @@
 using ExaltMultiTool.Proxy.Networking.Packets;
 
-internal class GuildInvitePacket : Packet
-{
+internal class GuildInvitePacket : Packet {
 	public string _Username;
 
 	public override PacketType pType => PacketType.GUILDINVITE;
