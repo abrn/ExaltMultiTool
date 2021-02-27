@@ -923,7 +923,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				num = 1907331609;
 				continue;
 			case 9u:
-				Program.LogNetworkInfo("client", $"Unable to find enemy type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
+				Program.LogNetworkInfo("client", $"Unable to find enemy type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc.Name})");
 				num = (int)((num2 * 1353711768) ^ 0x42288EDB);
 				continue;
 			case 15u:
@@ -1013,7 +1013,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 				num = 1219414074;
 				continue;
 			case 7u:
-				Program.LogNetworkInfo("client", $"Unable to find enemy projectile type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc._dzjzSFbtOGDAQRisUTP7vokTlVD})");
+				Program.LogNetworkInfo("client", $"Unable to find enemy projectile type in map, enemytype: {jI4Bueou7dItYp5S7QML5vyC6Rc._y2nCjecGeYsmqDEzaplcuBvYtN7} ({jI4Bueou7dItYp5S7QML5vyC6Rc.Name})");
 				num = (int)((num2 * 1698108007) ^ 0x13762240);
 				continue;
 			case 4u:
@@ -1721,7 +1721,7 @@ internal class _2JsGBNSkFue0Lbceua6NVMaZ7of
 					continue;
 				default:
 					stringBuilder.Append(classStats.WisdomMax - (jI4Bueou7dItYp5S7QML5vyC6Rc._UAk24tBgtCOd5WPGvcakcNRuFBJ - jI4Bueou7dItYp5S7QML5vyC6Rc._VC5NFP7putpASAq5eGJDSVhAIF));
-					_Client._TVcgSr7bcouFhNfw8PyT9bbBIM0(stringBuilder.ToString());
+					_Client.SendInfoMessage(stringBuilder.ToString());
 					return;
 				}
 				break;

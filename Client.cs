@@ -2480,7 +2480,7 @@ internal class Client
 		SendToClient(TextPacket.SendToPlayer(name, message));
 	}
 
-	public void _TVcgSr7bcouFhNfw8PyT9bbBIM0(string message)
+	public void SendInfoMessage(string message)
 	{
 		if (Settings.Default.DisableSystemMessages) {
 			return;

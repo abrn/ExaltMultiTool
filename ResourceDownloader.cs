@@ -40,7 +40,7 @@ internal static class ResourceDownloader {
 			Program.LogInfoMessage("core", "Parsing Objects...");
 			_VPArsrlUa0uEsW6OxAYV9WHJAMK =
 				new _VHWgt8pn9AXryODuVtLv9GmmHeH<ushort, ObjectStructure>(
-					ObjectStructure._uLt6b1uwFNgoZycBDqE02WmgdfB(parsedObjects));
+					ObjectStructure.GetObjectDictionary(parsedObjects));
 			
 			Program.LogInfoMessage("core", "Parsing Items...");
 			_3ndzvDGHhvqls1BD8vzizSQBDdI =

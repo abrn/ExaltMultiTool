@@ -156,7 +156,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 				return;
 			case 2u:
 			{
-				_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Server IP: " + _ServerHostname);
+				_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Server IP: " + _ServerHostname);
 				Thread thread = new Thread((ThreadStart)delegate
 				{
 					Clipboard.SetText(_ServerHostname);
@@ -326,7 +326,7 @@ internal class _sXxBcxQJ5OZEM8d0AIMUAzcF8In
 					num = (int)((num2 * 1540626680) ^ 0x31DA498D);
 					continue;
 				case 1u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Connecting to: " + ip);
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Connecting to: " + ip);
 					num = (int)(num2 * 1503746227) ^ -2081493219;
 					continue;
 				case 15u:

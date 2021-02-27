@@ -1108,7 +1108,7 @@ internal class MapHack
 					num7 = _2uy3SiURqP8Ecgmfnt4rRpGfe5y[_M2RcPC2J4Jc1ncdCsJJYHM1k0ai];
 					message = "World: " + num7;
 				}
-				plferqYaObizDfc28C5jdKSLGq._TVcgSr7bcouFhNfw8PyT9bbBIM0((string)message);
+				plferqYaObizDfc28C5jdKSLGq.SendInfoMessage((string)message);
 				num = -1775528083;
 				continue;
 			}

@@ -30,7 +30,7 @@ internal class PlayerData
 
 	public bool _KnKoysIj5SQBRgJ5j5NaR9rOWwO;
 
-	public bool _30X7XTik8sOluFKbYTZc5euHDhF;
+	public bool Static;
 
 	[CompilerGenerated]
 	private int _VRMEAZoASRLbbOJHbxq0SMigNYb;
@@ -478,7 +478,7 @@ internal class PlayerData
 		set;
 	}
 
-	public string _dzjzSFbtOGDAQRisUTP7vokTlVD
+	public string Name
 	{
 		get;
 		set;
@@ -633,100 +633,33 @@ internal class PlayerData
 	public void _K9KHPXwzr29YDgek3GVsa0yGGld(GameObject entity)
 	{
 		_y2nCjecGeYsmqDEzaplcuBvYtN7 = entity._ObjectType;
-		ObjectStructure objectStructure = default(ObjectStructure);
-		while (true)
+		_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._Status._ObjectId;
+		ObjectStructure objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ById(_y2nCjecGeYsmqDEzaplcuBvYtN7);
+		if (objectStructure == null)
 		{
-			int num = 825824561;
-			while (true)
-			{
-				uint num2;
-				switch ((num2 = (uint)num ^ 0x831F37Fu) % 16u)
-				{
-				case 0u:
-					break;
-				case 14u:
-				{
-					_fn2CRnBpjyTWHR9K8SU4iOwhDtK = entity._Status._ObjectId;
-					objectStructure = ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ById(_y2nCjecGeYsmqDEzaplcuBvYtN7);
-					int num3;
-					int num4;
-					if (objectStructure != null)
-					{
-						num3 = -1473268716;
-						num4 = num3;
-					}
-					else
-					{
-						num3 = -631389449;
-						num4 = num3;
-					}
-					num = num3 ^ ((int)num2 * -1215142786);
-					continue;
-				}
-				case 12u:
-					Program.LogNetworkError("core", $"structure null {_y2nCjecGeYsmqDEzaplcuBvYtN7:X}");
-					num = 1910254503;
-					continue;
-				case 10u:
-					_0uAKPjtnSdQDHNDBbKEF3hRerjh = objectStructure.ObjectClass == "Character";
-					num = ((int)num2 * -59299121) ^ -33543585;
-					continue;
-				case 6u:
-					_EpMX2v2db1pn8FM48P5WlE1WAPF = objectStructure.OccupySquare;
-					num = ((int)num2 * -761608534) ^ -702797918;
-					continue;
-				case 5u:
-					_fBkfBLhhMp7FH6BVjSag96CvhnT = objectStructure.MaxHP;
-					_zMlSnmW3LLSxr4x3sZAbRbWfh8Y = objectStructure.Size;
-					num = (int)((num2 * 1876588524) ^ 0x3F944377);
-					continue;
-				case 15u:
-					_fBkfBLhhMp7FH6BVjSag96CvhnT = 100;
-					_v6scruPI8GbKsVXu2rpqDMycX0Q = 100;
-					_W6bpBrAw6dPSILcVRK394JGD7tC = objectStructure.Player;
-					num = (int)(num2 * 493161600) ^ -1198106780;
-					continue;
-				case 7u:
-					_DKXdZpvHo34S5ZnQVXvzkRCVbXr = objectStructure.Defense;
-					num = (int)((num2 * 1596484602) ^ 0x1DB1C2FC);
-					continue;
-				case 9u:
-					_VnfPKrmQ7LzLqcF4PWxx5FYDsVP = objectStructure.Quest || _yYbRa1mIP7ZiuooCB0ThrkXMkOG.Contains(_y2nCjecGeYsmqDEzaplcuBvYtN7);
-					_WhjYATtyuIHc3jUkuJbSbMJdytu = objectStructure.God;
-					_O8hBN2IEFY6Eo2f2K2nULN5PgtD = objectStructure.Cube;
-					num = 1099953725;
-					continue;
-				case 11u:
-					_LePIFyFWrqLo6WMlJ4cV5MZBUqq = objectStructure.Enemy;
-					num = ((int)num2 * -170899806) ^ 0x13AACFF3;
-					continue;
-				case 1u:
-					_CG3bTc1opJ3Seu7PsOI5fhEywGk = objectStructure.FullOccupy;
-					_KnKoysIj5SQBRgJ5j5NaR9rOWwO = objectStructure.EnemyOccupySquare;
-					num = ((int)num2 * -263659548) ^ -1192645338;
-					continue;
-				case 2u:
-					_Tzs80AG7yuyH3MdkwBtecxKKzlB = objectStructure;
-					num = (int)(num2 * 1419057166) ^ -1851675600;
-					continue;
-				case 4u:
-					_dzjzSFbtOGDAQRisUTP7vokTlVD = objectStructure.Name;
-					num = ((int)num2 * -1048437993) ^ -2112838806;
-					continue;
-				case 3u:
-					num = (int)(num2 * 1276544191) ^ -1464080182;
-					continue;
-				case 13u:
-					_30X7XTik8sOluFKbYTZc5euHDhF = objectStructure.Static;
-					num = ((int)num2 * -151404443) ^ -1767284039;
-					continue;
-				default:
-					_JV6zl0lA6JLQZNtpbYVFdWCNsay(entity._Status, 0, -1, -1, -1L);
-					return;
-				}
-				break;
-			}
+			Program.LogNetworkError("core", $"structure null {_y2nCjecGeYsmqDEzaplcuBvYtN7:X}");
 		}
+		else
+		{
+			_fBkfBLhhMp7FH6BVjSag96CvhnT = 100;
+			_v6scruPI8GbKsVXu2rpqDMycX0Q = 100;
+			_W6bpBrAw6dPSILcVRK394JGD7tC = objectStructure.Player;
+			_LePIFyFWrqLo6WMlJ4cV5MZBUqq = objectStructure.Enemy;
+			_0uAKPjtnSdQDHNDBbKEF3hRerjh = objectStructure.ObjectClass == "Character";
+			_EpMX2v2db1pn8FM48P5WlE1WAPF = objectStructure.OccupySquare;
+			_CG3bTc1opJ3Seu7PsOI5fhEywGk = objectStructure.FullOccupy;
+			_KnKoysIj5SQBRgJ5j5NaR9rOWwO = objectStructure.EnemyOccupySquare;
+			Static = objectStructure.Static;
+			_DKXdZpvHo34S5ZnQVXvzkRCVbXr = objectStructure.Defense;
+			_fBkfBLhhMp7FH6BVjSag96CvhnT = objectStructure.MaxHP;
+			_zMlSnmW3LLSxr4x3sZAbRbWfh8Y = objectStructure.Size;
+			_bWj0oy0rW1RbT9ZGcsortIG47Df = objectStructure._WoxJKntvu1KdBSSkGgxIRzK5fim;
+			_VnfPKrmQ7LzLqcF4PWxx5FYDsVP = objectStructure.Quest || _yYbRa1mIP7ZiuooCB0ThrkXMkOG.Contains(_y2nCjecGeYsmqDEzaplcuBvYtN7);
+			_WhjYATtyuIHc3jUkuJbSbMJdytu = objectStructure.God;
+			_O8hBN2IEFY6Eo2f2K2nULN5PgtD = objectStructure.Cube;
+			_Tzs80AG7yuyH3MdkwBtecxKKzlB = objectStructure;
+		}
+		_JV6zl0lA6JLQZNtpbYVFdWCNsay(entity._Status, 0, -1, -1, -1L);
 	}
 
 	public void _JV6zl0lA6JLQZNtpbYVFdWCNsay(Status status, int tickTime, int tickId, int lastTickId, long lastUpdate, bool selfAndNewTick = false)

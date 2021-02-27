@@ -45,7 +45,7 @@ namespace ExaltMultiTool.Proxy.Mods
 					case 8u:
 						goto IL_006b;
 					case 0u:
-						_9dlEBQRajgHUPe01BLJS9ymRjkc.Add(enemy.ID, list2);
+						_9dlEBQRajgHUPe01BLJS9ymRjkc.Add(enemy.Id, list2);
 						num = (int)(num2 * 191264179) ^ -517369544;
 						continue;
 					case 12u:
@@ -53,15 +53,15 @@ namespace ExaltMultiTool.Proxy.Mods
 						num = (int)(num2 * 1296187777) ^ -122392875;
 						continue;
 					case 4u:
-						list2.Add(projectileStructure.ID);
+						list2.Add(projectileStructure.Id);
 						num = ((int)num2 * -1591650231) ^ -166307041;
 						continue;
 					case 13u:
-						_ZBH1FpPAnW1jZrUD0KruZCQObYF.Add(enemy.ID, list);
+						_ZBH1FpPAnW1jZrUD0KruZCQObYF.Add(enemy.Id, list);
 						num = ((int)num2 * -1204996809) ^ -1873362783;
 						continue;
 					case 1u:
-						dictionary.Add(projectileStructure.ID, projectileStructure);
+						dictionary.Add(projectileStructure.Id, projectileStructure);
 						num3++;
 						num = 339316962;
 						continue;
@@ -88,11 +88,11 @@ namespace ExaltMultiTool.Proxy.Mods
 					case 9u:
 						goto IL_0159;
 					case 5u:
-						list.Add(projectileStructure.ID);
+						list.Add(projectileStructure.Id);
 						num = ((int)num2 * -1857351975) ^ 0x17861208;
 						continue;
 					case 2u:
-						ObjectTypeToProjectileIdStructureMap.Add(enemy.ID, dictionary);
+						ObjectTypeToProjectileIdStructureMap.Add(enemy.Id, dictionary);
 						num = (int)((num2 * 876159021) ^ 0x26122D1B);
 						continue;
 					case 10u:
@@ -249,7 +249,7 @@ namespace ExaltMultiTool.Proxy.Mods
 							case 8u:
 								goto IL_006b;
 							case 0u:
-								_9dlEBQRajgHUPe01BLJS9ymRjkc.Add(enemy.ID, list2);
+								_9dlEBQRajgHUPe01BLJS9ymRjkc.Add(enemy.Id, list2);
 								num3 = (int)(num4 * 191264179) ^ -517369544;
 								continue;
 							case 12u:
@@ -257,15 +257,15 @@ namespace ExaltMultiTool.Proxy.Mods
 								num3 = (int)(num4 * 1296187777) ^ -122392875;
 								continue;
 							case 4u:
-								list2.Add(projectileStructure.ID);
+								list2.Add(projectileStructure.Id);
 								num3 = ((int)num4 * -1591650231) ^ -166307041;
 								continue;
 							case 13u:
-								_ZBH1FpPAnW1jZrUD0KruZCQObYF.Add(enemy.ID, list);
+								_ZBH1FpPAnW1jZrUD0KruZCQObYF.Add(enemy.Id, list);
 								num3 = ((int)num4 * -1204996809) ^ -1873362783;
 								continue;
 							case 1u:
-								dictionary.Add(projectileStructure.ID, projectileStructure);
+								dictionary.Add(projectileStructure.Id, projectileStructure);
 								num5++;
 								num3 = 339316962;
 								continue;
@@ -292,11 +292,11 @@ namespace ExaltMultiTool.Proxy.Mods
 							case 9u:
 								goto IL_0159;
 							case 5u:
-								list.Add(projectileStructure.ID);
+								list.Add(projectileStructure.Id);
 								num3 = ((int)num4 * -1857351975) ^ 0x17861208;
 								continue;
 							case 2u:
-								ObjectTypeToProjectileIdStructureMap.Add(enemy.ID, dictionary);
+								ObjectTypeToProjectileIdStructureMap.Add(enemy.Id, dictionary);
 								num3 = (int)((num4 * 876159021) ^ 0x26122D1B);
 								continue;
 							case 10u:

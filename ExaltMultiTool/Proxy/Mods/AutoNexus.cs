@@ -2526,7 +2526,7 @@ internal class AutoNexus
 				goto IL_0149;
 			case 0u:
 				_FX4vSy5JMHovi3Px83YbL5RUCVO();
-				_Client._TVcgSr7bcouFhNfw8PyT9bbBIM0($"Set autonexus health threshold to {result}% (at {_wpv3L2x9SVwVG8oTXkB9xlrWfYf} health)");
+				_Client.SendInfoMessage($"Set autonexus health threshold to {result}% (at {_wpv3L2x9SVwVG8oTXkB9xlrWfYf} health)");
 				num = (int)((num3 * 255506515) ^ 0x5E230082);
 				continue;
 			case 7u:

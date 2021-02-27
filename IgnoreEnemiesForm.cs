@@ -54,7 +54,7 @@ internal class IgnoreEnemiesForm : Form
 
 		internal int _hNDxNn71hkz4t8qiRafNirPLSOd(string Item)
 		{
-			return ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ByName(Item).ID;
+			return ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ByName(Item).Id;
 		}
 	}
 
@@ -238,7 +238,7 @@ internal class IgnoreEnemiesForm : Form
 
 	private void _Ki0ZDyZ2DkunPLe4H3Ix7qOIfK()
 	{
-		Settings.Default.FameIngoredEnemies = _TQVy1n9sXJC4L2B1RVg2HB1vFwg.Items.Cast<string>().Select((Func<string, int>)((string Item) => ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ByName(Item).ID)).ToArray();
+		Settings.Default.FameIngoredEnemies = _TQVy1n9sXJC4L2B1RVg2HB1vFwg.Items.Cast<string>().Select((Func<string, int>)((string Item) => ResourceDownloader._VPArsrlUa0uEsW6OxAYV9WHJAMK.ByName(Item).Id)).ToArray();
 		while (true)
 		{
 			int num = 761271567;

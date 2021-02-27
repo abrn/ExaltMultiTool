@@ -154,7 +154,7 @@ internal class TeleportHelper
 									continue;
 								}
 								case 9u:
-									_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Quest not found!");
+									_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Quest not found!");
 									return;
 								case 0u:
 									source = _50w8wVuv8bL5nhKaR2EHxjrTamB._Aq9hW2NyDqEkITmxzYm6OCQLaDB.Values.Where((PlayerData enemy) => enemy._fn2CRnBpjyTWHR9K8SU4iOwhDtK == _EeeRzHBDOL9AqYJ8CIuFvkR3Qlz);
@@ -169,7 +169,7 @@ internal class TeleportHelper
 						}
 						goto IL_0a15;
 						IL_0a6b:
-						_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to " + jI4Bueou7dItYp5S7QML5vyC6Rc2._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
+						_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Teleporting to " + jI4Bueou7dItYp5S7QML5vyC6Rc2._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
 						int num17 = -770781531;
 						goto IL_0695;
 						IL_0690:
@@ -327,7 +327,7 @@ internal class TeleportHelper
 							case 2u:
 								return;
 							case 1u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("No players found to teleport to!");
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("No players found to teleport to!");
 								num17 = (int)(num2 * 2096922046) ^ -125483602;
 								continue;
 							case 30u:
@@ -348,7 +348,7 @@ internal class TeleportHelper
 								continue;
 							}
 							case 24u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Usage: /connect [server name]");
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Usage: /connect [server name]");
 								num17 = -2142874341;
 								continue;
 							case 6u:
@@ -413,7 +413,7 @@ internal class TeleportHelper
 								goto IL_098f;
 							case 5u:
 								playerText._Send = false;
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0($"Current location: {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionX, 1)}, {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionY, 1)}");
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage($"Current location: {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionX, 1)}, {Math.Round(_50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._Position._PositionY, 1)}");
 								num17 = -1483513078;
 								continue;
 							case 23u:
@@ -453,14 +453,14 @@ internal class TeleportHelper
 								num17 = (int)(num2 * 611952939) ^ -184346516;
 								continue;
 							case 17u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Unknown server!");
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Unknown server!");
 								return;
 							case 29u:
 								return;
 							case 18u:
 								return;
 							case 11u:
-								_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Connecting to: " + value);
+								_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Connecting to: " + value);
 								num17 = (int)(num2 * 1732984103) ^ -347248346;
 								continue;
 							case 3u:
@@ -582,7 +582,7 @@ internal class TeleportHelper
 					continue;
 				case 8u:
 				{
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to self!");
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Teleporting to self!");
 					TeleportPacket gXkgDctfNPN0Xyz8qvjQDIS73of3 = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
 					gXkgDctfNPN0Xyz8qvjQDIS73of3._ObjectId = _50w8wVuv8bL5nhKaR2EHxjrTamB._PlayerData._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(gXkgDctfNPN0Xyz8qvjQDIS73of3);
@@ -602,7 +602,7 @@ internal class TeleportHelper
 					}
 					return;
 				case 10u:
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Usage: /tp [partial or full player name]");
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Usage: /tp [partial or full player name]");
 					num = (int)(num2 * 215014787) ^ -718363310;
 					continue;
 				default:
@@ -674,7 +674,7 @@ internal class TeleportHelper
 								}
 								case 1u:
 								{
-									_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Teleporting to " + current._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
+									_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Teleporting to " + current._WL2DOBxBuX9DARzf2KPoaJbgZiCb + "!");
 									TeleportPacket teleportPacket = (TeleportPacket)Packet.CreatePacketFromType(PacketType.TELEPORT);
 									teleportPacket._ObjectId = current._fn2CRnBpjyTWHR9K8SU4iOwhDtK;
 									_50w8wVuv8bL5nhKaR2EHxjrTamB.SendToServer(teleportPacket);
@@ -691,7 +691,7 @@ internal class TeleportHelper
 						}
 						end_IL_026e:;
 					}
-					_50w8wVuv8bL5nhKaR2EHxjrTamB._TVcgSr7bcouFhNfw8PyT9bbBIM0("Player with the name similar to " + text + " not found!");
+					_50w8wVuv8bL5nhKaR2EHxjrTamB.SendInfoMessage("Player with the name similar to " + text + " not found!");
 					return;
 				}
 				}
